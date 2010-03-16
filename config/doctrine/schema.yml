@@ -1,0 +1,55 @@
+options:
+  collate: utf8_unicode_ci
+  charset: utf8
+attributes:
+  export: all
+
+Profile:
+  columns:
+    sf_guard_user_id:           integer(4)
+    first_name:                 { type: string(100), notnull: true }
+    last_name:                  { type: string(100), notnull: true }
+    birth_date:                 { type: date }
+    phone:                      { type: string(40) }
+    movil:                      { type: string(40) }
+    email:                      { type: string(60) }
+    addres:                     { type: string(100) }
+    country:                    { type: string(50) }
+
+  relations:
+    User:
+      class:                    sfGuardUser
+      foreignType:              one
+
+# Formuulario
+Page:
+  actAs:
+    - Timestampable
+  tableName:                    page
+  columns:
+    id:                         { type: integer, primary: true, autoincrement: true}
+    parent_id:                  { type: integer }
+    author_id:                  integer(4)
+    title:                      { type: string(100), notnull: true }
+    description:                { type: clob, notnull: true }
+  relations:
+    Author:                     { local: author_id, foreign: id, class: sfGuardUser }
+    Parent:                     { local: parent_id, foreign: id, class: Page }
+    Categories:                 { class: Category, local: page_id, foreign: category_id, refClass: PageCategory }
+
+
+Category:
+  actAs:
+    - Timestampable
+  tableName:                    category
+  columns:
+    id:                         { type: integer, primary: true, autoincrement: true}
+    title:                      { type: string(60), notnull: true }
+    description:                { type: string(255) }
+  relations:
+    Pages:                      { class: Page, local: category_id, foreign: page_id, refClass: PageCategory }
+
+PageCategory:
+  columns:
+    category_id:                { type: integer, primary: true }
+    page_id:                    { type: integer, primary: true }

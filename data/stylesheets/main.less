@@ -1,0 +1,70 @@
+@import "_commons/clear";
+@import "_commons/common";
+@import "_commons/interface.boxs";
+@import "_commons/interface.elements";
+/*@import "_commons/interface.dialog";*/
+/*@import "_commons/interface.itemlist";*/
+/*@import "_commons/interface.scrollbar";*/
+@import "_commons/interface.tip";
+
+@import "menu/default";
+
+
+body {
+  padding: 5px;
+  background-color: #ccc;
+  font-family: Helvetica;
+  height: 100%;
+
+  /* Layout */
+  #wrapper {
+    padding: 10px;
+    max-width: 1000px;
+    .box-sizing;
+    margin: 20px auto;
+    background-color: #eee;
+    height: 100%;
+    .border-radius;
+    border: 1px solid #bbb;
+  }
+
+  #header {
+    nav.menu, section.mini-panel {
+      .box-sizing;
+      height: 50px;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 12px;
+    }
+    /* Menu */
+    nav.menu {
+      width: 80%;
+
+    }
+
+    section.mini-panel {
+      margin-left: 1%;
+      width: 17%;
+      padding: 5px;
+      .border-radius(6px);
+      background-color: #fff;
+      .box-shadow(0, 2px, 5px, rgba(0, 0, 0, 0.1));
+    }
+  }
+
+  #board {
+
+  }
+
+
+}
+ 
+
+/* Tablas */
+#sf_admin_content table tr th{
+  font-size: 12px;
+}
+
+#sf_admin_content table tr th a {
+  padding: 1px 5px;
+}

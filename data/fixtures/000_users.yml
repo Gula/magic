@@ -1,0 +1,39 @@
+sfGuardUser:
+  sgu_admin:
+    username:                 admin
+    password:                 admin
+    is_super_admin:           true
+
+  damian:
+    username:                 damian
+    password:                 123456
+    is_super_admin:           true
+    Profile:
+      first_name:               Roberto Damian
+      last_name:                Suarez
+      birth_date:               07/18/1977
+      phone:                    0299 4778030
+      movil:
+      email:                    damian.suarez@xifox.net
+      addres:                   Don Bosco 869
+      country:                  Argentina
+
+sfGuardPermission:
+  sgp_admin:
+    name:                     admin
+    description:              Administrator permission
+
+sfGuardGroup:
+  sgg_admin:
+    name:                     admin
+    description:              Administrator group
+
+sfGuardGroupPermission:
+  sggp_admin:
+    sfGuardGroup:       sgg_admin
+    sfGuardPermission:  sgp_admin
+
+sfGuardUserGroup:
+  sgug_admin:
+    sfGuardGroup:       sgg_admin
+    sfGuardUser:        sgu_admin
