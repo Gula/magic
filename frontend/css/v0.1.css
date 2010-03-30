@@ -402,6 +402,7 @@ NOVEDADES
 }
 
 .contenido-hotel .contenido .sub-menu h2 {
+	padding-top: 12px;
 	color: white;
 	font: 18px/27px 'CartoGothicStdBook', Helvetica, Arial, sans-serif;
 	font-weight: normal;
