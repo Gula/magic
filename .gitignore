@@ -10,3 +10,5 @@ project/lib/form/doctrine/base/*
 project/lib/model/doctrine/base/*
 
 project/config/databases.yml
+
+project/web/uploads/pictures/*

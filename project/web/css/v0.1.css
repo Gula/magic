@@ -347,6 +347,13 @@ NOVEDADES
 .novedades .fotos a:hover {
 	background-position: 0px -41px;
 }
+
+
+/* Accordion */
+.drawers h2 {
+  cursor: pointer;
+}
+
 .drawer-foto, .drawer-texto {
 	text-align: center;
 	display: block;
@@ -362,4 +369,7 @@ NOVEDADES
 	width: 232px;
 	margin: 0px;
 	padding: 0px;
+}
+
+.drawer ul li h2{
 }

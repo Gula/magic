@@ -41,7 +41,22 @@
         </div>
       </span>
     </li>
-        <li>
+
+    <li>
+      <div>
+        <?php $id = $form->getObject()->get('id') ?>
+        <?php echo image_tag('/uploads/'.$id.'/img_'.$id.'_250x141.jpg') ?>
+      </div>
+      <?php echo $form['picture']->renderLabel() ?>
+      <span>
+        <div>
+          <?php echo $form['picture']->renderError() ?>
+          <?php echo $form['picture'] ?>
+        </div>
+      </span>
+    </li>
+    
+    <li>
       <?php echo $form['categories_list']->renderLabel() ?>
       <span>
         <div>
