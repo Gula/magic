@@ -17,7 +17,10 @@ default:
     - blueprint/print.css
     - v0.1.css
 
-  javascripts:    []
+  javascripts:
+    - mootools-1.2.4-core-yc.js
+    - mootools-1.2.4.4-more.js
+    - casino.js
 
   has_layout:     true
   layout:         layout
