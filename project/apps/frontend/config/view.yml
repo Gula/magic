@@ -6,13 +6,16 @@ default:
     content-type: text/html
 
   metas:
-    #title:        symfony project
+    title:        Casino Magin 2010
     #description:  symfony project
     #keywords:     symfony, project
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css]
+  stylesheets:
+    - blueprint/screen.css
+    - blueprint/print.css
+    - v0.1.css
 
   javascripts:    []
 
