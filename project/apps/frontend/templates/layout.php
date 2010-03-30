@@ -11,28 +11,29 @@
 
   <body>
     <div class="container">
-      <div id="header">
-        <div id="logo" class="span-5"><h1><a href="index.html">Casino Magic</a></h1></div>
-        <div id="nav" class="span-19 last">
-       	  <div class="span-9 prepend-10 last" id="global">Iconos Globales</div>
-          <div id="menu">
-            <ul class="menu">
-              <li id="hotel"><a href="hotel.html">Hotel</a></li>
-              <li id="casino"><a href="casino.html">Casino</a></li>
-              <li id="eventos"><a href="hotel.html">Eventos</a></li>
-              <li id="espectaculos"><a href="hotel.html">Espect&aacute;culos</a></li>
-              <li id="promociones"><a href="hotel.html">Promociones</a></li>
-              <li id="gastronomia"><a href="hotel.html">Gastronom&iacute;a</a></li>
-              <li id="giftshop"><a href="hotel.html">Gift Shop</a></li>
-              <li id="search"><label for="search"><input border="0" id="searchInput" /></label></li>
-            </ul>
+      <?php include_component('default', 'header') ?>
+
+      <div class="span-18">
+        <div class="slideshow" id="slideshow">
+          <div class="slide_wrapper">
+            <div class="picture">
+              <img src="images/imagenes_inicio/foto_01.jpg" />
+            </div>
+
+            <div class="picture">
+              <img src="images/imagenes_inicio/foto_02.jpg" />
+            </div>
+
+            <div class="picture">
+              <img src="images/imagenes_inicio/foto_03.jpg" />
+            </div>
+
+            <div class="picture">
+              <img src="images/imagenes_inicio/foto_04.jpg" />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="span-18">
-        <div class="slideshow">
-          <img src="images/imagenes_inicio/foto_01.jpg" />
-        </div>
+
         <div class="clearfix"></div>
         <div id="boxNovedades">
           <ul class="novedades">
