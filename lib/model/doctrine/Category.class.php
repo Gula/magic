@@ -8,7 +8,7 @@
  * @package    sf_sandbox
  * @subpackage model
  * @author     Your name here
- * @version    SVN: $Id: Builder.php 7294 2010-03-02 17:59:20Z jwage $
+ * @version    SVN: $Id: Builder.php 7380 2010-03-15 21:07:50Z jwage $
  */
 class Category extends BaseCategory
 {

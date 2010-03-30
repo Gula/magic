@@ -8,14 +8,8 @@
  * @package    sf_sandbox
  * @subpackage model
  * @author     Your name here
- * @version    SVN: $Id: Builder.php 7294 2010-03-02 17:59:20Z jwage $
+ * @version    SVN: $Id: Builder.php 7380 2010-03-15 21:07:50Z jwage $
  */
 class Page extends BasePage
 {
-  public function getDescriptionSummary() {
-    $description = $this->getDescription();
-
-    $description = strlen($description) > 40 ? substr($description, 0, 40).' ...' : $description;
-    return $description;
-  }
 }
