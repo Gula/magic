@@ -30,4 +30,37 @@ class Page extends BasePage {
 
     return trim($text, '-');
   }
+
+  public function generatePictureFilename(sfValidatedFile $file) {
+    return $this->getSlugize().'_'.$this->get('id').$file->getExtension();
+  }
+
+  public function save(Doctrine_Connection $conn = null) {
+    // generamos thumbnails
+    $file = sfConfig::get('sf_upload_dir').'/pictures/'.$this->getPicture();
+
+    if(file_exists($file)) {
+
+      $dims = array (
+        array('w' => 950, 'h' => 534),
+        array('w' => 720, 'h' => 405),
+        array('w' => 250, 'h' => 141),
+        array('w' => 60, 'h' => 60)
+      );
+
+      $img = new sfImage($file, 'image/jpg');
+
+      if(!is_dir(sfConfig::get('sf_upload_dir').'/'.$this->get('id'))) mkdir(sfConfig::get('sf_upload_dir').'/'.$this->get('id'), 0777);
+
+      foreach ($dims as $dim) {
+        $img->thumbnail($dim['w'], $dim['h']);
+        $img->setQuality(90);
+
+        $img->saveAs(sfConfig::get('sf_upload_dir').'/'.$this->get('id').'/img_'.$this->get('id').'_'.$dim['w'].'x'.$dim['h'].'.jpg');
+      }
+
+    }
+
+    parent::save($conn);
+  }
 }
