@@ -69,7 +69,7 @@ body {
 	display:  block !important;
 	padding: 0px !important; margin: 0px;
 	text-indent: -5000px;
-	width: 50px !important; height: 35px;
+	width: 49px !important; height: 35px;
 	background: transparent url(../images/nav_menu.png) no-repeat 0px 0px !important;
 }
 #hotel a:hover {
@@ -80,18 +80,18 @@ body {
 	display:  block !important;
 	padding: 0px !important; margin: 0px;
 	text-indent: -5000px;
-	width: 55px !important; height: 35px;
-	background: transparent url(../images/nav_menu.png) no-repeat -50px 0px !important;
+	width: 56px !important; height: 35px;
+	background: transparent url(../images/nav_menu.png) no-repeat -49px 0px !important;
 }
 #casino a:hover {
-	background: transparent url(../images/nav_menu.png) no-repeat -50px -35px !important;
+	background: transparent url(../images/nav_menu.png) no-repeat -49px -35px !important;
 }
 
 #eventos a {
 	display:  block !important;
 	padding: 0px !important; margin: 0px;
 	text-indent: -5000px;
-	width: 65px !important; height: 35px;
+	width: 166px !important; height: 35px;
 	background: transparent url(../images/nav_menu.png) no-repeat -105px 0px !important;
 }
 #eventos a:hover {
@@ -102,59 +102,67 @@ body {
 	display:  block !important;
 	padding: 0px !important; margin: 0px;
 	text-indent: -5000px;
-	width: 97px !important; height: 35px;
-	background: transparent url(../images/nav_menu.png) no-repeat -170px 0px !important;
+	width: 90px !important; height: 35px;
+	background: transparent url(../images/nav_menu.png) no-repeat -271px 0px !important;
 }
 #espectaculos a:hover {
-	background: transparent url(../images/nav_menu.png) no-repeat -170px -35px !important;
+	background: transparent url(../images/nav_menu.png) no-repeat -271px -35px !important;
 }
 
 #promociones a {
 	display:  block !important;
 	padding: 0px !important; margin: 0px;
 	text-indent: -5000px;
-	width: 94px !important; height: 35px;
-	background: transparent url(../images/nav_menu.png) no-repeat -267px 0px !important;
+	width: 90px !important; height: 35px;
+	background: transparent url(../images/nav_menu.png) no-repeat -361px 0px !important;
 }
 #promociones a:hover {
-	background: transparent url(../images/nav_menu.png) no-repeat -267px -35px !important;
+	background: transparent url(../images/nav_menu.png) no-repeat -361px -35px !important;
 }
 
 #gastronomia a {
 	display:  block !important;
 	padding: 0px !important; margin: 0px;
 	text-indent: -5000px;
-	width: 97px !important; height: 35px;
-	background: transparent url(../images/nav_menu.png) no-repeat -361px 0px !important;
+	width: 90px !important; height: 35px;
+	background: transparent url(../images/nav_menu.png) no-repeat -451px 0px !important;
 }
 #gastronomia a:hover {
-	background: transparent url(../images/nav_menu.png) no-repeat -361px -35px !important;
+	background: transparent url(../images/nav_menu.png) no-repeat -451px -35px !important;
 }
 
 #giftshop a {
 	display:  block !important;
 	padding: 0px !important; margin: 0px;
 	text-indent: -5000px;
-	width: 72px !important; height: 35px;
-	background: transparent url(../images/nav_menu.png) no-repeat -458px 0px !important;
+	width: 69px !important; height: 35px;
+	background: transparent url(../images/nav_menu.png) no-repeat -541px 0px !important;
 }
 #giftshop a:hover {
-	background: transparent url(../images/nav_menu.png) no-repeat -458px -35px !important;
+	background: transparent url(../images/nav_menu.png) no-repeat -541px -35px !important;
 }
 
 #search {
 	display:  block !important;
 	padding: 0px !important; margin: 0px;
-	width: 232px !important; height: 35px;
+	width: 152px !important; height: 35px;
 	background: transparent url(../images/header_buscador.png) no-repeat 0px 0px !important;
 }
 #search label #searchInput {
+	outline: none;
 	margin-top: 9px;
-	margin-left: 95px;
+	margin-left: 26px;
 	font-family: Helvetica, Arial, sans-serif;
 	color: #000;
 	height: 15px;
-	width: 114px;
+	width: 113px;
+	border: 0px;
+	background:  transparent;
+}
+#search label #searchInput:focus {
+	outline: none;
+	border: 0px;
+
 }
 	.span-18 {
 		margin-right: 0px !important;
