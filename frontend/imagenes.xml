@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gallery>
+	<album>
+		<img src="images/imagenes_inicio/foto_01.jpg" />
+		<img src="images/imagenes_inicio/foto_02.jpg" />
+		<img src="images/imagenes_inicio/foto_03.jpg" />
+		<img src="images/imagenes_inicio/foto_04.jpg" />
+		<img src="images/imagenes_inicio/foto_05.jpg" />
+		<img src="images/imagenes_inicio/foto_06.jpg" />
+		<img src="images/imagenes_inicio/foto_07.jpg" />
+		<img src="images/imagenes_inicio/foto_08.jpg" />
+		<img src="images/imagenes_inicio/foto_09.jpg" />
+		<img src="images/imagenes_inicio/foto_10.jpg" />
+	</album>
+</gallery>
