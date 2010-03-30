@@ -31,7 +31,9 @@ Page:
     parent_id:                  { type: integer }
     author_id:                  integer(4)
     title:                      { type: string(100), notnull: true }
-    description:                { type: clob, notnull: true }
+    description:                { type: clob }
+    abstract:                   { type: string(255) }
+    picture:                    { type: string(255) }
   relations:
     Author:                     { local: author_id, foreign: id, class: sfGuardUser }
     Parent:                     { local: parent_id, foreign: id, class: Page }
