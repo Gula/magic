@@ -87,14 +87,14 @@ body {
 	background: transparent url(../images/nav_menu.png) no-repeat -49px -35px !important;
 }
 
-#eventos a {
+#banqueteseventos a {
 	display:  block !important;
 	padding: 0px !important; margin: 0px;
 	text-indent: -5000px;
 	width: 166px !important; height: 35px;
 	background: transparent url(../images/nav_menu.png) no-repeat -105px 0px !important;
 }
-#eventos a:hover {
+#banqueteseventos a:hover {
 	background: transparent url(../images/nav_menu.png) no-repeat -105px -35px !important;
 }
 
@@ -195,6 +195,22 @@ body {
 	background-color: #333132;
     }
 
+
+/* Slide */
+.slideshow, .slideshow .picture {
+  width: 800px;
+  height: 350px;
+  overflow: hidden;
+}
+
+
+.slideshow .slide_wrapper {
+  width: 3200px;
+  height: 350px;
+}
+.slideshow .picture {
+  float: left;
+}
 
 
 /* 
