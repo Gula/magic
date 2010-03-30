@@ -355,7 +355,17 @@ NOVEDADES
 }
 
 .contenido-hotel {
-	background-color: #ebbe44;
+	background-image: url(../images/paginas/hotel.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	height: 800px;
+}
+
+.contenido-hotel .alpha {
+	background-image: url(../images/alpha.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	height: 576px;
 }
 
 .contenido-hotel p {
