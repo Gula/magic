@@ -14,7 +14,7 @@ default:
 
   stylesheets:
     - blueprint/screen.css
-    - blueprint/print.css
+    #- blueprint/print.css
     - v0.1.css
 
   javascripts:
