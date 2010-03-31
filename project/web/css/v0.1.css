@@ -1,6 +1,24 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@font-face {
+	font-family: 'FuturaLTMediumRegular';
+	src: url('fonts/lte50186.eot');
+	src: local('Futura LT Medium'), local('FuturaLT'), url('fonts/lte50186.woff') format('woff'), url('fonts/lte50186.ttf') format('truetype'), url('fonts/lte50186.svg#FuturaLT') format('svg');
+}
+
+@font-face {
+	font-family: 'FuturaLTBoldRegular';
+	src: url('fonts/lte50154.eot');
+	src: local('Futura LT Bold'), local('FuturaLT-Bold'), url('fonts/lte50154.woff') format('woff'), url('fonts/lte50154.ttf') format('truetype'), url('fonts/lte50154.svg#FuturaLT-Bold') format('svg');
+}
+
+@font-face {
+	font-family: 'FuturaLTBookBold';
+	src: url('fonts/futuralt_bold.eot');
+	src: local('Futura LT Book'), local('FuturaLT-Bold'), url('fonts/futuralt_bold.woff') format('woff'), url('fonts/futuralt_bold.ttf') format('truetype'), url('fonts/futuralt_bold.svg#FuturaLT-Bold') format('svg');
+}
+
 body {
 		background: #000	none;
 		color: #F4F4F4;
