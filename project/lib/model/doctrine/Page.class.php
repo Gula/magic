@@ -36,6 +36,7 @@ class Page extends BasePage {
   }
 
   public function save(Doctrine_Connection $conn = null) {
+    
     // generamos thumbnails
     $file = sfConfig::get('sf_upload_dir').'/pictures/'.$this->getPicture();
 
@@ -62,5 +63,14 @@ class Page extends BasePage {
     }
 
     parent::save($conn);
+  }
+
+  public function getChildren() {
+    $q = Doctrine_Query::create()
+      ->from('Page p')
+      ->where('p.parent_id = ?', $this->get('id'));
+
+    return $q->execute();
+
   }
 }

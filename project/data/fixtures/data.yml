@@ -1,0 +1,215 @@
+Profile:
+  Profile_1:
+    User: sfGuardUser_2
+    first_name: 'Roberto Damian'
+    last_name: Suarez
+    birth_date: '0000-00-00'
+    phone: '0299 4778030'
+    movil: null
+    email: damian.suarez@xifox.net
+    addres: 'Don Bosco 869'
+    country: Argentina
+Category:
+  Category_1:
+    title: 'Main Menu'
+    description: 'Menu principal de la página'
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+  Category_2:
+    title: 'Main Slideshow'
+    description: 'Slideshow principal'
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+Page:
+  Page_1:
+    Author: sfGuardUser_2
+    title: Hotel
+    description: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.</p>'
+    abstract: 'La estrella que le faltaba a Neuquén'
+    picture: hotel.jpg
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-31 03:15:24'
+  Page_2:
+    Author: sfGuardUser_2
+    title: Casino
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.'
+    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
+    picture: casino.jpg
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+  Page_3:
+    Author: sfGuardUser_2
+    title: 'Banquetes & Eventos'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.'
+    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
+    picture: 'Banquetes&Eventos.jpg'
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+  Page_4:
+    Author: sfGuardUser_2
+    title: Espectáculos
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.'
+    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
+    picture: espectaculos.jpg
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+  Page_5:
+    Author: sfGuardUser_2
+    title: Promociones
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.'
+    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
+    picture: promociones.jpg
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+  Page_6:
+    Author: sfGuardUser_2
+    title: Gastronomía
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.'
+    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
+    picture: gastronomia.jpg
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+  Page_7:
+    Author: sfGuardUser_2
+    title: 'Gift Shop'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.'
+    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
+    picture: giftshop.jpg
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+  Page_8:
+    Parent: Page_1
+    Author: sfGuardUser_2
+    title: Habitaciones
+    description: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.</p>'
+    abstract: ''
+    picture: habitaciones_8.jpg
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 21:09:40'
+  Page_9:
+    Parent: Page_1
+    Author: sfGuardUser_2
+    title: Restaurante
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.'
+    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
+    picture: restaurante.jpg
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+  Page_10:
+    Parent: Page_1
+    Author: sfGuardUser_2
+    title: Piscina
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.'
+    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
+    picture: piscina.jpg
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+  Page_11:
+    Parent: Page_1
+    Author: sfGuardUser_2
+    title: 'Spa & Fitness'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.'
+    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
+    picture: 'spa&fitness.jpg'
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+  Page_12:
+    Parent: Page_1
+    Author: sfGuardUser_2
+    title: Servicios
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.'
+    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
+    picture: servicios.jpg
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+  Page_13:
+    Parent: Page_1
+    Author: sfGuardUser_2
+    title: Reservas
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.'
+    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
+    picture: reservas.jpg
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+sfGuardPermission:
+  sfGuardPermission_1:
+    name: admin
+    description: 'Administrator permission'
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+sfGuardUserGroup:
+  sfGuardUserGroup_1_1:
+    sfGuardUser: sfGuardUser_1
+    sfGuardGroup: sfGuardGroup_1
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+sfGuardGroup:
+  sfGuardGroup_1:
+    name: admin
+    description: 'Administrator group'
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+sfGuardGroupPermission:
+  sfGuardGroupPermission_1_1:
+    sfGuardGroup: sfGuardGroup_1
+    sfGuardPermission: sfGuardPermission_1
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+sfGuardUser:
+  sfGuardUser_1:
+    username: admin
+    algorithm: sha1
+    salt: 175c791b2d837217889462f269a8a961
+    password: 97af3e711a89b7e79471ea415cc80df771388476
+    is_active: true
+    is_super_admin: true
+    last_login: '2010-03-31 02:24:52'
+    created_at: '2010-03-30 19:50:27'
+    updated_at: '2010-03-31 02:24:52'
+  sfGuardUser_2:
+    username: damian
+    algorithm: sha1
+    salt: 28b0271c037ae651cd72d0af62631348
+    password: 17f718664a81bfbe922bb8a7c9aac6bb951c41a3
+    is_active: true
+    is_super_admin: true
+    last_login: null
+    created_at: '2010-03-30 19:50:27'
+    updated_at: '2010-03-30 19:50:27'
+PageCategory:
+  PageCategory_1_1:
+    Category: Category_1
+    Page: Page_1
+  PageCategory_2_1:
+    Category: Category_2
+    Page: Page_1
+  PageCategory_1_2:
+    Category: Category_1
+    Page: Page_2
+  PageCategory_2_2:
+    Category: Category_2
+    Page: Page_2
+  PageCategory_1_3:
+    Category: Category_1
+    Page: Page_3
+  PageCategory_2_3:
+    Category: Category_2
+    Page: Page_3
+  PageCategory_1_4:
+    Category: Category_1
+    Page: Page_4
+  PageCategory_2_4:
+    Category: Category_2
+    Page: Page_4
+  PageCategory_1_5:
+    Category: Category_1
+    Page: Page_5
+  PageCategory_1_6:
+    Category: Category_1
+    Page: Page_6
+  PageCategory_1_7:
+    Category: Category_1
+    Page: Page_7
+  PageCategory_2_8:
+    Category: Category_2
+    Page: Page_8

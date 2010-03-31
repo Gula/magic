@@ -1,19 +1,16 @@
-<div class="span-24 contenido-hotel">
+<div class="span-24 contenido-<?php echo $page->getSlugize() ?>">
 
   <div class="contenido">
     <div class="sub-menu">
       <h2><?php echo $page ?></h2>
       <ul>
-        <li><a href="#">Habitaciones</a></li>
-        <li><a href="#">Restaurante</a></li>
-        <li><a href="#">Piscina</a></li>
-        <li><a href="#">Spa &amp; Fitness</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Reservas</a></li>
+        <?php foreach ($page->getChildren() as $coco) : ?>
+        <li><a href="#"><?php echo $coco->get('title') ?></a></li>
+        <?php endforeach; ?>
       </ul>
     </div>
 
-    <div class="titulo"><h3>La estrella que le faltaba a Neuqu&eacute;n</h3></div>
+    <div class="titulo"><h3><?php echo $page->getAbstract() ?></h3></div>
     <div class="slideshow-paginas" id="slideshow-paginas">
       <div class="slide-wrapper-paginas">
         <ul>

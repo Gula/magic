@@ -33,6 +33,16 @@
       </span>
     </li>
     <li>
+      <?php echo $form['abstract']->renderLabel() ?>
+      <span>
+        <div>
+          <?php echo $form['abstract']->renderError() ?>
+          <?php echo $form['abstract'] ?>
+        </div>
+      </span>
+    </li>
+
+    <li>
       <?php echo $form['description']->renderLabel() ?>
       <span>
         <div>

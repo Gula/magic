@@ -1,5 +1,5 @@
 <div id="header">
-  <div id="logo" class="span-5"><h1><a href="index.html">Casino Magic</a></h1></div>
+  <div id="logo" class="span-5"><h1><?php echo link_to('Casino Magic', 'default/index') ?></h1></div>
   <div id="nav" class="span-19 last">
     <div class="span-9 prepend-10 last" id="global">Iconos Globales</div>
     <div id="menu">
