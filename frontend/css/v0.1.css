@@ -3,20 +3,20 @@
 
 @font-face {
 	font-family: 'FuturaLTMediumRegular';
-	src: url('lte50186.eot');
-	src: local('Futura LT Medium'), local('FuturaLT'), url('lte50186.woff') format('woff'), url('lte50186.ttf') format('truetype'), url('lte50186.svg#FuturaLT') format('svg');
+	src: url('fonts/lte50186.eot');
+	src: local('Futura LT Medium'), local('FuturaLT'), url('fonts/lte50186.woff') format('woff'), url('fonts/lte50186.ttf') format('truetype'), url('fonts/lte50186.svg#FuturaLT') format('svg');
 }
 
 @font-face {
 	font-family: 'FuturaLTBoldRegular';
-	src: url('lte50154.eot');
-	src: local('Futura LT Bold'), local('FuturaLT-Bold'), url('lte50154.woff') format('woff'), url('lte50154.ttf') format('truetype'), url('lte50154.svg#FuturaLT-Bold') format('svg');
+	src: url('fonts/lte50154.eot');
+	src: local('Futura LT Bold'), local('FuturaLT-Bold'), url('fonts/lte50154.woff') format('woff'), url('fonts/lte50154.ttf') format('truetype'), url('fonts/lte50154.svg#FuturaLT-Bold') format('svg');
 }
 
 @font-face {
 	font-family: 'FuturaLTBookBold';
-	src: url('futuralt_bold.eot');
-	src: local('Futura LT Book'), local('FuturaLT-Bold'), url('futuralt_bold.woff') format('woff'), url('futuralt_bold.ttf') format('truetype'), url('futuralt_bold.svg#FuturaLT-Bold') format('svg');
+	src: url('fonts/futuralt_bold.eot');
+	src: local('Futura LT Book'), local('FuturaLT-Bold'), url('fonts/futuralt_bold.woff') format('woff'), url('fonts/futuralt_bold.ttf') format('truetype'), url('fonts/futuralt_bold.svg#FuturaLT-Bold') format('svg');
 }
 
 body {
@@ -420,7 +420,7 @@ NOVEDADES
 	background-position: 0px 0px;
 }
 
-.contenido-hotel .contenido .sub-menu h2 {
+.contenido .sub-menu h2 {
 	padding-top: 14px;
 	color: white;
 	font: 18px/27px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
@@ -546,3 +546,13 @@ NOVEDADES
 	background-color: #ebc45b;
 	border-top: 1px solid #e6ddc7;
 }
+
+
+/* 
+***********************************************************
+
+CAMBIOS NUEVOS
+
+***********************************************************
+*/
+
