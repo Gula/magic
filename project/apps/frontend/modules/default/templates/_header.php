@@ -5,7 +5,9 @@
     <div id="menu">
       <ul class="menu">
         <?php foreach ($optionesMenu as $option) : ?>
-        <li id="<?php echo $option->getSlugize() ?>"><a href="index.php" title="<?php echo $option ?>"><?php echo $option ?></a></li>
+        <li id="<?php echo $option->getSlugize() ?>">
+          <?php echo link_to($option, 'pages/index?id='.$option->get('id'), array('title' => $option)) ?>
+        </li>
         <?php endforeach; ?>
         <li id="search"><label for="search"><input border="0" id="searchInput" /></label></li>
       </ul>
