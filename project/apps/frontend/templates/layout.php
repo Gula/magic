@@ -10,7 +10,14 @@
   </head>
 
   <body>
-    <div class="container">
+    <?php
+    if($sf_context->getModuleName() == 'pages') {
+      $page = Doctrine::getTable('Page')->find($sf_request->getParameter('id'));
+      $id = 'pagina-'.$page->getSlugize();
+    }
+
+    ?>
+    <div class="container" <?php if(isset($id)) echo 'id="'.$id.'"' ?>>
       <?php include_component('default', 'header') ?>
 
       <?php echo $sf_content ?>

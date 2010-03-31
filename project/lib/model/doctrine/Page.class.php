@@ -31,9 +31,10 @@ class Page extends BasePage {
     return trim($text, '-');
   }
 
+  /*
   public function generatePictureFilename(sfValidatedFile $file) {
     return $this->getSlugize().'_'.$this->get('id').$file->getExtension();
-  }
+  }*/
 
   public function save(Doctrine_Connection $conn = null) {
     parent::save($conn);
