@@ -78,6 +78,6 @@
       <hr />
       <div>Pie del sitio</div>
     </div>
-    <?php echo $sf_content ?>
+    <?php //echo $sf_content ?>
   </body>
 </html>

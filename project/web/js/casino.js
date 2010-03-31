@@ -11,7 +11,7 @@ window.addEvent('domready', function (ev) {
 
   // Main Slideshow
   var slideContainer = $('slideshow'),
-      slide_wrapper = slideContainer.getElement('.slide_wrapper'),
+      slide_wrapper = slideContainer.getElement('.slide-wrapper'),
       count_slides = slideContainer.getElements('.picture').length;
 
   slide_wrapper.setStyles({
@@ -20,17 +20,33 @@ window.addEvent('domready', function (ev) {
 
   var slide = new Fx.Scroll(slideContainer, {
     wait: false,
-    duration: 500,
+    duration: 1000,
     transition: Fx.Transitions.Quad.easeInOut
   });
 
-  var moveSlide = function () {
-    if (this.ind == undefined) this.ind = 0;
-    this.ind = (this.ind > (count_slides - 1)) ? 0 : this.ind;
-    slide.start(720*ind, 0);
+  // auto
+  var moveSlide = function (ind) {
+    if (ind===undefined) {
+      if(this.ind == undefined) this.ind = 0;
+      this.ind = (this.ind > (count_slides - 1)) ? 0 : this.ind;
+    }
+    else {
+      this.ind = ind;
+    }
+
+    slide.start(720*this.ind, 0);
     this.ind++;
   }
 
-  moveSlide.periodical(2000); //Will add the number of seconds at the Site.
+  var timer = moveSlide.periodical(10000);
 
+  // slideshow index
+  var slideIndex = $('slide-index');
+  slideIndex.addEvents({
+    click: function (ev) {
+      timer = $clear(timer);
+      timer = moveSlide.periodical(10000);
+      moveSlide(ev.target.get('text').toInt() -1);
+    }
+  })
 })

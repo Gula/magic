@@ -21,7 +21,7 @@ Profile:
       class:                    sfGuardUser
       foreignType:              one
 
-# Formuulario
+# Page
 Page:
   actAs:
     - Timestampable
@@ -39,7 +39,7 @@ Page:
     Parent:                     { local: parent_id, foreign: id, class: Page }
     Categories:                 { class: Category, local: page_id, foreign: category_id, refClass: PageCategory }
 
-
+#Category
 Category:
   actAs:
     - Timestampable
