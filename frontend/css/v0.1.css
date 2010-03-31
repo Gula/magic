@@ -2,19 +2,28 @@
 /* CSS Document */
 
 @font-face {
-	font-family: 'CartoGothicStdBold';
-	src: url('CartoGothicStd-Bold.eot');
-	src: local('CartoGothic Std'), local('CartoGothicStd-Bold'), url('CartoGothicStd-Bold.woff') format('woff'), url('CartoGothicStd-Bold.ttf') format('truetype'), url('CartoGothicStd-Bold.svg#CartoGothicStd-Bold') format('svg');
+	font-family: 'FuturaLTMediumRegular';
+	src: url('lte50186.eot');
+	src: local('Futura LT Medium'), local('FuturaLT'), url('lte50186.woff') format('woff'), url('lte50186.ttf') format('truetype'), url('lte50186.svg#FuturaLT') format('svg');
 }
+
 @font-face {
-	font-family: 'CartoGothicStdBook';
-	src: url('CartoGothicStd-Book.eot');
-	src: local('CartoGothic Std'), local('CartoGothicStd-Book'), url('CartoGothicStd-Book.woff') format('woff'), url('CartoGothicStd-Book.ttf') format('truetype'), url('CartoGothicStd-Book.svg#CartoGothicStd-Book') format('svg');
+	font-family: 'FuturaLTBoldRegular';
+	src: url('lte50154.eot');
+	src: local('Futura LT Bold'), local('FuturaLT-Bold'), url('lte50154.woff') format('woff'), url('lte50154.ttf') format('truetype'), url('lte50154.svg#FuturaLT-Bold') format('svg');
 }
+
+@font-face {
+	font-family: 'FuturaLTBookBold';
+	src: url('futuralt_bold.eot');
+	src: local('Futura LT Book'), local('FuturaLT-Bold'), url('futuralt_bold.woff') format('woff'), url('futuralt_bold.ttf') format('truetype'), url('futuralt_bold.svg#FuturaLT-Bold') format('svg');
+}
+
 body {
 		background: #000	none;
 		color: #F4F4F4;
 }
+
 #header #logo {
     width: 188px !important;
     height: 165px !important;
@@ -22,6 +31,7 @@ body {
     padding: 0px !important;
     position: relative;
 }
+
 #header #logo h1 a {
 	width: 188px !important;
 	height: 165px !important;
@@ -31,15 +41,14 @@ body {
 	background-repeat: no-repeat;
 	background-position: left top;
 }
+
 #header #nav {
 	display: block;
 	height: 165px;
 	width: 762px;
 	background-color: #000;
-	background-image: url(../images/header_bkg.jpg);
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
 }
+
 #nav #menu {
 	margin-top: 130px;
 }
@@ -312,7 +321,7 @@ NOVEDADES
 	background-position: 0px -41px;
 }
 .novedades li.fotos {
-	/* CARGGO ESTA CLASE PARA CERRAR EL FONDO SIN EL BORDE DEL PNG */
+	/* CARGO ESTA CLASE PARA CERRAR EL FONDO SIN EL BORDE DEL PNG */
 	width: 144px;
 	background-image: url(../images/box_bkg.png);
 	background-repeat: no-repeat;
@@ -357,6 +366,13 @@ NOVEDADES
 	padding: 0px;
 }
 
+#pagina-hotel #header #nav {
+	background-image: url(../images/paginas/hotel_header.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+
 .contenido-hotel {
 	position: relative;
 	width: 950px;
@@ -368,10 +384,13 @@ NOVEDADES
 */
 }
 
+
+
 .contenido-hotel .imagen-fondo {
 	position: absolute;
 	top: 0;
 	z-index: 0;
+	clear: both;
 } 
 
 .contenido-hotel .contenido {
@@ -382,14 +401,14 @@ NOVEDADES
 
 .contenido-hotel .alpha {
 	width: 100%;
-	height: 576px;
+	height: 534px;
 	z-index: 10;
 	position: absolute;
 	top: 0;
 	left: 0;
 	background-image: url(../images/alpha.png);
-	background-repeat: repeat;
-	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	background-position: 0px bottom;
 }
 
 	
@@ -402,9 +421,9 @@ NOVEDADES
 }
 
 .contenido-hotel .contenido .sub-menu h2 {
-	padding-top: 12px;
+	padding-top: 14px;
 	color: white;
-	font: 18px/27px 'CartoGothicStdBook', Helvetica, Arial, sans-serif;
+	font: 18px/27px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	text-transform:  uppercase;
 	letter-spacing: 2px;
@@ -428,10 +447,10 @@ NOVEDADES
 
 }
 .contenido .sub-menu li a {
-	letter-spacing: -.06em;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
-	font: 9px/12px 'CartoGothicStdBold', Helvetica, Arial, sans-serif;
-	letter-spacing: 0px;
+	font: 9px/12px 'FuturaLTBookBold', Helvetica, Arial, sans-serif;
+	letter-spacing: 1px;
+	font-weight: 500;
 	text-transform: uppercase;
 	color: white;
 	display:		block;
@@ -450,4 +469,80 @@ NOVEDADES
 	border: 1px solid rgba(255,255,255,0.4);
 	background-color: rgba(255,255,255,0.4);
 	
+}
+.contenido .titulo {	
+	position: absolute;
+	right: 0;
+	margin-top: 300px;
+	width: 753px;
+	height: 75px;
+}
+
+.contenido .titulo h3 {
+	/* border: 1px green solid; */
+	margin-top: 23px;
+	text-align: right;
+	color: white;
+	font: 16px/27px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	text-transform:  uppercase;
+	letter-spacing: 1px;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+	margin-right: 10px;
+}
+
+.contenido .slideshow-paginas {
+	position: absolute;
+	right: 0;
+	/* border: 1px yellow solid; */
+	margin-top: 376px;
+	width: 753px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.contenido .slide-wrapper-paginas {
+	
+}
+
+.contenido .slideshow-paginas .subpagina {
+	border-right: 1px solid transparent;
+	float: left;
+/* 	border: 1px green solid; */
+	width: 250px;
+	height: 300px;
+}
+
+.contenido .slideshow-paginas .subpagina .imagen-subpagina {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.contenido .slideshow-paginas .subpagina p.titulo-subpagina {
+	padding-left: 0px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	
+	width: 240px;
+	position: absolute;
+	margin: 0px;
+	margin-top: 141px;
+	text-align: right;
+	color: #fff;
+
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+	font: 11px/12px 'FuturaLTBookBold', Helvetica, Arial, sans-serif;
+
+}
+
+.contenido-hotel .contenido .titulo {	
+	background-color: rgba(235,190,68,0.5)
+}
+
+.contenido-hotel .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
+	background-color: #ebc45b;
+	border-top: 1px solid #e6ddc7;
 }
