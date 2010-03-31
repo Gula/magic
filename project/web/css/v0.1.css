@@ -196,22 +196,84 @@ body {
     }
 
 
-/* Slide */
+/* Slideshow */
 .slideshow, .slideshow .picture {
-  width: 800px;
-  height: 350px;
+  width: 720px;
+  height: 405px;
   overflow: hidden;
+  position: relative;
 }
 
+.slideshow .picture {
+  position: relative;
+}
 
-.slideshow .slide_wrapper {
-  width: 3200px;
-  height: 350px;
+.slideshow .slide-wrapper {
+  height: 405px;
 }
 .slideshow .picture {
   float: left;
+  color: #fff;
+  position: relative;
 }
 
+.slideshow .picture img {
+  position: absolute;
+  left: 0; top: 0;
+  z-index: 0;
+}
+
+.slideshow .picture h3 {
+  position: absolute;
+  left: 60px; top: 0px;
+  font: normal normal normal 40px Helvetica;
+  z-index: 10;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6), 0 1px 0 rgba(0, 0, 0, 0.6), 1px 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+.slideshow .picture .text {
+  position: absolute;
+  left: 20px; bottom: 20px;
+  width: 400px; height: 60px;
+  font: normal normal normal 18px/24px Helvetica;
+  z-index: 10;
+  color: #fff;
+  text-align: left;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 1), 0 1px 1px rgba(0, 0, 0, 1);
+}
+
+.slide-index {
+  position: relative;
+  margin: -30px 8px 0 0;
+  z-index: 30;
+
+}
+
+.slide-index ul {
+  height: 20px;
+  text-align: right;
+}
+
+.slide-index ul li {
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 20px; height: 20px; line-height: 20px;
+  text-align: center;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+}
+
+
+.slide-index ul li:hover {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+/*  end slideshow */
 
 /* 
 

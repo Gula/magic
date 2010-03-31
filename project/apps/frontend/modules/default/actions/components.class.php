@@ -9,7 +9,11 @@ class defaultComponents extends sfComponents
   */
   public function executeHeader(sfWebRequest $request)
   {
-    $this->optionesMenu = PageTable::retrievePages();
-    
+    $this->optionesMenu = PageTable::retrievePagesToMainMenu();
+  }
+
+  public function executeSlideshow(sfWebRequest $request)
+  {
+    $this->pages = PageTable::retrievePagesToMainSlideshow();
   }
 }
