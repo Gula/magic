@@ -160,7 +160,7 @@ sfGuardUser:
     username: admin
     algorithm: sha1
     salt: 175c791b2d837217889462f269a8a961
-    password: 97af3e711a89b7e79471ea415cc80df771388476
+    password: admin
     is_active: true
     is_super_admin: true
     last_login: '2010-03-31 02:24:52'
@@ -170,7 +170,7 @@ sfGuardUser:
     username: damian
     algorithm: sha1
     salt: 28b0271c037ae651cd72d0af62631348
-    password: 17f718664a81bfbe922bb8a7c9aac6bb951c41a3
+    password: damian
     is_active: true
     is_super_admin: true
     last_login: null

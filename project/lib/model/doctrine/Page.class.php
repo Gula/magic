@@ -36,7 +36,8 @@ class Page extends BasePage {
   }
 
   public function save(Doctrine_Connection $conn = null) {
-    
+    parent::save($conn);
+
     // generamos thumbnails
     $file = sfConfig::get('sf_upload_dir').'/pictures/'.$this->getPicture();
 
@@ -59,10 +60,7 @@ class Page extends BasePage {
 
         $img->saveAs(sfConfig::get('sf_upload_dir').'/'.$this->get('id').'/img_'.$this->get('id').'_'.$dim['w'].'x'.$dim['h'].'.jpg');
       }
-
     }
-
-    parent::save($conn);
   }
 
   public function getChildren() {
