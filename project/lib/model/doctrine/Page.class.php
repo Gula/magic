@@ -51,7 +51,8 @@ class Page extends BasePage {
         array('w' => 60, 'h' => 60)
       );
 
-      $img = new sfImage($file, 'image/jpg');
+      $size = getimagesize($file);
+      $img = new sfImage($file, $size['mime']);
 
       if(!is_dir(sfConfig::get('sf_upload_dir').'/'.$this->get('id'))) mkdir(sfConfig::get('sf_upload_dir').'/'.$this->get('id'), 0777);
 

@@ -55,7 +55,6 @@
     <li>
       <div>
         <?php $id = $form->getObject()->get('id');
-        echo '<p>$id: <b>'.$id.'</b></p>';
         ?>
         <?php echo image_tag('/uploads/'.$id.'/img_'.$id.'_250x141.jpg') ?>
       </div>

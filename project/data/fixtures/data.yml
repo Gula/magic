@@ -1,3 +1,14 @@
+Category:
+  Category_1:
+    title: 'Main Menu'
+    description: 'Menu principal de la página'
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+  Category_2:
+    title: 'Main Slideshow'
+    description: 'Slideshow principal'
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
 Profile:
   Profile_1:
     User: sfGuardUser_2
@@ -9,15 +20,83 @@ Profile:
     email: damian.suarez@xifox.net
     addres: 'Don Bosco 869'
     country: Argentina
-Category:
-  Category_1:
-    title: 'Main Menu'
-    description: 'Menu principal de la página'
+PageCategory:
+  PageCategory_1_1:
+    Category: Category_1
+    page_id: '1'
+  PageCategory_2_1:
+    Category: Category_2
+    page_id: '1'
+  PageCategory_1_2:
+    Category: Category_1
+    page_id: '2'
+  PageCategory_2_2:
+    Category: Category_2
+    page_id: '2'
+  PageCategory_1_3:
+    Category: Category_1
+    page_id: '3'
+  PageCategory_2_3:
+    Category: Category_2
+    page_id: '3'
+  PageCategory_1_4:
+    Category: Category_1
+    page_id: '4'
+  PageCategory_2_4:
+    Category: Category_2
+    page_id: '4'
+  PageCategory_1_5:
+    Category: Category_1
+    page_id: '5'
+  PageCategory_1_6:
+    Category: Category_1
+    page_id: '6'
+  PageCategory_1_7:
+    Category: Category_1
+    page_id: '7'
+sfGuardPermission:
+  sfGuardPermission_1:
+    name: admin
+    description: 'Administrator permission'
     created_at: '2010-03-30 19:50:28'
     updated_at: '2010-03-30 19:50:28'
-  Category_2:
-    title: 'Main Slideshow'
-    description: 'Slideshow principal'
+sfGuardUser:
+  sfGuardUser_1:
+    username: admin
+    algorithm: sha1
+    salt: 175c791b2d837217889462f269a8a961
+    password: 97af3e711a89b7e79471ea415cc80df771388476
+    is_active: true
+    is_super_admin: true
+    last_login: '2010-03-31 18:02:09'
+    created_at: '2010-03-30 19:50:27'
+    updated_at: '2010-03-31 18:02:09'
+  sfGuardUser_2:
+    username: damian
+    algorithm: sha1
+    salt: 28b0271c037ae651cd72d0af62631348
+    password: d83822927c11d19874b315ab2edc09ef3ca2ae44
+    is_active: true
+    is_super_admin: true
+    last_login: null
+    created_at: '2010-03-30 19:50:27'
+    updated_at: '2010-03-30 19:50:27'
+sfGuardGroupPermission:
+  sfGuardGroupPermission_1_1:
+    sfGuardGroup: sfGuardGroup_1
+    sfGuardPermission: sfGuardPermission_1
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+sfGuardUserGroup:
+  sfGuardUserGroup_1_1:
+    sfGuardUser: sfGuardUser_1
+    sfGuardGroup: sfGuardGroup_1
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+sfGuardGroup:
+  sfGuardGroup_1:
+    name: admin
+    description: 'Administrator group'
     created_at: '2010-03-30 19:50:28'
     updated_at: '2010-03-30 19:50:28'
 Page:
@@ -32,11 +111,11 @@ Page:
   Page_2:
     Author: sfGuardUser_2
     title: Casino
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.'
-    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
+    description: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.</p>'
+    abstract: 'hoy es tu día'
     picture: casino.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-31 18:17:30'
   Page_3:
     Author: sfGuardUser_2
     title: 'Banquetes & Eventos'
@@ -131,85 +210,30 @@ Page:
     picture: reservas.jpg
     created_at: '2010-03-30 19:50:28'
     updated_at: '2010-03-30 19:50:28'
-sfGuardPermission:
-  sfGuardPermission_1:
-    name: admin
-    description: 'Administrator permission'
-    created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'
-sfGuardUserGroup:
-  sfGuardUserGroup_1_1:
-    sfGuardUser: sfGuardUser_1
-    sfGuardGroup: sfGuardGroup_1
-    created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'
-sfGuardGroup:
-  sfGuardGroup_1:
-    name: admin
-    description: 'Administrator group'
-    created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'
-sfGuardGroupPermission:
-  sfGuardGroupPermission_1_1:
-    sfGuardGroup: sfGuardGroup_1
-    sfGuardPermission: sfGuardPermission_1
-    created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'
-sfGuardUser:
-  sfGuardUser_1:
-    username: admin
-    algorithm: sha1
-    salt: 175c791b2d837217889462f269a8a961
-    password: admin
-    is_active: true
-    is_super_admin: true
-    last_login: '2010-03-31 02:24:52'
-    created_at: '2010-03-30 19:50:27'
-    updated_at: '2010-03-31 02:24:52'
-  sfGuardUser_2:
-    username: damian
-    algorithm: sha1
-    salt: 28b0271c037ae651cd72d0af62631348
-    password: damian
-    is_active: true
-    is_super_admin: true
-    last_login: null
-    created_at: '2010-03-30 19:50:27'
-    updated_at: '2010-03-30 19:50:27'
-PageCategory:
-  PageCategory_1_1:
-    Category: Category_1
-    Page: Page_1
-  PageCategory_2_1:
-    Category: Category_2
-    Page: Page_1
-  PageCategory_1_2:
-    Category: Category_1
-    Page: Page_2
-  PageCategory_2_2:
-    Category: Category_2
-    Page: Page_2
-  PageCategory_1_3:
-    Category: Category_1
-    Page: Page_3
-  PageCategory_2_3:
-    Category: Category_2
-    Page: Page_3
-  PageCategory_1_4:
-    Category: Category_1
-    Page: Page_4
-  PageCategory_2_4:
-    Category: Category_2
-    Page: Page_4
-  PageCategory_1_5:
-    Category: Category_1
-    Page: Page_5
-  PageCategory_1_6:
-    Category: Category_1
-    Page: Page_6
-  PageCategory_1_7:
-    Category: Category_1
-    Page: Page_7
-  PageCategory_2_8:
-    Category: Category_2
-    Page: Page_8
+  Page_14:
+    Parent: Page_2
+    Author: sfGuardUser_2
+    title: 'Club Magic - VIP'
+    description: ''
+    abstract: ''
+    picture: 95d7d1d1b8fca17361500f7897cd2dea4b12f454.png
+    created_at: '2010-03-31 18:21:21'
+    updated_at: '2010-03-31 18:30:00'
+  Page_15:
+    Parent: Page_2
+    Author: sfGuardUser_2
+    title: 'Torneos de Poker'
+    description: ''
+    abstract: ''
+    picture: a45f8d1fd6b2191897a21ea2e6b4fb2e44743c96.png
+    created_at: '2010-03-31 18:30:51'
+    updated_at: '2010-03-31 18:30:51'
+  Page_16:
+    Parent: Page_2
+    Author: sfGuardUser_2
+    title: 'Mesas de Juego'
+    description: ''
+    abstract: ''
+    picture: a4ac6ae89ba7d7290e01af2f43eb43e1ce80dd23.png
+    created_at: '2010-03-31 18:31:21'
+    updated_at: '2010-03-31 18:31:21'
