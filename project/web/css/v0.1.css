@@ -198,18 +198,49 @@ body {
 
 /* Slide */
 .slideshow, .slideshow .picture {
-  width: 800px;
-  height: 350px;
+  width: 720px;
+  height: 405px;
   overflow: hidden;
+}
+
+.slideshow .picture {
+  position: relative;
 }
 
 
 .slideshow .slide_wrapper {
-  width: 3200px;
-  height: 350px;
+  height: 405px;
 }
 .slideshow .picture {
   float: left;
+  color: #fff;
+  position: relative;
+}
+
+.slideshow .picture img {
+  position: absolute;
+  left: 0; top: 0;
+  z-index: 0;
+}
+
+.slideshow .picture h3 {
+  position: absolute;
+  left: 60px; top: 0px;
+  font: normal normal normal 40px Helvetica;
+  z-index: 10;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6), 0 1px 0 rgba(0, 0, 0, 0.6), 1px 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+.slideshow .picture .text {
+  position: absolute;
+  right: 20px; bottom: 20px;
+  width: 400px; height: 60px;
+  font: normal normal normal 18px/24px Helvetica;
+  z-index: 10;
+  color: #fff;
+  text-align: right;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 1), 0 1px 1px rgba(0, 0, 0, 1);
 }
 
 

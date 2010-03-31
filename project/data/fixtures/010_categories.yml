@@ -1,4 +1,8 @@
 Category:
   main_menu:
-    title:   Main Menu
-    description: Menu principal de la página
+    title:        Main Menu
+    description:  Menu principal de la página
+
+  main_slideshow:
+    title:        Main Slideshow
+    description:  Slideshow principal

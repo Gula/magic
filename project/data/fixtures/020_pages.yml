@@ -5,28 +5,28 @@ Page:
     abstract:     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.
     picture:      hotel.jpg
     Author:       damian
-    Categories:   [main_menu]
+    Categories:   [main_menu, main_slideshow]
   Casino:
       title:        Casino
       description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.
       abstract:     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.
       picture:      casino.jpg
       Author:       damian
-      Categories:   [main_menu]
+      Categories:   [main_menu, main_slideshow]
   Banquetes&Eventos:
       title:        Banquetes & Eventos
       description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.
       abstract:     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.
       picture:      Banquetes&Eventos.jpg
       Author:       damian
-      Categories:   [main_menu]
+      Categories:   [main_menu, main_slideshow]
   Espectaculos:
       title:        Espectáculos
       description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.
       abstract:     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.
       picture:      espectaculos.jpg
       Author:       damian
-      Categories:   [main_menu]
+      Categories:   [main_menu, main_slideshow]
   Promociones:
       title:        Promociones
       description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.
@@ -95,5 +95,3 @@ Page:
       abstract:     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.
       picture:      reservas.jpg
       Author:       damian
-
-

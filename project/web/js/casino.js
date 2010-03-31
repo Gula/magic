@@ -10,22 +10,27 @@ window.addEvent('domready', function (ev) {
   });
 
   // Main Slideshow
-  var slideContainer = $('slideshow');
-  console.debug ("slideContainer -> ", slideContainer);
+  var slideContainer = $('slideshow'),
+      slide_wrapper = slideContainer.getElement('.slide_wrapper'),
+      count_slides = slideContainer.getElements('.picture').length;
+
+  slide_wrapper.setStyles({
+    'width': count_slides*720
+  });
 
   var slide = new Fx.Scroll(slideContainer, {
     wait: false,
-    duration: 2000,
+    duration: 500,
     transition: Fx.Transitions.Quad.easeInOut
   });
 
   var moveSlide = function () {
     if (this.ind == undefined) this.ind = 0;
-    this.ind = (this.ind > 3) ? 0 : this.ind;
-    slide.start(800*ind, 0);
+    this.ind = (this.ind > (count_slides - 1)) ? 0 : this.ind;
+    slide.start(720*ind, 0);
     this.ind++;
   }
 
-  moveSlide.periodical(6000); //Will add the number of seconds at the Site.
+  moveSlide.periodical(2000); //Will add the number of seconds at the Site.
 
 })

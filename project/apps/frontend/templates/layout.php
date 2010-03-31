@@ -14,25 +14,8 @@
       <?php include_component('default', 'header') ?>
 
       <div class="span-18">
-        <div class="slideshow" id="slideshow">
-          <div class="slide_wrapper">
-            <div class="picture">
-              <img src="images/imagenes_inicio/foto_01.jpg" />
-            </div>
 
-            <div class="picture">
-              <img src="images/imagenes_inicio/foto_02.jpg" />
-            </div>
-
-            <div class="picture">
-              <img src="images/imagenes_inicio/foto_03.jpg" />
-            </div>
-
-            <div class="picture">
-              <img src="images/imagenes_inicio/foto_04.jpg" />
-            </div>
-          </div>
-        </div>
+        <?php include_component('default', 'slideshow') ?>
 
         <div class="clearfix"></div>
         <div id="boxNovedades">
