@@ -213,8 +213,8 @@ body {
 	background-color: #333132;
     }
 
-
 /* Slideshow */
+
 .slideshow, .slideshow .picture {
   width: 720px;
   height: 405px;
@@ -242,52 +242,53 @@ body {
 }
 
 .slideshow .picture h3 {
-  position: absolute;
-  left: 60px; top: 0px;
-  font: normal normal normal 40px Helvetica;
+	font: 35px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+	position: absolute;
+	background-color: rgba(255,255,255,0.2);
+	width: 720px;
+  left: 0px; top: 240px;
+	padding: 25px;
+	padding-left: 35px;
   z-index: 10;
   color: #fff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6), 0 1px 0 rgba(0, 0, 0, 0.6), 1px 1px 8px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 10px #fff;
 }
 
 .slideshow .picture .text {
   position: absolute;
-  left: 20px; bottom: 20px;
-  width: 400px; height: 60px;
-  font: normal normal normal 18px/24px Helvetica;
+  left: 0px; bottom: 0px;
+  width: 720px;
   z-index: 10;
   color: #fff;
-  text-align: left;
-  text-shadow: 0 -1px 1px rgba(0, 0, 0, 1), 0 1px 1px rgba(0, 0, 0, 1);
+	background-color: rgba(255,255,255,0.2);
+	padding: 25px;
+	padding-left: 35px;
+	font: 12px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
 }
 
 .slide-index {
+	font: 12px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
   position: relative;
-  margin: -30px 8px 0 0;
+  margin: -195px 0 167px 0;
   z-index: 30;
-
 }
 
 .slide-index ul {
-  height: 20px;
+  height: 30px;
   text-align: right;
 }
 
 .slide-index ul li {
   color: rgba(255, 255, 255, 0.8);
   display: inline-block;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 20px; height: 20px; line-height: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 30px; height: 30px; line-height: 30px;
   text-align: center;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
 }
 
 
 .slide-index ul li:hover {
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.5);
   background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
@@ -467,12 +468,7 @@ NOVEDADES
 .contenido-hotel {
 	position: relative;
 	width: 950px;
-/*
-	background-image: url(../images/paginas/hotel.jpg);
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
 	height: 800px;
-*/
 }
 
 
@@ -611,6 +607,10 @@ NOVEDADES
 
 }
 
+
+/* Modifico el aspecto del tag P, para mostrar el titulo */
+/* El color de fondo del titulo va luego en .contenido-NOMBREPAGINA .contenido. .titulo-subpagina */
+
 .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
 	padding-left: 0px;
 	padding-bottom: 10px;
@@ -627,10 +627,35 @@ NOVEDADES
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
 	font: 11px/12px 'FuturaLTBookBold', Helvetica, Arial, sans-serif;
 
+	/* border: 1px solid red; */
+	
+	
 }
 
-.contenido-hotel .contenido .titulo {
-	background-color: rgba(235,190,68,0.5)
+/* Modifico el aspecto del SPAN, para mostrar resumen */
+
+.contenido .slideshow-paginas .subpagina .resumen-subpagina {
+	width: 240px;
+	height: 250px;
+	
+	padding-left: 5px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 10px;
+
+	position: absolute;
+	margin: 0px;
+	margin-top: 175px;
+	
+	
+	/* border: 1px solid green; */
+
+	font: 11px/12px 'FuturaLTBookBold', Helvetica, Arial, sans-serif;
+	text-align: justify;
+}
+
+.contenido-hotel .contenido .titulo, .contenido-hotel .contenido .resumen-subpagina {
+	background-color: rgba(235,190,68,0.5);
 }
 
 .contenido-hotel .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
@@ -638,4 +663,5 @@ NOVEDADES
 	border-top: 1px solid #e6ddc7;
 }
 
-/* end comment */
+
+

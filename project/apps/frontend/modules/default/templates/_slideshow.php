@@ -1,4 +1,6 @@
+
 <div class="slideshow" id="slideshow">
+	
   <div class="slide-wrapper">
     <?php foreach ($pages as $page) : ?>
     <div class="picture">
@@ -11,10 +13,10 @@
 </div>
 
 <div class="slide-index" id="slide-index">
-  <ul>
-    <?php $i = 0; ?>
-    <?php foreach ($pages as $page) : $i++?>
-    <li><?php echo $i ?></li>
-    <?php endforeach; ?>
-  </ul>
-</div>
+		<ul>
+			<?php $i = 0; ?>
+			<?php foreach ($pages as $page) : $i++?>
+				<li><?php echo $i ?></li>
+			<?php endforeach; ?>
+		</ul>
+	</div>
