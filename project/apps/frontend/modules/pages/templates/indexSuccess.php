@@ -1,11 +1,10 @@
 <div class="span-24 contenido-<?php echo $page->getSlugize() ?>">
-
   <div class="contenido">
     <div class="sub-menu">
       <h2><?php echo $page ?></h2>
       <ul>
         <?php foreach ($page->getChildren() as $child) : ?>
-        <li><?php echo link_to($child->get('title'), 'pages/index?id='.$child->get('id')) ?></li>
+        <li><?php echo link_to($child->get('title'), 'pages/index?id='.$child->get('id').'&level=1') ?></li>
         <?php endforeach; ?>
       </ul>
     </div>
@@ -14,7 +13,6 @@
     <div class="slideshow-paginas" id="slideshow-paginas">
       <div class="slide-wrapper-paginas">
         <ul>
-          <!-- Version escalada de la imagen de fondo 250x -->
           <?php foreach ($page->getChildren() as $child) : ?>
           <li class="subpagina">            
               <?php echo image_tag('/uploads/'.$child->get('id').'/img_'.$child->get('id').'_250x141.jpg', array('class' => 'imagen-subpagina')) ?>
@@ -25,6 +23,12 @@
         </ul>
       </div>
     </div>
+    <?php if($childPage) : ?>
+    <div class="subpagina-contenido">
+      <h3><?php echo $childPage ?></h3>
+      <?php echo $childPage->getRawValue()->getDescription() ?>
+    </div>
+    <?php endif; ?>
   </div>
 
   <div class="alpha"></div>

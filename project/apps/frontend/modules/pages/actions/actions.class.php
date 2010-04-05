@@ -17,6 +17,15 @@ class pagesActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-    $this->page = Doctrine::getTable('Page')->find($request->getParameter('id'));
+    $this->level = $request->getParameter('level');
+
+    if($this->level == 1) {
+      $this->childPage = Doctrine::getTable('Page')->find($request->getParameter('id'));
+      $this->page = $this->childPage->getParent();
+    }
+    else {
+      $this->page = Doctrine::getTable('Page')->find($request->getParameter('id'));
+      $this->childPage = false;
+    }
   }
 }
