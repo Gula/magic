@@ -468,10 +468,11 @@ NOVEDADES
 .contenido-hotel {
 	position: relative;
 	width: 950px;
-	height: 800px;
 }
 
-
+.contenido {
+	height: 990px;
+}
 
 .contenido-hotel .imagen-fondo {
 	position: absolute;
@@ -486,7 +487,8 @@ NOVEDADES
 }
 
 
-.contenido-hotel .alpha {
+.contenido-hotel
+.alpha {
 	width: 100%;
 	height: 534px;
 	z-index: 10;
@@ -499,7 +501,8 @@ NOVEDADES
 }
 
 
-.contenido-hotel .contenido .sub-menu {
+/* .contenido-hotel */
+.contenido .sub-menu {
 	width: 100%;
 	height: 61px;
 	background-image: url(../images/paginas/hotel_subnav.png);
@@ -507,7 +510,8 @@ NOVEDADES
 	background-position: 0px 0px;
 }
 
-.contenido-hotel .contenido .sub-menu h2 {
+/* .contenido-hotel  */
+.contenido .sub-menu h2 {
 	padding-top: 14px;
 	color: white;
 	font: 18px/27px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
@@ -566,6 +570,7 @@ NOVEDADES
 }
 
 .contenido .titulo h3 {
+	
 	/* border: 1px green solid; */
 	margin-top: 23px;
 	text-align: right;
@@ -663,5 +668,44 @@ NOVEDADES
 	border-top: 1px solid #e6ddc7;
 }
 
+/* CSS PARA PAGINAS */
 
+.contenido .subpagina-contenido {
+	position: absolute;
+	right: 0;
+	/* border: 1px yellow solid; */
+	margin-top: 677px;
+	width: 753px;
+	height: 250px;
+	overflow: hidden;
+	background-color: #3c2c13;
+}
 
+.contenido .subpagina-contenido h3 {	
+	margin-top: 15px;
+	margin-left: 10px;
+	text-align: left;
+	color: white;
+	font: 14px/27px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	text-transform:  uppercase;
+	letter-spacing: 1px;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+
+}
+
+.contenido .subpagina-contenido p {
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+
+	width: 260px;
+	text-align: justify;
+	color: #fff;
+	float: left;
+
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+	font: 11px/15px 'FuturaLTBookBold', Helvetica, Arial, sans-serif;
+	
+	
+}
