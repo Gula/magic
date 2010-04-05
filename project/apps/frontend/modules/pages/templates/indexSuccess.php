@@ -4,8 +4,8 @@
     <div class="sub-menu">
       <h2><?php echo $page ?></h2>
       <ul>
-        <?php foreach ($page->getChildren() as $coco) : ?>
-        <li><a href="#"><?php echo $coco->get('title') ?></a></li>
+        <?php foreach ($page->getChildren() as $child) : ?>
+        <li><?php echo link_to($child->get('title'), 'pages/index?id='.$child->get('id')) ?></li>
         <?php endforeach; ?>
       </ul>
     </div>
@@ -19,7 +19,7 @@
           <li class="subpagina">            
               <?php echo image_tag('/uploads/'.$child->get('id').'/img_'.$child->get('id').'_250x141.jpg', array('class' => 'imagen-subpagina')) ?>
             <p class="titulo-subpagina"><?php echo $child ?></p>
-            <span class="resumen-subpagina"><?php echo $child->getRawValue()->getDescription() ?></span>
+            <span class="resumen-subpagina"><?php echo $child->getRawValue()->getDescriptionAbstract() ?></span>
           </li>
           <?php endforeach; ?>
         </ul>

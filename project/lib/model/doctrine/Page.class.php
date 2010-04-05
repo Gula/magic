@@ -73,4 +73,9 @@ class Page extends BasePage {
     return $q->execute();
 
   }
+
+  public function getDescriptionAbstract() {
+    $long = strlen($this->getDescription());
+    return ($long > 140) ? substr($this->getDescription(), 0, 200).' ...' : $this->getDescription();
+  }
 }
