@@ -32,5 +32,9 @@
   </div>
 
   <div class="alpha"></div>
+  <?php if($childPage) : ?>
+  <?php echo image_tag('/uploads/'.$childPage->get('id').'/img_'.$childPage->get('id').'_950x534.jpg', array('class' => 'imagen-fondo')) ?>
+  <?php else : ?>
   <?php echo image_tag('/uploads/'.$page->get('id').'/img_'.$page->get('id').'_950x534.jpg', array('class' => 'imagen-fondo')) ?>
+  <?php endif; ?>
 </div>
