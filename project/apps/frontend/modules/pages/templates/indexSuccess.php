@@ -14,34 +14,18 @@
     <div class="slideshow-paginas" id="slideshow-paginas">
       <div class="slide-wrapper-paginas">
         <ul>
-          <!-- Comienza loop de subpaginas -->
-          <li class="subpagina">
-			<!-- Version escalada de la imagen de fondo 250x -->
-            <img class="imagen-subpagina" src="images/paginas/casino_habitaciones_250.jpg" width="" height="" alt="">
-            <p class="titulo-subpagina">Habitaciones</p>
-            <span class="resumen-subpagina">Donec ultricies orci sit amet neque egestas egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</span>
+          <!-- Version escalada de la imagen de fondo 250x -->
+          <?php foreach ($page->getChildren() as $child) : ?>
+          <li class="subpagina">            
+              <?php echo image_tag('/uploads/'.$child->get('id').'/img_'.$child->get('id').'_250x141.jpg', array('class' => 'imagen-subpagina')) ?>
+            <p class="titulo-subpagina"><?php echo $child ?></p>
+            <span class="resumen-subpagina"><?php echo $child->getRawValue()->getDescription() ?></span>
           </li>
-          
-          <li class="subpagina">
-            <img class="imagen-subpagina" src="images/paginas/casino_habitaciones_250.jpg" width="" height="" alt="">
-            <p class="titulo-subpagina">Habitaciones</p>
-            <span class="resumen-subpagina">Donec ultricies orci sit amet neque egestas egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</span>
-          </li>
-          
-          <li class="subpagina">
-            <img class="imagen-subpagina" src="images/paginas/casino_habitaciones_250.jpg" width="" height="" alt="">
-            <p class="titulo-subpagina">Habitaciones</p>
-            <span class="resumen-subpagina">Donec ultricies orci sit amet neque egestas egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</span>
-          </li>
-          
-          <!-- Termina loop de subpaginas -->
-          
+          <?php endforeach; ?>
         </ul>
       </div>
     </div>
   </div>
-
-
 
   <div class="alpha"></div>
   <?php echo image_tag('/uploads/'.$page->get('id').'/img_'.$page->get('id').'_950x534.jpg', array('class' => 'imagen-fondo')) ?>
