@@ -1,3 +1,7 @@
+<?php
+//if($childPage) $pages
+?>
+
 <div class="span-24 contenido-<?php echo $page->getSlugize() ?>">
   <div class="contenido">
     <div class="sub-menu">
@@ -13,7 +17,14 @@
     <div class="slideshow-paginas" id="slideshow-paginas">
       <div class="slide-wrapper-paginas">
         <ul>
-          <?php foreach ($page->getChildren() as $child) : ?>
+
+          <?php if($childPage) : ?>
+          <?php $realPage = $childPage->getChildren() ?>
+          <?php else : ?>
+          <?php $realPage = $page->getChildren() ?>
+          <?php endif; ?>
+
+          <?php foreach ($realPage as $child) : ?>
           <li class="subpagina">            
               <?php echo image_tag('/uploads/'.$child->get('id').'/img_'.$child->get('id').'_250x141.jpg', array('class' => 'imagen-subpagina')) ?>
             <p class="titulo-subpagina"><?php echo $child ?></p>
