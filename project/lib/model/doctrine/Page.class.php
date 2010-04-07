@@ -42,7 +42,7 @@ class Page extends BasePage {
     // generamos thumbnails
     $file = sfConfig::get('sf_upload_dir').'/pictures/'.$this->getPicture();
 
-    if(file_exists($file)) {
+    if(is_file($file)) {
 
       $dims = array (
         array('w' => 950, 'h' => 534),

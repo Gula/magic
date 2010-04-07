@@ -610,7 +610,7 @@ NOVEDADES
 	border-right: 1px solid transparent;
 	float: left;
 /* 	border: 1px green solid; */
-	width: 250px;
+	width: 249px;
 	height: 300px;
 }
 
@@ -631,7 +631,7 @@ NOVEDADES
 	padding-right: 10px;
 	padding-top: 10px;
 
-	width: 240px;
+	width: 239px;
 	position: absolute;
 	margin: 0px;
 	margin-top: 141px;
@@ -649,7 +649,7 @@ NOVEDADES
 /* Modifico el aspecto del SPAN, para mostrar resumen */
 
 .contenido .slideshow-paginas .subpagina .resumen-subpagina {
-	width: 240px;
+	width: 239px;
 	height: 250px;
 	
 	padding-left: 5px;
