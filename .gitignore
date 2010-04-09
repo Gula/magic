@@ -12,4 +12,4 @@ project/lib/model/doctrine/base/*
 project/config/databases.yml
 project/config/databases.yml.tpl
 
-project/web/uploads/pictures/*
+project/web/uploads/*
