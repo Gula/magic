@@ -16,6 +16,13 @@ class PageForm extends BasePageForm {
             'parent_id'=> 'Parent page'
     ));
 
+
+    $this->widgetSchema['abstract'] = new sfWidgetFormTextarea();
+
+    $this->widgetSchema['abstract']->setAttribute('cols', 50);
+    $this->widgetSchema['abstract']->setAttribute('rows', 2);
+
+
     $this->widgetSchema['description'] = new sfWidgetFormTextareaTinyMCE(array(
       'width' => 500,
       'height' => 250,
