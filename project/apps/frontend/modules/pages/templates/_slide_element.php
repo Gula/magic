@@ -8,7 +8,7 @@
 ?>
 
 <li class="subpagina">
-  <?php echo image_tag($img_url, array('class' => 'imagen-subpagina')) ?>
-  <p class="titulo-subpagina"><?php echo $page ?></p>
+  <?php echo link_to(image_tag($img_url, array('class' => 'imagen-subpagina')), 'pages/index?id='.$page->getId().'&level=2') ?>
+  <p class="titulo-subpagina"><?php echo link_to($page, 'pages/index?id='.$page->getId().'&level=2') ?></p>
   <span class="resumen-subpagina"><?php echo $page->getRawValue()->getDescriptionAbstract() ?></span>
 </li>

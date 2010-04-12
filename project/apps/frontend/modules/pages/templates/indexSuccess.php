@@ -13,35 +13,48 @@
       </ul>
     </div>
 
-    <div class="titulo"><h3><?php echo $page->getAbstract() ?></h3></div>
+
+    <?php if($childPage) : ?>
+      <?php
+        $realPage = $childPage;
+        $realPages = $childPage->getChildren();
+      ?>
+    <?php else : ?>
+      <?php
+        $realPages = $page->getChildren();
+        $realPage = $page;
+    ?>
+    <?php endif; ?>
+
+    <div class="titulo"><h3><?php echo $realPage->getAbstract() ?></h3></div>
+
+    <?php if($realPages->count() > 0) : ?>
+
     <div class="slideshow-paginas" id="slideshow-paginas">
       <div class="slide-wrapper-paginas">
         <ul>
-
-          <?php if($childPage) : ?>
-          <?php $realPage = $childPage->getChildren() ?>
-          <?php else : ?>
-          <?php $realPage = $page->getChildren() ?>
-          <?php endif; ?>
-
-          <?php foreach ($realPage as $child) : ?>
-          <?php include_partial('slide_element', array('page' => $child)) ?>
+          <?php foreach ($realPages as $child) : ?>
+            <?php include_partial('slide_element', array('page' => $child)) ?>
           <?php endforeach; ?>
         </ul>
       </div>
     </div>
+    <?php endif; ?>
+
     <?php if($childPage) : ?>
     <div class="subpagina-contenido">
       <h3><?php echo $childPage ?></h3>
-      <?php echo $childPage->getRawValue()->getDescription() ?>
+        <?php echo $childPage->getRawValue()->getDescription() ?>
     </div>
     <?php endif; ?>
   </div>
 
+
+
   <div class="alpha"></div>
   <?php if($childPage) : ?>
-  <?php echo image_tag('/uploads/'.$childPage->get('id').'/img_'.$childPage->get('id').'_950x534.jpg', array('class' => 'imagen-fondo')) ?>
+    <?php echo image_tag('/uploads/'.$childPage->get('id').'/img_'.$childPage->get('id').'_950x534.jpg', array('class' => 'imagen-fondo')) ?>
   <?php else : ?>
-  <?php echo image_tag('/uploads/'.$page->get('id').'/img_'.$page->get('id').'_950x534.jpg', array('class' => 'imagen-fondo')) ?>
+    <?php echo image_tag('/uploads/'.$page->get('id').'/img_'.$page->get('id').'_950x534.jpg', array('class' => 'imagen-fondo')) ?>
   <?php endif; ?>
 </div>
