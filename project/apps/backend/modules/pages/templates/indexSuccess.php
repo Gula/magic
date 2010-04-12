@@ -20,9 +20,10 @@
     <tbody>
       <?php foreach ($pages as $page): ?>
       <tr>
+        <td><a href="<?php echo url_for('pages/edit?id='.$page->getId()) ?>"><?php echo $page->getTitle() ?></a></td>
         <td><?php echo $page->getParent() ?></td>
         <td><?php echo $page->getAuthor() ?></td>
-        <td><a href="<?php echo url_for('pages/edit?id='.$page->getId()) ?>"><?php echo $page->getTitle() ?></a></td>
+        
         <td><?php echo format_date($page->getCreatedAt(), 'f') ?></td>
       </tr>
       <?php endforeach; ?>

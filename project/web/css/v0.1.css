@@ -480,7 +480,8 @@ NOVEDADES
 }
 
 .contenido {
-	height: 990px;
+	/*height: 990px;*/
+  padding-bottom: 30px;
 }
 
 .imagen-fondo {
@@ -590,10 +591,11 @@ NOVEDADES
 }
 
 .contenido .slideshow-paginas {
-	margin-left: 197px;
+	margin-left: 200px;
 	margin-top: 376px;
-	width: 753px;
+	width: 750px;
 	height: 300px;
+  position: relative;
 	overflow: hidden;
 }
 
