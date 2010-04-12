@@ -590,9 +590,7 @@ NOVEDADES
 }
 
 .contenido .slideshow-paginas {
-	position: absolute;
-	right: 0;
-	/* border: 1px yellow solid; */
+	margin-left: 197px;
 	margin-top: 376px;
 	width: 753px;
 	height: 300px;
