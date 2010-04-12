@@ -366,3 +366,7 @@ form fieldset > section > div { margin-bottom: 8px; }
   background: url(/images/form_select.png) no-repeat left 0px, url(/images/form_select.png) no-repeat right -60px, url(/images/form_select.png) repeat-x left -30px;
 }
 #board form span.select-one select > option:last-child { background-color: #88ffaa; }
+table thead tr th {
+  text-align: left;
+  padding-left: 10px;
+}

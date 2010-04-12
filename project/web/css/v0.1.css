@@ -591,9 +591,9 @@ NOVEDADES
 }
 
 .contenido .slideshow-paginas {
-	margin-left: 200px;
+	margin-left: 197px;
 	margin-top: 376px;
-	width: 750px;
+	width: 753px;
 	height: 300px;
   position: relative;
 	overflow: hidden;
@@ -607,7 +607,7 @@ NOVEDADES
 	border-right: 1px solid transparent;
 	float: left;
 /* 	border: 1px green solid; */
-	width: 249px;
+	width: 250px;
 	height: 300px;
 }
 
@@ -628,7 +628,7 @@ NOVEDADES
 	padding-right: 10px;
 	padding-top: 10px;
 
-	width: 239px;
+	width: 240px;
 	position: absolute;
 	margin: 0px;
 	margin-top: 141px;
@@ -644,9 +644,8 @@ NOVEDADES
 }
 
 /* Modifico el aspecto del SPAN, para mostrar resumen */
-
 .contenido .slideshow-paginas .subpagina .resumen-subpagina {
-	width: 239px;
+	width: 240px;
 	height: 250px;
 	
 	padding-left: 5px;
@@ -689,11 +688,10 @@ NOVEDADES
 /* CSS PARA PAGINAS */
 
 .contenido .subpagina-contenido {
-	position: absolute;
-	right: 0;
-	/* border: 1px yellow solid; */
-	margin-top: 677px;
-	width: 753px;
+	margin-left: 197px;
+  position: relative;
+	width: 752px;
+  border-right: 1px solid #000;
 	height: 250px;
 	overflow: hidden;
 	background-color: #3c2c13;

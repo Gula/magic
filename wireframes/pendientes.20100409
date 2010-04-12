@@ -1,10 +1,15 @@
-* checkbox en vez de select multiples
+* checkbox en vez de select multiples. [OK]
+
 * arreglar el estilo de los selects. Se ve para el tuje en FF.
+
 * implementar arrows en carousel.
+
 * Extracto de página usar un textarea de dos lineas.
+
 * click en las imagene/titulos de slideshow para pagina de nivel 1 -> nivel 2
 
-* alinear a la izq los encabezados de los listados.
+* alinear a la izq los encabezados de los listados. [OK]
+
 * castellanizar
 
 * conmutar editor.

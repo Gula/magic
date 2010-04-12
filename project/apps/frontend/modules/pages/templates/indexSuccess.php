@@ -25,11 +25,7 @@
           <?php endif; ?>
 
           <?php foreach ($realPage as $child) : ?>
-          <li class="subpagina">            
-              <?php echo image_tag('/uploads/'.$child->get('id').'/img_'.$child->get('id').'_250x141.jpg', array('class' => 'imagen-subpagina')) ?>
-            <p class="titulo-subpagina"><?php echo $child ?></p>
-            <span class="resumen-subpagina"><?php echo $child->getRawValue()->getDescriptionAbstract() ?></span>
-          </li>
+          <?php include_partial('slide_element', array('page' => $child)) ?>
           <?php endforeach; ?>
         </ul>
       </div>

@@ -61,7 +61,7 @@ window.addEvent('domready', function (ev) {
     count_slides = slidePagesChildren.getElements('ul li.subpagina').length;
 
     slide_wrapper.setStyles({
-      'width': count_slides*250
+      'width': count_slides*251
     });
 
     slide = new Fx.Scroll(slidePagesChildren, {
@@ -80,7 +80,7 @@ window.addEvent('domready', function (ev) {
         this.ind = ind;
       }
 
-      slide.start(250*this.ind, 0);
+      slide.start(251*this.ind, 0);
       this.ind++;
     }
 
