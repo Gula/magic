@@ -96,6 +96,7 @@ window.addEvent('domready', function (ev) {
 
     // arrows events
     $('noticia-bloque').addEvent('click:relay(a.arrow)', function (ev) {
+      ev.stop();
       var move = ev.target.hasClass('arrow-left') ? 'previous' : 'next';
       timer = $clear(timer);
       timer = moveSlide.periodical(5000);
