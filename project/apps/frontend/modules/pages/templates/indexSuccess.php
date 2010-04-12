@@ -16,37 +16,46 @@
 
     <?php if($childPage) : ?>
       <?php
-        $realPage = $childPage;
-        $realPages = $childPage->getChildren();
+      $realPage = $childPage;
+      $realPages = $childPage->getChildren();
       ?>
     <?php else : ?>
       <?php
-        $realPages = $page->getChildren();
-        $realPage = $page;
-    ?>
+      $realPages = $page->getChildren();
+      $realPage = $page;
+      ?>
     <?php endif; ?>
 
-    <div class="titulo"><h3><?php echo $realPage->getAbstract() ?></h3></div>
 
-    <?php if($realPages->count() > 0) : ?>
+    <div class="noticia-bloque" id="noticia-bloque">
+      <div class="titulo"><h3><?php echo $realPage->getAbstract() ?></h3></div>
 
-    <div class="slideshow-paginas" id="slideshow-paginas">
-      <div class="slide-wrapper-paginas">
-        <ul>
-          <?php foreach ($realPages as $child) : ?>
-            <?php include_partial('slide_element', array('page' => $child)) ?>
-          <?php endforeach; ?>
-        </ul>
+      <?php if($realPages->count() > 0) : ?>
+      <!-- carousel -->
+      <div class="slideshow-paginas" id="slideshow-paginas">
+        <div class="slide-wrapper-paginas">
+          <ul>
+              <?php foreach ($realPages as $child) : ?>
+                <?php include_partial('slide_element', array('page' => $child)) ?>
+              <?php endforeach; ?>
+          </ul>
+        </div>
       </div>
-    </div>
-    <?php endif; ?>
+      <?php endif; ?>
 
-    <?php if($childPage) : ?>
-    <div class="subpagina-contenido">
-      <h3><?php echo $childPage ?></h3>
-        <?php echo $childPage->getRawValue()->getDescription() ?>
+      <?php if($realPages->count() > 3) : ?>
+      <a href="#" class="arrow arrow-left"></a>
+      <a href="#" class="arrow arrow-right"></a>
+      <?php endif; ?>
+
+
+      <?php if($childPage) : ?>
+      <div class="subpagina-contenido">
+        <h3><?php echo $childPage ?></h3>
+          <?php echo $childPage->getRawValue()->getDescription() ?>
+      </div>
+      <?php endif; ?>
     </div>
-    <?php endif; ?>
   </div>
 
 

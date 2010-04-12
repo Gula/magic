@@ -568,15 +568,22 @@ NOVEDADES
 	background-color: rgba(255,255,255,0.4);
 
 }
-.contenido .titulo {
+
+
+.contenido .noticia-bloque {
   margin-top: 310px;
+  position: relative;
+}
+
+.contenido .noticia-bloque .titulo {
   margin-left: 197px;
 
 	width: 753px;
 	height: 75px;
 }
 
-.contenido .titulo h3 {
+
+.contenido .noticia-bloque .titulo h3 {
   margin: 0;
 	padding: 23px 10px 0 0;
 	text-align: right;
@@ -591,7 +598,7 @@ NOVEDADES
 
 
 
-.contenido .slideshow-paginas {
+.contenido .noticia-bloque .slideshow-paginas {
 	margin-left: 197px;
 	width: 753px;
 	height: 300px;
@@ -603,7 +610,7 @@ NOVEDADES
 
 }
 
-.contenido .slideshow-paginas .subpagina {
+.contenido .noticia-bloque .slideshow-paginas .subpagina {
 	border-right: 1px solid transparent;
 	float: left;
 /* 	border: 1px green solid; */
@@ -611,12 +618,35 @@ NOVEDADES
 	height: 300px;
 }
 
-.contenido .slideshow-paginas .subpagina .imagen-subpagina {
+.contenido .noticia-bloque .slideshow-paginas .subpagina .imagen-subpagina {
 	position: absolute;
 	margin: 0;
 	padding: 0;
-
 }
+
+/* arrows */
+.contenido .noticia-bloque a.arrow {
+  width: 22px; height: 31px;
+  background: transparent url(../images/flechas_slideshow.png) no-repeat left top;
+  position: absolute;
+  z-index: 100;
+  right: 10px; top: 130px;
+}
+
+.contenido .noticia-bloque a.arrow:hover {
+  background-position: 0px -31px;
+  cursor: pointer;
+}
+
+.contenido .noticia-bloque a.arrow-left {
+  right: 720px;
+  background-position: -21px 0px;
+}
+
+.contenido .noticia-bloque a.arrow-left:hover {
+  background-position: -21px -31px;
+}
+
 
 
 /* Modifico el aspecto del tag P, para mostrar el titulo */
