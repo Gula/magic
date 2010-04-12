@@ -23,6 +23,13 @@ class PageForm extends BasePageForm {
     ));
 
 
+    // categories_list
+    $this->widgetSchema['categories_list'] = new sfWidgetFormDoctrineChoice(array(
+      'expanded' => true,
+      'multiple' => true,
+      'model' => 'Category'
+    ));
+
     // Picture
     $this->widgetSchema['picture'] = new sfWidgetFormInputFile(array(
       'label' => 'Picture',

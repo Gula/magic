@@ -1,0 +1,17 @@
+* checkbox en vez de select multiples
+* arreglar el estilo de los selects. Se ve para el tuje en FF.
+* implementar arrows en carousel.
+* Extracto de página usar un textarea de dos lineas.
+* click en las imagene/titulos de slideshow para pagina de nivel 1 -> nivel 2
+
+* alinear a la izq los encabezados de los listados.
+* castellanizar
+
+* conmutar editor.
+
+
+
+roles
+-----
+
+* editor: puede crear/editar paginas que no sean las principales. No puede borrar ninguna pagina excepto las propias.
