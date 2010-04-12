@@ -25,7 +25,6 @@
         <target>Páginas</target>
       </trans-unit>
 
-
       <trans-unit id="5">
         <source>Finish</source>
         <target>Final</target>
@@ -127,7 +126,6 @@
         <source>Updated at</source>
         <target>Actualizado en</target>
       </trans-unit>
-
 
       <trans-unit id="32">
         <source>Stated</source>
@@ -279,8 +277,32 @@
         <source>New user</source>
         <target>Usuario Nuevo</target>
       </trans-unit>
-      
-      
+
+      <trans-unit id="64">
+        <source>Categorys List</source>
+        <target>Listado de Categorías</target>
+      </trans-unit>
+
+      <trans-unit id="65">
+        <source>Page list</source>
+        <target>Listado de páginas</target>
+      </trans-unit>
+
+      <trans-unit id="66">
+        <source>New</source>
+        <target>Nuevo</target>
+      </trans-unit>
+
+      <trans-unit id="67">
+        <source>Picture</source>
+        <target>Imagen</target>
+      </trans-unit>
+
+      <trans-unit id="68">
+        <source>Save</source>
+        <target>Guradar</target>
+      </trans-unit>
+
       
     </body>
   </file>

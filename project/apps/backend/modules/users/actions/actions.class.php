@@ -15,6 +15,9 @@ class usersActions extends sfActions
     $this->sf_guard_users = Doctrine::getTable('sfGuardUser')
       ->createQuery('a')
       ->execute();
+
+   $this->getUser()->setCulture('es');
+
   }
 
   public function executeNew(sfWebRequest $request)

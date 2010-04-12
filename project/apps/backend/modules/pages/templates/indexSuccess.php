@@ -17,6 +17,14 @@
         <th><?php echo __('Title'); ?></th>
       </tr>
     </thead>
+
+    <tfoot>
+      <tr>
+        <th colspan="3"><a class="link-button" href="<?php echo url_for('pages/new') ?>"><?php echo __('New'); ?></a></th>
+      </tr>
+    </tfoot>
+
+
     <tbody>
       <?php foreach ($pages as $page): ?>
       <tr>
@@ -29,6 +37,4 @@
       <?php endforeach; ?>
     </tbody>
   </table>
-
-  <a href="<?php echo url_for('pages/new') ?>">New</a>
 </section>
