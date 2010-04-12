@@ -49,12 +49,12 @@
       <?php endif; ?>
 
 
-      <?php if($childPage) : ?>
+      <?php //if($childPage) : ?>
       <div class="subpagina-contenido">
-        <h3><?php echo $childPage ?></h3>
-          <?php echo $childPage->getRawValue()->getDescription() ?>
+        <h3><?php echo $realPage ?></h3>
+          <?php echo $realPage->getRawValue()->getDescription() ?>
       </div>
-      <?php endif; ?>
+      <?php //endif; ?>
     </div>
   </div>
 
