@@ -1,7 +1,3 @@
-<?php
-//if($childPage) $pages
-?>
-
 <div class="span-24 contenido-<?php echo $page->getSlugize() ?>">
   <div class="contenido">
     <div class="sub-menu">
@@ -52,7 +48,7 @@
       <?php //if($childPage) : ?>
       <div class="subpagina-contenido">
         <h3><?php echo $realPage ?></h3>
-          <?php echo $realPage->getRawValue()->getDescription() ?>
+        <?php echo $realPage->getRawValue()->getDescription() ?>
       </div>
       <?php //endif; ?>
     </div>

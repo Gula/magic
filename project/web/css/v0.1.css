@@ -641,6 +641,7 @@ NOVEDADES
 .contenido .noticia-bloque a.arrow-left {
   right: 720px;
   background-position: -21px 0px;
+  display: none;
 }
 
 .contenido .noticia-bloque a.arrow-left:hover {

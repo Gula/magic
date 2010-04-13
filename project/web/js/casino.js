@@ -72,10 +72,17 @@ window.addEvent('domready', function (ev) {
       transition: Fx.Transitions.Quad.easeInOut
     });
 
+    var arrows = $$('#noticia-bloque a.arrow');
+    console.debug ("arrows -> ", arrows);
+    
+    
     // auto
     moveSlide = function (ind) {
-
       this.ind = (this.ind) ? this.ind : 0;
+
+      
+
+      
 
       if (ind===undefined) if(this.ind == undefined) this.ind = 1;
 
@@ -89,6 +96,14 @@ window.addEvent('domready', function (ev) {
 
       this.ind = (this.ind > (count_slides - 4) ? 0 : (this.ind < 0) ? (count_slides - 4) : this.ind);
       slide.start(251*this.ind, 0);
+
+      // escondemos las arrows
+      if (!this.ind) arrows[0].setStyle('display', 'none')
+      else arrows[0].setStyle('display', 'block')
+
+      // escondemos las arrows
+      if ((this.ind + 4) == count_slides) arrows[1].setStyle('display', 'none')
+      else arrows[1].setStyle('display', 'block')
       
     }
 
