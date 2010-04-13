@@ -474,7 +474,7 @@ NOVEDADES
 }
 
 
-.contenido-hotel, .contenido-casino {
+.contenido-hotel, .contenido-casino, .contenido-banquetesconvenciones, .contenido-espectaculos, .contenido-promociones, .contenido-gastronomia, .contenido-giftshop {
 	position: relative;
 	width: 950px;
 }
