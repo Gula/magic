@@ -36,7 +36,7 @@
         <div class="slide-wrapper-paginas">
           <ul>
               <?php foreach ($realPages as $child) : ?>
-                <?php include_partial('slide_element', array('page' => $child)) ?>
+                <?php include_partial('slide_element', array('page' => $child, 'level' => $level)) ?>
               <?php endforeach; ?>
           </ul>
         </div>
@@ -57,7 +57,6 @@
       <?php //endif; ?>
     </div>
   </div>
-
 
 
   <div class="alpha"></div>
