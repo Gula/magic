@@ -13,11 +13,11 @@ Page:
   Page_1:
     Author: sfGuardUser_2
     title: Hotel
-    description: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.</p>'
+    description: "<p><span style=\"font-family: Helvetica; font-size: medium;\"> </span></p>\r\n<div style=\"font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; background-color: #ffffff;\">\r\n<p>En</p>\r\n</div>\r\n<p>&nbsp;</p>"
     abstract: 'La estrella que le faltaba a Neuquén'
     picture: 339ffa18cd0b5f715495db2eb8d856175d99b6df.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-04-08 20:32:56'
+    updated_at: '2010-04-13 15:03:36'
   Page_2:
     Author: sfGuardUser_2
     title: Casino
@@ -70,20 +70,20 @@ Page:
     Parent: Page_1
     Author: sfGuardUser_2
     title: Habitaciones
-    description: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.</p>'
-    abstract: ''
+    description: '<p>El descanso nunca fue tan elegante: sobrias, amplias, lujosas, nuestras habitaciones envuelven al hu&eacute;sped en una atm&oacute;sfera &uacute;nica.</p>'
+    abstract: 'El descanso nunca fue tan elegante'
     picture: 8947ad0e35b033cee4de795b5302094f7e65e88e.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-04-09 17:29:52'
+    updated_at: '2010-04-12 03:23:10'
   Page_9:
     Parent: Page_1
     Author: sfGuardUser_2
     title: Restaurante
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.'
-    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
-    picture: restaurante.jpg
+    description: '<p>Cocina internacional de primer nivel, los platos m&aacute;s exquisitos de la regi&oacute;n, tapas y snacks: la oferta gastron&oacute;mica de Casino Magic es amplia para abarcar los gustos y sentidos de cada comensal.</p>'
+    abstract: 'Cocina internacional de primer nivel'
+    picture: 35a1c4589815a45952e5ae7db5d49c9c9ad6d5a1.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'
+    updated_at: '2010-04-12 03:42:18'
   Page_10:
     Parent: Page_1
     Author: sfGuardUser_2
@@ -151,29 +151,28 @@ Page:
     Parent: Page_8
     Author: sfGuardUser_2
     title: 'Habitacion Standard'
-    description: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin,</p>'
+    description: '<p>S&aacute;banas de algod&oacute;n egipcio, LCD 42&rdquo;, Wifi, Aire Acondicionado.</p>'
     abstract: ''
-    picture: 65c3c5ffd10fbb10ecc82b9bd5a77c05523adf86.jpg
+    picture: c73e68418c5a8de70a8e4a6bedd935130001cbe0.jpg
     created_at: '2010-04-07 19:50:05'
-    updated_at: '2010-04-07 20:25:21'
+    updated_at: '2010-04-12 03:36:17'
   Page_18:
     Parent: Page_8
     Author: sfGuardUser_2
     title: 'Habitacion Superior'
-    description: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin,</p>'
+    description: '<p>S&aacute;banas de algod&oacute;n egipcio, LCD 42&rdquo;, Wifi, Aire Acondicionado, Jacuzzi.</p>'
     abstract: ''
-    picture: 545c7ca16cf9cfcd7b65f7db5efe15c7dc7f85b2.jpg
+    picture: 2350ce55fcba6f64edf74857a3ac69116b812c69.jpg
     created_at: '2010-04-07 19:50:36'
-    updated_at: '2010-04-07 20:25:31'
-  Page_19:
+    updated_at: '2010-04-12 03:25:49'
+  Page_21:
     Parent: Page_8
-    Author: sfGuardUser_2
     title: 'Habitacion Presidencial'
-    description: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin,</p>'
+    description: "<p>165 m&sup2;, tres LCD, s&aacute;banas de algod&oacute;n egipcio, Wifi, Aire Acondicionado, Jacuzzi.</p>\r\n<p>&nbsp;</p>"
     abstract: ''
-    picture: 9a25d3c6d04b987e36a3434ba2fd311f6058397a.jpg
-    created_at: '2010-04-07 20:16:46'
-    updated_at: '2010-04-07 20:25:37'
+    picture: 909ccae4937e78e3ad2ac540bc10434e0b8af2c1.jpg
+    created_at: '2010-04-12 09:31:42'
+    updated_at: '2010-04-12 09:34:41'
 PageCategory:
   PageCategory_1_1:
     Category: Category_1
@@ -208,14 +207,24 @@ PageCategory:
 Profile:
   Profile_1:
     User: sfGuardUser_2
-    first_name: 'Roberto Damian'
+    first_name: Damian
     last_name: Suarez
-    birth_date: '0000-00-00'
-    phone: '0299 4778030'
-    movil: null
-    email: damian.suarez@xifox.net
-    addres: 'Don Bosco 869'
-    country: Argentina
+    birth_date: null
+    phone: ''
+    movil: ''
+    email: ''
+    addres: ''
+    country: ''
+  Profile_2:
+    User: sfGuardUser_1
+    first_name: Macarena
+    last_name: Vela
+    birth_date: null
+    phone: ''
+    movil: ''
+    email: ''
+    addres: ''
+    country: ''
 sfGuardGroup:
   sfGuardGroup_1:
     name: admin
@@ -242,14 +251,14 @@ sfGuardUser:
     password: admin
     is_active: true
     is_super_admin: true
-    last_login: '2010-04-09 17:25:20'
+    last_login: '2010-04-13 14:29:39'
     created_at: '2010-03-30 19:50:27'
-    updated_at: '2010-04-09 17:25:20'
+    updated_at: '2010-04-13 14:29:39'
   sfGuardUser_2:
     username: damian
     algorithm: sha1
     salt: 28b0271c037ae651cd72d0af62631348
-    password: d83822927c11d19874b315ab2edc09ef3ca2ae44
+    password: damian
     is_active: true
     is_super_admin: true
     last_login: null
