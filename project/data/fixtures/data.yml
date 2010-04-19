@@ -9,6 +9,152 @@ Category:
     description: 'Slideshow principal'
     created_at: '2010-03-30 19:50:28'
     updated_at: '2010-03-30 19:50:28'
+  Category_3:
+    title: Shows
+    description: '<p>Shows realizados en el Casino</p>'
+    created_at: '2010-04-18 21:04:14'
+    updated_at: '2010-04-18 21:04:14'
+  Category_4:
+    Parent: Category_3
+    title: Belterra
+    description: '<p>Belterra, bandas locales, ventas c/consumisi&oacute;n.</p>'
+    created_at: '2010-04-18 21:04:45'
+    updated_at: '2010-04-18 21:04:45'
+  Category_5:
+    Parent: Category_3
+    title: Rainbow
+    description: '<p>Rainbow, Teatro. Venta Plateas. Fiestas tem&aacute;ticas.</p>'
+    created_at: '2010-04-18 21:05:00'
+    updated_at: '2010-04-18 21:05:00'
+  Category_6:
+    Parent: Category_3
+    title: Estadio
+    description: '<p>Estadio Casino Magic, Main Events.</p>'
+    created_at: '2010-04-18 21:05:19'
+    updated_at: '2010-04-18 21:05:19'
+Event:
+  Event_25:
+    title: 'Wisin & Yandel'
+    description: ''
+    date: null
+    publication_date: null
+    due_date: null
+    sticky: no
+    image: ''
+    created_at: '2010-04-19 00:24:59'
+    updated_at: '2010-04-19 00:50:10'
+    mugshot: c2373b0da07a9dade83be2250a732ebca8b8d0dd.jpg
+    mugshot_x1: '245'
+    mugshot_y1: '0'
+    mugshot_x2: '322'
+    mugshot_y2: '77'
+EventCategory:
+  EventCategory_4_25:
+    Category: Category_4
+    Event: Event_25
+Profile:
+  Profile_1:
+    User: sfGuardUser_2
+    first_name: Damian
+    last_name: Suarez
+    birth_date: null
+    phone: ''
+    movil: ''
+    email: ''
+    addres: ''
+    country: ''
+  Profile_2:
+    User: sfGuardUser_1
+    first_name: Macarena
+    last_name: Vela
+    birth_date: null
+    phone: ''
+    movil: ''
+    email: ''
+    addres: ''
+    country: ''
+PageCategory:
+  PageCategory_1_1:
+    Category: Category_1
+    page_id: '1'
+  PageCategory_2_1:
+    Category: Category_2
+    page_id: '1'
+  PageCategory_1_2:
+    Category: Category_1
+    page_id: '2'
+  PageCategory_2_2:
+    Category: Category_2
+    page_id: '2'
+  PageCategory_1_3:
+    Category: Category_1
+    page_id: '3'
+  PageCategory_2_3:
+    Category: Category_2
+    page_id: '3'
+  PageCategory_1_4:
+    Category: Category_1
+    page_id: '4'
+  PageCategory_2_4:
+    Category: Category_2
+    page_id: '4'
+  PageCategory_1_5:
+    Category: Category_1
+    page_id: '5'
+  PageCategory_1_6:
+    Category: Category_1
+    page_id: '6'
+  PageCategory_1_7:
+    Category: Category_1
+    page_id: '7'
+  PageCategory_2_20:
+    Category: Category_2
+    page_id: '20'
+sfGuardPermission:
+  sfGuardPermission_1:
+    name: admin
+    description: 'Administrator permission'
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+sfGuardUser:
+  sfGuardUser_1:
+    username: admin
+    algorithm: sha1
+    salt: 175c791b2d837217889462f269a8a961
+    password: admin
+    is_active: true
+    is_super_admin: true
+    last_login: '2010-04-18 17:03:18'
+    created_at: '2010-03-30 19:50:27'
+    updated_at: '2010-04-18 17:03:18'
+  sfGuardUser_2:
+    username: damian
+    algorithm: sha1
+    salt: 28b0271c037ae651cd72d0af62631348
+    password: damian
+    is_active: true
+    is_super_admin: true
+    last_login: null
+    created_at: '2010-03-30 19:50:27'
+    updated_at: '2010-03-30 19:50:27'
+sfGuardGroupPermission:
+  sfGuardGroupPermission_1_1:
+    sfGuardGroup: sfGuardGroup_1
+    sfGuardPermission: sfGuardPermission_1
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+sfGuardUserGroup:
+  sfGuardUserGroup_1_1:
+    sfGuardUser: sfGuardUser_1
+    sfGuardGroup: sfGuardGroup_1
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+sfGuardGroup:
+  sfGuardGroup_1:
+    name: admin
+    description: 'Administrator group'
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
 Page:
   Page_1:
     Author: sfGuardUser_2
@@ -165,7 +311,7 @@ Page:
     picture: 2350ce55fcba6f64edf74857a3ac69116b812c69.jpg
     created_at: '2010-04-07 19:50:36'
     updated_at: '2010-04-12 03:25:49'
-  Page_21:
+  Page_19:
     Parent: Page_8
     title: 'Habitacion Presidencial'
     description: "<p>165 m&sup2;, tres LCD, s&aacute;banas de algod&oacute;n egipcio, Wifi, Aire Acondicionado, Jacuzzi.</p>\r\n<p>&nbsp;</p>"
@@ -173,7 +319,7 @@ Page:
     picture: 909ccae4937e78e3ad2ac540bc10434e0b8af2c1.jpg
     created_at: '2010-04-12 09:31:42'
     updated_at: '2010-04-12 09:34:41'
-  Page_22:
+  Page_20:
     Parent: Page_4
     title: 'Wisin & Yandel'
     description: ''
@@ -181,106 +327,3 @@ Page:
     picture: b67726d28021a1e9bd076357389d473e77f90b7c.jpg
     created_at: '2010-04-15 13:45:25'
     updated_at: '2010-04-15 13:45:25'
-PageCategory:
-  PageCategory_1_1:
-    Category: Category_1
-    Page: Page_1
-  PageCategory_2_1:
-    Category: Category_2
-    Page: Page_1
-  PageCategory_1_2:
-    Category: Category_1
-    Page: Page_2
-  PageCategory_2_2:
-    Category: Category_2
-    Page: Page_2
-  PageCategory_1_3:
-    Category: Category_1
-    Page: Page_3
-  PageCategory_2_3:
-    Category: Category_2
-    Page: Page_3
-  PageCategory_1_4:
-    Category: Category_1
-    Page: Page_4
-  PageCategory_2_4:
-    Category: Category_2
-    Page: Page_4
-  PageCategory_1_5:
-    Category: Category_1
-    Page: Page_5
-  PageCategory_1_6:
-    Category: Category_1
-    Page: Page_6
-  PageCategory_1_7:
-    Category: Category_1
-    Page: Page_7
-  PageCategory_2_22:
-    Category: Category_2
-    Page: Page_22
-Profile:
-  Profile_1:
-    User: sfGuardUser_2
-    first_name: Damian
-    last_name: Suarez
-    birth_date: null
-    phone: ''
-    movil: ''
-    email: ''
-    addres: ''
-    country: ''
-  Profile_2:
-    User: sfGuardUser_1
-    first_name: Macarena
-    last_name: Vela
-    birth_date: null
-    phone: ''
-    movil: ''
-    email: ''
-    addres: ''
-    country: ''
-sfGuardGroup:
-  sfGuardGroup_1:
-    name: admin
-    description: 'Administrator group'
-    created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'
-sfGuardGroupPermission:
-  sfGuardGroupPermission_1_1:
-    sfGuardGroup: sfGuardGroup_1
-    sfGuardPermission: sfGuardPermission_1
-    created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'
-sfGuardPermission:
-  sfGuardPermission_1:
-    name: admin
-    description: 'Administrator permission'
-    created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'
-sfGuardUser:
-  sfGuardUser_1:
-    username: admin
-    algorithm: sha1
-    salt: 175c791b2d837217889462f269a8a961
-    password: 97af3e711a89b7e79471ea415cc80df771388476
-    is_active: true
-    is_super_admin: true
-    last_login: '2010-04-18 17:03:18'
-    created_at: '2010-03-30 19:50:27'
-    updated_at: '2010-04-18 17:03:18'
-  sfGuardUser_2:
-    username: damian
-    algorithm: sha1
-    salt: 28b0271c037ae651cd72d0af62631348
-    password: d83822927c11d19874b315ab2edc09ef3ca2ae44
-    is_active: true
-    is_super_admin: true
-    last_login: null
-    created_at: '2010-03-30 19:50:27'
-    updated_at: '2010-03-30 19:50:27'
-sfGuardUserGroup:
-  sfGuardUserGroup_1_1:
-    sfGuardUser: sfGuardUser_1
-    sfGuardGroup: sfGuardGroup_1
-    created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'

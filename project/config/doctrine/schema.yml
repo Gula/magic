@@ -46,12 +46,43 @@ Category:
   tableName:                    category
   columns:
     id:                         { type: integer, primary: true, autoincrement: true}
+    parent_id:                  { type: integer }
     title:                      { type: string(60), notnull: true }
     description:                { type: string(255) }
   relations:
-    Pages:                      { class: Page, local: category_id, foreign: page_id, refClass: PageCategory }
+    Pages:                      { class: Page, local: category_id, foreign: page_id, refClass: PageCategory, onDelete: CASCADE }
+    Events:                     { class: Event, local: category_id, foreign: event_id, refClass: EventCategory, onDelete: CASCADE }
+    Parent:                     { local: parent_id, foreign: id, class: Category }
 
 PageCategory:
   columns:
     category_id:                { type: integer, primary: true }
     page_id:                    { type: integer, primary: true }
+
+
+# Events
+Event:
+  actAs:
+    - Timestampable
+    JCroppable:
+      images:                   [ mugshot ]
+  tableName:                    events
+  columns:
+    id:                         { type: integer, primary: true, autoincrement: true}
+    author_id:                  integer(4)
+    title:                      { type: string(100), notnull: true }
+    description:                { type: clob }
+    date:                       { type: timestamp }
+    publication_date:           { type: timestamp }
+    due_date:                   { type: timestamp }
+    sticky:                     { type: enum, values: [ no, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ], default: no }
+    #image:                      { type: string(255) }
+
+  relations:
+    Author:                     { local: author_id, foreign: id, class: sfGuardUser }
+    Categories:                 { class: Category, local: event_id, foreign: category_id, refClass: EventCategory }
+
+EventCategory:
+  columns:
+    category_id:                { type: integer, primary: true }
+    event_id:                   { type: integer, primary: true }

@@ -303,7 +303,42 @@
         <target>Guradar</target>
       </trans-unit>
 
+      <trans-unit id="69">
+        <source>Date</source>
+        <target>Fecha</target>
+      </trans-unit>
+
+      <trans-unit id="70">
+        <source>Publication date</source>
+        <target>Fecha de Publicación</target>
+      </trans-unit>
+
+      <trans-unit id="71">
+        <source>Due date</source>
+        <target>Fecha de Expiración</target>
+      </trans-unit>
+
+      <trans-unit id="72">
+        <source>Image</source>
+        <target>Imagen</target>
+      </trans-unit>
+
+      <trans-unit id="73">
+        <source>Add event</source>
+        <target>Agregar evento</target>
+      </trans-unit>
+
+      <trans-unit id="74">
+        <source>Events</source>
+        <target>Eventos</target>
+      </trans-unit>
+
+      <trans-unit id="75">
+        <source>Parent category</source>
+        <target>Categoría padre</target>
+      </trans-unit>
       
+
     </body>
   </file>
 </xliff>

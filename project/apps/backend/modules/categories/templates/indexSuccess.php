@@ -13,7 +13,7 @@
       <tr>
         <th><?php echo __('Title'); ?></th>
         <th><?php echo __('Description'); ?></th>
-        <th><?php echo __('Created at'); ?></th>
+        <th><?php echo __('Parent'); ?></th>
       </tr>
     </thead>
     <tbody>
@@ -21,8 +21,9 @@
       <tr>
         <td><a href="<?php echo url_for('categories/edit?id='.$category->getId()) ?>"><?php echo $category->getTitle() ?></a></td>
         <td><?php echo $category->getRawValue()->getDescription() ?></td>
-        <td><?php echo format_date($category->getCreatedAt(), 'f') ?></td>
+        <td><?php echo ($category->getParent() == '') ? '&mdash;' : $category->getParent() ?></td>
       </tr>
+
       <?php endforeach; ?>
     </tbody>
   </table>

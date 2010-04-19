@@ -21,6 +21,13 @@
         <?php echo $form['description'] ?>
       </div>
     </li>
+    <li>
+      <?php echo $form['parent_id']->renderLabel() ?>
+      <div>
+        <?php echo $form['parent_id']->renderError() ?>
+        <?php echo $form['parent_id'] ?>
+      </div>
+    </li>
   </ul>
 
 

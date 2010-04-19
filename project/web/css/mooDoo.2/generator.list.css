@@ -1,3 +1,5 @@
+/* This CSS is autocompiled by LESS parser. Don't edit it manually. */
+
 *:focus {
   outline: 0;
   outline: none;
@@ -67,10 +69,13 @@
 }
 .sf_admin_list table tbody tr td.object_actions { cursor: pointer; }
 .sf_admin_list table tbody tr td.object_actions div.object_actions_container { position: relative; }
+.sf_admin_list table tbody tr td.object_actions div.object_actions_container:hover > ul { display: block; }
+.sf_admin_list table tbody tr td.object_actions div.object_actions_container span.label_action { text-decoration: underline; }
 .sf_admin_list table tbody tr td.object_actions div.object_actions_container > ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: none;
   background-color: #eeeeee;
   border-radius: 4px;
   -moz-border-radius: 4px;
