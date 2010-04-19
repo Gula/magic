@@ -17,47 +17,21 @@
 <div class="span-5 last">
   <ul class="drawers">
     <img src="images/titulo_agenda.png" width="232" height="34" alt="Agenda" />
+
+
+    <?php foreach ($eventsList as $event) : ?>
+
     <li class="drawer">
-      <h2 class="drawer-handle open"><img src="images/agenda_titulo_wisin_yandel.png" width="232" height="24" alt="Agenda" /></h2>
+      <h2 class="drawer-handle open"><?php echo $event ?></h2>
       <ul>
-        <li class="drawer-foto"><img src="images/agenda_foto_wisin_yandel.jpg" width="200" height="231" /></li>
-        <li class="drawer-texto"><div><img src="images/agenda_texto_wisin_yandel.png" width="200" height="78" /></div></li>
+        <li class="drawer-foto">
+        <?php echo $event->getRawValue()->getImageTag('mugshot', 'medium') ?>
+        </li>
+        <li class="drawer-texto"><div><?php echo $event->getRawValue()->getDescription() ?></div></li>
       </ul>
     </li>
-    <li class="drawer">
-      <h2 class="drawer-handle open"><img src="images/agenda_titulo_wisin_yandel.png" width="232" height="24" alt="Agenda" /></h2>
-      <ul>
-        <li class="drawer-foto"><img src="images/agenda_foto_wisin_yandel.jpg" width="200" height="231" /></li>
-        <li class="drawer-texto"><div><img src="images/agenda_texto_wisin_yandel.png" width="200" height="78" /></div></li>
-      </ul>
-    </li>
-    <li class="drawer">
-      <h2 class="drawer-handle open"><img src="images/agenda_titulo_wisin_yandel.png" width="232" height="24" alt="Agenda" /></h2>
-      <ul>
-        <li class="drawer-foto"><img src="images/agenda_foto_wisin_yandel.jpg" width="200" height="231" /></li>
-        <li class="drawer-texto"><div><img src="images/agenda_texto_wisin_yandel.png" width="200" height="78" /></div></li>
-      </ul>
-    </li>
-    <li class="drawer">
-      <h2 class="drawer-handle open"><img src="images/agenda_titulo_wisin_yandel.png" width="232" height="24" alt="Agenda" /></h2>
-      <ul>
-        <li class="drawer-foto"><img src="images/agenda_foto_wisin_yandel.jpg" width="200" height="231" /></li>
-        <li class="drawer-texto"><div><img src="images/agenda_texto_wisin_yandel.png" width="200" height="78" /></div></li>
-      </ul>
-    </li>
-    <li class="drawer">
-      <h2 class="drawer-handle open"><img src="images/agenda_titulo_wisin_yandel.png" width="232" height="24" alt="Agenda" /></h2>
-      <ul>
-        <li class="drawer-foto"><img src="images/agenda_foto_wisin_yandel.jpg" width="200" height="231" /></li>
-        <li class="drawer-texto"><div><img src="images/agenda_texto_wisin_yandel.png" width="200" height="78" /></div></li>
-      </ul>
-    </li>
-    <li class="drawer last">
-      <h2 class="drawer-handle open"><img src="images/agenda_titulo_wisin_yandel.png" width="232" height="24" alt="Agenda" /></h2>
-      <ul>
-        <li class="drawer-foto"><img src="images/agenda_foto_wisin_yandel.jpg" width="200" height="231" /></li>
-        <li class="drawer-texto"><div><img src="images/agenda_texto_wisin_yandel.png" width="200" height="78" /></div></li>
-      </ul>
-    </li>
+
+    <?php endforeach; ?>
+
   </ul>
 </div>
