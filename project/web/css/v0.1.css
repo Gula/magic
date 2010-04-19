@@ -235,6 +235,13 @@ ul.drawers .drawer div.accordion-container {
   padding: 15px;
 }
 
+ul.drawers .drawer div.accordion-categories {
+  text-align: left;
+  padding-bottom:15px;
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+}
+
 ul.drawers .drawer div.accordion-container img {
   margin: 15px 0;
 }
@@ -243,7 +250,6 @@ ul.drawers .drawer div.accordion-container .drawer-texto {
   font-size: 10px;
   text-align: left;
   line-height: 12px;
-  margin-bottom: 30px;
 }
 
 ul.drawers .drawer div.accordion-container .drawer-texto p {

@@ -18,6 +18,6 @@ class defaultActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {
     $this->eventsList = EventTable::retrieveEventsList();
-
+    $this->betterShow = EventTable::retrieveBetterShow();
   }
 }

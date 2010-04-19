@@ -15,7 +15,7 @@ all:
             ratio:        1
             sizes:
               medium:     { width: 200, height: 200 }
-              small:      { width: 103, height: 103 }
+              small:      { width: 130, height: 130 }
               thumb:      { width: 60, height: 60 }
               tiny:       { width: 32, height: 32 }
 

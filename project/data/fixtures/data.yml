@@ -40,13 +40,7 @@ Event:
     publication_date: '2010-04-11 00:00:00'
     due_date: '2010-05-11 00:00:00'
     sticky: no
-    created_at: '2010-04-19 10:20:07'
-    updated_at: '2010-04-19 11:25:08'
-    mugshot: 4cb25050a804fb0f10560be3a9268d3854fb3347.jpg
-    mugshot_x1: '21'
-    mugshot_y1: '13'
-    mugshot_x2: '185'
-    mugshot_y2: '177'
+
   Event_2:
     title: Midachi
     description: '<p>El tr&iacute;o mas decadente de los noventa quiere afanar m&aacute;s que Vox Dei, y esta vez es en el Casino Magig de Neuquen !</p>'
@@ -54,13 +48,7 @@ Event:
     publication_date: null
     due_date: null
     sticky: no
-    created_at: '2010-04-19 11:35:26'
-    updated_at: '2010-04-19 11:38:49'
-    mugshot: 1151e01a2b677589dff96bb159f0bd3747d9b5e7.jpg
-    mugshot_x1: '25'
-    mugshot_y1: '0'
-    mugshot_x2: '250'
-    mugshot_y2: '225'
+
 EventCategory:
   EventCategory_3_1:
     Category: Category_3
@@ -137,7 +125,7 @@ sfGuardUser:
     username: admin
     algorithm: sha1
     salt: 175c791b2d837217889462f269a8a961
-    password: 97af3e711a89b7e79471ea415cc80df771388476
+    password: admin
     is_active: true
     is_super_admin: true
     last_login: '2010-04-19 10:01:49'
@@ -147,7 +135,7 @@ sfGuardUser:
     username: damian
     algorithm: sha1
     salt: 28b0271c037ae651cd72d0af62631348
-    password: d83822927c11d19874b315ab2edc09ef3ca2ae44
+    password: damian
     is_active: true
     is_super_admin: true
     last_login: null
