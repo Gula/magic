@@ -1,3 +1,5 @@
+<?php use_helper('Date') ?>
+
 <div class="span-18">
 
   <?php include_component('default', 'slideshow') ?>
@@ -20,15 +22,12 @@
 
 
     <?php foreach ($eventsList as $event) : ?>
-
     <li class="drawer">
-      <h2 class="drawer-handle open"><?php echo $event ?></h2>
-      <ul>
-        <li class="drawer-foto">
+      <div class="drawer-handle open"><strong><?php echo $event ?></strong> - <?php echo format_date($event->getDate(), 'M') ?></div>
+      <div class="accordion-container">
         <?php echo $event->getRawValue()->getImageTag('mugshot', 'medium') ?>
-        </li>
-        <li class="drawer-texto"><div><?php echo $event->getRawValue()->getDescription() ?></div></li>
-      </ul>
+        <div class="drawer-texto"><?php echo $event->getRawValue()->getDescription() ?></div>
+      </div>
     </li>
 
     <?php endforeach; ?>

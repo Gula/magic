@@ -1,8 +1,8 @@
 window.addEvent('domready', function (ev) {
 
   // Accordion
-  var togglers = $$('.drawers .drawer h2'),
-  wins = $$('.drawers .drawer ul');
+  var togglers = $$('.drawers .drawer div.drawer-handle'),
+  wins = $$('.drawers .drawer div.accordion-container');
 
   var myAccordion = new Fx.Accordion(togglers, wins, {
     display: 0,

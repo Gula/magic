@@ -2,216 +2,256 @@
 /* CSS Document */
 
 @font-face {
-	font-family: 'FuturaLTMediumRegular';
-	src: url('fonts/lte50186.eot');
-	src: local('Futura LT Medium'), local('FuturaLT'), url('fonts/lte50186.woff') format('woff'), url('fonts/lte50186.ttf') format('truetype'), url('fonts/lte50186.svg#FuturaLT') format('svg');
+  font-family: 'FuturaLTMediumRegular';
+  src: url('fonts/lte50186.eot');
+  src: local('Futura LT Medium'), local('FuturaLT'), url('fonts/lte50186.woff') format('woff'), url('fonts/lte50186.ttf') format('truetype'), url('fonts/lte50186.svg#FuturaLT') format('svg');
 }
 
 @font-face {
-	font-family: 'FuturaLTBoldRegular';
-	src: url('fonts/lte50154.eot');
-	src: local('Futura LT Bold'), local('FuturaLT-Bold'), url('fonts/lte50154.woff') format('woff'), url('fonts/lte50154.ttf') format('truetype'), url('fonts/lte50154.svg#FuturaLT-Bold') format('svg');
+  font-family: 'FuturaLTBoldRegular';
+  src: url('fonts/lte50154.eot');
+  src: local('Futura LT Bold'), local('FuturaLT-Bold'), url('fonts/lte50154.woff') format('woff'), url('fonts/lte50154.ttf') format('truetype'), url('fonts/lte50154.svg#FuturaLT-Bold') format('svg');
 }
 
 @font-face {
-	font-family: 'FuturaLTBookBold';
-	src: url('fonts/futuralt_bold.eot');
-	src: local('Futura LT Book'), local('FuturaLT-Bold'), url('fonts/futuralt_bold.woff') format('woff'), url('fonts/futuralt_bold.ttf') format('truetype'), url('fonts/futuralt_bold.svg#FuturaLT-Bold') format('svg');
+  font-family: 'FuturaLTBookBold';
+  src: url('fonts/futuralt_bold.eot');
+  src: local('Futura LT Book'), local('FuturaLT-Bold'), url('fonts/futuralt_bold.woff') format('woff'), url('fonts/futuralt_bold.ttf') format('truetype'), url('fonts/futuralt_bold.svg#FuturaLT-Bold') format('svg');
 }
 
 body {
-		background: #000	none;
-		color: #F4F4F4;
+  background: #000	none;
+  color: #F4F4F4;
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+
+li a {
+  text-decoration: none;
+}
+
 #header #logo {
-    width: 188px !important;
-    height: 165px !important;
-    margin:0px;
-    padding: 0px !important;
-    position: relative;
+  width: 188px !important;
+  height: 165px !important;
+  margin:0px;
+  padding: 0px !important;
+  position: relative;
 }
 #header #logo h1 a {
-	width: 188px !important;
-	height: 165px !important;
-	display:block;
-	text-indent:-9000px;
-	background-image: url(../images/logo.png);
-	background-repeat: no-repeat;
-	background-position: left top;
+  width: 188px !important;
+  height: 165px !important;
+  display:block;
+  text-indent:-9000px;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 #header #nav {
-	display: block;
-	height: 165px;
-	width: 762px;
-	background-color: #000;
-	background-image: url(../images/header_bkg.jpg);
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
+  display: block;
+  height: 165px;
+  width: 762px;
+  background-color: #000;
+  background-image: url(../images/header_bkg.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
 }
 #nav #menu {
-	margin-top: 130px;
+  margin-top: 130px;
 }
 
 #header #logo h1 a:hover {
-	background-position: left -165px;
+  background-position: left -165px;
 }
 
 
 .menu, .menu * {
-	font-family:  Georgia, sans-serif;
-	font-size:  11px;
-	line-height:	1.7;
-	color: #f1da34;
-	margin:			0;
-	padding:		0;
-	list-style:		none;
+  font-family:  Georgia, sans-serif;
+  font-size:  11px;
+  line-height:	1.7;
+  color: #f1da34;
+  margin:			0;
+  padding:		0;
+  list-style:		none;
 }
 
 .menu ul li {
-	width:			100%;
+  width:			100%;
 }
 
 .menu li:hover {
-	visibility:		inherit; /* fixes IE7 'sticky bug' */
+  visibility:		inherit; /* fixes IE7 'sticky bug' */
 }
 .menu li {
-	float:			left;
-	position:		relative;
+  float:			left;
+  position:		relative;
 }
 .menu a {
-	display:		block;
-	position:		relative;
+  display:		block;
+  position:		relative;
 }
 
 #hotel a {
-	display:  block !important;
-	padding: 0px !important; margin: 0px;
-	text-indent: -5000px;
-	width: 49px !important; height: 35px;
-	background: transparent url(../images/nav_menu.png) no-repeat 0px 0px !important;
+  display:  block !important;
+  padding: 0px !important; margin: 0px;
+  text-indent: -5000px;
+  width: 49px !important; height: 35px;
+  background: transparent url(../images/nav_menu.png) no-repeat 0px 0px !important;
 }
 #hotel a:hover {
-	background: transparent url(../images/nav_menu.png) no-repeat 0px -35px !important;
+  background: transparent url(../images/nav_menu.png) no-repeat 0px -35px !important;
 }
 
 #casino a {
-	display:  block !important;
-	padding: 0px !important; margin: 0px;
-	text-indent: -5000px;
-	width: 56px !important; height: 35px;
-	background: transparent url(../images/nav_menu.png) no-repeat -49px 0px !important;
+  display:  block !important;
+  padding: 0px !important; margin: 0px;
+  text-indent: -5000px;
+  width: 56px !important; height: 35px;
+  background: transparent url(../images/nav_menu.png) no-repeat -49px 0px !important;
 }
 #casino a:hover {
-	background: transparent url(../images/nav_menu.png) no-repeat -49px -35px !important;
+  background: transparent url(../images/nav_menu.png) no-repeat -49px -35px !important;
 }
 
 #banquetesconvenciones a {
-	display:  block !important;
-	padding: 0px !important; margin: 0px;
-	text-indent: -5000px;
-	width: 166px !important; height: 35px;
-	background: transparent url(../images/nav_menu.png) no-repeat -105px 0px !important;
+  display:  block !important;
+  padding: 0px !important; margin: 0px;
+  text-indent: -5000px;
+  width: 166px !important; height: 35px;
+  background: transparent url(../images/nav_menu.png) no-repeat -105px 0px !important;
 }
 #banquetesconvenciones a:hover {
-	background: transparent url(../images/nav_menu.png) no-repeat -105px -35px !important;
+  background: transparent url(../images/nav_menu.png) no-repeat -105px -35px !important;
 }
 
 #espectaculos a {
-	display:  block !important;
-	padding: 0px !important; margin: 0px;
-	text-indent: -5000px;
-	width: 90px !important; height: 35px;
-	background: transparent url(../images/nav_menu.png) no-repeat -271px 0px !important;
+  display:  block !important;
+  padding: 0px !important; margin: 0px;
+  text-indent: -5000px;
+  width: 90px !important; height: 35px;
+  background: transparent url(../images/nav_menu.png) no-repeat -271px 0px !important;
 }
 #espectaculos a:hover {
-	background: transparent url(../images/nav_menu.png) no-repeat -271px -35px !important;
+  background: transparent url(../images/nav_menu.png) no-repeat -271px -35px !important;
 }
 
 #promociones a {
-	display:  block !important;
-	padding: 0px !important; margin: 0px;
-	text-indent: -5000px;
-	width: 90px !important; height: 35px;
-	background: transparent url(../images/nav_menu.png) no-repeat -361px 0px !important;
+  display:  block !important;
+  padding: 0px !important; margin: 0px;
+  text-indent: -5000px;
+  width: 90px !important; height: 35px;
+  background: transparent url(../images/nav_menu.png) no-repeat -361px 0px !important;
 }
 #promociones a:hover {
-	background: transparent url(../images/nav_menu.png) no-repeat -361px -35px !important;
+  background: transparent url(../images/nav_menu.png) no-repeat -361px -35px !important;
 }
 
 #gastronomia a {
-	display:  block !important;
-	padding: 0px !important; margin: 0px;
-	text-indent: -5000px;
-	width: 90px !important; height: 35px;
-	background: transparent url(../images/nav_menu.png) no-repeat -451px 0px !important;
+  display:  block !important;
+  padding: 0px !important; margin: 0px;
+  text-indent: -5000px;
+  width: 90px !important; height: 35px;
+  background: transparent url(../images/nav_menu.png) no-repeat -451px 0px !important;
 }
 #gastronomia a:hover {
-	background: transparent url(../images/nav_menu.png) no-repeat -451px -35px !important;
+  background: transparent url(../images/nav_menu.png) no-repeat -451px -35px !important;
 }
 
 #giftshop a {
-	display:  block !important;
-	padding: 0px !important; margin: 0px;
-	text-indent: -5000px;
-	width: 69px !important; height: 35px;
-	background: transparent url(../images/nav_menu.png) no-repeat -541px 0px !important;
+  display:  block !important;
+  padding: 0px !important; margin: 0px;
+  text-indent: -5000px;
+  width: 69px !important; height: 35px;
+  background: transparent url(../images/nav_menu.png) no-repeat -541px 0px !important;
 }
 #giftshop a:hover {
-	background: transparent url(../images/nav_menu.png) no-repeat -541px -35px !important;
+  background: transparent url(../images/nav_menu.png) no-repeat -541px -35px !important;
 }
 
 #search {
-	display:  block !important;
-	padding: 0px !important; margin: 0px;
-	width: 152px !important; height: 35px;
-	background: transparent url(../images/header_buscador.png) no-repeat 0px 0px !important;
+  display:  block !important;
+  padding: 0px !important; margin: 0px;
+  width: 152px !important; height: 35px;
+  background: transparent url(../images/header_buscador.png) no-repeat 0px 0px !important;
 }
 #search label #searchInput {
-	outline: none;
-	margin-top: 9px;
-	margin-left: 26px;
-	font-family: Helvetica, Arial, sans-serif;
-	color: #000;
-	height: 15px;
-	width: 113px;
-	border: 0px;
-	background:  transparent;
+  outline: none;
+  margin-top: 9px;
+  margin-left: 26px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000;
+  height: 15px;
+  width: 113px;
+  border: 0px;
+  background:  transparent;
 }
 #search label #searchInput:focus {
-	outline: none;
-	border: 0px;
+  outline: none;
+  border: 0px;
 
 }
-	.span-18 {
-		margin-right: 0px !important;
-		width: 718px !important;
-		}
-  UL.drawers {
-	width: 230px;
-    }
-.drawers .drawer {
-	background-color: #333132;
+.span-18 {
+  margin-right: 0px !important;
+  width: 718px !important;
 }
 
-    UL {
-        list-style: none;
-        margin: 0;
-        padding: 0px;
-    }
 
-    LI A {
-	text-decoration: none;
-    }
+/* Accordion */
+ul.drawers {
+  width: 232px;
+  background-color: #333132;
+}
 
-    H2.drawer-handle {
-	margin: 0;
-	padding: 0px;
-	background-color: #333132;
-    }
+ul.drawers .drawer ul {
+  display: block;
+  width: 232px;
+  margin: 0px;
+  padding: 0px;
+}
 
-    H2.drawer-handle.open {
-	background-color: #333132;
-    }
+ul.drawers li.drawer {
+  display: block;
+}
+
+ul.drawers li.drawer div.drawer-handle {
+  background: transparent url(../images/accordion-title-background.png) repeat-x 0px 0px !important;
+  color: #fff;
+  cursor: pointer;
+  height: 24px;
+  font: normal normal normal 11px/24px sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #333132;
+}
+
+ul.drawers .drawer div.accordion-container {
+  text-align: center;
+  display: block;
+  margin: 0px;
+  padding: 15px;
+}
+
+ul.drawers .drawer div.accordion-container img {
+  margin: 15px 0;
+}
+
+ul.drawers .drawer div.accordion-container .drawer-texto {
+  font-size: 10px;
+  text-align: left;
+  line-height: 12px;
+  margin-bottom: 30px;
+}
+
+ul.drawers .drawer div.accordion-container .drawer-texto p {
+  margin: 6px 0;
+}
+/* end accordion */
+
+
 
 /* Slideshow */
 
@@ -242,16 +282,16 @@ body {
 }
 
 .slideshow .picture h3 {
-	font: 35px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
-	position: absolute;
-	background-color: rgba(0,0,0,0.2);
-	width: 720px;
-	left: 0px; top: 240px;
-	padding: 25px;
-	padding-left: 35px;
-	z-index: 10;
-	color: #fff;
-	text-shadow: 0 0 10px #fff;
+  font: 35px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  width: 720px;
+  left: 0px; top: 240px;
+  padding: 25px;
+  padding-left: 35px;
+  z-index: 10;
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
 }
 
 .slideshow .picture .text {
@@ -260,14 +300,14 @@ body {
   width: 720px;
   z-index: 10;
   color: #fff;
-	background-color: rgba(0,0,0,0.2);
-	padding: 25px;
-	padding-left: 35px;
-	font: 12px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  background-color: rgba(0,0,0,0.2);
+  padding: 25px;
+  padding-left: 35px;
+  font: 12px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
 }
 
 .slide-index {
-	font: 12px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 12px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
   position: relative;
   margin: -195px 0 167px 0;
   z-index: 30;
@@ -279,26 +319,26 @@ body {
 }
 
 .slide-index ul li {
-	background-color: rgba(0,0,0,0.2);
-	display: inline-block;
-	width: 30px; height: 30px; line-height: 30px;
-	text-align: center;
-/*
+  background-color: rgba(0,0,0,0.2);
+  display: inline-block;
+  width: 30px; height: 30px; line-height: 30px;
+  text-align: center;
+  /*
 	border-top: 1px solid rgba(255,255,255,0.2);
 	border-left: 1px solid rgba(255,255,255,0.2);
 	border-right: 1px solid rgba(255,255,255,0.2);
-*/
+  */
 }
 
 
 .slide-index ul li:hover,.slide-index ul li:active {
-/*
+  /*
 	border-top: 1px solid rgba(255,255,255,0.5);
 	border-left: 1px solid rgba(255,255,255,0.5);
 	border-right: 1px solid rgba(255,255,255,0.5);
-*/
+  */
   color: #fff;
-	background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   cursor: pointer;
 }
 /*  end slideshow */
@@ -308,264 +348,236 @@ body {
 NOVEDADES
 
 */
-    .novedades li {
-	float: left;
-	width: 143px;
-	background-image: url(../images/box_bkg.png);
-	background-repeat: no-repeat;
-	background-position: right top;
-	height: 191px;
-	}
+.novedades li {
+  float: left;
+  width: 143px;
+  background-image: url(../images/box_bkg.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 191px;
+}
 
 .novedades .novedades-imagen {
-	margin-top: 10px;
-	margin-right: 0px;
-	margin-left: 7px;
-	margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-left: 7px;
+  margin-bottom: 10px;
 }
 
 
 .novedades .shows {
-	width: 144px;
+  width: 144px;
 }
 
 .novedades .shows a {
-	background-image: url(../images/box_click_shows.png);
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	display: block;
-	width: 144px;
-	height: 41px;
-	text-indent: -5000px;
+  background-image: url(../images/box_click_shows.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  display: block;
+  width: 144px;
+  height: 41px;
+  text-indent: -5000px;
 }
 
 .novedades .shows a:hover {
-	background-position: 0px -41px;
+  background-position: 0px -41px;
 }
 
 .novedades .promos a {
-	background-image: url(../images/box_click_promos.png);
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	display: block;
-	width: 143px;
-	height: 41px;
-	text-indent: -5000px;
+  background-image: url(../images/box_click_promos.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  display: block;
+  width: 143px;
+  height: 41px;
+  text-indent: -5000px;
 }
 
 .novedades .promos a:hover {
-	background-position: 0px -41px;
+  background-position: 0px -41px;
 }
 
 .novedades .torneos {
-	width: 144px;
+  width: 144px;
 }
 
 .novedades .torneos a {
-	background-image: url(../images/box_click_torneos.png);
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	display: block;
-	width: 144px;
-	height: 41px;
-	text-indent: -5000px;
+  background-image: url(../images/box_click_torneos.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  display: block;
+  width: 144px;
+  height: 41px;
+  text-indent: -5000px;
 }
 
 .novedades .torneos a:hover {
-	background-position: 0px -41px;
+  background-position: 0px -41px;
 }
 
 .novedades .hotel {
-	width: 143px;
+  width: 143px;
 }
 
 .novedades .hotel a {
-	background-image: url(../images/box_click_hotel.png);
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	display: block;
-	width: 143px;
-	height: 41px;
-	text-indent: -5000px;
+  background-image: url(../images/box_click_hotel.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  display: block;
+  width: 143px;
+  height: 41px;
+  text-indent: -5000px;
 }
 
 .novedades .hotel a:hover {
-	background-position: 0px -41px;
+  background-position: 0px -41px;
 }
 .novedades li.fotos {
-	/* CARGGO ESTA CLASE PARA CERRAR EL FONDO SIN EL BORDE DEL PNG */
-	width: 144px;
-	background-image: url(../images/box_bkg.png);
-	background-repeat: no-repeat;
-	background-position: left top;
-	}
+  /* CARGGO ESTA CLASE PARA CERRAR EL FONDO SIN EL BORDE DEL PNG */
+  width: 144px;
+  background-image: url(../images/box_bkg.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
 
 .novedades .fotos {
-	width: 144px;
+  width: 144px;
 }
 
 .novedades .fotos a {
-	background-image: url(../images/box_click_fotos.png);
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	display: block;
-	width: 144px;
-	height: 41px;
-	text-indent: -5000px;
+  background-image: url(../images/box_click_fotos.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  display: block;
+  width: 144px;
+  height: 41px;
+  text-indent: -5000px;
 }
 
 .novedades .fotos a:hover {
-	background-position: 0px -41px;
+  background-position: 0px -41px;
 }
-
-
-/* Accordion */
-.drawers h2 {
-  cursor: pointer;
-}
-
-.drawer-foto, .drawer-texto {
-	text-align: center;
-	display: block;
-	margin: 0px;
-	padding: 0px;
-}
-.drawer-foto {
-	margin-top: 15px;
-}
-
-.drawer ul {
-	display: block;
-	width: 232px;
-	margin: 0px;
-	padding: 0px;
-}
-
-.drawer ul li h2{
-}
-
-
 
 
 #pagina-hotel #header #nav {
-	background-image: url(../images/paginas/hotel_header.jpg);
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
+  background-image: url(../images/paginas/hotel_header.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
 }
 
 
 .contenido-hotel, .contenido-casino, .contenido-banquetesconvenciones, .contenido-espectaculos, .contenido-promociones, .contenido-gastronomia, .contenido-giftshop {
-	position: relative;
-	width: 950px;
+  position: relative;
+  width: 950px;
 }
 
 .contenido {
-	/*height: 990px;*/
+  /*height: 990px;*/
   padding-bottom: 30px;
 }
 
 .imagen-fondo {
-	position: absolute;
-	top: 0;
-	z-index: 0;
-	clear: both;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  clear: both;
 }
 
 .contenido {
-	z-index: 20;
-	position: relative;
+  z-index: 20;
+  position: relative;
 }
 
 
 
 .alpha {
-	width: 100%;
-	height: 534px;
-	z-index: 10;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-image: url(../images/alpha.png);
-	background-repeat: repeat-x;
-	background-position: 0px bottom;
+  width: 100%;
+  height: 534px;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/alpha.png);
+  background-repeat: repeat-x;
+  background-position: 0px bottom;
 }
 
 
 /* .contenido-hotel */
 .contenido .sub-menu {
-	width: 100%;
-	height: 61px;
+  width: 100%;
+  height: 61px;
 }
 
 /* .contenido-hotel  */
 .contenido .sub-menu h2 {
-	padding-top: 14px;
-	color: white;
-	font: 16px/15px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
-	font-weight: normal;
-	text-transform:  uppercase;
-	letter-spacing: 2px;
-	text-align: center;
-	margin: 0 auto;
-	width: 188px;
-	float: left;
+  padding-top: 14px;
+  color: white;
+  font: 16px/15px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform:  uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0 auto;
+  width: 188px;
+  float: left;
 }
 .contenido .sub-menu ul {
-	width:			100%;
-	padding-top: 20px;
+  width:			100%;
+  padding-top: 20px;
 }
 .contenido .sub-menu li:hover {
-	visibility:		inherit; /* fixes IE7 'sticky bug' */
+  visibility:		inherit; /* fixes IE7 'sticky bug' */
 }
 .contenido .sub-menu li {
-	margin: 0;
-	padding: 0;
-	float:			left;
-	position:		relative;
+  margin: 0;
+  padding: 0;
+  float:			left;
+  position:		relative;
 
 }
 .contenido .sub-menu li a {
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
-	font: 9px/12px 'FuturaLTBookBold', Helvetica, Arial, sans-serif;
-	letter-spacing: 1px;
-	font-weight: 500;
-	text-transform: uppercase;
-	color: white;
-	display:		block;
-	position:		relative;
-	margin: 0 5px;
-	padding: 7px;
-	border: 1px solid transparent;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  font: 9px/12px 'FuturaLTBookBold', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  display:		block;
+  position:		relative;
+  margin: 0 5px;
+  padding: 7px;
+  border: 1px solid transparent;
 }
 .contenido .sub-menu a:hover {
-	border: 1px solid rgba(255,255,255,0.4);
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	}
+  border: 1px solid rgba(255,255,255,0.4);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
 
 .contenido .sub-menu a:active {
-	border: 1px solid rgba(255,255,255,0.4);
-	background-color: rgba(255,255,255,0.4);
+  border: 1px solid rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.4);
 
 }
 
@@ -578,32 +590,32 @@ NOVEDADES
 .contenido .noticia-bloque .titulo {
   margin-left: 197px;
 
-	width: 753px;
-	height: 75px;
+  width: 753px;
+  height: 75px;
 }
 
 
 .contenido .noticia-bloque .titulo h3 {
   margin: 0;
-	padding: 23px 10px 0 0;
-	text-align: right;
-	color: white;
+  padding: 23px 10px 0 0;
+  text-align: right;
+  color: white;
 
-	font: normal normal normal 16px/27px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
-	text-transform:  uppercase;
+  font: normal normal normal 16px/27px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  text-transform:  uppercase;
 
-	letter-spacing: 1px;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
 }
 
 
 
 .contenido .noticia-bloque .slideshow-paginas {
-	margin-left: 197px;
-	width: 753px;
-	height: 300px;
+  margin-left: 197px;
+  width: 753px;
+  height: 300px;
   position: relative;
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .contenido .slide-wrapper-paginas {
@@ -611,17 +623,17 @@ NOVEDADES
 }
 
 .contenido .noticia-bloque .slideshow-paginas .subpagina {
-	border-right: 1px solid transparent;
-	float: left;
-/* 	border: 1px green solid; */
-	width: 250px;
-	height: 300px;
+  border-right: 1px solid transparent;
+  float: left;
+  /* 	border: 1px green solid; */
+  width: 250px;
+  height: 300px;
 }
 
 .contenido .noticia-bloque .slideshow-paginas .subpagina .imagen-subpagina {
-	position: absolute;
-	margin: 0;
-	padding: 0;
+  position: absolute;
+  margin: 0;
+  padding: 0;
 }
 
 /* arrows */
@@ -654,20 +666,20 @@ NOVEDADES
 /* El color de fondo del titulo va luego en .contenido-NOMBREPAGINA .contenido. .titulo-subpagina */
 
 .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
-	padding-left: 0px;
-	padding-bottom: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
 
-	width: 240px;
-	position: absolute;
-	margin: 0px;
-	margin-top: 141px;
-	text-align: right;
-	color: #fff;
+  width: 240px;
+  position: absolute;
+  margin: 0px;
+  margin-top: 141px;
+  text-align: right;
+  color: #fff;
 
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
-	font: 11px/12px 'FuturaLTBookBold', Helvetica, Arial, sans-serif;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  font: 11px/12px 'FuturaLTBookBold', Helvetica, Arial, sans-serif;
 }
 
 .contenido .slideshow-paginas .subpagina p.titulo-subpagina a {
@@ -680,41 +692,41 @@ NOVEDADES
 
 /* Modifico el aspecto del SPAN, para mostrar resumen */
 .contenido .slideshow-paginas .subpagina .resumen-subpagina {
-	width: 240px;
-	height: 250px;
+  width: 240px;
+  height: 250px;
 
-	padding-left: 5px;
-	padding-bottom: 10px;
-	padding-right: 5px;
-	padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  padding-top: 10px;
 
-	position: absolute;
-	margin: 0px;
-	margin-top: 175px;
+  position: absolute;
+  margin: 0px;
+  margin-top: 175px;
 
 
-	/* border: 1px solid green; */
+  /* border: 1px solid green; */
 
-	font: 11px/12px 'FuturaLTBookBold', Helvetica, Arial, sans-serif;
-	text-align: justify;
+  font: 11px/12px 'FuturaLTBookBold', Helvetica, Arial, sans-serif;
+  text-align: justify;
 }
 
 .contenido-hotel .contenido .sub-menu, .contenido-hotel .contenido .titulo, .contenido-hotel .contenido .resumen-subpagina {
-	background-color: rgba(235,190,68,0.5);
+  background-color: rgba(235,190,68,0.5);
 }
 
 .contenido-hotel .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
-	background-color: #ebbe44;
-	border-top: 1px solid #e6ddc7;
+  background-color: #ebbe44;
+  border-top: 1px solid #e6ddc7;
 }
 
 .contenido-casino .contenido .sub-menu, .contenido-casino .contenido .titulo, .contenido-casino .contenido .resumen-subpagina {
-	background-color: rgba(145, 0, 0, .5);
+  background-color: rgba(145, 0, 0, .5);
 }
 
 .contenido-casino .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
-	background-color: #a12524;
-	border-top: 1px solid #dec4c3;
+  background-color: #a12524;
+  border-top: 1px solid #dec4c3;
 }
 
 
@@ -723,38 +735,38 @@ NOVEDADES
 /* CSS PARA PAGINAS */
 
 .contenido .subpagina-contenido {
-	margin-left: 197px;
+  margin-left: 197px;
   position: relative;
-	width: 752px;
+  width: 752px;
   border-right: 1px solid #000;
-	height: 250px;
-	overflow: hidden;
-	background-color: #3c2c13;
+  height: 250px;
+  overflow: hidden;
+  background-color: #3c2c13;
 }
 
 .contenido .subpagina-contenido h3 {
-	margin-top: 15px;
-	margin-left: 10px;
-	text-align: left;
-	color: white;
-	font: 14px/16px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
-	font-weight: normal;
-	text-transform:  uppercase;
-	letter-spacing: 1px;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+  margin-top: 15px;
+  margin-left: 10px;
+  text-align: left;
+  color: white;
+  font: 14px/16px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform:  uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
 
 }
 
 .contenido .subpagina-contenido p {
-	padding-left: 10px;
-	padding-bottom: 10px;
-	padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
 
-	width: 260px;
-	text-align: justify;
-	color: #fff;
-	float: left;
+  width: 260px;
+  text-align: justify;
+  color: #fff;
+  float: left;
 
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
-	font: 11px/15px 'FuturaLTBookBold', Helvetica, Arial, sans-serif;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  font: 11px/15px 'FuturaLTBookBold', Helvetica, Arial, sans-serif;
 }
