@@ -2,7 +2,7 @@
 
 <div class="span-18">
 
-  <?php include_component('default', 'slideshow') ?>
+  <?php include_component('default', 'slideshow', array('eventsList' => $eventsList)) ?>
 
   <div class="clearfix"></div>
   <div id="boxNovedades">

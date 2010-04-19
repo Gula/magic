@@ -15,36 +15,31 @@ class Event extends BaseEvent {
   public function save(Doctrine_Connection $conn = null) {
     parent::save($conn);
 
-    // generamos thumbnails
-    //$file = sfConfig::get('sf_upload_dir').'/events/'.$this->getImage();
+    $config = sfConfig::get('app_sfDoctrineJCroppablePlugin_models');
+    $dir = sfConfig::get('sf_upload_dir').DIRECTORY_SEPARATOR.$config['Events']['directory'];
+    $image = $this->getImageSrc('mugshot', 'original');
 
-    if($this->isNew()) {
+    $arr_filename = explode ('.', $this->getMugshot());
+    $filename = $arr_filename[0].'_original.'.$arr_filename[1];
 
-      $config = sfConfig::get('app_sfDoctrineJCroppablePlugin_models');
-      $dir = sfConfig::get('sf_upload_dir').DIRECTORY_SEPARATOR.$config['Events']['directory'];
-      $image = $this->getImageSrc('mugshot', 'original');
+    $file = $dir.DIRECTORY_SEPARATOR.$filename;
 
-      $filename = explode ('.', $this->getMugshot());
-      $filename = $filename[0].'_original.'.$filename[1];
+    if(is_file($file)) {
 
-      $file = $dir.DIRECTORY_SEPARATOR.$filename;
+      $dims = array (
+              array('w' => 950, 'h' => 534),
+              array('w' => 720, 'h' => 405),
+              array('w' => 250, 'h' => 141),
+      );
 
-      if(is_file($file)) {
+      $size = getimagesize($file);
+      $img = new sfImage($file, $size['mime']);
 
-        $dims = array (
-                array('w' => 950, 'h' => 534),
-                array('w' => 720, 'h' => 405),
-                array('w' => 250, 'h' => 141),
-        );
+      foreach ($dims as $dim) {
 
-        $size = getimagesize($file);
-        $img = new sfImage($file, $size['mime']);
-
-        foreach ($dims as $dim) {
-          $img->resize($dim['w'], $dim['h']);
-          $img->setQuality(90);
-          $img->saveAs($dir.'/'.$this->getMugshot().'_'.$dim['w'].'x'.$dim['h'].'.jpg');
-        }
+        $img->resize($dim['w'], $dim['h']);
+        $img->setQuality(90);
+        $img->saveAs($dir.'/'.$arr_filename[0].'_'.$dim['w'].'x'.$dim['h'].'.jpg');
       }
     }
   }
