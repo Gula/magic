@@ -12,7 +12,8 @@ class ProjectConfiguration extends sfProjectConfiguration
       'sfFormExtraPlugin',
       'sfDoctrineGuardPlugin',
       'sfLessPhpPlugin',
-      'sfImageTransformPlugin'
+      'sfImageTransformPlugin',
+      'sfDoctrineJCroppablePlugin'
     );
   }
 }

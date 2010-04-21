@@ -1,3 +1,12 @@
+event:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Event
+    module:               events
+    prefix_path:          /events
+    column:               id
+    with_wildcard_routes: true
+
 sf_guard_signin:
   url:   /login
   param: { module: sfGuardAuth, action: signin }

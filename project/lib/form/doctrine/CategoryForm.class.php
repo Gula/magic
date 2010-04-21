@@ -15,7 +15,7 @@ class CategoryForm extends BaseCategoryForm
   unset($this['created_at'], $this['updated_at'], $this['pages_list']);
 
     $this->widgetSchema->setLabels(array(
-      'parent_id'=> 'Parent page'
+      'parent_id'=> 'Parent category'
     ));
 
     $this->widgetSchema['description'] = new sfWidgetFormTextareaTinyMCE(array(

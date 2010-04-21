@@ -26,9 +26,8 @@ class PageForm extends BasePageForm {
     $this->widgetSchema['description'] = new sfWidgetFormTextareaTinyMCE(array(
       'width' => 500,
       'height' => 250,
-      'config' => 'theme : "simple", theme_advanced_disable: "anchor,image,cleanup,help, charmap, visualaid, removeformat, code, styleselect"'
+      'config' => 'theme_advanced_disable: "cleanup, help, charmap, visualaid, styleselect"'
     ));
-
 
     // categories_list
     $this->widgetSchema['categories_list'] = new sfWidgetFormDoctrineChoice(array(

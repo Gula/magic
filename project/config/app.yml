@@ -1,3 +1,23 @@
 all:
+  sfImageTransformPlugin:
+    default_adapter: GD
+    mime_type:
+      auto_detect: true
+      library: gd_mime_type
+
+  # sfDoctrineJCroppablePlugin configuration
+  sfDoctrineJCroppablePlugin:
+    models:
+      Events:
+        directory:      events
+        images:
+          mugshot:
+            ratio:        1
+            sizes:
+              medium:     { width: 200, height: 200 }
+              small:      { width: 130, height: 130 }
+              thumb:      { width: 60, height: 60 }
+              tiny:       { width: 32, height: 32 }
+
   sf_less_php_plugin:
     use_lessc:    true

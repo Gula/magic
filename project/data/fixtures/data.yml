@@ -9,15 +9,165 @@ Category:
     description: 'Slideshow principal'
     created_at: '2010-03-30 19:50:28'
     updated_at: '2010-03-30 19:50:28'
+  Category_3:
+    title: Shows
+    description: '<p>Shows realizados en el Casino</p>'
+    created_at: '2010-04-18 21:04:14'
+    updated_at: '2010-04-18 21:04:14'
+  Category_4:
+    Parent: Category_3
+    title: Belterra
+    description: '<p>Belterra, bandas locales, ventas c/consumisi&oacute;n.</p>'
+    created_at: '2010-04-18 21:04:45'
+    updated_at: '2010-04-18 21:04:45'
+  Category_5:
+    Parent: Category_3
+    title: Rainbow
+    description: '<p>Rainbow, Teatro. Venta Plateas. Fiestas tem&aacute;ticas.</p>'
+    created_at: '2010-04-18 21:05:00'
+    updated_at: '2010-04-18 21:05:00'
+  Category_6:
+    Parent: Category_3
+    title: Estadio
+    description: '<p>Estadio Casino Magic, Main Events.</p>'
+    created_at: '2010-04-18 21:05:19'
+    updated_at: '2010-04-18 21:05:19'
+Event:
+  Event_1:
+    title: 'Wisin & Yandel'
+    description: "<p>Wisin &amp; Yandel visitan Neuqu&eacute;n por primera vez el 11 de mayo a las 21:30 hs.</p>\r\n<p>Entradas anticipadas en Casino Magic y en las sucursales de Saturno Hogar.</p>"
+    date: '2010-05-11 21:00:00'
+    publication_date: '2010-04-11 00:00:00'
+    due_date: '2010-05-11 00:00:00'
+    sticky: no
+
+  Event_2:
+    title: Midachi
+    description: '<p>El tr&iacute;o mas decadente de los noventa quiere afanar m&aacute;s que Vox Dei, y esta vez es en el Casino Magig de Neuquen !</p>'
+    date: '2010-05-05 21:30:00'
+    publication_date: null
+    due_date: null
+    sticky: no
+
+EventCategory:
+  EventCategory_3_1:
+    Category: Category_3
+    Event: Event_1
+  EventCategory_3_2:
+    Category: Category_3
+    Event: Event_2
+Profile:
+  Profile_1:
+    User: sfGuardUser_2
+    first_name: Damian
+    last_name: Suarez
+    birth_date: null
+    phone: ''
+    movil: ''
+    email: ''
+    addres: ''
+    country: ''
+  Profile_2:
+    User: sfGuardUser_1
+    first_name: Macarena
+    last_name: Vela
+    birth_date: null
+    phone: ''
+    movil: ''
+    email: ''
+    addres: ''
+    country: ''
+PageCategory:
+  PageCategory_1_1:
+    Category: Category_1
+    page_id: '1'
+  PageCategory_2_1:
+    Category: Category_2
+    page_id: '1'
+  PageCategory_1_2:
+    Category: Category_1
+    page_id: '2'
+  PageCategory_2_2:
+    Category: Category_2
+    page_id: '2'
+  PageCategory_1_3:
+    Category: Category_1
+    page_id: '3'
+  PageCategory_2_3:
+    Category: Category_2
+    page_id: '3'
+  PageCategory_1_4:
+    Category: Category_1
+    page_id: '4'
+  PageCategory_2_4:
+    Category: Category_2
+    page_id: '4'
+  PageCategory_1_5:
+    Category: Category_1
+    page_id: '5'
+  PageCategory_1_6:
+    Category: Category_1
+    page_id: '6'
+  PageCategory_1_7:
+    Category: Category_1
+    page_id: '7'
+  PageCategory_2_20:
+    Category: Category_2
+    page_id: '20'
+sfGuardPermission:
+  sfGuardPermission_1:
+    name: admin
+    description: 'Administrator permission'
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+sfGuardUser:
+  sfGuardUser_1:
+    username: admin
+    algorithm: sha1
+    salt: 175c791b2d837217889462f269a8a961
+    password: admin
+    is_active: true
+    is_super_admin: true
+    last_login: '2010-04-19 10:01:49'
+    created_at: '2010-03-30 19:50:27'
+    updated_at: '2010-04-19 10:01:49'
+  sfGuardUser_2:
+    username: damian
+    algorithm: sha1
+    salt: 28b0271c037ae651cd72d0af62631348
+    password: damian
+    is_active: true
+    is_super_admin: true
+    last_login: null
+    created_at: '2010-03-30 19:50:27'
+    updated_at: '2010-03-30 19:50:27'
+sfGuardGroupPermission:
+  sfGuardGroupPermission_1_1:
+    sfGuardGroup: sfGuardGroup_1
+    sfGuardPermission: sfGuardPermission_1
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+sfGuardUserGroup:
+  sfGuardUserGroup_1_1:
+    sfGuardUser: sfGuardUser_1
+    sfGuardGroup: sfGuardGroup_1
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
+sfGuardGroup:
+  sfGuardGroup_1:
+    name: admin
+    description: 'Administrator group'
+    created_at: '2010-03-30 19:50:28'
+    updated_at: '2010-03-30 19:50:28'
 Page:
   Page_1:
     Author: sfGuardUser_2
     title: Hotel
-    description: "<p><span style=\"font-family: Helvetica; font-size: medium;\"> </span></p>\r\n<div style=\"font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; background-color: #ffffff;\">\r\n<p>En</p>\r\n</div>\r\n<p>&nbsp;</p>"
+    description: '<p>En</p>'
     abstract: 'La estrella que le faltaba a Neuquén'
     picture: 339ffa18cd0b5f715495db2eb8d856175d99b6df.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-04-13 15:03:36'
+    updated_at: '2010-04-16 14:45:35'
   Page_2:
     Author: sfGuardUser_2
     title: Casino
@@ -27,21 +177,21 @@ Page:
     created_at: '2010-03-30 19:50:28'
     updated_at: '2010-04-09 14:25:36'
   Page_3:
-    Author: sfGuardUser_2
+    Author: sfGuardUser_1
     title: 'Banquetes & Convenciones'
-    description: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.</p>'
-    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
-    picture: 'Banquetes&Eventos.jpg'
+    description: '<p>Creado para convertir un evento en un acontecimiento &uacute;nico. Exclusivo servicio de catering, asesoramiento integral y el m&aacute;s alto nivel.</p>'
+    abstract: 'Creado para convertir un evento en un acontecimiento único.'
+    picture: 77787f8673e922d609fac5c930fa02761ea6c958.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-04-09 14:31:14'
+    updated_at: '2010-04-13 18:49:19'
   Page_4:
     Author: sfGuardUser_2
     title: Espectáculos
-    description: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.</p>'
-    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
+    description: '<p>Casino Magic: anfitri&oacute;n de los espect&aacute;culos m&aacute;s importantes de la Patagonia como Ricardo Arjona, Los Fabulosos Cadillacs o Gustavo Cerati.</p>'
+    abstract: "Anfitrión de los espectáculos más importantes de la Patagonia \r\n "
     picture: dd6fa8f979638a44d1699793f061c60725581359.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-04-09 14:31:39'
+    updated_at: '2010-04-13 15:57:25'
   Page_5:
     Author: sfGuardUser_2
     title: Promociones
@@ -88,20 +238,20 @@ Page:
     Parent: Page_1
     Author: sfGuardUser_2
     title: Piscina
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.'
-    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
-    picture: piscina.jpg
+    description: '<p>Piscina climatizada: placer y deporte en todas las &eacute;pocas del a&ntilde;o.</p>'
+    abstract: 'Placer y deporte en todas las épocas del año.'
+    picture: d73c6347151e4ee241068e1c0bee72a052eee6f7.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'
+    updated_at: '2010-04-13 17:54:08'
   Page_11:
     Parent: Page_1
     Author: sfGuardUser_2
     title: 'Spa & Fitness'
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci. Morbi facilisis elit quis ligula dapibus molestie. Etiam id elit nec mauris bibendum sagittis. Cras sollicitudin, lectus vel tristique dictum, velit ante venenatis elit, ut cursus nunc turpis id arcu. Nulla at sem nec velit suscipit placerat. Suspendisse bibendum quam et nisi aliquam ac gravida nisl fringilla. Duis laoreet laoreet urna, in consectetur tellus convallis eget. Fusce tristique, diam ut egestas tincidunt, eros nisi aliquet nisi, vel vulputate nunc est eu justo. Vestibulum et augue tempor leo posuere ullamcorper eget non ipsum. Donec et mauris diam, non commodo nisl. Cras nec accumsan orci. Proin venenatis convallis accumsan. Nullam convallis mattis dignissim. Duis porttitor, erat pellentesque tempor vulputate, velit est dapibus orci, non iaculis eros diam eleifend quam. Nulla posuere leo a ipsum placerat eu sodales lorem vestibulum. Sed sed velit neque. Integer sed scelerisque leo. Donec mi diam, ultrices nec sollicitudin at, tincidunt eget massa.'
-    abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus libero, adipiscing a dictum sed, dignissim at orci.'
-    picture: 'spa&fitness.jpg'
+    description: '<p><span style="font-family: ''Lucida Grande''; font-size: 11px; white-space: pre-wrap;">El relax y la salud en un mismo lugar. Piscina, solarium, spa, gimnasio: descansar y cuidarse tienen el mismo nombre.</span></p>'
+    abstract: 'El relax y la salud en un mismo lugar'
+    picture: 4a291fff6609c5ccd90ad5ad526ae38f2770febc.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'
+    updated_at: '2010-04-13 18:29:36'
   Page_12:
     Parent: Page_1
     Author: sfGuardUser_2
@@ -165,7 +315,7 @@ Page:
     picture: 2350ce55fcba6f64edf74857a3ac69116b812c69.jpg
     created_at: '2010-04-07 19:50:36'
     updated_at: '2010-04-12 03:25:49'
-  Page_21:
+  Page_19:
     Parent: Page_8
     title: 'Habitacion Presidencial'
     description: "<p>165 m&sup2;, tres LCD, s&aacute;banas de algod&oacute;n egipcio, Wifi, Aire Acondicionado, Jacuzzi.</p>\r\n<p>&nbsp;</p>"
@@ -173,100 +323,11 @@ Page:
     picture: 909ccae4937e78e3ad2ac540bc10434e0b8af2c1.jpg
     created_at: '2010-04-12 09:31:42'
     updated_at: '2010-04-12 09:34:41'
-PageCategory:
-  PageCategory_1_1:
-    Category: Category_1
-    Page: Page_1
-  PageCategory_2_1:
-    Category: Category_2
-    Page: Page_1
-  PageCategory_1_2:
-    Category: Category_1
-    Page: Page_2
-  PageCategory_2_2:
-    Category: Category_2
-    Page: Page_2
-  PageCategory_1_3:
-    Category: Category_1
-    Page: Page_3
-  PageCategory_1_4:
-    Category: Category_1
-    Page: Page_4
-  PageCategory_2_4:
-    Category: Category_2
-    Page: Page_4
-  PageCategory_1_5:
-    Category: Category_1
-    Page: Page_5
-  PageCategory_1_6:
-    Category: Category_1
-    Page: Page_6
-  PageCategory_1_7:
-    Category: Category_1
-    Page: Page_7
-Profile:
-  Profile_1:
-    User: sfGuardUser_2
-    first_name: Damian
-    last_name: Suarez
-    birth_date: null
-    phone: ''
-    movil: ''
-    email: ''
-    addres: ''
-    country: ''
-  Profile_2:
-    User: sfGuardUser_1
-    first_name: Macarena
-    last_name: Vela
-    birth_date: null
-    phone: ''
-    movil: ''
-    email: ''
-    addres: ''
-    country: ''
-sfGuardGroup:
-  sfGuardGroup_1:
-    name: admin
-    description: 'Administrator group'
-    created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'
-sfGuardGroupPermission:
-  sfGuardGroupPermission_1_1:
-    sfGuardGroup: sfGuardGroup_1
-    sfGuardPermission: sfGuardPermission_1
-    created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'
-sfGuardPermission:
-  sfGuardPermission_1:
-    name: admin
-    description: 'Administrator permission'
-    created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'
-sfGuardUser:
-  sfGuardUser_1:
-    username: admin
-    algorithm: sha1
-    salt: 175c791b2d837217889462f269a8a961
-    password: admin
-    is_active: true
-    is_super_admin: true
-    last_login: '2010-04-13 14:29:39'
-    created_at: '2010-03-30 19:50:27'
-    updated_at: '2010-04-13 14:29:39'
-  sfGuardUser_2:
-    username: damian
-    algorithm: sha1
-    salt: 28b0271c037ae651cd72d0af62631348
-    password: damian
-    is_active: true
-    is_super_admin: true
-    last_login: null
-    created_at: '2010-03-30 19:50:27'
-    updated_at: '2010-03-30 19:50:27'
-sfGuardUserGroup:
-  sfGuardUserGroup_1_1:
-    sfGuardUser: sfGuardUser_1
-    sfGuardGroup: sfGuardGroup_1
-    created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-03-30 19:50:28'
+  Page_20:
+    Parent: Page_4
+    title: 'Wisin & Yandel'
+    description: ''
+    abstract: 'El duo dinámico'
+    picture: b67726d28021a1e9bd076357389d473e77f90b7c.jpg
+    created_at: '2010-04-15 13:45:25'
+    updated_at: '2010-04-15 13:45:25'

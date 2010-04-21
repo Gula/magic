@@ -1,0 +1,29 @@
+generator:
+  class:                      sfDoctrineGenerator
+  param:
+    model_class:              Event
+    theme:                    mooDoo.2
+    non_verbose_templates:    true
+    with_show:                false
+    singular:                 ~
+    plural:                   ~
+    route_prefix:             event
+    with_doctrine_route:      true
+    actions_base_class:       sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+
+      list:
+        display:               [ _thumb, title, date, publication_date, due_date ]
+
+      filter:  ~
+
+      form:
+        fields:
+          Parent:             { name: Parent Event }
+
+      edit:    ~
+      new:
+        title:                Nuevo Evento
