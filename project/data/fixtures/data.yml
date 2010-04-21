@@ -32,30 +32,6 @@ Category:
     description: '<p>Estadio Casino Magic, Main Events.</p>'
     created_at: '2010-04-18 21:05:19'
     updated_at: '2010-04-18 21:05:19'
-Event:
-  Event_1:
-    title: 'Wisin & Yandel'
-    description: "<p>Wisin &amp; Yandel visitan Neuqu&eacute;n por primera vez el 11 de mayo a las 21:30 hs.</p>\r\n<p>Entradas anticipadas en Casino Magic y en las sucursales de Saturno Hogar.</p>"
-    date: '2010-05-11 21:00:00'
-    publication_date: '2010-04-11 00:00:00'
-    due_date: '2010-05-11 00:00:00'
-    sticky: no
-
-  Event_2:
-    title: Midachi
-    description: '<p>El tr&iacute;o mas decadente de los noventa quiere afanar m&aacute;s que Vox Dei, y esta vez es en el Casino Magig de Neuquen !</p>'
-    date: '2010-05-05 21:30:00'
-    publication_date: null
-    due_date: null
-    sticky: no
-
-EventCategory:
-  EventCategory_3_1:
-    Category: Category_3
-    Event: Event_1
-  EventCategory_3_2:
-    Category: Category_3
-    Event: Event_2
 Profile:
   Profile_1:
     User: sfGuardUser_2
