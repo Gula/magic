@@ -40,7 +40,13 @@ Event:
     publication_date: '2010-04-11 00:00:00'
     due_date: '2010-05-11 00:00:00'
     sticky: no
-
+    created_at: '2010-04-19 12:28:38'
+    updated_at: '2010-04-19 13:15:25'
+    mugshot: 9498a48ed3861bb6d4fe15d5884b642e22086f33.jpg
+    mugshot_x1: '0'
+    mugshot_y1: '0'
+    mugshot_x2: '192'
+    mugshot_y2: '192'
   Event_2:
     title: Midachi
     description: '<p>El tr&iacute;o mas decadente de los noventa quiere afanar m&aacute;s que Vox Dei, y esta vez es en el Casino Magig de Neuquen !</p>'
@@ -48,14 +54,37 @@ Event:
     publication_date: null
     due_date: null
     sticky: no
-
+    created_at: '2010-04-19 12:28:38'
+    updated_at: '2010-04-19 13:23:37'
+    mugshot: fd7598ac781fbb325cac446e7265a78475682475.jpg
+    mugshot_x1: '23'
+    mugshot_y1: '0'
+    mugshot_x2: '248'
+    mugshot_y2: '225'
+  Event_3:
+    title: 'Les luthires'
+    description: '<p>Les luthiers al palo.</p>'
+    date: null
+    publication_date: null
+    due_date: null
+    sticky: no
+    created_at: '2010-04-19 12:29:52'
+    updated_at: '2010-04-19 13:26:56'
+    mugshot: f963527676a8e3b9841be8f8428d4cd5174156ec.jpg
+    mugshot_x1: '195'
+    mugshot_y1: '3'
+    mugshot_x2: '395'
+    mugshot_y2: '203'
 EventCategory:
   EventCategory_3_1:
     Category: Category_3
     Event: Event_1
-  EventCategory_3_2:
-    Category: Category_3
+  EventCategory_5_2:
+    Category: Category_5
     Event: Event_2
+  EventCategory_6_3:
+    Category: Category_6
+    Event: Event_3
 Profile:
   Profile_1:
     User: sfGuardUser_2
