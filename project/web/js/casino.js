@@ -16,7 +16,7 @@ window.addEvent('domready', function (ev) {
     var slide_wrapper = slideContainer.getElement('.slide-wrapper'),
     count_slides = slideContainer.getElements('.picture').length;
 
-    if(count_slides > 3) {
+    
       slide_wrapper.setStyles({
         'width': count_slides*720
       });
@@ -52,7 +52,7 @@ window.addEvent('domready', function (ev) {
           moveSlide(ev.target.get('text').toInt() -1);
         }
       })
-    }
+    
   } // end Main Slideshow
 
   
