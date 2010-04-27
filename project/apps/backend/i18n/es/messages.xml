@@ -337,6 +337,21 @@
         <source>Parent category</source>
         <target>Categoría padre</target>
       </trans-unit>
+
+      <trans-unit id="76">
+        <source>Abstract</source>
+        <target>Resúmen</target>
+      </trans-unit>
+
+      <trans-unit id="77">
+        <source>Edit Page</source>
+        <target>Editar Página</target>
+      </trans-unit>
+
+      <trans-unit id="78">
+        <source>New Page</source>
+        <target>Página nueva</target>
+      </trans-unit>
       
 
     </body>

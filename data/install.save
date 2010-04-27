@@ -1,7 +1,3 @@
-magin
-=====
-
-
 1) Clonar repositorio.
 
    git clone git@github.com:Gula/magic.git
@@ -37,17 +33,4 @@ all:
 7) Borrar cache
   ./symfony cc
 
-8) Configurar Virtual Host
-Listen *:83
-<VirtualHost *:83>
-  DocumentRoot "/var/www/casino/project/web"
-  DirectoryIndex index.php
-  <Directory "/var/www/casino/project/web">
-    AllowOverride All
-    Allow from All
-  </Directory>
-</VirtualHost>
-
-9) Permisos de escritura a web/css y web/uplodas
-  chmod 777 web/css -R
-  chmod 777 web/uploads -R
+8) Configurar Virtual host.
