@@ -24,6 +24,19 @@ class EventForm extends BaseEventForm
       'model' => 'Category'
     ));
 
+    $this->widgetSchema['date'] = new sfWidgetFormInputText(
+      array(
+        'type'=> 'date'
+      ),
+      array(
+        'class' => 'input_date'
+      )
+    );
+
+    //'title'            => new sfWidgetFormInputText(),
+    //'date'             => new sfWidgetFormDateTime(),
+
+
     $this->widgetSchema['description'] = new sfWidgetFormTextareaTinyMCE(array(
       'width' => 500,
       'height' => 250,

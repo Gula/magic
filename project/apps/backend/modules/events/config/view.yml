@@ -1,4 +1,4 @@
-all:
+editSuccess:
   javascripts:
     - tiny_mce/tiny_mce.js
     - JCrop/jquery.min.js

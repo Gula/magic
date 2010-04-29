@@ -6,7 +6,7 @@ default:
     content-type: text/html
 
   metas:
-    title:        Casino Magin 2010
+    title:        Casino Magic 2010
     #description:  symfony project
     #keywords:     symfony, project
     #language:     en
