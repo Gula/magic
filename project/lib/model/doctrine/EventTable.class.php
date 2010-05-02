@@ -51,4 +51,13 @@ class EventTable extends Doctrine_Table {
 
     return $q->fetchOne();
   }
+
+  static public function retrieveMainShow() {
+    $q = Doctrine_Query::create()
+      ->from ('Event e')
+      //->where('e.sticky = ?', 0)
+      ->orderBy('sticky Asc, e.date Desc');
+
+    return $q->fetchOne();
+  }
 }

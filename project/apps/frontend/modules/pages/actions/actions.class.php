@@ -27,5 +27,10 @@ class pagesActions extends sfActions
       $this->page = Doctrine::getTable('Page')->find($request->getParameter('id'));
       $this->childPage = false;
     }
+
+    if($request->getParameter('id') == 4) {
+      $this->mainShow = EventTable::retrieveMainShow();
+      $this->setTemplate('show');
+    }
   }
 }

@@ -43,4 +43,14 @@ class Event extends BaseEvent {
       }
     }
   }
+
+  public function getCats() {
+    $q = Doctrine_Query::create()
+      ->from ('Category c')
+      ->leftJoin('c.EventCategory ec')
+      ->where('ec.event_id = ?', $this->get('id'))
+      ->andWhere('c.parent_id = ?', 3);
+
+    return $q->execute();
+  }
 }
