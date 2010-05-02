@@ -23,17 +23,12 @@
     <img src="images/titulo_agenda.png" width="232" height="34" alt="Agenda" />
 
 
-    <?php foreach ($eventsList as $event) : ?>
+    <?php foreach ($showList as $event) : ?>
     <li class="drawer">
       <div class="drawer-handle open"><strong><?php echo $event ?></strong> - <?php echo format_date($event->getDate(), 'M') ?></div>
       <div class="accordion-container">
         <img src="<?php echo $event->getRawValue()->getImageSrc('mugshot', 'medium') ?>" width="200" height="200" />
         <div class="drawer-texto"><?php echo $event->getRawValue()->getDescription() ?></div>
-        <div class="accordion-categories">
-            <?php foreach($event->getCategories() as $cat) : ?>
-              <?php echo $cat ?>
-            <?php endforeach; ?>
-        </div>
       </div>
     </li>
 

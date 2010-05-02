@@ -20,7 +20,7 @@
     <div class="picture">
         <?php echo image_tag('/uploads/events/'.$filename) ?>
       <h3><?php echo $event ?></h3>
-      <div class="text"><?php echo $event->getRawValue()->getDescription() ?></div>
+      <div class="text"><?php echo strip_tags($event->getRawValue()->getDescription()) ?></div>
     </div>
     <?php endforeach; ?>
 
