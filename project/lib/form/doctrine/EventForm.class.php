@@ -24,9 +24,9 @@ class EventForm extends BaseEventForm
       'model' => 'Category'
     ));
 
-    $this->widgetSchema['date'] = new sfWidgetFormInputText(
+    $this->widgetSchema['date'] = new sfWidgetFormDateAndTime(
       array(),
-      array( 'class' => 'input_date' )
+      array( 'class' => 'input_date-time' )
     );
     $this->widgetSchema['date']->setLabel('Fecha del Evento');
 
@@ -38,39 +38,15 @@ class EventForm extends BaseEventForm
 
     $this->widgetSchema['due_date'] = new sfWidgetFormInputText(
       array(),
-      array( 'class' => 'input_date' )
+      array('class' => 'input_date')
     );
     $this->widgetSchema['due_date']->setLabel('Fecha de Expiración');
-
-    //'title'            => new sfWidgetFormInputText(),
-    //'date'             => new sfWidgetFormDateTime(),
-
 
     $this->widgetSchema['description'] = new sfWidgetFormTextareaTinyMCE(array(
       'width' => 500,
       'height' => 250,
       'config' => 'theme_advanced_disable: "cleanup, help, charmap, visualaid, styleselect"'
     ));
-
-    /*
-    // Thumbnail del evento
-    $dir = '/images/events/'.$this->getObject()->get('id');
-    $file = $dir.'/img_'.$this->getObject()->get('id').'_130x130.png';
-
-    $this->widgetSchema['image'] = new sfWidgetFormInputFileEditable(array(
-      'label' => 'Image',
-      'file_src' => $file,
-      'is_image'  => true,
-      'edit_mode' => !$this->isNew(),
-    ));
-
-    $this->validatorSchema['image'] = new sfValidatorFile(array(
-      'required'   => false,
-      'path'       => sfConfig::get('sf_upload_dir').'/events',
-      'mime_types' => 'web_images',
-    ));
-     *
-     */
 
     $this->getObject()->configureJCropWidgets($this);
     $this->getObject()->configureJCropValidators($this);
