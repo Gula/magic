@@ -8,13 +8,11 @@
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
  * @version    SVN: $Id: sfGuardUserAdminForm.class.php 23536 2009-11-02 21:41:21Z Kris.Wallsmith $
  */
-class UserAdminForm extends BasesfGuardUserAdminForm
-{
+class UserAdminForm extends BasesfGuardUserAdminForm {
   /**
    * @see sfForm
    */
-  public function configure()
-  {
+  public function configure() {
     parent::configure();
 
     $profileForm = new ProfileForm($this->object->Profile);

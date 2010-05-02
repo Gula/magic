@@ -352,8 +352,12 @@
         <source>New Page</source>
         <target>Página nueva</target>
       </trans-unit>
-      
 
+      <trans-unit id="79">
+        <source>The two passwords must be the same.</source>
+        <target>Las dos contraseñas deben ser iguales.</target>
+      </trans-unit>
+      
     </body>
   </file>
 </xliff>

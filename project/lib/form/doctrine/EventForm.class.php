@@ -25,13 +25,22 @@ class EventForm extends BaseEventForm
     ));
 
     $this->widgetSchema['date'] = new sfWidgetFormInputText(
-      array(
-        'type'=> 'date'
-      ),
-      array(
-        'class' => 'input_date'
-      )
+      array(),
+      array( 'class' => 'input_date' )
     );
+    $this->widgetSchema['date']->setLabel('Fecha del Evento');
+
+    $this->widgetSchema['publication_date'] = new sfWidgetFormInputText(
+      array(),
+      array( 'class' => 'input_date')
+    );
+    $this->widgetSchema['publication_date']->setLabel('Fecha de Publicación');
+
+    $this->widgetSchema['due_date'] = new sfWidgetFormInputText(
+      array(),
+      array( 'class' => 'input_date' )
+    );
+    $this->widgetSchema['due_date']->setLabel('Fecha de Expiración');
 
     //'title'            => new sfWidgetFormInputText(),
     //'date'             => new sfWidgetFormDateTime(),
