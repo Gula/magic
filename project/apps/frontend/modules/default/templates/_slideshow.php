@@ -12,10 +12,10 @@
     <?php endforeach; ?>
 
     <?php foreach ($eventsList as $event) : ?>
-    <?php
-    $arr_filename = explode ('.', $event->getMugshot());
-    $filename = $arr_filename[0].'_720x405.'.$arr_filename[1];
-    ?>
+      <?php
+      $arr_filename = explode ('.', $event->getMugshot());
+      $filename = $arr_filename[0].'_720x405.'.$arr_filename[1];
+      ?>
 
     <div class="picture">
         <?php echo image_tag('/uploads/events/'.$filename) ?>
@@ -23,6 +23,7 @@
       <div class="text"><?php echo $event->getRawValue()->getDescription() ?></div>
     </div>
     <?php endforeach; ?>
+
   </div>
 </div>
 
