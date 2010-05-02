@@ -9,7 +9,7 @@
     		<li id="login"><a href="/backend.php/">Acceder al administrador</a></li>
     		<li id="reservas"><a href="javascript:;">Reservas Hotel</a>
     			<ul>
-    				<li><iframe src="http://www.idiso.com/csl/reservations/jsp/C_Search_Dates.jsp?&codigoHotel=1652&lang=es&idPartner=CASINOMAGIC&idPrm=MBCASINOMG&idONg=P25&idNom=webpropia" frameborder="0" allowtransparency="true" id="iframeBEIdiso"></iframe></li>
+    				<li><iframe src="http://www.idiso.com/csl/reservations/jsp/C_Search_Dates.jsp?&codigoHotel=1652&lang=es&idPartner=CASINOMAGIC&idPrm=MBCASINOMG&idONg=P25&idNom=webpropia" width="420" height="50" frameborder="0" allowtransparency="true" id="iframeBEIdiso"></iframe></li>
     			</ul>
     		</li>
     	</ul>	
