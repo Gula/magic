@@ -51,7 +51,7 @@ class EventTable extends Doctrine_Table {
   static public function retrieveBetterShow() {
     $q = Doctrine_Query::create()
       ->from ('Event e')
-      ->orderBy('e.date Desc');
+      ->orderBy('e.sticky Asc');
 
     return $q->fetchOne();
   }
@@ -60,6 +60,8 @@ class EventTable extends Doctrine_Table {
     $q = Doctrine_Query::create()
       ->from ('Event e')
       ->leftJoin('e.EventCategory ec')
+      ->andWhere('e.due_date >= ?', date('y-m-d h:i'))
+      ->andWhere('e.publication_date < ?', date('y-m-d h:i'))
       ->orderBy('sticky Asc, e.date Desc');
 
     if(is_null($cat_id)) {
