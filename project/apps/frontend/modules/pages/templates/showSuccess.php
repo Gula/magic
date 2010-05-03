@@ -26,7 +26,7 @@
 
     <div class="main-show">
       <h2><?php echo link_to($mainShow, 'pages/index') ?></h2>
-      <h3><?php echo format_date($mainShow->getDate(), 'd-m-y') ?></h3>
+      <h3><?php echo format_date($mainShow->getDate(), 'dd-MM-y') ?></h3>
 
       <div class="category">
         <?php foreach($mainShow->getCats() as $cat ) : ?>
@@ -46,8 +46,8 @@
           <ul>
                 <?php foreach ($show['events'] as $event) : ?>
             <li>
-              <h2><?php echo $event ?></h2>
-              <h3><?php echo format_date($event->getDate(), 'd-m-y')?></h3>
+              <h3><?php echo $event ?></h3>
+              <h4><?php echo format_date($event->getDate(), 'dd-MM-y hh:mm')?></h4>
               <div class="img-placeholder sticky-<?php echo $event->get('sticky') ?>">
               <?php
                 if(is_file(sfConfig::get('sf_web_dir').'/'.$event->getImageSrc('mugshot', 'small'))) {
