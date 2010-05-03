@@ -139,10 +139,6 @@ window.addEvent('domready', function (ev) {
   // tapas en thumb de eventos
   var showWrapper = $$('.shows-wrapper .img-placeholder')
 
-
-  console.debug ("showWrapper -> ", showWrapper);
-  
-
   var myEffects;
   showWrapper.each(function (event) {
     if(event.getNext().get('text').trim() != '') {
