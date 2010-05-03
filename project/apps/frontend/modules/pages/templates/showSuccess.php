@@ -26,7 +26,10 @@
       <?php foreach ($shows as $show) : ?>
         <?php if(count($show['events']) > 0) : ?>
       <div class="<?php echo strtolower($show['title']) ?>">
-        <span class="count-event"><span><?php echo count($show['events']) ?></span></span>
+        <span class="count-event"><span>
+        <?php $count = count($show['events']); ?>
+        <?php echo $count ?>&nbsp;<?php echo ($count > 1) ? 'eventos' : 'evento' ?>
+        </span></span>
         <h2><?php echo $show['title'] ?></h2>
 
         <div>
@@ -37,14 +40,14 @@
               <h4><?php echo format_date($event->getDate(), 'dd-MM-y hh:mm')?>hs</h4>
               <div class="img-placeholder sticky-<?php echo $event->get('sticky') ?>">
 
-              <?php
-              if(is_file(sfConfig::get('sf_web_dir').'/'.$event->getImageSrc('mugshot', 'small'))) {
-                $img_url = $event->getImageSrc('mugshot', 'small');
-              }
-              else {
-                $img_url = '/images/no-image-event.png';
-              }
-              ?>
+                      <?php
+                      if(is_file(sfConfig::get('sf_web_dir').'/'.$event->getImageSrc('mugshot', 'small'))) {
+                        $img_url = $event->getImageSrc('mugshot', 'small');
+                      }
+                      else {
+                        $img_url = '/images/no-image-event.png';
+                      }
+                      ?>
 
                 <img src="<?php echo $img_url ?>" width="130" height="130" alt="<?php echo $event ?>" />
               </div>
