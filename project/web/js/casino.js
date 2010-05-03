@@ -1,5 +1,5 @@
 window.addEvent('load', function (ev) {
-});
+  });
 
 window.addEvent('domready', function (ev) {
 
@@ -35,41 +35,41 @@ window.addEvent('domready', function (ev) {
     count_slides = slideContainer.getElements('.picture').length;
 
     
-      slide_wrapper.setStyles({
-        'width': count_slides*720
-      });
+    slide_wrapper.setStyles({
+      'width': count_slides*720
+    });
 
-      var slide = new Fx.Scroll(slideContainer, {
-        wait: false,
-        duration: 1000,
-        transition: Fx.Transitions.Quad.easeInOut
-      });
+    var slide = new Fx.Scroll(slideContainer, {
+      wait: false,
+      duration: 1000,
+      transition: Fx.Transitions.Quad.easeInOut
+    });
 
-      // auto
-      var moveSlide = function (ind) {
-        if (ind===undefined) {
-          if(this.ind == undefined) this.ind = 0;
-          this.ind = (this.ind > (count_slides - 1)) ? 0 : this.ind;
-        }
-        else {
-          this.ind = ind;
-        }
-
-        slide.start(720*this.ind, 0);
-        this.ind++;
+    // auto
+    var moveSlide = function (ind) {
+      if (ind===undefined) {
+        if(this.ind == undefined) this.ind = 0;
+        this.ind = (this.ind > (count_slides - 1)) ? 0 : this.ind;
+      }
+      else {
+        this.ind = ind;
       }
 
-      var timer = moveSlide.periodical(10000);
+      slide.start(720*this.ind, 0);
+      this.ind++;
+    }
 
-      // slideshow index
-      var slideIndex = $('slide-index');
-      slideIndex.addEvents({
-        click: function (ev) {
-          timer = $clear(timer);
-          timer = moveSlide.periodical(10000);
-          moveSlide(ev.target.get('text').toInt() -1);
-        }
-      })
+    var timer = moveSlide.periodical(10000);
+
+    // slideshow index
+    var slideIndex = $('slide-index');
+    slideIndex.addEvents({
+      click: function (ev) {
+        timer = $clear(timer);
+        timer = moveSlide.periodical(10000);
+        moveSlide(ev.target.get('text').toInt() -1);
+      }
+    })
     
   } // end Main Slideshow  
   
@@ -134,4 +134,65 @@ window.addEvent('domready', function (ev) {
       })
     }
   }
+
+
+  // tapas en thumb de eventos
+  var showWrapper = $$('.shows-wrapper .img-placeholder')
+
+
+  console.debug ("showWrapper -> ", showWrapper);
+  
+
+  var myEffects;
+  showWrapper.each(function (event) {
+    if(event.getNext().get('text').trim() != '') {
+      event.addEvents({
+        mouseenter: function (ev) {
+
+          myEffects = new Fx.Morph(event, {
+            duration: 400,
+            transition: Fx.Transitions.Sine.easeOut
+          });
+
+          //ev.target.setStyle('position', 'absolute')
+
+          myEffects.start({
+            opacity: 0.1
+          });
+        }
+        ,
+        mouseleave: function (ev) {
+          myEffects.cancel();
+          myEffects.start({
+            opacity: 1
+          });
+        }
+      })
+
+      event.getNext().addEvents({
+        mouseleave: function (ev) {
+          myEffects.cancel();
+          myEffects.start({
+            opacity: 1
+          });
+        }
+      })
+    }
+  })
+
+
+
+/*
+  var myEffects = new Fx.Morph('myElement', {
+    duration: 1000,
+    transition: Fx.Transitions.Sine.easeOut
+    });
+
+  myEffects.start({
+    'height': [10, 100],
+    'width': [900, 300],
+    'opacity': 0,
+    'background-color': '#00f'
+  });
+  */
 })
