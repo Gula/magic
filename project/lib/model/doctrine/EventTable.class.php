@@ -52,11 +52,18 @@ class EventTable extends Doctrine_Table {
     return $q->fetchOne();
   }
 
-  static public function retrieveMainShow() {
+  static public function retrieveMainShow($cat_id = null) {
     $q = Doctrine_Query::create()
       ->from ('Event e')
-      //->where('e.sticky = ?', 0)
+      ->leftJoin('e.EventCategory ec')
       ->orderBy('sticky Asc, e.date Desc');
+
+    if(is_null($cat_id)) {
+      $q->whereIn('ec.category_id', array(4, 5, 6, 7));
+    }
+    else {
+      $q->where('ec.category_id = ?', $cat_id);
+    }
 
     return $q->fetchOne();
   }

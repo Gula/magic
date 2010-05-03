@@ -24,7 +24,21 @@ class pagesActions extends sfActions
       $this->page = $this->childPage->getParent();
 
       if($this->childPage->getParent()->get('id') == 4) {
-        $this->mainShow = EventTable::retrieveMainShow();
+
+        $catId = $this->childPage->get('id');
+        $catId = $catId - 16;
+
+
+
+        /* Asignacion de mierda
+         * 
+         * 27 = main show   -> 4
+         * 28 = Belterra    -> 5
+         * 29 = Rainbow     -> 6
+         * 30 = Jocker      -> 7
+         */
+
+        $this->mainShow = EventTable::retrieveMainShow($catId);
         $this->shows = EventTable::retrieveShows();
         $this->setTemplate('shows');
       }
