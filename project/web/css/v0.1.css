@@ -992,13 +992,13 @@ NOVEDADES
     margin-bottom: 1px;
   margin-left: 197px;
   width: 753px;
-  height: 75px;
-
 }
 
 .contenido .main-show h2 
 {
 margin-bottom: 0px;
+padding-left: 5px;
+padding-top: 15px;
 }
 
 .contenido .main-show h2 a {
@@ -1019,6 +1019,7 @@ margin-bottom: 0px;
   color: #44ddeb;
 }
 
+
 .contenido .main-show h3, .contenido .main-show .category {
   margin: 0 !important;
   padding: 0;
@@ -1035,6 +1036,100 @@ margin-bottom: 0px;
 .contenido .main-show h3 {
 	font: bold 11px 'FuturaLTBoldRegular', Helvetica, Arial, sans-serif;
 }
+.contenido .main-show h3, .contenido .main-show .category
+{
+padding-left: 5px;
+}
+.contenido .main-show .category
+{
+padding-bottom: 15px;
+}
+
+.shows-wrapper {
+  background-color: rgba(68, 221, 235, 0.6);
+  position: relative;
+  margin-bottom: 1px;
+  margin-left: 197px;
+  width: 753px;
+}
+
+.belterra, .rainbow, .event, .jokers  {
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.belterra h2, .rainbow h2, .event h2, .jokers h2 {
+  width: auto;
+  margin: 0 !important;
+  padding: 28px 10px 0 0;
+  text-align: left;
+  color: white;
+  font: normal normal normal 21px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  text-transform:  uppercase;
+
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+
+.shows-wrapper div {
+	clear: both;
+}
+
+.shows-wrapper ul li {
+  float: left;
+  width: 143px;
+  overflow: hidden;
+  position: relative;
+}
+
+.shows-wrapper li h3, .shows-wrapper li h4 {
+	margin-bottom: 0 !important;
+}
+
+.shows-wrapper li h3 a {
+  margin: 0 !important;
+  padding: 0;
+  text-align: left;
+  color: #004046;
+  font: 12px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: 0px;
+  text-decoration: none;
+
+}
+
+.shows-wrapper li h3 a:hover {
+	background-color: white;
+	color: #004046;
+}
+.shows-wrapper li h4, .shows-wrapper li .description {
+  margin: 0 !important;
+  padding: 0;
+  text-align: left;
+  color: #004046;
+  font: 10px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0px;
+  text-decoration: none;
+}
+
+.shows-wrapper li .description {
+	padding: 5px;
+	width: 120px; height: 120px;
+	background-color: #004d54;
+	font-weight: normal;
+	color: #e7fbfd;
+}
+
+.shows-wrapper li .img-placeholder {
+	border: 0;
+	left: 0px; top: 28px;
+	position: absolute;
+	width: 130px; height: 130px;
+}
+
+
 
 /*
 #mapa a:hover,
