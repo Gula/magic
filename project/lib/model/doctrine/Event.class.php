@@ -13,6 +13,8 @@
 class Event extends BaseEvent {
 
   public function save(Doctrine_Connection $conn = null) {
+    if($this->get('sticky') == 'no') $this->set('sticky', 1000);
+
     parent::save($conn);
 
     $config = sfConfig::get('app_sfDoctrineJCroppablePlugin_models');

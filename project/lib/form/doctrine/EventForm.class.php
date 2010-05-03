@@ -40,6 +40,8 @@ class EventForm extends BaseEventForm
       array(),
       array('class' => 'input_date')
     );
+
+
     $this->widgetSchema['due_date']->setLabel('Fecha de Expiración');
 
     $this->widgetSchema['description'] = new sfWidgetFormTextareaTinyMCE(array(
@@ -47,6 +49,9 @@ class EventForm extends BaseEventForm
       'height' => 250,
       'config' => 'theme_advanced_disable: "cleanup, help, charmap, visualaid, styleselect"'
     ));
+
+    $this->widgetSchema['sticky'] = new sfWidgetFormInputText();
+    $this->validatorSchema['sticky'] = new sfValidatorString();
 
     $this->getObject()->configureJCropWidgets($this);
     $this->getObject()->configureJCropValidators($this);

@@ -22,7 +22,8 @@ class EventTable extends Doctrine_Table {
     $q = Doctrine_Query::create()
       ->from('Event e')
       ->leftJoin('e.EventCategory ec')
-      ->whereIn('ec.category_id', $cats_id);
+      ->whereIn('ec.category_id', $cats_id)
+      ->orderBy('e.date Asc');
     return $q->execute();
   }
 
@@ -40,7 +41,10 @@ class EventTable extends Doctrine_Table {
     $q = Doctrine_Query::create()
       ->from('Event e')
       ->leftJoin('e.EventCategory ec')
-      ->whereIn('ec.category_id', $cats_id);
+      ->whereIn('ec.category_id', $cats_id)
+      ->andWhere('e.due_date >= ?', date('y-m-d h:i'))
+      ->andWhere('e.publication_date < ?', date('y-m-d h:i'))
+      ->orderBy('e.sticky Asc, e.date Asc');
     return $q->execute();
   }
 
