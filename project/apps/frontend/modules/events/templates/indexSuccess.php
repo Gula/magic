@@ -1,3 +1,4 @@
+<?php use_helper('Date') ?>
 <div class="span-24 contenido-<?php echo $page->getSlugize() ?>">
   <div class="contenido" id="event">
     <div class="sub-menu">
@@ -19,7 +20,10 @@
 
       <div class="subpagina-contenido event">
         <h3><?php echo $event->getTitle() ?></h3>
-        <?php echo $event->getRawValue()->getDescription() ?>
+        <h4><?php echo format_date($event->getDate(), 'dd-MM-y') ?></h4>
+        <div class="description">
+          <?php echo $event->getRawValue()->getDescription() ?>
+        </div>
       </div>
     </div>
   </div>
@@ -42,7 +46,6 @@
   else {
     $img_url = '/uploads/'.$page->get('id').'/img_'.$page->get('id').'_950x534.jpg';
   }
-
   ?>
 
 
