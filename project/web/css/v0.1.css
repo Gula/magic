@@ -986,7 +986,7 @@ NOVEDADES
 
 
 .contenido .main-show {
-  
+	background-color: rgba(0, 0, 0, 0.6);
   margin-top: 220px;
   position: relative;
     margin-bottom: 1px;
