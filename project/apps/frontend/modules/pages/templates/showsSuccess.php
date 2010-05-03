@@ -12,7 +12,7 @@
     </div>
 
     <div class="main-show">
-      <h2><?php echo link_to($mainShow, 'pages/index') ?></h2>
+      <h2><?php echo link_to($mainShow, 'events/index?id='.$mainShow->get('id')) ?></h2>
       <h3><?php echo format_date($mainShow->getDate(), 'dd-MM-y') ?></h3>
 
       <div class="category">

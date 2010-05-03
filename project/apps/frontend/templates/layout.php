@@ -15,6 +15,9 @@
       $page = Doctrine::getTable('Page')->find($sf_request->getParameter('id'));
       $id = 'pagina-'.$page->getSlugize();
     }
+    elseif ($sf_context->getModuleName() == 'events') {
+      $id = 'pagina-espectaculos';
+    }
     ?>
     <div class="container" <?php if(isset($id)) echo 'id="'.$id.'"' ?>>
       <?php include_component('default', 'header') ?>
