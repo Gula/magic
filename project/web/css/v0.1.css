@@ -34,6 +34,10 @@ li a {
   text-decoration: none;
 }
 
+.clear {
+  clear: both;
+}
+
 #header #logo {
   width: 188px !important;
   height: 165px !important;
@@ -539,7 +543,7 @@ NOVEDADES
 
 .contenido {
   /*height: 990px;*/
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 
 .imagen-fondo {
@@ -993,6 +997,7 @@ NOVEDADES
     margin-bottom: 1px;
   margin-left: 197px;
   width: 753px;
+  display: block;
 }
 
 .contenido .main-show h2 
@@ -1039,8 +1044,11 @@ padding-top: 15px;
 }
 .contenido .main-show h3, .contenido .main-show .category
 {
-padding-left: 5px;
+	padding-left: 5px;
 }
+
+
+
 .contenido .main-show .category
 {
 padding-bottom: 15px;
@@ -1052,14 +1060,21 @@ padding-bottom: 15px;
   margin-bottom: 1px;
   margin-left: 197px;
   width: 753px;
+  padding-bottom: 10px;
 }
 
-.belterra, .rainbow, .event, .jokers  {
+.belterra, .rainbow, .events, .jokers  {
 	padding-top: 10px;
-	padding-left: 5px;
+	padding-left: 10px;
 }
 
-.belterra h2, .rainbow h2, .event h2, .jokers h2 {
+#event .belterra, #event .rainbow, #event .events, #event .jokers
+{
+padding-left: 0px;
+}
+
+
+.belterra h2, .rainbow h2, .events h2, .jokers h2 {
   width: auto;
   margin: 0 !important;
   padding: 28px 10px 0 0;
@@ -1103,7 +1118,7 @@ display: block;
   font: 9px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
   float: left;
   margin: 0;
-  margin-top: 28px;
+  
 */
   
   -webkit-border-bottom-left-radius: 2px 2px;
@@ -1111,21 +1126,45 @@ display: block;
 -webkit-border-top-left-radius: 2px 2px;
 -webkit-border-top-right-radius: 2px 2px;
 background-color: rgb(0, 55, 106);
-
-display: none;
-font-size: 9px;
+margin-top: 24px;
+display: block;
+ font: 9px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
 font-weight: bold;
 padding-bottom: 1px;
 position: absolute;
+/*
 right: -2px;
 top: -2px;
-z-index: 3;  
+*/
+z-index: 0;  
+}
+
+.shows-wrapper .count-event span {
+-webkit-border-bottom-left-radius: 2px 2px;
+-webkit-border-bottom-right-radius: 2px 2px;
+-webkit-border-top-left-radius: 2px 2px;
+-webkit-border-top-right-radius: 2px 2px;
+background-color: #004d54;
+border: 0px;
+border-top: 0px;
+display: block;
+padding: 3px;
 }
 
 .shows-wrapper .belterra .count-event {
+ margin-left: 90px;
+ }
 
- margin-left: 70px;
+.shows-wrapper .rainbow .count-event {
+ margin-left: 100px;
+ }
  
+ .shows-wrapper .events .count-event {
+ margin-left: 140px;
+ }
+
+ .shows-wrapper .jokers .count-event {
+ margin-left: 75px;
  }
 
 .shows-wrapper li h3 a {

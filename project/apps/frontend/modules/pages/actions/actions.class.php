@@ -26,7 +26,7 @@ class pagesActions extends sfActions
       if($this->childPage->getParent()->get('id') == 4) {
 
         $catId = $this->childPage->get('id');
-        $catId = $catId - 16;
+        $catId = $catId - 23;
 
 
 
