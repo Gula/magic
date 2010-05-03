@@ -46,8 +46,8 @@
           <ul>
                 <?php foreach ($show['events'] as $event) : ?>
             <li>
-              <h3><?php echo $event ?></h3>
-              <h4><?php echo format_date($event->getDate(), 'dd-MM-y hh:mm')?></h4>
+              <h3><?php echo link_to($event, 'events/index?id='.$event->get('id')) ?></h3>
+              <h4><?php echo format_date($event->getDate(), 'dd-MM-y hh:mm')?>hs</h4>
               <div class="img-placeholder sticky-<?php echo $event->get('sticky') ?>">
               <?php
                 if(is_file(sfConfig::get('sf_web_dir').'/'.$event->getImageSrc('mugshot', 'small'))) {
