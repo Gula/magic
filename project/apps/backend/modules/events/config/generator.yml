@@ -16,7 +16,7 @@ generator:
       fields:  ~
 
       list:
-        display:               [ _thumb, title, date, publication_date, due_date ]
+        display:               [ _thumb, title, _cats, date, due_date ]
 
       filter:  ~
 

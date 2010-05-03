@@ -12,7 +12,12 @@ class CategoryForm extends BaseCategoryForm
 {
   public function configure()
   {
-  unset($this['created_at'], $this['updated_at'], $this['pages_list']);
+  unset(
+    $this['created_at'],
+    $this['updated_at'],
+    $this['pages_list'],
+    $this['events_list']
+  );
 
     $this->widgetSchema->setLabels(array(
       'parent_id'=> 'Parent category'

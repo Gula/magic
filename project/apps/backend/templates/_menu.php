@@ -19,14 +19,6 @@
             <li><?php echo link_to(__('Add event'), 'events/new') ?></li>
           </ul>
         </li>
-
-        <li>
-          <a href="#"><?php echo __('Categories'); ?></a>
-          <ul>
-            <li><?php echo link_to(__('List'), 'categories/index') ?></li>
-            <li><?php echo link_to(__('Add category'), 'categories/new') ?></li>
-          </ul>
-        </li>
       </ul>
     </li>
     <li>
@@ -41,6 +33,15 @@
             <li><?php echo link_to(__('Permissions'), 'permissions/index') ?></li>
           </ul>
         </li>
+
+        <li>
+          <a href="#"><?php echo __('Categories'); ?></a>
+          <ul>
+            <li><?php echo link_to(__('List'), 'categories/index') ?></li>
+            <li><?php echo link_to(__('Add category'), 'categories/new') ?></li>
+          </ul>
+        </li>
+        
       </ul>
     </li>
   </ul>
