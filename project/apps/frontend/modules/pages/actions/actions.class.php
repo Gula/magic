@@ -27,6 +27,7 @@ class pagesActions extends sfActions
 
         $catId = $this->childPage->get('id');
         $catId = $catId - 23;
+        //$catId = $catId - 16;
 
         /* Asignacion de mierda
          * 

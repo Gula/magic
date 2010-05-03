@@ -12,6 +12,7 @@
     </div>
 
     <div class="main-show">
+      <span class="next-show">Próximo Evento</span>
       <h2><?php echo link_to($mainShow, 'events/index?id='.$mainShow->get('id')) ?></h2>
       <h3><?php echo format_date($mainShow->getDate(), 'dd-MM-y') ?></h3>
 
@@ -67,10 +68,9 @@
 
 
   <div class="alpha"></div>
-
- <?php
-  if($event->getMugshot() != '') {
-    $arr_filename = explode ('.', $event->getMugshot());
+  <?php
+  if($mainShow->getMugshot() != '') {
+    $arr_filename = explode ('.', $mainShow->getMugshot());
     $filename = $arr_filename[0].'_950x534.'.$arr_filename[1];
   }
   else {
