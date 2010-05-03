@@ -44,13 +44,10 @@
       <a href="#" class="arrow arrow-right"></a>
       <?php endif; ?>
 
-
-      <?php //if($childPage) : ?>
       <div class="subpagina-contenido">
         <h3><?php echo $realPage ?></h3>
         <?php echo $realPage->getRawValue()->getDescription() ?>
       </div>
-      <?php //endif; ?>
     </div>
   </div>
 

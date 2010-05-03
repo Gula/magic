@@ -3,7 +3,7 @@ window.addEvent('domready', function (ev) {
 
   // Toggle para mostrar las reservas
   
-  $('iframeBEIdiso').setStyle('height','auto');
+  //$('iframeBEIdiso').setStyle('height','auto');
   var mySlide = new Fx.Slide('iframeBEIdiso').hide();  //starts the panel in closed state  
  
     $('reservas').addEvent('click', function(e){
@@ -76,7 +76,7 @@ window.addEvent('domready', function (ev) {
   if(slidePagesChildren) {
     
     slide_wrapper = slidePagesChildren.getElement('.slide-wrapper-paginas'),
-    count_slides = slidePagesChildren.getElements('ul li.subpagina').length;
+    count_slides = slidePagesChildren.getElements('ul li.subpagina').length + 1;
 
     if(count_slides > 3) {
 
