@@ -35615,3 +35615,185 @@ Stack trace:
 #3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
 #4 {main}
   thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:25:38] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[03-May-2010 02:25:38] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:26:16] Empty module and/or action after parsing the URL "/css/menu.css" (/).
+[03-May-2010 02:26:16] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:26:16] Action "uploads/events" does not exist.
+[03-May-2010 02:26:16] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:26:16] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[03-May-2010 02:26:16] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:32:17] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[03-May-2010 02:32:17] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:32:23] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[03-May-2010 02:32:23] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:32:28] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[03-May-2010 02:32:28] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:33:11] PHP Parse error:  syntax error, unexpected '<' in /home/magic/magic/project/apps/frontend/modules/pages/templates/showsSuccess.php on line 80
+[03-May-2010 02:33:12] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[03-May-2010 02:33:12] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:33:28] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[03-May-2010 02:33:28] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:34:30] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';' in /home/magic/magic/project/apps/frontend/modules/pages/templates/showsSuccess.php on line 77
+[03-May-2010 02:34:31] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[03-May-2010 02:34:31] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:34:53] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[03-May-2010 02:34:53] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:35:22] Empty module and/or action after parsing the URL "/css/menu.css" (/).
+[03-May-2010 02:35:22] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:35:23] Action "uploads/events" does not exist.
+[03-May-2010 02:35:23] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:35:23] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[03-May-2010 02:35:23] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:35:27] Empty module and/or action after parsing the URL "/css/menu.css" (/).
+[03-May-2010 02:35:27] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:35:28] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[03-May-2010 02:35:28] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:36:50] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[03-May-2010 02:36:50] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:37:11] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[03-May-2010 02:37:11] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:37:19] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[03-May-2010 02:37:19] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[03-May-2010 02:37:35] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[03-May-2010 02:37:35] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638

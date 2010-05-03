@@ -68,7 +68,7 @@
 
   <div class="alpha"></div>
 
-  <?php
+ <?php
   if($event->getMugshot() != '') {
     $arr_filename = explode ('.', $event->getMugshot());
     $filename = $arr_filename[0].'_950x534.'.$arr_filename[1];
