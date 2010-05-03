@@ -19,37 +19,41 @@ class Event extends BaseEvent {
     $dir = sfConfig::get('sf_upload_dir').DIRECTORY_SEPARATOR.$config['Events']['directory'];
     $image = $this->getImageSrc('mugshot', 'original');
 
-    $arr_filename = explode ('.', $this->getMugshot());
-    $filename = $arr_filename[0].'_original.'.$arr_filename[1];
 
-    $file = $dir.DIRECTORY_SEPARATOR.$filename;
+    if($this->getMugshot() != '') {
+      $arr_filename = explode ('.', $this->getMugshot());
 
-    if(is_file($file)) {
+      $filename = $arr_filename[0].'_original.'.$arr_filename[1];
 
-      $dims = array (
-              array('w' => 950, 'h' => 534),
-              array('w' => 720, 'h' => 405),
-              array('w' => 250, 'h' => 141),
-      );
+      $file = $dir.DIRECTORY_SEPARATOR.$filename;
 
-      $size = getimagesize($file);
-      $img = new sfImage($file, $size['mime']);
+      if(is_file($file)) {
 
-      foreach ($dims as $dim) {
+        $dims = array (
+                array('w' => 950, 'h' => 534),
+                array('w' => 720, 'h' => 405),
+                array('w' => 250, 'h' => 141),
+        );
 
-        $img->resize($dim['w'], $dim['h']);
-        $img->setQuality(90);
-        $img->saveAs($dir.'/'.$arr_filename[0].'_'.$dim['w'].'x'.$dim['h'].'.jpg');
+        $size = getimagesize($file);
+        $img = new sfImage($file, $size['mime']);
+
+        foreach ($dims as $dim) {
+
+          $img->resize($dim['w'], $dim['h']);
+          $img->setQuality(90);
+          $img->saveAs($dir.'/'.$arr_filename[0].'_'.$dim['w'].'x'.$dim['h'].'.jpg');
+        }
       }
     }
   }
 
   public function getCats() {
     $q = Doctrine_Query::create()
-      ->from ('Category c')
-      ->leftJoin('c.EventCategory ec')
-      ->where('ec.event_id = ?', $this->get('id'))
-      ->andWhere('c.parent_id = ?', 3);
+            ->from ('Category c')
+            ->leftJoin('c.EventCategory ec')
+            ->where('ec.event_id = ?', $this->get('id'))
+            ->andWhere('c.parent_id = ?', 3);
 
     return $q->execute();
   }

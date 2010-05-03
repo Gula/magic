@@ -60,4 +60,28 @@ class EventTable extends Doctrine_Table {
 
     return $q->fetchOne();
   }
+
+  static public function retrieveShows() {
+    $q = Doctrine_Query::create()
+      ->select('c.id, c.title')
+      ->from ('Category c')
+      ->leftJoin('c.EventCategory ev')
+      ->where('c.parent_id = ?', 3)
+      ->groupBy('ev.category_id');
+      //->orderBy('sticky Asc, e.date Desc');
+
+    $shows= $q->fetchArray();
+
+    for ($i = 0 ; $i < count($shows); $i++) {
+      
+      $q = Doctrine_Query::create()
+        ->from ('Event e')
+        ->leftJoin('e.EventCategory ev')
+        ->where('ev.category_id = ?', $shows[$i]['id']);
+
+      $shows[$i]['events'] = $q->execute();
+    }
+
+    return $shows;
+  }
 }

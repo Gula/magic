@@ -30,6 +30,7 @@ class pagesActions extends sfActions
 
     if($request->getParameter('id') == 4) {
       $this->mainShow = EventTable::retrieveMainShow();
+      $this->shows = EventTable::retrieveShows();
       $this->setTemplate('show');
     }
   }

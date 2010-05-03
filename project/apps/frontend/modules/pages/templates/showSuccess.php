@@ -35,7 +35,42 @@
       </div>
     </div>
 
+    <div class="shows-wrapper">
+      <?php foreach ($shows as $show) : ?>
+        <?php if(count($show['events']) > 0) : ?>
+      <div class="<?php echo strtolower($show['title']) ?>">
+        <span class="count-event"><?php echo count($show['events']) ?></span>
+        <h2><?php echo $show['title'] ?></h2>
 
+        <div>
+          <ul>
+                <?php foreach ($show['events'] as $event) : ?>
+            <li>
+              <h2><?php echo $event ?></h2>
+              <h3><?php echo format_date($event->getDate(), 'd-m-y')?></h3>
+              <div class="img-placeholder sticky-<?php echo $event->get('sticky') ?>">
+              <?php
+                if(is_file(sfConfig::get('sf_web_dir').'/'.$event->getImageSrc('mugshot', 'small'))) {
+                  $img_url = $event->getImageSrc('mugshot', 'small');
+                }
+                else {
+                  $img_url = '/images/no-image-event.png';
+                }
+                ?>
+
+                <img src="<?php echo $img_url ?>" width="130" height="130" alt="<?php echo $event ?>" />
+              </div>
+              <div class="description">
+                <?php echo strip_tags($event->getRawValue()->getDescription()) ?>
+              </div>
+            </li>
+                <?php endforeach; ?>
+          </ul>
+        </div>
+      </div>
+        <?php endif; ?>
+      <?php endforeach; ?>
+    </div>
 
     <?php /* ?>
     <div class="noticia-bloque" id="noticia-bloque">
@@ -67,7 +102,7 @@
       </div>
       <?php //endif; ?>
     </div>
-     */ ?>
+    */ ?>
   </div>
 
 

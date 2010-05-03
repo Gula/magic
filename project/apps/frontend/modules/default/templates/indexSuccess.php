@@ -8,7 +8,7 @@
   <div id="boxNovedades">
     <ul class="novedades">
       <li class="shows">
-        <img src="<?php echo $betterShow->getRawValue()->getImageSrc('mugshot', 'small') ?>" width="130" height="130" alt="Show" class="novedades-imagen" /><a href="">Shows destacados</a>
+        <img src="<?php echo $betterShow->getRawValue()->getImageSrc('mugshot', 'small') ?>" width="130" height="130" alt="Show" class="novedades-imagen" /><?php echo link_to('Shows destacados', 'pages/index?id=4') ?></a>
       </li>
       <li class="promos"><span class="shows"><img src="images/box_promos_convertiteas.jpg" width="130" height="130" class="novedades-imagen" /></span><a href="">Promos destacadas</a></li>
       <li class="torneos"><span class="shows"><img src="images/box_torneos_poker0310.jpg" width="130" height="130" class="novedades-imagen" /></span><a href="">Torneos destacados</a></li>
