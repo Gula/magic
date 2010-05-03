@@ -40,14 +40,14 @@
               <h4><?php echo format_date($event->getDate(), 'dd-MM-y hh:mm')?>hs</h4>
               <div class="img-placeholder sticky-<?php echo $event->get('sticky') ?>">
 
-                      <?php
-                      if(is_file(sfConfig::get('sf_web_dir').'/'.$event->getImageSrc('mugshot', 'small'))) {
-                        $img_url = $event->getImageSrc('mugshot', 'small');
-                      }
-                      else {
-                        $img_url = '/images/no-image-event.png';
-                      }
-                      ?>
+              <?php
+              if(is_file(sfConfig::get('sf_web_dir').'/'.$event->getImageSrc('mugshot', 'small'))) {
+                $img_url = $event->getImageSrc('mugshot', 'small');
+              }
+              else {
+                $img_url = '/images/no-image-event.jpg';
+              }
+              ?>
 
                 <img src="<?php echo $img_url ?>" width="130" height="130" alt="<?php echo $event ?>" />
               </div>
