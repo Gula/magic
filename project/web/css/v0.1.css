@@ -244,18 +244,22 @@ ul.drawers .drawer div.accordion-categories {
 }
 
 ul.drawers .drawer div.accordion-container img {
-  margin: 15px 0;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 ul.drawers .drawer div.accordion-container .drawer-texto {
+  font: normal normal normal 11px/14px "FuturaLTMediumRegular", Helvetica, Arial, sans-serif;
+  margin: 6px 0;
   font-size: 10px;
   text-align: left;
   line-height: 12px;
+  margin-bottom: 5px !important;
 }
 
 ul.drawers .drawer div.accordion-container .drawer-texto p {
-  font: normal normal normal 11px/14px "FuturaLTMediumRegular", Helvetica, Arial, sans-serif;
-  margin: 6px 0;
+  
 }
 /* end accordion */
 
@@ -844,7 +848,11 @@ NOVEDADES
 
 /* COLOR DE FONDO CUSTOMIZADO PARA CADA PAGINA */
 
-#pagina-hotel .contenido .subpagina-contenido {
+#pagina-hotel .contenido .subpagina-contenido,
+#pagina-restaurante .contenido .subpagina-contenido,
+#pagina-habitaciones .contenido .subpagina-contenido 
+
+{
   background-color: #3c2c13;
 }
 #pagina-mesasdejuego .contenido .subpagina-contenido,
@@ -972,6 +980,60 @@ NOVEDADES
 
 #reservas ul {
 	margin: 0;
+}
+
+/* SHOWS */
+
+
+.contenido .main-show {
+  
+  margin-top: 220px;
+  position: relative;
+    margin-bottom: 1px;
+  margin-left: 197px;
+  width: 753px;
+  height: 75px;
+
+}
+
+.contenido .main-show h2 
+{
+margin-bottom: 0px;
+}
+
+.contenido .main-show h2 a {
+  margin: 0 !important;
+  padding: 28px 10px 0 0;
+  text-align: left;
+  color: white;
+  font: normal normal normal 21px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  text-transform:  uppercase;
+
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+
+.contenido .main-show h2 a:hover {
+  text-decoration: underline;
+  color: #44ddeb;
+}
+
+.contenido .main-show h3, .contenido .main-show .category {
+  margin: 0 !important;
+  padding: 0;
+  text-align: left;
+  color: white;
+  font: 11px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  text-transform:  uppercase;
+
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+
+.contenido .main-show h3 {
+	font: bold 11px 'FuturaLTBoldRegular', Helvetica, Arial, sans-serif;
 }
 
 /*
