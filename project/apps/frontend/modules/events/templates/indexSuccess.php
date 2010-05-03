@@ -28,8 +28,13 @@
   <div class="alpha"></div>
 
   <?php
-  $arr_filename = explode ('.', $event->getMugshot());
-  $filename = $arr_filename[0].'_950x534.'.$arr_filename[1];
+  if($event->getMugshot() != '') {
+    $arr_filename = explode ('.', $event->getMugshot());
+    $filename = $arr_filename[0].'_950x534.'.$arr_filename[1];
+  }
+  else {
+    $filename = 'no-image';
+  }
 
   if(is_file(sfConfig::get('sf_upload_dir').'/events/'.$filename)) {
     $img_url = '/uploads/events/'.$filename;
@@ -37,6 +42,7 @@
   else {
     $img_url = '/uploads/'.$page->get('id').'/img_'.$page->get('id').'_950x534.jpg';
   }
+
   ?>
 
 
