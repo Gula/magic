@@ -21,7 +21,7 @@
           <?php echo link_to($option, 'pages/index?id='.$option->get('id'), array('title' => $option)) ?>
         </li>
         <?php endforeach; ?>
-        <li id="search"><label for="search"><input border="0" id="searchInput" /></label></li>
+        <li id="search"><!-- <label for="search"><input border="0" id="searchInput" /></label> --></li>
       </ul>
     </div>
   </div>
