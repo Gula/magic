@@ -55,8 +55,9 @@
                       <?php echo strip_tags($event->getRawValue()->getDescription()) ?>
               </div>
             </li>
-                <?php endforeach; ?>
+            <?php endforeach; ?>
           </ul>
+          <div class="clear"></div>
         </div>
       </div>
         <?php endif; ?>
