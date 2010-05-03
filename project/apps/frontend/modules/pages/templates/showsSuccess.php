@@ -27,9 +27,9 @@
         <?php if(count($show['events']) > 0) : ?>
       <div class="<?php echo strtolower($show['title']) ?>">
         <span class="count-event"><span>
-        <?php $count = count($show['events']); ?>
-        <?php echo $count ?>&nbsp;<?php echo ($count > 1) ? 'eventos' : 'evento' ?>
-        </span></span>
+                <?php $count = count($show['events']); ?>
+                <?php echo $count ?>&nbsp;<?php echo ($count > 1) ? 'eventos' : 'evento' ?>
+          </span></span>
         <h2><?php echo $show['title'] ?></h2>
 
         <div>
@@ -55,7 +55,7 @@
                       <?php echo strip_tags($event->getRawValue()->getDescription()) ?>
               </div>
             </li>
-            <?php endforeach; ?>
+                <?php endforeach; ?>
           </ul>
           <div class="clear"></div>
         </div>
@@ -67,9 +67,23 @@
 
 
   <div class="alpha"></div>
+
   <?php
-  $arr_filename = explode ('.', $mainShow->getMugshot());
-  $filename = $arr_filename[0].'_950x534.'.$arr_filename[1];
-  echo image_tag('/uploads/events/'.$filename, array('class' => 'imagen-fondo'));
+  if($event->getMugshot() != '') {
+    $arr_filename = explode ('.', $event->getMugshot());
+    $filename = $arr_filename[0].'_950x534.'.$arr_filename[1];
+  }
+  else {
+    $filename = 'no-image';
+  }
+
+  if(is_file(sfConfig::get('sf_upload_dir').'/events/'.$filename)) {
+    $img_url = '/uploads/events/'.$filename;
+  }
+  else {
+    $img_url = '/uploads/'.$page->get('id').'/img_'.$page->get('id').'_950x534.jpg';
+  }
   ?>
+
+  <?php echo image_tag($img_url, array('class' => 'imagen-fondo')) ?>
 </div>

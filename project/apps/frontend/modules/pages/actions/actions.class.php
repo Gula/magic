@@ -28,8 +28,6 @@ class pagesActions extends sfActions
         $catId = $this->childPage->get('id');
         $catId = $catId - 23;
 
-
-
         /* Asignacion de mierda
          * 
          * 27 = main show   -> 4
@@ -39,7 +37,7 @@ class pagesActions extends sfActions
          */
 
         $this->mainShow = EventTable::retrieveMainShow($catId);
-        $this->shows = EventTable::retrieveShows();
+        $this->shows = EventTable::retrieveShows($catId);
         $this->setTemplate('shows');
       }
     }
