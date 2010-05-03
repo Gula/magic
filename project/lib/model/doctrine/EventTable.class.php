@@ -68,14 +68,21 @@ class EventTable extends Doctrine_Table {
     return $q->fetchOne();
   }
 
-  static public function retrieveShows() {
+  static public function retrieveShows($cat_id = null) {
     $q = Doctrine_Query::create()
       ->select('c.id, c.title')
       ->from ('Category c')
       ->leftJoin('c.EventCategory ev')
-      ->where('c.parent_id = ?', 3)
       ->groupBy('ev.category_id');
       //->orderBy('sticky Asc, e.date Desc');
+
+    if(is_null($cat_id)) {
+      $q->where('c.parent_id = ?', 3);
+    }
+    else {
+      $q->where('c.id = ?', $cat_id);
+    }
+
 
     $shows= $q->fetchArray();
 
