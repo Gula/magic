@@ -13,6 +13,7 @@ class ProfileForm extends BaseProfileForm
   public function configure()
   {
     $this->widgetSchema['birth_date'] = new sfWidgetFormInputText(
+      array(),
       array( 'class' => 'input_date')
     );
     $this->widgetSchema['birth_date']->setLabel('Fecha de nacimiento');
