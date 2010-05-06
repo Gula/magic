@@ -40,14 +40,14 @@ li a {
 
 #header #logo {
   width: 188px !important;
-  height: 165px !important;
+  height: 166px !important;
   margin:0px;
   padding: 0px !important;
   position: relative;
 }
 #header #logo h1 a {
   width: 188px !important;
-  height: 165px !important;
+  height: 166px !important;
   display:block;
   text-indent:-9000px;
   background-image: url(../images/logo.png);
@@ -56,7 +56,7 @@ li a {
 }
 #header #nav {
   display: block;
-  height: 165px;
+  height: 166px;
   width: 762px;
   background-color: #000;
   background-image: url(../images/header_bkg.jpg);
@@ -64,7 +64,7 @@ li a {
   background-position: 0px 0px;
 }
 #nav #menu {
-  margin-top: 130px;
+  margin-top: 131px;
 }
 
 #header #logo h1 a:hover {
@@ -178,8 +178,9 @@ li a {
 #search {
   display:  block !important;
   padding: 0px !important; margin: 0px;
-  width: 152px !important; height: 35px;
-  background: transparent url(../images/header_buscador.png) no-repeat 0px 0px !important;
+  /* width: 152px !important; height: 35px; */
+  width: 221px !important; height: 35px;
+  background: transparent url(../images/header_buscador.png) repeat 0px 0px !important;
 }
 #search label #searchInput {
   outline: none;
@@ -325,7 +326,7 @@ ul.drawers .drawer div.accordion-container .drawer-texto p {
 .slide-index {
   font: 12px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
   position: relative;
-  margin: -195px 0 167px 0;
+  margin: -197px 0 167px 0;
   z-index: 30;
 }
 
@@ -506,6 +507,13 @@ NOVEDADES
   background-position: 0px 0px;
 }
 
+#pagina-gastronomia #header #nav
+{
+  background-image: url(../images/paginas/gastronomia_header.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
 #pagina-casino #header #nav,
 #pagina-torneosdepoker #header #nav,
 #pagina-clubmagicvip #header #nav,
@@ -515,7 +523,12 @@ NOVEDADES
   background-position: 0px 0px;
 }
 
-#pagina-espectaculos #header #nav {
+#pagina-espectaculos #header #nav,
+#pagina-eventosdestacadados #header #nav,
+#pagina-belterra #header #nav, 
+#pagina-rainbow #header #nav,
+#pagina-jokers #header #nav
+{
   background-image: url(../images/paginas/espectaculos_header.jpg);
   background-repeat: no-repeat;
   background-position: 0px 0px;
@@ -534,7 +547,7 @@ NOVEDADES
   background-position: 0px 0px;
 }
 
-
+.span-24, div.span-24,
 .contenido-habitaciones,
 .contenido-habitacionstandard,
 .contenido-hotel,
@@ -641,7 +654,7 @@ NOVEDADES
 
 .contenido .noticia-bloque {
   
-  margin-top: 310px;
+  margin-top: 270px;
   position: relative;
 }
 
@@ -745,7 +758,7 @@ NOVEDADES
 }
 
 .contenido .slideshow-paginas .subpagina p.titulo-subpagina a:hover {
-  color: #F05;
+  color: #e1e1e1;
 }
 
 /* Modifico el aspecto del SPAN, para mostrar resumen */
@@ -772,11 +785,17 @@ NOVEDADES
 
 /* ESTILO ESPECIAL PARA CADA SECCION */
 
-.contenido-hotel .contenido .sub-menu, .contenido-hotel .contenido .titulo, .contenido-hotel .contenido .resumen-subpagina,
-.contenido-habitaciones .contenido .sub-menu, .contenido-habitaciones .contenido .titulo, .contenido-habitaciones .contenido .resumen-subpagina,
-.contenido-habitacionstandard .contenido .sub-menu, .contenido-habitacionstandard .contenido .titulo, .contenido-habitacionstandard  .contenido .resumen-subpagina
+.contenido-hotel .contenido .sub-menu,
+.contenido-hotel .contenido .titulo,
+.contenido-hotel .contenido .resumen-subpagina,
+.contenido-habitaciones .contenido .sub-menu,
+.contenido-habitaciones .contenido .titulo,
+.contenido-habitaciones .contenido .resumen-subpagina,
+.contenido-habitacionstandard .contenido .sub-menu,
+.contenido-habitacionstandard .contenido .titulo,
+.contenido-habitacionstandard .contenido .resumen-subpagina
 {
-  background-color: rgba(235,190,68,.8);
+  background-color: rgba(235,190,68,0.5);
 }
 
 
@@ -789,7 +808,7 @@ NOVEDADES
 }
 
 .contenido-casino .contenido .sub-menu, .contenido-casino .contenido .titulo, .contenido-casino .contenido .resumen-subpagina {
-  background-color: rgba(145, 0, 0, .5);
+  background-color: rgba(145, 0, 0, .8);
 }
 
 .contenido-casino .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
@@ -798,7 +817,7 @@ NOVEDADES
 }
 
 .contenido-banquetesconvenciones .contenido .sub-menu, .contenido-banquetesconvenciones .contenido .titulo, .contenido-banquetesconvenciones .contenido .resumen-subpagina {
-  background-color: rgba(146, 56, 85, .5);
+  background-color: rgba(146, 56, 85, .8);
 }
 
 .contenido-banquetesconvenciones .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
@@ -807,12 +826,23 @@ NOVEDADES
 }
 
 .contenido-espectaculos .contenido .sub-menu, .contenido-espectaculos .contenido .titulo, .contenido-espectaculos .contenido .resumen-subpagina {
-  background-color: rgba(68, 221, 235, .5);
+  background-color: rgba(68, 221, 235, .8);
 }
 
 .contenido-espectaculos .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
   background-color: #44ddeb;
   border-top: 1px solid #69f3ff;
+}
+
+.contenido-gastronomia .contenido .sub-menu,
+.contenido-gastronomia .contenido .titulo,
+.contenido-gastronomia .contenido .resumen-subpagina {
+  background-color: rgba(219, 186, 131, .8);
+}
+
+.contenido-gastronomia .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
+  background-color: #dbba83;
+  border-top: 1px solid #f2d3a0;
 }
 
 
@@ -855,8 +885,9 @@ NOVEDADES
   color: #fff;
   /* float: left; */
 
+  letter-spacing: 0px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
-  font: 11px/14px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 12px/14px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
 }
 
 
@@ -864,10 +895,12 @@ NOVEDADES
 
 #pagina-hotel .contenido .subpagina-contenido,
 #pagina-restaurante .contenido .subpagina-contenido,
-#pagina-habitaciones .contenido .subpagina-contenido 
-
+#pagina-habitaciones .contenido .subpagina-contenido,
+#pagina-spafitness .contenido .subpagina-contenido,
+#pagina-piscina .contenido .subpagina-contenido,
+#pagina-servicios .contenido .subpagina-contenido
 {
-  background-color: #3c2c13;
+  background-color: #bb9224;
 }
 #pagina-mesasdejuego .contenido .subpagina-contenido,
 #pagina-torneosdepoker .contenido .subpagina-contenido,
@@ -877,6 +910,14 @@ NOVEDADES
 
 #pagina-espectaculos .contenido .subpagina-contenido {
   background-color: #016781;
+}
+
+#pagina-gastronomia .contenido .subpagina-contenido,
+#pagina-seasons .contenido .subpagina-contenido,
+#pagina-belterra .contenido .subpagina-contenido,
+#pagina-jokers .contenido .subpagina-contenido
+{
+  background-color: #d0a866;
 }
 
 #pagina-banquetesconvenciones .subpagina-contenido,
@@ -920,6 +961,21 @@ NOVEDADES
 #global .above-menu a {
   display:		block;
   position:		relative;
+}
+
+#global .telefono {
+  position: relative;
+  float: right;
+  margin: 0 !important;
+  padding: 0;
+  text-align: left;
+  color: white;
+  font: 9px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  letter-spacing: 0px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  top: 5px;
+  right: 50px;
 }
 
 

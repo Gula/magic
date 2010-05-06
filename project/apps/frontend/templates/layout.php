@@ -25,7 +25,7 @@
       <?php echo $sf_content ?>
       
       <hr />
-      <div>Pie del sitio</div>
+      <div>¨ 2010 Hotel Casino Magic. Todos los derechos reservados.</div>
     </div>
     
   </body>
