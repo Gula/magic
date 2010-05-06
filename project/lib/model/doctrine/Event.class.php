@@ -17,6 +17,7 @@ class Event extends BaseEvent {
 
     parent::save($conn);
 
+    /*
     $config = sfConfig::get('app_sfDoctrineJCroppablePlugin_models');
     $dir = sfConfig::get('sf_upload_dir').DIRECTORY_SEPARATOR.$config['Events']['directory'];
     $image = $this->getImageSrc('mugshot', 'original');
@@ -48,6 +49,8 @@ class Event extends BaseEvent {
         }
       }
     }
+     * 
+     */
   }
 
   public function getCats() {

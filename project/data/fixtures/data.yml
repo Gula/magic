@@ -1,3 +1,148 @@
+Event:
+  Event_1:
+    title: 'Wisin & Yandel'
+    description: "<p>\r\n<p>Winsin &amp; Yandel visitan Neuqu&eacute;n por primera vez el dia 11 de Mayo a las 21.30 hs.</p>\r\n<p>Entradas anticipadas en Casino Magic y en las sucursales de Saturno Hogar.</p>\r\n</p>"
+    date: '2010-05-11 22:00:00'
+    publication_date: '2010-05-01 00:00:00'
+    due_date: '2010-05-16 00:00:00'
+    sticky: no
+    created_at: '2010-04-21 10:37:02'
+    updated_at: '2010-05-03 04:16:00'
+  Event_4:
+    title: 'Cantobar con Epílogo'
+    description: ''
+    date: '2010-05-06 23:30:00'
+    publication_date: '2010-05-01 00:00:00'
+    due_date: '2010-05-09 00:00:00'
+    sticky: '1000'
+    created_at: '2010-05-02 19:58:19'
+    updated_at: '2010-05-04 16:03:31'
+  Event_5:
+    title: Bariette
+    description: ''
+    date: '2010-05-07 23:30:00'
+    publication_date: '2010-05-02 00:00:00'
+    due_date: '2010-05-09 00:00:00'
+    sticky: '1000'
+    created_at: '2010-05-02 19:59:17'
+    updated_at: '2010-05-04 16:06:58'
+  Event_6:
+    title: 'Cacho Garay'
+    description: '<p>El humorista mendocino nos deleita una vez m&aacute;s con su particular show.</p>'
+    date: '2010-05-05 22:30:00'
+    publication_date: '2010-05-02 00:00:00'
+    due_date: '2010-05-09 00:00:00'
+    sticky: '1000'
+    created_at: '2010-05-02 20:27:07'
+    updated_at: '2010-05-04 16:13:33'
+  Event_7:
+    title: 'Fiesta de Jugadores'
+    description: ''
+    date: '2010-05-07 23:30:00'
+    publication_date: '2010-05-02 00:00:00'
+    due_date: '2010-05-09 00:00:00'
+    sticky: no
+    created_at: '2010-05-02 20:36:06'
+    updated_at: '2010-05-03 01:49:00'
+  Event_8:
+    title: 'Noches de Saxo'
+    description: '<p>Noches de Saxo con "Dr. Lio"</p>'
+    date: '2010-05-07 22:00:00'
+    publication_date: '2010-05-02 00:00:00'
+    due_date: '2010-05-09 00:00:00'
+    sticky: no
+    created_at: '2010-05-02 20:37:07'
+    updated_at: '2010-05-03 02:13:54'
+  Event_9:
+    title: 'Bonus Track'
+    description: '<p>Bonus Track</p>'
+    date: '2010-05-08 23:30:00'
+    publication_date: '2010-05-02 00:00:00'
+    due_date: '2010-05-09 00:00:00'
+    sticky: no
+    created_at: '2010-05-02 20:38:18'
+    updated_at: '2010-05-03 01:30:20'
+  Event_10:
+    title: 'Noche de Tango'
+    description: 'Noche de Tango con la Típica Arrabal'
+    date: '2010-05-09 22:00:00'
+    publication_date: '2010-05-02 00:00:00'
+    due_date: '2010-05-09 00:00:00'
+    sticky: no
+    created_at: '2010-05-02 20:39:14'
+    updated_at: '2010-05-02 20:39:14'
+  Event_11:
+    title: 'Cantobar con Epílogo'
+    description: '<p>Nueva descripcion del evento cantobar con epilogo</p>'
+    date: '2010-05-13 00:00:00'
+    publication_date: '2010-05-09 00:00:00'
+    due_date: '2010-05-16 00:00:00'
+    sticky: '1000'
+    created_at: '2010-05-02 20:51:29'
+    updated_at: '2010-05-03 08:32:42'
+  Event_12:
+    title: 'Una noche para recordar'
+    description: '<p>Los 60, 70 y 80</p>'
+    date: '2010-05-14 23:30:00'
+    publication_date: '2010-05-09 00:00:00'
+    due_date: '2010-05-16 00:00:00'
+    sticky: no
+    created_at: '2010-05-02 20:52:43'
+    updated_at: '2010-05-03 03:31:19'
+  Event_13:
+    title: Epílogo
+    description: ''
+    date: '2010-05-15 23:30:00'
+    publication_date: '2010-05-09 00:00:00'
+    due_date: '2010-05-16 00:00:00'
+    sticky: no
+    created_at: '2010-05-02 20:53:53'
+    updated_at: '2010-05-03 03:32:34'
+  Event_14:
+    title: Epílogo
+    description: ''
+    date: '2010-05-15 01:00:00'
+    publication_date: '2010-05-09 00:00:00'
+    due_date: '2010-05-16 00:00:00'
+    sticky: no
+    created_at: '2010-05-02 20:54:37'
+    updated_at: '2010-05-03 03:32:40'
+  Event_15:
+    title: 'La Mississippi'
+    description: ''
+    date: '2010-05-15 22:00:00'
+    publication_date: '2010-05-09 00:00:00'
+    due_date: '2010-05-16 00:00:00'
+    sticky: no
+    created_at: '2010-05-02 20:55:28'
+    updated_at: '2010-05-02 20:55:28'
+  Event_16:
+    title: 'Noches de Saxo'
+    description: '<p>Noches de Saxo con "Dr. Lio"</p>'
+    date: '2010-05-14 23:30:00'
+    publication_date: '2010-05-09 00:00:00'
+    due_date: '2010-05-16 00:00:00'
+    sticky: no
+    created_at: '2010-05-02 21:26:01'
+    updated_at: '2010-05-03 03:33:06'
+  Event_17:
+    title: 'Corazón Latino'
+    description: '<p>Coraz&oacute;n Latino</p>'
+    date: '2010-05-15 23:30:00'
+    publication_date: '2010-05-09 00:00:00'
+    due_date: '2010-05-16 00:00:00'
+    sticky: no
+    created_at: '2010-05-02 21:26:43'
+    updated_at: '2010-05-03 03:33:11'
+  Event_18:
+    title: 'Noche de Tango'
+    description: 'Noche de Tango con la Típica Splendid '
+    date: '2010-05-16 22:00:00'
+    publication_date: '2010-05-14 00:00:00'
+    due_date: '2010-05-23 00:00:00'
+    sticky: no
+    created_at: '2010-05-02 21:33:18'
+    updated_at: '2010-05-02 21:33:18'
 PageCategory:
   PageCategory_1_1:
     category_id: '1'
@@ -32,100 +177,6 @@ PageCategory:
   PageCategory_2_20:
     category_id: '2'
     page_id: '20'
-EventCategory:
-  EventCategory_2_1:
-    category_id: '2'
-    event_id: '1'
-  EventCategory_3_1:
-    category_id: '3'
-    event_id: '1'
-  EventCategory_3_4:
-    category_id: '3'
-    event_id: '4'
-  EventCategory_3_5:
-    category_id: '3'
-    event_id: '5'
-  EventCategory_3_6:
-    category_id: '3'
-    event_id: '6'
-  EventCategory_3_7:
-    category_id: '3'
-    event_id: '7'
-  EventCategory_3_8:
-    category_id: '3'
-    event_id: '8'
-  EventCategory_3_9:
-    category_id: '3'
-    event_id: '9'
-  EventCategory_3_10:
-    category_id: '3'
-    event_id: '10'
-  EventCategory_3_11:
-    category_id: '3'
-    event_id: '11'
-  EventCategory_3_12:
-    category_id: '3'
-    event_id: '12'
-  EventCategory_3_13:
-    category_id: '3'
-    event_id: '13'
-  EventCategory_3_14:
-    category_id: '3'
-    event_id: '14'
-  EventCategory_3_15:
-    category_id: '3'
-    event_id: '15'
-  EventCategory_3_16:
-    category_id: '3'
-    event_id: '16'
-  EventCategory_3_17:
-    category_id: '3'
-    event_id: '17'
-  EventCategory_3_18:
-    category_id: '3'
-    event_id: '18'
-  EventCategory_4_1:
-    category_id: '4'
-    event_id: '1'
-  EventCategory_4_2:
-    category_id: '4'
-    event_id: '2'
-  EventCategory_4_3:
-    category_id: '4'
-    event_id: '3'
-  EventCategory_5_4:
-    category_id: '5'
-    event_id: '4'
-  EventCategory_5_5:
-    category_id: '5'
-    event_id: '5'
-  EventCategory_5_11:
-    category_id: '5'
-    event_id: '11'
-  EventCategory_5_12:
-    category_id: '5'
-    event_id: '12'
-  EventCategory_5_13:
-    category_id: '5'
-    event_id: '13'
-  EventCategory_5_14:
-    category_id: '5'
-    event_id: '14'
-  EventCategory_6_6:
-    category_id: '6'
-    event_id: '6'
-  EventCategory_6_7:
-    category_id: '6'
-    event_id: '7'
-  EventCategory_7_8:
-    category_id: '7'
-    event_id: '8'
-  EventCategory_7_16:
-    category_id: '7'
-    event_id: '16'
-  EventCategory_7_17:
-    category_id: '7'
-    event_id: '17'
 Profile:
   Profile_1:
     User: sfGuardUser_2
@@ -157,231 +208,6 @@ Profile:
     email: ''
     addres: ''
     country: ''
-Event:
-  Event_1:
-    title: 'Wisin & Yandel'
-    description: "<p>\r\n<p>Winsin &amp; Yandel visitan Neuqu&eacute;n por primera vez el dia 11 de Mayo a las 21.30 hs.</p>\r\n<p>Entradas anticipadas en Casino Magic y en las sucursales de Saturno Hogar.</p>\r\n</p>"
-    date: '2010-05-11 22:00:00'
-    publication_date: '2010-05-01 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: no
-    created_at: '2010-04-21 10:37:02'
-    updated_at: '2010-05-03 04:16:00'
-    mugshot: c4fb67c4dec97c45d980b76e6b242f2fb0b80aa0.jpg
-    mugshot_x1: '80'
-    mugshot_y1: '0'
-    mugshot_x2: '305'
-    mugshot_y2: '225'
-  Event_4:
-    title: 'Cantobar con Epílogo'
-    description: ''
-    date: '2010-05-06 23:30:00'
-    publication_date: '2010-05-01 00:00:00'
-    due_date: '2010-05-09 00:00:00'
-    sticky: '1000'
-    created_at: '2010-05-02 19:58:19'
-    updated_at: '2010-05-04 16:03:31'
-    mugshot: 0f71d3e89d8ef143ead744a090c9773e4b76960d.jpg
-    mugshot_x1: '46'
-    mugshot_y1: '0'
-    mugshot_x2: '271'
-    mugshot_y2: '225'
-  Event_5:
-    title: Bariette
-    description: ''
-    date: '2010-05-07 23:30:00'
-    publication_date: '2010-05-02 00:00:00'
-    due_date: '2010-05-09 00:00:00'
-    sticky: '1000'
-    created_at: '2010-05-02 19:59:17'
-    updated_at: '2010-05-04 16:06:58'
-    mugshot: 7c11375297f07a40880d0f85ecfd88ff0a36da2f.jpg
-    mugshot_x1: '45'
-    mugshot_y1: '0'
-    mugshot_x2: '270'
-    mugshot_y2: '225'
-  Event_6:
-    title: 'Cacho Garay'
-    description: '<p>El humorista mendocino nos deleita una vez m&aacute;s con su particular show.</p>'
-    date: '2010-05-05 22:30:00'
-    publication_date: '2010-05-02 00:00:00'
-    due_date: '2010-05-09 00:00:00'
-    sticky: '1000'
-    created_at: '2010-05-02 20:27:07'
-    updated_at: '2010-05-04 16:13:33'
-    mugshot: e209b14a0f2ee9623739a39b0f3e2d58c3ceaab2.jpg
-    mugshot_x1: '107'
-    mugshot_y1: '0'
-    mugshot_x2: '332'
-    mugshot_y2: '225'
-  Event_7:
-    title: 'Fiesta de Jugadores'
-    description: ''
-    date: '2010-05-07 23:30:00'
-    publication_date: '2010-05-02 00:00:00'
-    due_date: '2010-05-09 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:36:06'
-    updated_at: '2010-05-03 01:49:00'
-    mugshot: null
-    mugshot_x1: null
-    mugshot_y1: '0'
-    mugshot_x2: '0'
-    mugshot_y2: '0'
-  Event_8:
-    title: 'Noches de Saxo'
-    description: '<p>Noches de Saxo con "Dr. Lio"</p>'
-    date: '2010-05-07 22:00:00'
-    publication_date: '2010-05-02 00:00:00'
-    due_date: '2010-05-09 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:37:07'
-    updated_at: '2010-05-03 02:13:54'
-    mugshot: null
-    mugshot_x1: null
-    mugshot_y1: '0'
-    mugshot_x2: '0'
-    mugshot_y2: '0'
-  Event_9:
-    title: 'Bonus Track'
-    description: '<p>Bonus Track</p>'
-    date: '2010-05-08 23:30:00'
-    publication_date: '2010-05-02 00:00:00'
-    due_date: '2010-05-09 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:38:18'
-    updated_at: '2010-05-03 01:30:20'
-    mugshot: null
-    mugshot_x1: null
-    mugshot_y1: '0'
-    mugshot_x2: '0'
-    mugshot_y2: '0'
-  Event_10:
-    title: 'Noche de Tango'
-    description: 'Noche de Tango con la Típica Arrabal'
-    date: '2010-05-09 22:00:00'
-    publication_date: '2010-05-02 00:00:00'
-    due_date: '2010-05-09 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:39:14'
-    updated_at: '2010-05-02 20:39:14'
-    mugshot: null
-    mugshot_x1: null
-    mugshot_y1: '0'
-    mugshot_x2: '0'
-    mugshot_y2: '0'
-  Event_11:
-    title: 'Cantobar con Epílogo'
-    description: '<p>Nueva descripcion del evento cantobar con epilogo</p>'
-    date: '2010-05-13 00:00:00'
-    publication_date: '2010-05-09 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: '1000'
-    created_at: '2010-05-02 20:51:29'
-    updated_at: '2010-05-03 08:32:42'
-    mugshot: null
-    mugshot_x1: null
-    mugshot_y1: '0'
-    mugshot_x2: '0'
-    mugshot_y2: '0'
-  Event_12:
-    title: 'Una noche para recordar'
-    description: '<p>Los 60, 70 y 80</p>'
-    date: '2010-05-14 23:30:00'
-    publication_date: '2010-05-09 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:52:43'
-    updated_at: '2010-05-03 03:31:19'
-    mugshot: null
-    mugshot_x1: null
-    mugshot_y1: '0'
-    mugshot_x2: '0'
-    mugshot_y2: '0'
-  Event_13:
-    title: Epílogo
-    description: ''
-    date: '2010-05-15 23:30:00'
-    publication_date: '2010-05-09 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:53:53'
-    updated_at: '2010-05-03 03:32:34'
-    mugshot: null
-    mugshot_x1: null
-    mugshot_y1: '0'
-    mugshot_x2: '0'
-    mugshot_y2: '0'
-  Event_14:
-    title: Epílogo
-    description: ''
-    date: '2010-05-15 01:00:00'
-    publication_date: '2010-05-09 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:54:37'
-    updated_at: '2010-05-03 03:32:40'
-    mugshot: null
-    mugshot_x1: null
-    mugshot_y1: '0'
-    mugshot_x2: '0'
-    mugshot_y2: '0'
-  Event_15:
-    title: 'La Mississippi'
-    description: ''
-    date: '2010-05-15 22:00:00'
-    publication_date: '2010-05-09 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:55:28'
-    updated_at: '2010-05-02 20:55:28'
-    mugshot: null
-    mugshot_x1: null
-    mugshot_y1: '0'
-    mugshot_x2: '0'
-    mugshot_y2: '0'
-  Event_16:
-    title: 'Noches de Saxo'
-    description: '<p>Noches de Saxo con "Dr. Lio"</p>'
-    date: '2010-05-14 23:30:00'
-    publication_date: '2010-05-09 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 21:26:01'
-    updated_at: '2010-05-03 03:33:06'
-    mugshot: null
-    mugshot_x1: null
-    mugshot_y1: '0'
-    mugshot_x2: '0'
-    mugshot_y2: '0'
-  Event_17:
-    title: 'Corazón Latino'
-    description: '<p>Coraz&oacute;n Latino</p>'
-    date: '2010-05-15 23:30:00'
-    publication_date: '2010-05-09 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 21:26:43'
-    updated_at: '2010-05-03 03:33:11'
-    mugshot: null
-    mugshot_x1: null
-    mugshot_y1: '0'
-    mugshot_x2: '0'
-    mugshot_y2: '0'
-  Event_18:
-    title: 'Noche de Tango'
-    description: 'Noche de Tango con la Típica Splendid '
-    date: '2010-05-16 22:00:00'
-    publication_date: '2010-05-14 00:00:00'
-    due_date: '2010-05-23 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 21:33:18'
-    updated_at: '2010-05-02 21:33:18'
-    mugshot: null
-    mugshot_x1: null
-    mugshot_y1: '0'
-    mugshot_x2: '0'
-    mugshot_y2: '0'
 Category:
   Category_1:
     title: 'Main Menu'
@@ -732,7 +558,7 @@ sfGuardUser:
     username: admin
     algorithm: sha1
     salt: 175c791b2d837217889462f269a8a961
-    password: 84a3b983ca1c33ff9dd135ce4acb79b69286d402
+    password: monoloco
     is_active: true
     is_super_admin: true
     last_login: '2010-05-04 16:29:44'
@@ -742,7 +568,7 @@ sfGuardUser:
     username: damian
     algorithm: sha1
     salt: 28b0271c037ae651cd72d0af62631348
-    password: e54941b35731d8332abed4ce82f0b0f2d3ccc9a2
+    password: damian
     is_active: true
     is_super_admin: true
     last_login: '2010-05-05 21:03:08'
@@ -752,7 +578,7 @@ sfGuardUser:
     username: davo
     algorithm: sha1
     salt: 3bfce462e5af26d946a96eda5603581b
-    password: 47b2a346c61aa01ae19b33475fb55a6c40f23f23
+    password: superpirulo
     is_active: true
     is_super_admin: true
     last_login: '2010-05-05 18:22:14'
