@@ -70,7 +70,9 @@ class EventTable extends Doctrine_Table {
       $q->where('ec.category_id = ?', $cat_id);
     }
 
-    return $q->fetchOne();
+    $result = $q->fetchOne();
+
+    return empty($result) ? null : $result;
   }
 
   static public function retrieveShows($cat_id = null) {

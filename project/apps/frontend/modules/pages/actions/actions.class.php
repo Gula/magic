@@ -19,14 +19,15 @@ class pagesActions extends sfActions
   {
     $this->level = $request->getParameter('level');
 
+    // paginas hijas
     if($this->level == 1) {
       $this->childPage = Doctrine::getTable('Page')->find($request->getParameter('id'));
       $this->page = $this->childPage->getParent();
 
+      // Paginas hijas de show
       if($this->childPage->getParent()->get('id') == 4) {
-
         $catId = $this->childPage->get('id');
-        $catId = $catId - 23;
+        $catId = $catId - 26;
         //$catId = $catId - 16;
 
         /* Asignacion de mierda
@@ -47,6 +48,7 @@ class pagesActions extends sfActions
       $this->childPage = false;
     }
 
+    // pagina de show
     if($request->getParameter('id') == 4) {
       $this->mainShow = EventTable::retrieveMainShow();
       $this->shows = EventTable::retrieveShows();

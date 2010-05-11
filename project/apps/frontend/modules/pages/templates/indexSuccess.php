@@ -12,14 +12,14 @@
 
     <?php if($childPage) : ?>
       <?php
-      $realPage = $childPage;
-      $realPages = $childPage->getChildren();
-      ?>
+        $realPage = $childPage;
+        $realPages = $childPage->getChildren();
+        ?>
     <?php else : ?>
       <?php
-      $realPages = $page->getChildren();
-      $realPage = $page;
-      ?>
+        $realPages = $page->getChildren();
+        $realPage = $page;
+        ?>
     <?php endif; ?>
 
 
