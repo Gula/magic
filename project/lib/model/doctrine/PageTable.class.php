@@ -22,4 +22,12 @@ class PageTable extends Doctrine_Table {
       ->where('pc.category_id= ?', 2);
     return $q->execute();
   }
+
+  static public function retrieveFooterPagers() {
+    $q = Doctrine_Query::create()
+      ->from('Page p')
+      ->leftJoin('p.PageCategory pc')
+      ->where('pc.category_id= ?', 8);
+    return $q->execute();
+  }
 }
