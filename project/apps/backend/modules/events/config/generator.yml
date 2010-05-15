@@ -17,7 +17,9 @@ generator:
 
       list:
         display:               [ _thumb, title, _cats, date, due_date ]
-
+        fields:
+          cats:
+            label:              Categories
       filter:  ~
 
       form:

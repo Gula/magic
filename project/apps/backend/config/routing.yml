@@ -49,7 +49,7 @@ sf_guard_password:
 # default rules
 homepage:
   url:   /
-  param: { module: users, action: index }
+  param: { module: pages, action: index }
 
 # generic rules
 # please, remove them by adding more specific rules

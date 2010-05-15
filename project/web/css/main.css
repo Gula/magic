@@ -1,5 +1,3 @@
-/* This CSS is autocompiled by LESS parser. Don't edit it manually. */
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
@@ -58,7 +56,7 @@ nav.menu > ul li {
   position: relative;
 }
 nav.menu > ul a {
-  color: #ffffff;
+  color: #555555;
   display: block;
   font-weight: bold;
   margin: 0;
@@ -69,12 +67,12 @@ nav.menu > ul a {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid #555555;
 }
 nav.menu > ul .current a {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
   color: #4466aa;
-  border-top: solid 1px #f8f8f8;
+  border: solid 1px #f8f8f8;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -83,7 +81,7 @@ nav.menu > ul .current a {
 nav.menu > ul li:hover > a {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
   color: #4466aa;
-  border-top: solid 1px #f8f8f8;
+  border: solid 1px #f8f8f8;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -185,6 +183,7 @@ body #wrapper {
   -webkit-border-radius: 8px;
   border: 1px solid #bbbbbb;
 }
+body #header { margin: 0 0 10px 0; }
 body #header nav.menu {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

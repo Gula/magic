@@ -1,26 +1,21 @@
 <nav class="menu">
   <ul>
-    <li class="current"><a href="#">Inicio</a></li>
+    <li><?php echo link_to(__('Start'), '@homepage') ?></li>
     <li>
-      <a href="#"><?php echo __('Content'); ?></a>
+      <a href="#"><?php echo __('Pages'); ?></a>
       <ul>
-        <li>
-          <a href="#"><?php echo __('Pages'); ?></a>
-          <ul>
-            <li><?php echo link_to(__('List'), 'pages/index') ?></li>
-            <li><?php echo link_to(__('Add page'), 'pages/new') ?></li>
-          </ul>
-        </li>
-
-        <li>
-          <a href="#"><?php echo __('Events'); ?></a>
-          <ul>
-            <li><?php echo link_to(__('List'), 'events/index') ?></li>
-            <li><?php echo link_to(__('Add event'), 'events/new') ?></li>
-          </ul>
-        </li>
+        <li><?php echo link_to(__('List'), 'pages/index') ?></li>
+        <li><?php echo link_to(__('Add page'), 'pages/new') ?></li>
       </ul>
     </li>
+    <li>
+      <a href="#"><?php echo __('Events'); ?></a>
+      <ul>
+        <li><?php echo link_to(__('List'), 'events/index') ?></li>
+        <li><?php echo link_to(__('Add event'), 'events/new') ?></li>
+      </ul>
+    </li>
+     
     <li>
       <a href="#"><?php echo __('Configuration'); ?></a>
       <ul>

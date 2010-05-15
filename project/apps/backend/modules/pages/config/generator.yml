@@ -16,6 +16,9 @@ generator:
       fields:  ~
       list:
         display:                [ parent, author, title, created_at ]
+        fields:
+          parent:
+            label:              Parent page
       filter:  ~
       form:    ~
 

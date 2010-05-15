@@ -24,6 +24,9 @@ test:
 
 all:
   .settings:
+    default_culture: es_AR
+    i18n: true
+
     # Form security secret (CSRF protection)
     csrf_secret:            a91faf6f3c9adf5e7a46069d5b6d7879d06d29d6
 
@@ -43,7 +46,5 @@ all:
     secure_module:          sfGuardAuth
     secure_action:          secure
 
-  i18n: true
-  default_culture: es_AR
-
+  
   standard_helpers: [ Partial, Cache, I18N ]
