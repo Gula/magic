@@ -1,7 +1,6 @@
 window.addEvent('domready', function (ev) {
 
   if($('iframeBEIdiso')) {
-    console.debug ("$('iframeBEIdiso') -> ", $('iframeBEIdiso'));
     var overlay = new OverlayElement ($('iframeBEIdiso'), {
       injectTo: [$$('body')[0]]
     });
@@ -10,6 +9,8 @@ window.addEvent('domready', function (ev) {
       ev.preventDefault();
       overlay.show();
     });
+
+    $('iframeBEIdiso').setStyle('display', 'none');
   }
 
   // Toggle para mostrar las reservas

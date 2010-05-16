@@ -50,16 +50,11 @@ OverlayElement = new Class({
   
   show: function(){
     this.shown = true;
-    console.debug ("this.options.injectTo -> ", this.options.injectTo);
-    
-
     if (this.options.injectTo) this.element.inject.apply(this.element, this.options.injectTo);
     if (this.options.mask !== false) this.mask();
     this.element.setStyle('z-index', this.options.zIndex).setStyle('display', 'block');
     if (this.options.position !== false) this.element.position(this.options.position);
     return this.fireEvent('show');
-
-
   },
   
   hide: function(){
