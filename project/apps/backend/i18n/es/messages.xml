@@ -392,6 +392,16 @@
         <source>Start</source>
         <target>Inicio</target>
       </trans-unit>
+      <trans-unit id="87">
+        <source>Log Off</source>
+        <target>Cerrar Sesión</target>
+      </trans-unit>
+      <trans-unit id="88">
+        <source>User</source>
+        <target>Usuario</target>
+      </trans-unit>
+
+
 
 
 

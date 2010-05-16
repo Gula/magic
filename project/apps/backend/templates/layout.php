@@ -15,6 +15,7 @@
     <div id="wrapper">
 
       <section id="header">
+        <div id="logo"></div>
         <?php include_partial('global/menu') ?>
         <?php include_partial('global/mini-panel') ?>
       </section>

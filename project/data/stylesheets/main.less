@@ -11,34 +11,40 @@
 
 
 body {
-  padding: 5px;
-  background-color: #ccc;
+  background: #e2e2e2 url(backend/images/bg.png) repeat-x left top;
   font-family: Helvetica;
-  font-size: 12px;
+  font-size: 60.52%;
   height: 100%;
 
   /* Layout */
   #wrapper {
-    padding: 10px;
-    max-width: 1000px;
+    width: 1000px;
     .box-sizing;
-    margin: 20px auto;
-    background-color: #eee;
+    margin: 0 auto;
+    padding: 0 20px;
     height: 100%;
-    .border-radius;
-    border: 1px solid #bbb;
+   
   }
 
   #header {
-    margin:0 0 10px 0;
-    nav.menu, section.mini-panel {
-      .box-sizing;
-      height: 50px;
-      display: inline-block;
-      vertical-align: top;
-      font-size: 1em;
+    background: transparent url(backend/images/sprite_magic.png) repeat-x left -320px;
+    width:960px; height: 274px;
+    margin:0;
+    position: relative;
+    div#logo{
+      background: transparent url(backend/images/sprite_magic.png) repeat-x left -220px;
+      width:217px; height: 93px;
+      position: absolute;
+      top:15px; left:30px;
+      }
+
+
+   section.mini-panel {
+      position: absolute;
+      top:0; right: 0;
+      width: auto;
     }
-    /* Menu */
+    /* Menu 
     nav.menu {
       width: 80%;
 
@@ -51,11 +57,13 @@ body {
       .border-radius(6px);
       background-color: #fff;
       .box-shadow(0, 2px, 5px, rgba(0, 0, 0, 0.1));
-    }
+    }*/
   }
 
   #board {
-
+      background-color:#2c2c2c;
+      .border-radius(6px);
+      padding: 10px;
   }
 
 
