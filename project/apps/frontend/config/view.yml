@@ -20,6 +20,7 @@ default:
   javascripts:
     - mootools-1.2.4-core-yc.js
     - mootools-1.2.4.4-more.js
+    - OverlayElement.js
     - casino.js
 
   has_layout:     true

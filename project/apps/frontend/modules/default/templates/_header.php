@@ -7,11 +7,7 @@
     		<li id="facebook"><a href="javascript:;">Agreganos a tu Facebook</a></li>
     		<li id="contactenos"><a href="javascript:;">Contactenos</a></li>
     		<li id="login"><a href="/backend.php/">Acceder al administrador</a></li>
-    		<li id="reservas"><a href="javascript:;">Reservas Hotel</a>
-    			<ul>
-    				<li><iframe src="http://www.idiso.com/csl/reservations/jsp/C_Search_Dates.jsp?&codigoHotel=1652&lang=es&idPartner=CASINOMAGIC&idPrm=MBCASINOMG&idONg=P25&idNom=webpropia" width="420" height="50" frameborder="0" allowtransparency="true" id="iframeBEIdiso"></iframe></li>
-    			</ul>
-    		</li>
+    		<li id="reservas"><a href="#">Reservas Hotel</a></li>
     	</ul>
     	<span class="telefono">T. Planas 4005, 0800 666 2442</span>
     </div>

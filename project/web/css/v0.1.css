@@ -1054,18 +1054,17 @@ background-color: #dbba83;
 */
 #iframeBEIdiso {
 	background-color: #c0ab10;
-	display: none;
-	/* float: right; */
+	/*display: none;*/
 	position: absolute;
 	z-index: 5000;
-	width: 150px;
-/*
-	top: 0px;
-	right: -17px;
-*/
-/* 	height: 10px; */
-	height: 0 !important;
-	overflow:hidden;
+	width: 760px;
+  right: 0;
+  z-index: 1000;
+
+	top: 135px;
+	left: 95px;
+
+	height: 420px !important;
 }
 
 #reservas ul {
@@ -1307,3 +1306,7 @@ padding: 3px;
 */
 
 
+
+.mask-fixed {
+  background: transparent  url(../images/bg_70.png) repeat left top;
+}

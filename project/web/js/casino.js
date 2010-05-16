@@ -1,11 +1,19 @@
-window.addEvent('load', function (ev) {
-  });
-
 window.addEvent('domready', function (ev) {
 
+  if($('iframeBEIdiso')) {
+    console.debug ("$('iframeBEIdiso') -> ", $('iframeBEIdiso'));
+    var overlay = new OverlayElement ($('iframeBEIdiso'), {
+      injectTo: [$$('body')[0]]
+    });
+
+    $('reservas').addEvent('click', function (ev) {
+      ev.preventDefault();
+      overlay.show();
+    });
+  }
 
   // Toggle para mostrar las reservas
-  
+  /*
     $('iframeBEIdiso').setStyle('height','auto');
   var mySlide = new Fx.Slide('iframeBEIdiso').hide();  //starts the panel in closed state  
  
@@ -14,7 +22,7 @@ window.addEvent('domready', function (ev) {
 		mySlide.toggle();
 		e.stop();
 	});
- 
+ */
     
 
   // Accordion
