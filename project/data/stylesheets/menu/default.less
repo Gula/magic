@@ -2,31 +2,105 @@
 
 /* Menus */
 /* el menú es una lista */
+
 nav.menu {
   > ul {
-    .background_gradient_linear();
-
-    /*background-color: rgba(200, 130, 255, 0.8);*/
-    line-height: 100%;
-    margin: 0;
-    padding: 7px 6px 0;
-
-    border: 1px solid #ccc;
-    .border-radius();
+    padding: 140px 7px 7px;
+    height: 52px;
+    li { /* cada item de esa lista */
+      float: left;
+      list-style: none;
+      margin: 0 4px;
+      position: relative;
+      a{
+      color: #525252;
+      font-size:1.6em;
+      font-weight: bold;
+      text-decoration: none;
+      .text-shadow(1px, 1px, 1px, rgba(255, 255, 255, 0.5));
+      display: block;
+      line-height: 48px;
+      padding: 0 12px 0 8px;
+      background: transparent url(backend/images/bg_menu.png) repeat-x left top;
+      .box-shadow(2px, 4px, 1px, rgba(0,0,0, 0.3));
+      .border-radius(6px);
+      span{
+        display: block;
+        float:left;
+        margin:9px 5px 9px 0  ;
+        width:30px; height:30px;
+        background: transparent url(backend/images/sprite_magic.png) repeat-x left -60px;
+        }
+      span.pages{background-position: -30px -60px;}
+      span.events{background-position: -60px -60px;}
+      span.config{background-position: -90px -60px;}
+      span.user{background-position: -120px -60px;}
+      span.close{background-position: -150px -60px;}
+      strong{color: #005aff}
+      :hover{
+        background-image: none;
+        background-color: #fdfdfd;
+        color:#636363;
+        }
+      :active{
+        margin-top: 1px;
+        margin-bottom: -1px;
+        }
+      }
+    }
+    li:hover > ul {
+      display: block;
+    }
+    ul{
+      display: none;
+      position: absolute;
+      left: 0; top: 48px;
+      li {
+        float: none;
+        margin: 0;
+        padding: 0;
+        a{
+         .box-sizing;
+         font-size: 1.2em;
+         color: #fff;
+         .text-shadow(1px, 1px, 1px, rgba(0, 0, 0, 0.5));
+         width: 154px; height: 39px;
+         line-height:39px;
+         padding: 0 10px;
+         background: transparent url(backend/images/sprite_magic.png) repeat-x left -120px;
+         .border-radius(0px);
+         .box-shadow(0px, 0px, 0px, rgba(0,0,0, 0.3));
+         :hover{
+            background: transparent url(backend/images/sprite_magic.png) repeat-x -160px -120px;
+            color: #fff;
+          }
+         span{
+          display: block;
+          float:left;
+          margin:9px 5px 10px 0  ;
+          width:20px; height:20px;
+          background: transparent url(backend/images/sprite_magic.png) repeat-x left -100px;
+          }
+        span.add{background-position: -20px -100px;}
+        span.event{background-position: -40px -100px;}
+        span.cat{background-position: -60px -100px;}
+        span.cats{background-position: -80px -100px;}
+        span.users{background-position: -100px -100px;}
+        }
+      }
+      ul{
+        left: 155px;
+        top: 0px;
+      }
+    }
   }
 }
 
-nav.menu > ul li { /* cada item de esa lista */
-  float: left;
-  list-style: none;
-  margin: 0 5px;
-  padding: 0 0 8px;
-  position: relative;
-}
+
 
 /* las definiciones del Nivel Principal */
 nav.menu > ul a {
-  color: #fff;
+ /* color: #555;
   display: block;
   font-weight: bold;
   margin: 0;
@@ -35,71 +109,55 @@ nav.menu > ul a {
   .background_gradient_linear(left, top, left, bottom, #b0b0b0, #c0c0c0);
 
   .border-radius(4px);
-  .text-shadow(0, 1px, 1px, rgba(0,0,0, 0.3));
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  .text-shadow(0, 1px, 1px, rgba(0,0,0, 0.3));*/
+ /* border: 1px solid #555;/*rgba(255, 255, 255, 0.3);*/
 }
 
 /* efecto hover en el Nivel Principal */
 nav.menu > ul .current a, nav.menu > ul li:hover > a {
-  .background_gradient_linear(left, top, left, bottom, #fff, #ccc);
-  color: #46A;
-  border-top: solid 1px #F8F8F8;
+  /*.background_gradient_linear(left, top, left, bottom, #fff, #ccc);*/
+  /*color: #46A;
+  border: solid 1px #F8F8F8;
   .box-shadow(0, 1px, 1px, rgba(0,0,0, 0.2));
-  .text-shadow(0, 1px, 0, rgba(255,255,255, 1));
+  .text-shadow(0, 1px, 0, rgba(255,255,255, 1));*/
 }
 
 /* los subniveles */
 nav.menu > ul ul li:hover a, nav.menu > ul li:hover li a {
-  background: none;
+  /*background: none;
   border: none;
   color: #333;
   -webkit-box-shadow: none;
-  -moz-box-shadow: none;
+  -moz-box-shadow: none;*/
 }
 nav.menu > ul ul a:hover {
-  background-color: #08B !important;
+ /* background-color: #08B !important;
   color: #fff !important;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  .text-shadow(0, 1px, 1px, rgba(0,0,0, 0.7));
+  .text-shadow(0, 1px, 1px, rgba(0,0,0, 0.7));*/
 }
 
 /* el efecto de desplegar */
-nav.menu > ul li:hover > ul {
-  display: block;
-}
+
 
 /* las definiciones de los submenues */
 nav.menu > ul ul {
-  background-color: #DDD;
-  border: solid 1px #B4B4B4;
-  display: none;
-  left: 0; top: 30px;
-  margin: 0; padding: 0;
-  position: absolute;
-  z-index: 300;
-
-  width: 185px;
-  .border-radius(6px);
-  .box-shadow(3px, 3px, 5px, rgba(0,0,0, 0.3));
+  
 }
-nav.menu > ul ul li {
-  float: none;
-  margin: 0;
-  padding: 0;
-}
+/*nav.menu > ul ul
 nav.menu > ul ul a {
-  font-weight: normal;
+ /* font-weight: normal;
   .text-shadow(0, 1px, 0, #FFF);
 }
 
-/* las definiciones de los submenues internos */
+/* las definiciones de los submenues internos 
 nav.menu > ul ul ul {
   left: 181px;
   top: -3px;
 }
 
-/* bordes redondeados del primer y  último item */
+/* bordes redondeados del primer y  último item 
 nav.menu > ul ul li:first-child > a {
   -webkit-border-top-left-radius: 5px;
   -moz-border-radius-topleft: 5px;
@@ -113,7 +171,7 @@ nav.menu > ul ul li:last-child > a {
   -moz-border-radius-bottomright: 5px;
 }
 
-/* definiciones generales */
+/* definiciones generales*/
 nav.menu > ul:after {
   clear: both;
   content: ".";
