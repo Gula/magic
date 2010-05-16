@@ -787,13 +787,10 @@ NOVEDADES
 /* ESTILO ESPECIAL PARA CADA SECCION */
 
 .contenido-hotel .contenido .sub-menu,
-.contenido-hotel .contenido .titulo,
 .contenido-hotel .contenido .resumen-subpagina,
 .contenido-habitaciones .contenido .sub-menu,
-.contenido-habitaciones .contenido .titulo,
 .contenido-habitaciones .contenido .resumen-subpagina,
 .contenido-habitacionstandard .contenido .sub-menu,
-.contenido-habitacionstandard .contenido .titulo,
 .contenido-habitacionstandard .contenido .resumen-subpagina
 {
   background-color: rgba(235,190,68,0.5);
@@ -804,52 +801,62 @@ NOVEDADES
 .contenido-habitaciones .contenido .slideshow-paginas .subpagina p.titulo-subpagina,
 .contenido-habitacionstandard .contenido .slideshow-paginas .subpagina p.titulo-subpagina
 {
-  background-color: #ebbe44;
+  /*
+background-color: #ebbe44;
   border-top: 1px solid #e6ddc7;
+*/
 }
 
-.contenido-casino .contenido .sub-menu, .contenido-casino .contenido .titulo, .contenido-casino .contenido .resumen-subpagina {
+.contenido-casino .contenido .sub-menu,
+.contenido-casino .contenido .resumen-subpagina {
   background-color: rgba(145, 0, 0, .8);
 }
 
 .contenido-casino .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
-  background-color: #a12524;
+  /*
+background-color: #a12524;
   border-top: 1px solid #dec4c3;
+*/
 }
 
-.contenido-banquetesconvenciones .contenido .sub-menu, .contenido-banquetesconvenciones .contenido .titulo, .contenido-banquetesconvenciones .contenido .resumen-subpagina {
+.contenido-banquetesconvenciones .contenido .sub-menu,
+.contenido-banquetesconvenciones .contenido .resumen-subpagina {
   background-color: rgba(146, 56, 85, .8);
 }
 
 .contenido-banquetesconvenciones .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
-  background-color: #923855;
+  /*
+background-color: #923855;
   border-top: 1px solid #bc4a6f;
+*/
 }
 
-.contenido-espectaculos .contenido .sub-menu, .contenido-espectaculos .contenido .titulo, .contenido-espectaculos .contenido .resumen-subpagina {
+.contenido-espectaculos .contenido .sub-menu,
+.contenido-espectaculos .contenido .resumen-subpagina {
   background-color: rgba(68, 221, 235, .8);
 }
 
 .contenido-espectaculos .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
-  background-color: #44ddeb;
+  /*
+background-color: #44ddeb;
   border-top: 1px solid #69f3ff;
+*/
 }
 
 .contenido-gastronomia .contenido .sub-menu,
-.contenido-gastronomia .contenido .titulo,
 .contenido-gastronomia .contenido .resumen-subpagina {
   background-color: rgba(219, 186, 131, .8);
 }
 
 .contenido-gastronomia .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
-  background-color: #dbba83;
+  /*
+background-color: #dbba83;
   border-top: 1px solid #f2d3a0;
+*/
 }
 
 
 /* FIN DE ESTILO ESPECIAL PARA CADA SECCION */
-
-
 
 
 /* CSS PARA PAGINAS */
@@ -888,7 +895,7 @@ NOVEDADES
 
   letter-spacing: 0px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
-  font: 12px/14px Helvetica, Arial, sans-serif;
+  font: 12px/14px;
 }
 
 
