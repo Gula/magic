@@ -1057,6 +1057,9 @@ background-color: #dbba83;
 }
 */
 #iframeBEIdiso {
+	  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+
 	background-color: #c0ab10;
 	/*display: none;*/
 	position: absolute;
@@ -1067,7 +1070,7 @@ background-color: #dbba83;
 
 	top: 135px;
 	left: 95px;
-
+	display: none;
 	height: 420px !important;
 }
 
