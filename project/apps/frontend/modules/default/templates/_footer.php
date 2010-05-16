@@ -9,5 +9,5 @@
       <?php endforeach; ?>
     </ul>
   </div>
-  <p>&copy; <?php echo date('Y') ?> Hotel Casino Magic. Todos los derechos reservados.</p>
+  <p>&copy; Copyright <?php echo date('Y') ?> Hotel Casino Magic. Todos los derechos reservados. Pol&iacute;tica de privacidad - T&eacute;rminos y condiciones - Oportunidades Laborales.</p>
 </div>
