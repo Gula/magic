@@ -23,10 +23,10 @@
       <?php include_component('default', 'header') ?>
 
       <?php echo $sf_content ?>
-      
+
       <hr />
-      <div>¨ 2010 Hotel Casino Magic. Todos los derechos reservados.</div>
+      <?php include_component('default', 'footer') ?>
     </div>
-    
+
   </body>
 </html>

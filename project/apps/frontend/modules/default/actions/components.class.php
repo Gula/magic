@@ -12,6 +12,11 @@ class defaultComponents extends sfComponents
     $this->optionesMenu = PageTable::retrievePagesToMainMenu();
   }
 
+  public function executeFooter(sfWebRequest $request)
+  {
+    $this->footer_pagers = PageTable::retrieveFooterPagers();
+  }
+
   public function executeSlideshow(sfWebRequest $request)
   {
     $this->pages = PageTable::retrievePagesToMainSlideshow();

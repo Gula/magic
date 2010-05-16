@@ -21,10 +21,8 @@
 <div class="span-5 last">
   <ul class="drawers">
     <img src="images/titulo_agenda.png" width="232" height="34" alt="Agenda" />
-
     <?php foreach ($showList as $event) : ?>
     <?php include_partial('show', array('event' => $event)) ?>
     <?php endforeach; ?>
-
   </ul>
 </div>
