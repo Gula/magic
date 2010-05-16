@@ -48,6 +48,7 @@ class Event extends BaseEvent {
         }
       }
     }
+
   }
 
   public function getCats() {

@@ -357,7 +357,54 @@
         <source>The two passwords must be the same.</source>
         <target>Las dos contraseñas deben ser iguales.</target>
       </trans-unit>
-      
+
+      <trans-unit id="80">
+        <source>Pages List</source>
+        <target>Listado de páginas</target>
+      </trans-unit>
+
+      <trans-unit id="81">
+        <source>Events List</source>
+        <target>Listado de eventos</target>
+      </trans-unit>
+
+      <trans-unit id="82">
+        <source>New Users</source>
+        <target>Nuevos Usuarios</target>
+      </trans-unit>
+
+      <trans-unit id="83">
+        <source>Profile</source>
+        <target>Perfil</target>
+      </trans-unit>
+
+      <trans-unit id="84">
+        <source>Password again</source>
+        <target>Contraseña nuevamente</target>
+      </trans-unit>
+
+      <trans-unit id="85">
+        <source>Users List</source>
+        <target>Listado de usuarios</target>
+      </trans-unit>
+
+      <trans-unit id="86">
+        <source>Start</source>
+        <target>Inicio</target>
+      </trans-unit>
+      <trans-unit id="87">
+        <source>Log Off</source>
+        <target>Cerrar Sesión</target>
+      </trans-unit>
+      <trans-unit id="88">
+        <source>User</source>
+        <target>Usuario</target>
+      </trans-unit>
+
+
+
+
+
     </body>
   </file>
 </xliff>

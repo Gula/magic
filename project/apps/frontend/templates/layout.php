@@ -23,10 +23,10 @@
       <?php include_component('default', 'header') ?>
 
       <?php echo $sf_content ?>
-      
+
       <hr />
       <div>&copy; Copyright  2010 Hotel Casino Magic. Todos los derechos reservados. Pol&iacute;tica de privacidad - T&eacute;rminos y condiciones - Oportunidades Laborales</div>
     </div>
-    
+
   </body>
 </html>

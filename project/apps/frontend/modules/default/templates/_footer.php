@@ -1,4 +1,5 @@
-<?php use_helper('Date') ?> <div class="footer">
+<?php use_helper('Date') ?>
+<div class="footer">
   <div class="footer-menu">
     <ul>
       <?php foreach ($footer_pagers as $page) : ?>
