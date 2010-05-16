@@ -1,5 +1,6 @@
 window.addEvent('domready', function (ev) {
 
+  // modal window para Reservas de Hotel
   if($('iframeBEIdiso')) {
     var overlay = new OverlayElement ($('iframeBEIdiso'), {
       injectTo: [$$('body')[0]]
@@ -9,22 +10,8 @@ window.addEvent('domready', function (ev) {
       ev.preventDefault();
       overlay.show();
     });
-
-    $('iframeBEIdiso').setStyle('display', 'none');
+    overlay.element.setStyle('display', 'block');
   }
-
-  // Toggle para mostrar las reservas
-  /*
-    $('iframeBEIdiso').setStyle('height','auto');
-  var mySlide = new Fx.Slide('iframeBEIdiso').hide();  //starts the panel in closed state  
- 
-    $('reservas').addEvent('click', function(e){
-		e = new Event(e);
-		mySlide.toggle();
-		e.stop();
-	});
- */
-    
 
   // Accordion
   var togglers = $$('.drawers .drawer div.drawer-handle'),
