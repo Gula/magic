@@ -15,10 +15,10 @@
         <li>
           <a href="<?php echo url_for('events/new') ?>"><span class="add"></span><?php echo __('Add event'); ?></a>
           <ul>
-            <li><?php echo link_to('Main Event', 'events/new', array('class' => 'event')) ?></li>
-            <li><?php echo link_to('Belterra', 'events/new', array('class' => 'event')) ?></li>
-            <li><?php echo link_to('Rainbow', 'events/new', array('class' => 'event')) ?></li>
-            <li><?php echo link_to('Jockers', 'events/new', array('class' => 'event')) ?></li>
+            <li><?php echo link_to('Main Event', 'events/new?id=4', array('class' => 'event')) ?></li>
+            <li><?php echo link_to('Belterra', 'events/new?id=5', array('class' => 'event')) ?></li>
+            <li><?php echo link_to('Rainbow', 'events/new?id=6', array('class' => 'event')) ?></li>
+            <li><?php echo link_to('Jockers', 'events/new?id=7', array('class' => 'event')) ?></li>
           </ul>
         </li>
       </ul>

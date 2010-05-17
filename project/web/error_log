@@ -943,3 +943,5 @@ Stack trace:
 #3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
 #4 {main}
   thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[16-May-2010 21:44:32] PHP Fatal error:  Class 'EventForm' not found in /home/magic/magic/project/lib/vendor/symfony/lib/generator/sfModelGeneratorConfiguration.class.php on line 484
+[16-May-2010 21:45:43] PHP Fatal error:  Class 'EventForm' not found in /home/magic/magic/project/lib/vendor/symfony/lib/generator/sfModelGeneratorConfiguration.class.php on line 484
