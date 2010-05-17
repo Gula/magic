@@ -11,6 +11,7 @@
  * @version    SVN: $Id: Builder.php 7380 2010-03-15 21:07:50Z jwage $
  */
 class Event extends BaseEvent {
+  static $cat_id;
 
   public function save(Doctrine_Connection $conn = null) {
     if($this->get('sticky') == 'no') $this->set('sticky', 1000);
@@ -60,4 +61,21 @@ class Event extends BaseEvent {
 
     return $q->execute();
   }
+
+  public function setCatId($cat_id) {
+    $this->cat_id = $cat_id;
+  }
+
+  public function getCatId() {
+    return isset($this->cat_id) ? $this->cat_id : null;
+  }
+
+  public function setIsMainSlide($isMainSlide) {
+    $this->isMainSlide = $isMainSlide;
+  }
+
+  public function getIsMainSlide() {
+    return isset($this->isMainSlide) ? $this->isMainSlide : null;
+  }
+
 }

@@ -19,24 +19,21 @@ class EventAdminForm extends BaseEventForm
       $this['categories_list']
     );
 
-    // categories_list
-    /*
-    $this->widgetSchema['categories_list'] = new sfWidgetFormDoctrineChoice(array(
-      'expanded' => true,
-      'multiple' => true,
-      'model' => 'Category'
-    ));
-     * 
-     */
 
-    $this->widgetSchema['main slideshow'] = new sfWidgetFormInput(
+    $this->widgetSchema['main_slideshow'] = new sfWidgetFormInput(
       array(),
-      array('type' => 'checkbox')
+      array(
+        'type' => 'checkbox',
+        'checked' => $this->getObject()->getIsMainSlide() ? 'checked' : false
+      )
     );
-    $this->validatorSchema['main slideshow'] = new sfValidatorString(array('required' => FALSE));
+    $this->validatorSchema['main_slideshow'] = new sfValidatorString(array('required' => false));
 
-    $this->widgetSchema['event_cat'] = new sfWidgetFormInput();
-    $this->validatorSchema['event_cat'] = new sfValidatorString();
+    $this->widgetSchema['event_cat'] = new sfWidgetFormInputHidden(
+      array(),
+      array('value' => $this->getObject()->getCatId())
+    );
+    $this->validatorSchema['event_cat'] = new sfValidatorString(array('required' => false));
 
     $this->widgetSchema['date'] = new sfWidgetFormDateAndTime(
       array(),

@@ -30,7 +30,8 @@ class EventTable extends Doctrine_Table {
   static public function retrieveShowList() {
     $cats = Doctrine_Query::create()
       ->from('Category c')
-      ->where('c.id = ? or c.parent_id = ?', array(3, 3))
+      //->where('c.id = ? or c.parent_id = ?', array(3, 3))
+      ->where('c.parent_id = ?', 3)
       ->fetchArray();
 
     $cats_id = array();
