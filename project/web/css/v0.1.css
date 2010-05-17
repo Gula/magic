@@ -322,7 +322,7 @@ ul.drawers .drawer div.accordion-container .drawer-texto p {
   width: 720px;
   z-index: 10;
   color: #fff;
-  background-color: rgba(0,0,0,0.2);
+  background: transparent  url(../images/bg_30.png) repeat left top;
   padding: 25px;
   padding-left: 35px;
   font: 12px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
@@ -341,7 +341,7 @@ ul.drawers .drawer div.accordion-container .drawer-texto p {
 }
 
 .slide-index ul li {
-  background-color: rgba(0,0,0,0.2);
+  background: transparent  url(../images/bg_30.png) repeat left top;
   display: inline-block;
   width: 30px; height: 30px; line-height: 30px;
   text-align: center;
@@ -360,7 +360,7 @@ ul.drawers .drawer div.accordion-container .drawer-texto p {
 	border-right: 1px solid rgba(255,255,255,0.5);
   */
   color: #fff;
-  background-color: rgba(0,0,0,0.5);
+ background: transparent  url(../images/bg_50.png) repeat left top;
   cursor: pointer;
 }
 /*  end slideshow */
@@ -1086,7 +1086,7 @@ background-color: #dbba83;
 
 
 .contenido .main-show {
-	background-color: rgba(0, 0, 0, 0.6);
+	background: transparent  url(../images/bg_50.png) repeat left top;
   margin-top: 220px;
   position: relative;
     margin-bottom: 1px;
