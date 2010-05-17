@@ -1,20 +1,22 @@
 <?php
 
 /**
- * Event Admin form.
+ * Event form.
  *
  * @package    sf_sandbox
  * @subpackage form
  * @author     Your name here
  * @version    SVN: $Id: sfDoctrineFormTemplate.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
  */
-class EventAdmin extends BaseEventForm
+class EventAdminForm extends BaseEventForm
 {
   public function configure()
+
   {
     unset(
       $this['created_at'],
-      $this['updated_at']
+      $this['updated_at'],
+      $this['categories_list']
     );
 
     // categories_list
@@ -27,7 +29,14 @@ class EventAdmin extends BaseEventForm
      * 
      */
 
-    $this->widgetSchema['categories_list']  = new sfWidgetFormInputHidden();
+    $this->widgetSchema['main slideshow'] = new sfWidgetFormInput(
+      array(),
+      array('type' => 'checkbox')
+    );
+    $this->validatorSchema['main slideshow'] = new sfValidatorString(array('required' => FALSE));
+
+    $this->widgetSchema['event_cat'] = new sfWidgetFormInput();
+    $this->validatorSchema['event_cat'] = new sfValidatorString();
 
     $this->widgetSchema['date'] = new sfWidgetFormDateAndTime(
       array(),

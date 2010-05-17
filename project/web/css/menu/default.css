@@ -57,6 +57,7 @@ nav.menu > ul li a:active {
 nav.menu > ul li:hover > ul { display: block; }
 nav.menu > ul ul {
   display: none;
+  z-index: 1000;
   position: absolute;
   left: 0;
   top: 48px;
