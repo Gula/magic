@@ -25,10 +25,7 @@
 
       <div class="container" <?php if(isset($id)) echo 'id="'.$id.'"' ?>>
         <?php include_component('default', 'header') ?>
-
         <?php echo $sf_content ?>
-
-        <hr />
         <?php include_component('default', 'footer') ?>
       </div>
     </div>

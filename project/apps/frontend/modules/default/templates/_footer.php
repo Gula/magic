@@ -1,4 +1,5 @@
 <?php use_helper('Date') ?>
+<div class="clear"></div>
 <div class="footer">
   <div class="footer-menu">
     <ul>
@@ -8,6 +9,7 @@
       </li>
       <?php endforeach; ?>
     </ul>
+    <p>&copy; Copyright <?php echo date('Y') ?> Hotel Casino Magic. Todos los derechos reservados. Pol&iacute;tica de privacidad - T&eacute;rminos y condiciones - Oportunidades Laborales.</p>
   </div>
-  <p>&copy; Copyright <?php echo date('Y') ?> Hotel Casino Magic. Todos los derechos reservados. Pol&iacute;tica de privacidad - T&eacute;rminos y condiciones - Oportunidades Laborales.</p>
+  
 </div>
