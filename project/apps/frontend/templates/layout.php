@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
+    <!--[if IE]>
+	<link href="/css/ie.css" media="all" type="text/css" />
+	<![endif]-->
   </head>
 
   <body>

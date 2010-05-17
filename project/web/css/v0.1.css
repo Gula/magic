@@ -20,7 +20,7 @@
 }
 
 body {
-  font: normal normal normal 11px/14px "FuturaLTMediumRegular", Helvetica, Arial, sans-serif;
+  font: normal normal normal 0.69em/0.88em "FuturaLTMediumRegular", Helvetica, Arial, sans-serif;
   background: #000	none;
   color: #F4F4F4;
   background-image: url(../images/bkg.jpg);
@@ -78,7 +78,7 @@ li a {
 
 .menu, .menu * {
   font-family:  Georgia, sans-serif;
-  font-size:  11px;
+  font-size:  0.69em;
   line-height:	1.7;
   color: #f1da34;
   margin:			0;
@@ -259,7 +259,7 @@ ul.drawers .drawer div.accordion-container img {
 }
 
 ul.drawers .drawer div.accordion-container .drawer-texto {
-  font: normal normal normal 11px/14px "FuturaLTMediumRegular", Helvetica, Arial, sans-serif;
+  font: normal normal normal 0.69em/14px "FuturaLTMediumRegular", Helvetica, Arial, sans-serif;
   margin: 5px;
   font-size: 10px;
   text-align: left;
@@ -305,7 +305,8 @@ ul.drawers .drawer div.accordion-container .drawer-texto p {
 .slideshow .picture h3 {
   font: 35px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
   position: absolute;
-  background-color: rgba(0,0,0,0.2);
+  /* background-color: rgba(0,0,0,0.2); */
+  background: transparent  url(../images/bg_30.png) repeat left top;
   width: 720px;
   left: 0px; top: 240px;
   padding: 25px;
@@ -754,7 +755,7 @@ NOVEDADES
   color: #fff;
 
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
-  font: 11px/12px "FuturaLTMediumRegular", Helvetica, Arial, sans-serif;
+  font: 0.69em/12px "FuturaLTMediumRegular", Helvetica, Arial, sans-serif;
 }
 
 .contenido .slideshow-paginas .subpagina p.titulo-subpagina a {
@@ -767,8 +768,9 @@ NOVEDADES
 
 /* Modifico el aspecto del SPAN, para mostrar resumen */
 .contenido .slideshow-paginas .subpagina .resumen-subpagina {
+  line-height: 12px;
   width: 240px;
-  height: 250px;
+  height: 140px;
 
   padding-left: 5px;
   padding-bottom: 10px;
@@ -782,7 +784,7 @@ NOVEDADES
 
   /* border: 1px solid green; */
 
-  font: 11px/12px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
   text-align: justify;
 }
 
@@ -914,11 +916,13 @@ background-color: #dbba83;
 {
   background-color: #bb9224;
 }
+#pagina-casino .contenido .subpagina-contenido,
 #pagina-mesasdejuego .contenido .subpagina-contenido,
 #pagina-torneosdepoker .contenido .subpagina-contenido,
 #pagina-clubmagicvip .contenido .subpagina-contenido {
   background-color: #5a0502;
 }
+
 
 #pagina-espectaculos .contenido .subpagina-contenido {
   background-color: #016781;
@@ -1126,7 +1130,7 @@ padding-left: 5px;
   padding: 0;
   text-align: left;
   color: white;
-  font: 11px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 0.69em 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
   text-transform:  uppercase;
 
   letter-spacing: 1px;
@@ -1135,7 +1139,7 @@ padding-left: 5px;
 }
 
 .main-show h3 {
-	font: bold 11px 'FuturaLTBoldRegular', Helvetica, Arial, sans-serif;
+	font: bold 0.69em 'FuturaLTBoldRegular', Helvetica, Arial, sans-serif;
 }
 .main-show h3, .main-show .category, .main-show .next-show 
 {
@@ -1320,6 +1324,76 @@ padding: 3px;
 
 .footer {
 
-background-color: #252525;
+background-color: #000; 
 
+}
+
+.footer-menu .nuestroscasinos, .footer-menu .informacioninstitucional, .footer-menu .social {
+	padding-left: 15px;
+	padding-bottom: 15px;
+	padding-right: 0px;
+	padding-top: 15px;
+	width: 224px;
+	float:left;
+	margin: 0px;
+	height: 140px;
+	overflow: visible;
+}
+
+.footer-menu .comollegar {
+	background: url(../images/footer_mapa.png) no-repeat 15px 30px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	padding-right: 0px;
+	padding-top: 15px;
+	width: 217px;
+	float:left;
+	margin: 0px;
+	height: 140px;
+	overflow: visible;
+}
+
+.footer-menu .nuestroscasinos, .footer-menu .informacioninstitucional, .footer-menu .social {
+	background: url(../images/footer_linea.png) no-repeat right 2px;
+}
+
+.footer-menu h2 {
+  padding-left: 0;
+  padding-bottom: 10px;
+  padding-right: 0px;
+  padding-top: 15px;
+  width: auto;
+  margin: 0 !important;
+  text-align: left;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font: 8px 'FuturaLTBoldRegular', Helvetica, Arial, sans-serif;
+}
+
+.footer-menu a, .footer-menu li {
+  text-align: left;
+  color: #b3b3b3;
+  letter-spacing: 0px;
+  font: 9px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+}
+
+.footer-menu .comollegar li, .footer-menu .comollegar h2 {
+	padding-left: 65px;
+}
+
+
+
+.footer-menu a:hover {
+	color: #c9ae00;
+}
+
+.signature p {
+	padding-bottom: 15px;
+	padding-top: 5px;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	letter-spacing: 0px;
+	font: 10px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
 }
