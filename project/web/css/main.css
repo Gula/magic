@@ -110,17 +110,17 @@ nav.menu > ul ul li a {
   font-size: 1.2em;
   color: #ffffff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  width: 154px;
-  height: 39px;
-  line-height: 39px;
+  width: 158px;
+  height: 35px;
+  line-height: 35px;
   padding: 0 10px;
   background: transparent url(backend/images/sprite_magic.png) repeat-x left -120px;
   border-radius: 0px;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -box-shadow: none;
 }
 nav.menu > ul ul li a:hover {
   background: transparent url(backend/images/sprite_magic.png) repeat-x -160px -120px;
@@ -129,7 +129,7 @@ nav.menu > ul ul li a:hover {
 nav.menu > ul ul li a span {
   display: block;
   float: left;
-  margin: 9px 5px 10px 0;
+  margin: 7px 0 8px 0;
   width: 20px;
   height: 20px;
   background: transparent url(backend/images/sprite_magic.png) repeat-x left -100px;
