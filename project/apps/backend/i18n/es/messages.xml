@@ -300,7 +300,7 @@
 
       <trans-unit id="68">
         <source>Save</source>
-        <target>Guradar</target>
+        <target>Guardar</target>
       </trans-unit>
 
       <trans-unit id="69">
@@ -401,10 +401,62 @@
         <target>Usuario</target>
       </trans-unit>
 
+      <trans-unit id="89">
+        <source>Edit Groups</source>
+        <target>Editar Grupos</target>
+      </trans-unit>
+
+      <trans-unit id="90">
+        <source>Save and add</source>
+        <target>Guardar y agregar nuevo</target>
+      </trans-unit>
+
+      <trans-unit id="91">
+        <source>Filter</source>
+        <target>Filtro</target>
+      </trans-unit>
+
+      <trans-unit id="92">
+        <source>Go</source>
+        <target>Ejecutar</target>
+      </trans-unit>
+
+      <trans-unit id="93">
+        <source>New Event</source>
+        <target>Evento Nuevo</target>
+      </trans-unit>
+
+      <trans-unit id="94">
+        <source>Edit Event</source>
+        <target>Editar Evento</target>
+      </trans-unit>
+
+      <trans-unit id="95">
+        <source>New User</source>
+        <target>Usuario Nuevo</target>
+      </trans-unit>
+
+      <trans-unit id="96">
+        <source>Edit User</source>
+        <target>Editar Usuario</target>
+      </trans-unit>
 
 
+      <trans-unit id="97">
+        <source>Edit Category</source>
+        <target>Editar Categoría</target>
+      </trans-unit>
 
 
+      <trans-unit id="98">
+        <source>Categories List</source>
+        <target>Listado de Categorías</target>
+      </trans-unit>
+
+      <trans-unit id="99">
+        <source>Do you need a new password?</source>
+        <target>Necesita un nuevo password?</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

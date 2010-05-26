@@ -19,11 +19,23 @@ generator:
         fields:
           parent:
             label:              Parent page
+        actions:
+          _new:                  { label: '&nbsp;', atts: {title: Add page } }
+        batch_actions:
+          delete:                ~
+          
       filter:  ~
       form:    ~
 
       edit:
         title:                  Edit Page
-
+        actions:
+          _list:                  { label: '&nbsp;', atts: {title: Back to list } }
+          _delete:                { label: '&nbsp;', atts: {title: Delete } }
+          _save:                  { label: '&nbsp;', atts: {title: Save } }
       new:
         title:                  New Page
+        actions:
+          _list:                  { label: '&nbsp;', atts: {title: Back to list } }
+          _save:                  { label: '&nbsp;', atts: {title: Save } }
+          _save_and_add:          { label: '&nbsp;', atts: {title: Save and add } }

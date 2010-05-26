@@ -4,9 +4,23 @@
   outline: 0;
   outline: none;
 }
+nav.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 nav.menu > ul {
+  display: inline-block;
   padding: 140px 7px 7px;
   height: 52px;
+}
+nav.menu > ul:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
 }
 nav.menu > ul li {
   float: left;
@@ -19,14 +33,14 @@ nav.menu > ul li a {
   font-size: 1.6em;
   font-weight: bold;
   text-decoration: none;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 1px 0 #ffffff;
   display: block;
   line-height: 48px;
   padding: 0 12px 0 8px;
   background: transparent url(backend/images/bg_menu.png) repeat-x left top;
-  box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.3);
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -49,6 +63,9 @@ nav.menu > ul li a:hover {
   background-image: none;
   background-color: #fdfdfd;
   color: #636363;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
 nav.menu > ul li a:active {
   margin-top: 1px;
@@ -59,13 +76,13 @@ nav.menu > ul ul {
   display: none;
   z-index: 1000;
   position: absolute;
-  left: 0;
+  left: 2px;
   top: 48px;
 }
 nav.menu > ul ul li {
   float: none;
   margin: 0;
-  padding: 0;
+  padding: 2px;
 }
 nav.menu > ul ul li a {
   -moz-box-sizing: border-box;
@@ -73,21 +90,24 @@ nav.menu > ul ul li a {
   font-size: 1.2em;
   color: #ffffff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  width: 158px;
+  width: 150px;
   height: 35px;
-  line-height: 35px;
+  line-height: 39px;
   padding: 0 10px;
-  background: transparent url(backend/images/sprite_magic.png) repeat-x left -120px;
+  background: transparent url(backend/images/sprite_magic.png) repeat-x -2px -120px;
   border-radius: 0px;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -box-shadow: none;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 nav.menu > ul ul li a:hover {
-  background: transparent url(backend/images/sprite_magic.png) repeat-x -160px -120px;
+  background: transparent url(backend/images/sprite_magic.png) repeat-x -162px -120px;
   color: #ffffff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 nav.menu > ul ul li a span {
   display: block;
@@ -106,14 +126,5 @@ nav.menu > ul ul ul {
   left: 155px;
   top: 0px;
 }
-nav.menu > ul:after {
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  line-height: 0;
-  visibility: hidden;
-}
-nav.menu > ul { display: inline-block; }
 html[xmlns] nav.menu > ul { display: block; }
 * html nav.menu > ul { height: 1%; }

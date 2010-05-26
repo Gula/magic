@@ -4,50 +4,63 @@
 /* el menú es una lista */
 
 nav.menu {
+  position: absolute;
+  top:0; left:0;
   > ul {
+    display: inline-block;
     padding: 140px 7px 7px;
     height: 52px;
+    :after {
+      clear: both;
+      content: ".";
+      display: block;
+      height: 0;
+      line-height: 0;
+      visibility: hidden;
+      }
     li { /* cada item de esa lista */
       float: left;
       list-style: none;
       margin: 0 4px;
       position: relative;
       a{
-      color: #525252;
-      font-size:1.6em;
-      font-weight: bold;
-      text-decoration: none;
-      .text-shadow(1px, 1px, 1px, rgba(255, 255, 255, 0.5));
-      display: block;
-      line-height: 48px;
-      padding: 0 12px 0 8px;
-      background: transparent url(backend/images/bg_menu.png) repeat-x left top;
-      .box-shadow(2px, 4px, 1px, rgba(0,0,0, 0.3));
-      .border-radius(6px);
-      span{
+        color: #525252;
+        font-size:1.6em;
+        font-weight: bold;
+        text-decoration: none;
+        .text-shadow(1px, 1px, 0, rgba(255, 255, 255, 1));
         display: block;
-        float:left;
-        margin:9px 5px 9px 0  ;
-        width:30px; height:30px;
-        background: transparent url(backend/images/sprite_magic.png) repeat-x left -60px;
-        }
-      span.pages{background-position: -30px -60px;}
-      span.events{background-position: -60px -60px;}
-      span.config{background-position: -90px -60px;}
-      span.user{background-position: -120px -60px;}
-      span.close{background-position: -150px -60px;}
-      strong{color: #005aff}
-      :hover{
-        background-image: none;
-        background-color: #fdfdfd;
-        color:#636363;
-        }
-      :active{
-        margin-top: 1px;
-        margin-bottom: -1px;
+        line-height: 48px;
+        padding: 0 12px 0 8px;
+        background: transparent url(backend/images/bg_menu.png) repeat-x left top;
+        .box-shadow(4px, 4px, 1px, rgba(0,0,0, 0.3));
+        .border-radius(6px);
+        span{
+          display: block;
+          float:left;
+          margin:9px 5px 9px 0  ;
+          width:30px; height:30px;
+          background: transparent url(backend/images/sprite_magic.png) repeat-x left -60px;
+          }
+        span.pages{background-position: -30px -60px;}
+        span.events{background-position: -60px -60px;}
+        span.config{background-position: -90px -60px;}
+        span.user{background-position: -120px -60px;}
+        span.close{background-position: -150px -60px;}
+        strong{color: #005aff}
+        :hover{
+          /*.border-radius(6px 6px 0 0);*/
+          background-image: none;
+          background-color: #fdfdfd;
+          color:#636363;
+          .box-shadow(2px, 2px, 1px, rgba(0,0,0, 0.3));
+          }
+        :active{
+          margin-top: 1px;
+          margin-bottom: -1px;
+          }
         }
       }
-    }
     li:hover > ul {
       display: block;
     }
@@ -55,28 +68,29 @@ nav.menu {
       display: none;
       z-index: 1000;
       position: absolute;
-      left: 0; top: 48px;
+      left: 2px; top: 48px;
       li {
         float: none;
         margin: 0;
-        padding: 0;
+        padding: 2px;
         a{
          .box-sizing;
          font-size: 1.2em;
          color: #fff;
          .text-shadow(1px, 1px, 1px, rgba(0, 0, 0, 0.5));
-         width: 158px; height: 35px;
-         line-height:35px;
+         width: 150px; height: 35px;
+         line-height:39px;
          padding: 0 10px;
-         background: transparent url(backend/images/sprite_magic.png) repeat-x left -120px;
+         background: transparent url(backend/images/sprite_magic.png) repeat-x -2px -120px;
          .border-radius(0px);
-         /*.box-shadow(0px, 0px, 0px, rgba(0,0,0, 0.3));*/
-         -webkit-box-shadow: none;
+         .box-shadow(2px, 2px, 2px, rgba(0,0,0, 0.5));
+        /* -webkit-box-shadow: none;
          -moz-box-shadow: none;
-         -box-shadow: none;
+         -box-shadow: none;*/
          :hover{
-            background: transparent url(backend/images/sprite_magic.png) repeat-x -160px -120px;
+            background: transparent url(backend/images/sprite_magic.png) repeat-x -162px -120px;
             color: #fff;
+            .box-shadow(1px, 1px, 2px, rgba(0,0,0, 0.5));
           }
          span{
           display: block;
@@ -99,91 +113,5 @@ nav.menu {
     }
   }
 }
-
-
-
-/* las definiciones del Nivel Principal */
-nav.menu > ul a {
- /* color: #555;
-  display: block;
-  font-weight: bold;
-  margin: 0;
-  padding:  8px 20px;
-  text-decoration: none;
-  .background_gradient_linear(left, top, left, bottom, #b0b0b0, #c0c0c0);
-
-  .border-radius(4px);
-  .text-shadow(0, 1px, 1px, rgba(0,0,0, 0.3));*/
- /* border: 1px solid #555;/*rgba(255, 255, 255, 0.3);*/
-}
-
-/* efecto hover en el Nivel Principal */
-nav.menu > ul .current a, nav.menu > ul li:hover > a {
-  /*.background_gradient_linear(left, top, left, bottom, #fff, #ccc);*/
-  /*color: #46A;
-  border: solid 1px #F8F8F8;
-  .box-shadow(0, 1px, 1px, rgba(0,0,0, 0.2));
-  .text-shadow(0, 1px, 0, rgba(255,255,255, 1));*/
-}
-
-/* los subniveles */
-nav.menu > ul ul li:hover a, nav.menu > ul li:hover li a {
-  /*background: none;
-  border: none;
-  color: #333;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;*/
-}
-nav.menu > ul ul a:hover {
- /* background-color: #08B !important;
-  color: #fff !important;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  .text-shadow(0, 1px, 1px, rgba(0,0,0, 0.7));*/
-}
-
-/* el efecto de desplegar */
-
-
-/* las definiciones de los submenues */
-nav.menu > ul ul {
-  
-}
-/*nav.menu > ul ul
-nav.menu > ul ul a {
- /* font-weight: normal;
-  .text-shadow(0, 1px, 0, #FFF);
-}
-
-/* las definiciones de los submenues internos 
-nav.menu > ul ul ul {
-  left: 181px;
-  top: -3px;
-}
-
-/* bordes redondeados del primer y  último item 
-nav.menu > ul ul li:first-child > a {
-  -webkit-border-top-left-radius: 5px;
-  -moz-border-radius-topleft: 5px;
-  -webkit-border-top-right-radius: 5px;
-  -moz-border-radius-topright: 5px;
-}
-nav.menu > ul ul li:last-child > a {
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  -moz-border-radius-bottomright: 5px;
-}
-
-/* definiciones generales*/
-nav.menu > ul:after {
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  line-height: 0;
-  visibility: hidden;
-}
-nav.menu > ul { display: inline-block; }
 html[xmlns] nav.menu > ul { display: block; }
 * html nav.menu > ul { height: 1%; }

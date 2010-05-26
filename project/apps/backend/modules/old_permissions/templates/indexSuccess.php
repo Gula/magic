@@ -1,13 +1,12 @@
 <?php use_helper('I18N') ?>
-<?php use_stylesheet('mooDoo.2/generator.global.css') ?>
-<?php use_stylesheet('mooDoo.2/generator.list.css') ?>
+<?php use_stylesheet('/sfDoctrineMooDooPlugin/css/generator.list.css') ?>
 
-<?php use_stylesheet('backend/base.css') ?>
-<?php use_stylesheet('backend/users.css') ?>
+<?php //use_stylesheet('backend/base.css') ?>
+<?php //use_stylesheet('backend/users.css') ?>
 
-<section class="sf_admin_list">
+<div class="sf_admin_list" id="sf_admin_container" >
 <h1><?php echo __('Permission list'); ?></h1>
-
+<div class="admin_container">
 <table>
   <thead>
     <tr>
@@ -30,4 +29,5 @@
     <?php endforeach; ?>
   </tbody>
 </table>
-</section>
+</div>
+</div>

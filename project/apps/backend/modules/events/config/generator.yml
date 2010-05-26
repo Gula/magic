@@ -20,6 +20,8 @@ generator:
         fields:
           cats:
             label:              Categories
+        actions:
+          _new:                  { label: '&nbsp;', atts: {title: Add Event } }
       filter:  ~
 
       form:
@@ -28,6 +30,15 @@ generator:
           Parent:             { name: Parent Event }
         display:              [ title, author_id, description, date, publication_date, due_date, sticky, mugshot, main_slideshow, event_cat ]
 
-      edit:    ~
+      edit:
+        title:                  Edit Event
+        actions:
+          _list:                  { label: '&nbsp;', atts: {title: Back to list } }
+          _delete:                { label: '&nbsp;', atts: {title: Delete } }
+          _save:                  { label: '&nbsp;', atts: {title: Save } }
       new:
-        title:                Nuevo Evento
+        title:                  New Event
+        actions:
+          _list:                  { label: '&nbsp;', atts: {title: Back to list } }
+          _save:                  { label: '&nbsp;', atts: {title: Save } }
+          _save_and_add:          { label: '&nbsp;', atts: {title: Save and add } }

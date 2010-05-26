@@ -11,7 +11,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   background: transparent;
 }
-body { line-height: 1; }
+body {
+  line-height: 1;
+  font-size: 62.5%;
+}
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 blockquote:before {
@@ -385,46 +388,32 @@ form fieldset > section p.info {
   color: #999999;
 }
 form fieldset > section > div { margin-bottom: 8px; }
-body {
-  background-color: #eeeeee;
-  font-size: 14px;
-}
+body { background-color: #2f2f2f; }
 body div#wrapper {
-  padding: 5px;
-  width: 1000px;
-  margin: 0 auto;
+  width: 557px;
+  height: 452px;
+  margin: 200px auto;
+  padding: 35px 0 0 0;
+  background: transparent url('images/login_sprite.png') no-repeat -410px top;
 }
 body #login {
+  background: #c19400 url('images/login_sprite.png') no-repeat top left;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  background-color: #eeffff;
-  border-radius: 12px;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  width: 300px;
-  height: 300px;
-  margin: 200px auto 0;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  width: 410px;
+  height: 370px;
+  margin: 0 auto 0;
+}
+body #login img {
+  width: 210px;
+  margin: 25px 100px;
 }
 body #login input[type=text] { width: 100px; }
 body #login input[type=email] { width: 100px; }
 body #login input[type=password] { width: 100px; }
-body #login h2 {
-  margin: 0;
-  padding: 0;
-  height: 30px;
-  line-height: 30px;
-  background-color: #000000;
-  border-radius: 12px 12px 0 0;
-  -moz-border-radius: 12px 12px 0 0;
-  -webkit-border-radius: 12px 12px 0 0;
-  color: #ffffff;
-  text-align: center;
-  border-bottom: 1px solid #aaaaaa;
-  -webkit-box-shadow: 0 1px 0 #ffffff;
-}
 body #login form {
   padding: 5px;
   font-size: 12px;

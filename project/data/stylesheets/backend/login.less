@@ -4,27 +4,30 @@
 @import "../_commons/interface.elements";
 
 body {
-  background-color: #eee;
-  font-size: 14px;
+  background-color: #2f2f2f;
+
 
   /* Layout */
   div#wrapper {
-    padding: 5px;
-    width: 1000px; margin: 0 auto;
+    width: 557px; height: 452px; margin: 200px auto;
+    padding: 35px 0 0 0;
+    background: transparent url('images/login_sprite.png') no-repeat -410px top;
   }
 
   #login {
-
+    background: #c19400 url('images/login_sprite.png') no-repeat top left;
+    .box-sizing;
+    .border-radius(6px);
+    width: 410px; height: 370px;
+    margin: 0 auto 0;
+    img {
+      width:210px;
+      margin: 25px 100px;
+    }
     input[type=text], input[type=email], input[type=password] {
       width: 100px;
     }
-
-    .box-sizing;
-    .simple-dialog;
-
-    width: 300px; height: 300px;
-    margin: 200px auto 0;
-    
+  
     form {
       padding: 5px;
       font-size: 12px;

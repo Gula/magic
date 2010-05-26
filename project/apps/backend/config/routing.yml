@@ -10,7 +10,7 @@ category:
 sf_guard_user:
   class: sfDoctrineRouteCollection
   options:
-    model:                sfGuardUser
+    model:                sfMooDooUser
     module:               users
     prefix_path:          /users
     column:               id
@@ -36,15 +36,15 @@ event:
 
 sf_guard_signin:
   url:   /login
-  param: { module: sfGuardAuth, action: signin }
+  param: { module: sfMooDooAuth, action: signin }
 
 sf_guard_signout:
   url:   /logout
-  param: { module: sfGuardAuth, action: signout }
+  param: { module: sfMooDooAuth, action: signout }
 
 sf_guard_password:
   url:   /request_password
-  param: { module: sfGuardAuth, action: password }
+  param: { module: sfMooDooAuth, action: password }
 
 # default rules
 homepage:

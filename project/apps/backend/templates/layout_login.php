@@ -11,7 +11,9 @@
   <body>
 
     <div id="wrapper">
-      <section id="login" class="simple-box">
+      
+      <section id="login">
+        <img id="logo" src="/images/logo-bkend.png" />
         <?php echo $sf_content ?>
       </section>
 

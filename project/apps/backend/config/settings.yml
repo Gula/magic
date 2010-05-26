@@ -37,13 +37,13 @@ all:
     # Enable the database manager
     use_database:           true
 
-    enabled_modules:        [default, sfGuardGroup, sfGuardUser, sfGuardPermission, sfGuardAuth, mooDooTest]
+    enabled_modules:        [default, sfMooDooGroup, sfMooDooUser, sfMooDooPermission, sfMooDooAuth, mooDooTest]
 
   .actions:
-    login_module:           sfGuardAuth
+    login_module:           sfMooDooAuth
     login_action:           signin
 
-    secure_module:          sfGuardAuth
+    secure_module:          sfMooDooAuth
     secure_action:          secure
 
   

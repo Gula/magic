@@ -15,15 +15,14 @@
     <div id="wrapper">
 
       <section id="header">
-        <div id="logo"></div>
+        <img id="logo" src="/images/logo-bkend.png" />
+        <div id="shine"></div>
+
         <?php include_partial('global/menu') ?>
         <?php include_partial('global/mini-panel') ?>
       </section>
-
-
-      <section id="board">
-        <?php echo $sf_content ?>
-      </section>
+       <?php echo $sf_content ?>
+       <?php include_partial('global/footer') ?>
 
     </div>
     

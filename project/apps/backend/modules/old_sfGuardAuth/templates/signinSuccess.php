@@ -1,5 +1,5 @@
 <?php use_helper('I18N') ?>
-<h2><?php echo __('Login'); ?></h2>
+
 <form action="<?php echo url_for('@sf_guard_signin') ?>" method="post">
   <table>
     <?php echo $form ?>
