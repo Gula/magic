@@ -35,3 +35,11 @@ all:
 
     # Enable the database manager
     use_database:           true
+    enabled_modules:        [default, sfMooDooAuth]
+
+  .actions:
+    login_module:           sfMooDooAuth
+    login_action:           signin
+
+    secure_module:          sfMooDooAuth
+    secure_action:          secure

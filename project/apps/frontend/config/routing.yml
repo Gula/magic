@@ -6,6 +6,20 @@ homepage:
   url:   /
   param: { module: default, action: index }
 
+sf_guard_signin:
+  url:   /login
+  param: { module: sfMooDooAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfMooDooAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfMooDooAuth, action: password }
+
+
+
 # generic rules
 # please, remove them by adding more specific rules
 default_index:

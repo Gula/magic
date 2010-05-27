@@ -30,8 +30,8 @@
         <li>
           <a href="#"><span class="users"></span><?php echo __('Users'); ?></a>
           <ul>
-            <li><a href="<?php echo url_for('@user_list') ?>"><span class="users"></span><?php echo __('List'); ?></a></li>
-            <li><a href="<?php echo url_for('@user_new') ?>"><span class="add"></span><?php echo __('Add user'); ?></a></li>
+            <li><a href="<?php echo url_for('user/list') ?>"><span class="users"></span><?php echo __('List'); ?></a></li>
+            <li><a href="<?php echo url_for('user/new') ?>"><span class="add"></span><?php echo __('Add user'); ?></a></li>
             <li><?php echo link_to(__('Groups'), 'groups/index') ?></li>
             <li><?php echo link_to(__('Permissions'), 'permissions/index') ?></li>
           </ul>

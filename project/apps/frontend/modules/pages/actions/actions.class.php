@@ -54,5 +54,8 @@ class pagesActions extends sfActions
       $this->shows = EventTable::retrieveShows();
       $this->setTemplate('shows');
     }
+
+
+    
   }
 }
