@@ -9,15 +9,11 @@
     <?php include_javascripts() ?>
   </head>
   <body>
-
     <div id="wrapper">
-      
       <section id="login">
         <img id="logo" src="/images/logo-bkend.png" />
         <?php echo $sf_content ?>
       </section>
-
     </div>
-    
   </body>
 </html>

@@ -69,7 +69,7 @@
       </trans-unit>
       <trans-unit id="15">
         <source>sign in</source>
-        <target>Autenticar</target>
+        <target>Acceder</target>
       </trans-unit>
       <trans-unit id="16">
         <source>Forgot your password?</source>
@@ -456,6 +456,11 @@
       <trans-unit id="99">
         <source>Do you need a new password?</source>
         <target>Necesita un nuevo password?</target>
+      </trans-unit>
+
+     <trans-unit id="100">
+        <source>Remember User?</source>
+        <target>Recordar Usuario?</target>
       </trans-unit>
     </body>
   </file>

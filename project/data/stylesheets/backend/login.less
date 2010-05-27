@@ -1,86 +1,91 @@
 @import "../_commons/common";
 @import "../_commons/clear";
-@import "../_commons/interface.boxs";
-@import "../_commons/interface.elements";
+/*@import "../_commons/interface.boxs";
+@import "../_commons/interface.elements";*/
 
 body {
   background-color: #2f2f2f;
-
-
+  font-family: Hevetica, Arial;
   /* Layout */
   div#wrapper {
     width: 557px; height: 452px; margin: 200px auto;
     padding: 35px 0 0 0;
     background: transparent url('images/login_sprite.png') no-repeat -410px top;
-  }
-
-  #login {
-    background: #c19400 url('images/login_sprite.png') no-repeat top left;
-    .box-sizing;
-    .border-radius(6px);
-    width: 410px; height: 370px;
-    margin: 0 auto 0;
-    img {
-      width:210px;
-      margin: 25px 100px;
-    }
-    input[type=text], input[type=email], input[type=password] {
-      width: 100px;
-    }
-  
-    form {
-      padding: 5px;
-      font-size: 12px;
-
-      position: relative;
-      text-align: center;
-      
-      input[type=submit] {
-        display: block;
-        margin: 0 auto;
+    #login {
+      background: #c19400 url('images/login_sprite.png') no-repeat top left;
+      .box-sizing;
+      .border-radius(6px);
+      width: 410px; height: 370px;
+      margin: 0 auto 0;
+      img {
+        width:210px;
+        margin: 25px 100px;
       }
-
-      table{
-        width: 100%;
-        margin-bottom: 30px;
-
-        tr {
-          th {
-            .box-sizing;
-            padding: 0 5px 5px 0;
-            text-align: right;
-
-            label {
-              font-size: 12px;
+      input[type=text], input[type=email], input[type=password] {
+        border: none;
+        font-size:1.6em;
+        height:18px;
+        padding:15px;
+        width:217px;
+        .border-radius;
+        margin-bottom:10px;
+        background: #c19400 url('images/login_sprite.png') no-repeat left -400px;
+        :hover{
+          background-position: left -448px
+        }
+      }
+      form {
+        padding: 5px;
+       /* font-size: 12px;*/
+        position: relative;
+        text-align: center;
+        input[type=submit] {
+          display: block;
+          margin: 0 auto;
+        }
+        table{
+          width: 100%;
+          margin-bottom: 10px;
+          tr {
+            th {
+              .box-sizing;
+              text-align: right;
+              width:60px;
+              
+            }
+            td {
+              width:250px;
+              padding: 0 5px;
+              label {
+                font-weight: bold;
+                font-size: 1.2em;
+                color: #fff;
+                .text-shadow(1px, 1px, 1px, #000);
+              }
             }
           }
         }
-
-        td {
-          padding: 0 5px;
-
-          ul.error_list {
-            color: #f00;
-            position: absolute;
-            right: -260px;
-            width: 300px;
-            background-color: rgba(255, 0, 0, 0.1);
-            border: 1px solid rgba(255, 0, 0, 0.4);
-            .border-radius;
-            padding: 5px;
+         ul.error_list {
+                color: #f00;
+                position: absolute;
+                right: -260px;
+                width: 300px;
+                background-color: rgba(255, 0, 0, 0.1);
+                border: 1px solid rgba(255, 0, 0, 0.4);
+                .border-radius;
+                padding: 5px;
+              }
+        a {
+          display: block; 
+          margin: 10px auto 0;
+          color: #FFF;
+          font-size: 1.2em;
+          font-weight:bold;
+          .text-shadow(1px, 1px, 1px, #000);
+          text-decoration: none;
+          :hover {
+            text-decoration: underline;
           }
-        }
-
-      }
-
-      a {
-        display: block; margin: 20px auto 0;
-        color: #A04;
-        .text-shadow;
-        text-decoration: none;
-
-        :hover {
-          text-decoration: underline;
         }
       }
     }
