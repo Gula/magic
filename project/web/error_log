@@ -1969,3 +1969,31 @@ Stack trace:
 #3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
 #4 {main}
   thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[27-May-2010 14:24:15] Action "users/edit" does not exist.
+[27-May-2010 14:24:15] Action "sf/sf_default" does not exist.
+[27-May-2010 14:24:15] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[27-May-2010 14:24:15] Action "sf/sf_default" does not exist.
+[27-May-2010 14:24:15] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638
+[27-May-2010 14:24:15] Action "sf/sf_default" does not exist.
+[27-May-2010 14:24:15] PHP Fatal error:  Uncaught exception 'sfError404Exception' with message 'Action "default/error404" does not exist.' in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php:638
+Stack trace:
+#0 /home/magic/magic/project/lib/vendor/symfony/lib/exception/sfError404Exception.class.php(49): sfController->forward('default', 'error404')
+#1 /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php(2345): sfError404Exception->printStackTrace()
+#2 /home/magic/magic/project/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#3 /home/magic/magic/project/web/index.php(7): sfContext->dispatch()
+#4 {main}
+  thrown in /home/magic/magic/project/cache/frontend/prod/config/config_core_compile.yml.php on line 638

@@ -83,7 +83,7 @@
                   <?php foreach ($show['events'] as $event) : ?>
             <li>
               <h3><?php echo link_to($event, 'events/index?id='.$event->get('id')) ?></h3>
-              <h4><?php echo format_date($event->getDate(), 'dd-MM-y hh:mm')?>hs</h4>
+              <h4><?php echo format_date($event->getDate(), 'dd-MM-y HH:mm')?>hs</h4>
               <div class="img-placeholder sticky-<?php echo $event->get('sticky') ?>">
 
                         <?php
