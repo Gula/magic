@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*
 @font-face {
   font-weight: bold;
   font-family: 'FuturaLTMediumRegular';
@@ -18,9 +19,10 @@
   src: url('fonts/futuralt_bold.eot');
   src: local('Futura LT Book'), local('FuturaLT-Bold'), url('fonts/futuralt_bold.woff') format('woff'), url('fonts/futuralt_bold.ttf') format('truetype'), url('fonts/futuralt_bold.svg#FuturaLT-Bold') format('svg');
 }
+*/
 
 body {
-  font: normal normal normal 0.69em/0.88em "FuturaLTMediumRegular", Helvetica, Arial, sans-serif;
+  font: normal normal normal 0.75em/0.98em "FuturaLTMediumRegular", Helvetica, Arial, sans-serif;
   background: #000	none;
   color: #F4F4F4;
   background-image: url(../images/bkg.jpg);
@@ -520,7 +522,7 @@ NOVEDADES
 }
 
 #pagina-casino #header #nav,
-#pagina-torneosdepoker #header #nav,
+#pagina-torneosdecartas #header #nav,
 #pagina-clubmagicvip #header #nav,
 #pagina-mesasdejuego #header #nav {
   background-image: url(../images/paginas/casino_header.jpg);
@@ -632,7 +634,7 @@ NOVEDADES
   font-style: normal;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
   font-family: 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
-  font-size: 9px;
+  font-size: 45%;
   letter-spacing: 0px;
   font-weight: 500;
   font-weight: normal;
@@ -640,7 +642,7 @@ NOVEDADES
   color: white;
   display:		block;
   position:		relative;
-  margin: 0 3px;
+  margin: 0 1px;
   padding: 6px;
   border: 1px solid transparent;
 }
@@ -668,6 +670,8 @@ NOVEDADES
   margin-left: 197px;
   width: 753px;
   height: 75px;
+  background: transparent  url(../images/bg_50.png) repeat left top;
+
 }
 
 
@@ -677,8 +681,7 @@ NOVEDADES
   text-align: right;
   color: white;
 
-  font: normal normal normal 16px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
-  text-transform:  uppercase;
+  font: normal normal normal 150% 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
 
   letter-spacing: 1px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
@@ -742,20 +745,22 @@ NOVEDADES
 /* El color de fondo del titulo va luego en .contenido-NOMBREPAGINA .contenido. .titulo-subpagina */
 
 .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
-  padding-left: 0px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
+padding-left: 0px;
+padding-bottom: 10px;
+padding-right: 10px;
+padding-top: 10px;
 
-  width: 240px;
-  position: absolute;
-  margin: 0px;
-  margin-top: 141px;
-  text-align: right;
-  color: #fff;
+width: 240px;
+position: absolute;
+margin: 0px;
+margin-top: 141px;
+text-align: right;
+color: #fff;
 
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
-  font: 0.69em/12px "FuturaLTMediumRegular", Helvetica, Arial, sans-serif;
+text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+letter-spacing: 1px;
+text-transform: uppercase;
+font: 9px 'FuturaLTBoldRegular', Helvetica, Arial, sans-serif;
 }
 
 .contenido .slideshow-paginas .subpagina p.titulo-subpagina a {
@@ -771,7 +776,7 @@ NOVEDADES
   line-height: 12px;
   width: 240px;
   height: 140px;
-
+  font-size: 65%;
   padding-left: 5px;
   padding-bottom: 10px;
   padding-right: 5px;
@@ -785,7 +790,7 @@ NOVEDADES
   /* border: 1px solid green; */
 
   font: 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
-  text-align: justify;
+  text-align: left;
 }
 
 
@@ -901,7 +906,7 @@ background-color: #dbba83;
 
   letter-spacing: 0px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
-  font: 12px/14px;
+  font: 12px/16px;
 }
 
 
@@ -918,7 +923,7 @@ background-color: #dbba83;
 }
 #pagina-casino .contenido .subpagina-contenido,
 #pagina-mesasdejuego .contenido .subpagina-contenido,
-#pagina-torneosdepoker .contenido .subpagina-contenido,
+#pagina-torneosdecartas .contenido .subpagina-contenido,
 #pagina-clubmagicvip .contenido .subpagina-contenido {
   background-color: #5a0502;
 }
@@ -941,7 +946,8 @@ background-color: #dbba83;
 #pagina-cateringmenus .subpagina-contenido,
 #pagina-salonrainbow .subpagina-contenido,
 #pagina-businesscenter .subpagina-contenido,
-#pagina-equipamientoaudiovisual .subpagina-contenido
+#pagina-equipamientoaudiovisual .subpagina-contenido,
+#pagina-formatosycapacidades .subpagina-contenido
 {
   background-color: #63132d;
 }
@@ -1396,4 +1402,65 @@ background-color: #000;
 	color: white;
 	letter-spacing: 0px;
 	font: 10px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+}
+
+#poker, #capacidad {
+	width: 100%;
+}
+#capacidad caption {
+
+	background-color: #732b42;
+
+}
+
+#poker caption, #poker thread th {
+
+	background-color: #5a0502;
+
+}
+
+
+
+#poker caption p, #capacidad caption p {
+	font-size: 14px;
+	margin: 0px;
+	padding-top: 10px !important;
+	padding-right: 0px;
+	padding-bottom: 10px !important;
+	padding-left: 0px;
+}
+
+#poker p {
+	text-align: left;
+}
+
+#poker p, #capacidad p {
+	font-size: 10px;
+	margin: 0px;
+	padding: 5px !important;
+	text-align: center;
+}
+#poker tr th, #capacidad tr th {
+	border-right-width: 2px;
+	border-right-style: solid;
+	border-right-color: #732b42;
+}
+
+#capacidad tr th p {
+	text-align: left !important;
+}
+#capacidad td {
+	border-bottom-width: 1px !important;
+	border-bottom-style: solid !important;
+	border-bottom-color: #814155 !important;
+}
+
+#poker td {
+	border-bottom-width: 1px !important;
+	border-bottom-style: solid !important;
+	border-bottom-color: #5a0502 !important;
+}
+
+#capacidad td.no-line {
+	border-bottom-width: 0px !important;
 }
