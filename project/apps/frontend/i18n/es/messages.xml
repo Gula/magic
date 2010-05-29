@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="es" datatype="plaintext" original="messages" date="2010-03-08T01:57:46Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Logout</source>
+        <target>Salir</target>
+      </trans-unit>
+
+      <trans-unit id="2">
+        <source>Content</source>
+        <target>Contenido</target>
+      </trans-unit>
+      
+
+      <trans-unit id="3">
+        <source>list</source>
+        <target>listado</target>
+      </trans-unit>
+
+      <trans-unit id="4">
+        <source>Pages</source>
+        <target>Páginas</target>
+      </trans-unit>
+
+      <trans-unit id="5">
+        <source>Finish</source>
+        <target>Final</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Configuration</source>
+        <target>Configuración</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Users</source>
+        <target>Usuarios</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>List</source>
+        <target>Listado</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Groups</source>
+        <target>Grupos</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Permissions</source>
+        <target>Credenciales</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Forms</source>
+        <target>Formularios</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>New form</source>
+        <target>Nuevo Formulario</target>
+      </trans-unit>
+
+      <trans-unit id="13">
+        <source>Add page</source>
+        <target>Agregar página</target>
+      </trans-unit>
+
+      <trans-unit id="14">
+        <source>Login</source>
+        <target>Ingresar</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>sign in</source>
+        <target>Acceder</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Forgot your password?</source>
+        <target>Olvido su contraseña ?</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>You don't have the required permission to access this page.</source>
+        <target>Usted no tiene permisos para ingresar a esta página.</target>
+      </trans-unit>
+
+      <trans-unit id="18">
+        <source>Name</source>
+        <target>Nombre</target>
+      </trans-unit>
+
+      <trans-unit id="19">
+        <source>Description</source>
+        <target>Descripción</target>
+      </trans-unit>
+
+      <trans-unit id="20">
+        <source>Created at</source>
+        <target>Creado en</target>
+      </trans-unit>
+
+      <trans-unit id="21">
+        <source>actions</source>
+        <target>acciones</target>
+      </trans-unit>
+
+      <trans-unit id="22">
+        <source>Group</source>
+        <target>Grupo</target>
+      </trans-unit>
+
+      <trans-unit id="23">
+        <source>Title</source>
+        <target>Título</target>
+      </trans-unit>
+
+
+      <trans-unit id="25">
+        <source>Back to list</source>
+        <target>Volver al listado</target>
+      </trans-unit>
+
+      <trans-unit id="27">
+        <source>Number</source>
+        <target>Número</target>
+      </trans-unit>
+
+
+      <trans-unit id="29">
+        <source>Updated at</source>
+        <target>Actualizado en</target>
+      </trans-unit>
+
+      <trans-unit id="32">
+        <source>Stated</source>
+        <target>Estado</target>
+      </trans-unit>
+
+
+      <trans-unit id="37">
+        <source>The username and/or password is invalid.</source>
+        <target>El nombre de usuario y/o la contraseña es incorrecto</target>
+      </trans-unit>
+
+      <trans-unit id="38">
+        <source>Required.</source>
+        <target>Requerido.</target>
+      </trans-unit>
+
+      <trans-unit id="39">
+        <source>Username</source>
+        <target>Nombre de cuenta</target>
+      </trans-unit>
+
+      <trans-unit id="40">
+        <source>Password</source>
+        <target>Contraseña</target>
+      </trans-unit>
+
+      <trans-unit id="41">
+        <source>Remember</source>
+        <target>Recordar</target>
+      </trans-unit>
+
+      <trans-unit id="42">
+        <source>Invalid mime type (%mime_type%).</source>
+        <target>Tipo de Archivo inválido (%mime_type%).</target>
+      </trans-unit>
+
+      <trans-unit id="43">
+        <source>empty</source>
+        <target>vacío</target>
+      </trans-unit>
+
+      <trans-unit id="44">
+        <source>Choose File</source>
+        <target>Selecciona Archivo</target>
+      </trans-unit>
+
+      <trans-unit id="43">
+        <source>State</source>
+        <target>Estado</target>
+      </trans-unit>
+
+      <trans-unit id="44">
+        <source>First name</source>
+        <target>Nombre</target>
+      </trans-unit>
+
+      <trans-unit id="45">
+        <source>Last name</source>
+        <target>Apellido</target>
+      </trans-unit>
+
+      <trans-unit id="46">
+        <source>Is active</source>
+        <target>Activo</target>
+      </trans-unit>
+
+      <trans-unit id="47">
+        <source>Is super admin</source>
+        <target>Superadmin</target>
+      </trans-unit>
+
+      <trans-unit id="48">
+        <source>Last login</source>
+        <target>Ultimo login</target>
+      </trans-unit>
+
+      <trans-unit id="49">
+        <source>Add user</source>
+        <target>Agregar Usuario</target>
+      </trans-unit>
+
+      <trans-unit id="50">
+        <source>User list</source>
+        <target>Listado de Usuarios</target>
+      </trans-unit>
+
+      <trans-unit id="51">
+        <source>Group list</source>
+        <target>Listado de Grupos</target>
+      </trans-unit>
+
+      <trans-unit id="52">
+        <source>Permission list</source>
+        <target>Listado de Credenciales</target>
+      </trans-unit>
+
+      <trans-unit id="53">
+        <source>Edit user</source>
+        <target>Editar usuario</target>
+      </trans-unit>
+
+      <trans-unit id="54">
+        <source>Author</source>
+        <target>Autor</target>
+      </trans-unit>
+
+      <trans-unit id="55">
+        <source>New page</source>
+        <target>Página nueva</target>
+      </trans-unit>
+
+      <trans-unit id="56">
+        <source>Parent page</source>
+        <target>Página padre</target>
+      </trans-unit>
+
+      <trans-unit id="57">
+        <source>Edit page</source>
+        <target>Editar Página</target>
+      </trans-unit>
+
+      <trans-unit id="58">
+        <source>New Category</source>
+        <target>Categoría nueva</target>
+      </trans-unit>
+
+      <trans-unit id="59">
+        <source>Categories</source>
+        <target>Categorías</target>
+      </trans-unit>
+
+      <trans-unit id="60">
+        <source>Add category</source>
+        <target>Agregar categoría</target>
+      </trans-unit>
+      
+      <trans-unit id="61">
+        <source>Categories list</source>
+        <target>Lista de categorías</target>
+      </trans-unit>
+
+      <trans-unit id="62">
+        <source>New category</source>
+        <target>Categoría nueva</target>
+      </trans-unit>
+
+      <trans-unit id="63">
+        <source>New user</source>
+        <target>Usuario Nuevo</target>
+      </trans-unit>
+
+      <trans-unit id="64">
+        <source>Categorys List</source>
+        <target>Listado de Categorías</target>
+      </trans-unit>
+
+      <trans-unit id="65">
+        <source>Page list</source>
+        <target>Listado de páginas</target>
+      </trans-unit>
+
+      <trans-unit id="66">
+        <source>New</source>
+        <target>Nuevo</target>
+      </trans-unit>
+
+      <trans-unit id="67">
+        <source>Picture</source>
+        <target>Imagen</target>
+      </trans-unit>
+
+      <trans-unit id="68">
+        <source>Save</source>
+        <target>Guardar</target>
+      </trans-unit>
+
+      <trans-unit id="69">
+        <source>Date</source>
+        <target>Fecha</target>
+      </trans-unit>
+
+      <trans-unit id="70">
+        <source>Publication date</source>
+        <target>Fecha de Publicación</target>
+      </trans-unit>
+
+      <trans-unit id="71">
+        <source>Due date</source>
+        <target>Fecha de Expiración</target>
+      </trans-unit>
+
+      <trans-unit id="72">
+        <source>Image</source>
+        <target>Imagen</target>
+      </trans-unit>
+
+      <trans-unit id="73">
+        <source>Add event</source>
+        <target>Agregar evento</target>
+      </trans-unit>
+
+      <trans-unit id="74">
+        <source>Events</source>
+        <target>Eventos</target>
+      </trans-unit>
+
+      <trans-unit id="75">
+        <source>Parent category</source>
+        <target>Categoría padre</target>
+      </trans-unit>
+
+      <trans-unit id="76">
+        <source>Abstract</source>
+        <target>Resúmen</target>
+      </trans-unit>
+
+      <trans-unit id="77">
+        <source>Edit Page</source>
+        <target>Editar Página</target>
+      </trans-unit>
+
+      <trans-unit id="78">
+        <source>New Page</source>
+        <target>Página nueva</target>
+      </trans-unit>
+
+      <trans-unit id="79">
+        <source>The two passwords must be the same.</source>
+        <target>Las dos contraseñas deben ser iguales.</target>
+      </trans-unit>
+
+      <trans-unit id="80">
+        <source>Pages List</source>
+        <target>Listado de páginas</target>
+      </trans-unit>
+
+      <trans-unit id="81">
+        <source>Events List</source>
+        <target>Listado de eventos</target>
+      </trans-unit>
+
+      <trans-unit id="82">
+        <source>New Users</source>
+        <target>Nuevos Usuarios</target>
+      </trans-unit>
+
+      <trans-unit id="83">
+        <source>Profile</source>
+        <target>Perfil</target>
+      </trans-unit>
+
+      <trans-unit id="84">
+        <source>Password again</source>
+        <target>Contraseña nuevamente</target>
+      </trans-unit>
+
+      <trans-unit id="85">
+        <source>Users List</source>
+        <target>Listado de usuarios</target>
+      </trans-unit>
+
+      <trans-unit id="86">
+        <source>Start</source>
+        <target>Inicio</target>
+      </trans-unit>
+      <trans-unit id="87">
+        <source>Log Off</source>
+        <target>Cerrar Sesión</target>
+      </trans-unit>
+      <trans-unit id="88">
+        <source>User</source>
+        <target>Usuario</target>
+      </trans-unit>
+
+      <trans-unit id="89">
+        <source>Edit Groups</source>
+        <target>Editar Grupos</target>
+      </trans-unit>
+
+      <trans-unit id="90">
+        <source>Save and add</source>
+        <target>Guardar y agregar nuevo</target>
+      </trans-unit>
+
+      <trans-unit id="91">
+        <source>Filter</source>
+        <target>Filtro</target>
+      </trans-unit>
+
+      <trans-unit id="92">
+        <source>Go</source>
+        <target>Ejecutar</target>
+      </trans-unit>
+
+      <trans-unit id="93">
+        <source>New Event</source>
+        <target>Evento Nuevo</target>
+      </trans-unit>
+
+      <trans-unit id="94">
+        <source>Edit Event</source>
+        <target>Editar Evento</target>
+      </trans-unit>
+
+      <trans-unit id="95">
+        <source>New User</source>
+        <target>Usuario Nuevo</target>
+      </trans-unit>
+
+      <trans-unit id="96">
+        <source>Edit User</source>
+        <target>Editar Usuario</target>
+      </trans-unit>
+
+
+      <trans-unit id="97">
+        <source>Edit Category</source>
+        <target>Editar Categoría</target>
+      </trans-unit>
+
+
+      <trans-unit id="98">
+        <source>Categories List</source>
+        <target>Listado de Categorías</target>
+      </trans-unit>
+
+      <trans-unit id="99">
+        <source>Do you need a new password?</source>
+        <target>Necesita un nuevo password?</target>
+      </trans-unit>
+
+     <trans-unit id="100">
+        <source>Remember User?</source>
+        <target>Recordar Usuario?</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

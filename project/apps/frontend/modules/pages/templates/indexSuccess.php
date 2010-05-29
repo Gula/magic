@@ -1,3 +1,5 @@
+<?php use_helper('I18N') ?>
+
 <div class="span-24 contenido-<?php echo $page->getSlugize() ?>">
   <div class="contenido">
     <div class="sub-menu">
@@ -27,7 +29,9 @@
       <div class="titulo"><h3><?php echo $realPage->getAbstract() ?></h3></div>
 
       <?php if($realPages->count() > 0) : ?>
+      <?php if ($sf_request->getParameter('id') == 21 and !($sf_user->isAuthenticated() and $isVip)): ?>
       <!-- carousel -->
+      <?php else: ?>
       <div class="slideshow-paginas" id="slideshow-paginas">
         <div class="slide-wrapper-paginas">
           <ul>
@@ -37,6 +41,8 @@
           </ul>
         </div>
       </div>
+
+      <?php endif; ?>
       <?php endif; ?>
 
       <?php if($realPages->count() > 3) : ?>
@@ -48,6 +54,45 @@
         <h3><?php echo $realPage ?></h3>
         <?php echo $realPage->getRawValue()->getDescription() ?>
       </div>
+
+      <?php if ($sf_request->getParameter('id') == 21 and !$sf_user->isAuthenticated()) : ?>
+      <div class="auth">
+        <form action="<?php echo url_for('pages/index') ?>" method="post">
+        <input type="hidden" value="21" name="id" />
+        <input type="hidden" value="1" name="level" />
+        <table>
+          <?php echo $form->renderGlobalErrors() ?>
+           <?php echo $form->renderHiddenFields() ?>
+           <tr>
+             <td>
+              <?php echo $form['username']->renderError() ?>
+              <?php echo $form['username'] ?>
+            </td>
+          </tr>
+           <tr>
+             <td>
+              <?php echo $form['password']->renderError() ?>
+              <?php echo $form['password'] ?>
+            </td>
+          </tr>
+       <tr>
+             <td>
+              <?php echo $form['remember']->renderError() ?>
+              <?php echo $form['remember']->renderLabel() ?>
+              <?php echo $form['remember'] ?>
+            </td>
+          </tr>
+
+
+        </table>
+
+        <input type="submit" value="<?php echo __('sign in') ?>" />
+      </form>
+
+      </div>
+      <?php else: ?>
+      <?php echo link_to('Salir','@sf_guard_signout' ); ?>
+      <?php endif; ?>
     </div>
   </div>
 

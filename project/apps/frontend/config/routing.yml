@@ -8,18 +8,19 @@ homepage:
 
 sf_guard_signin:
   url:   /login
-  param: { module: sfMooDooAuth, action: signin }
+  param: { module: users, action: signin }
 
 sf_guard_signout:
   url:   /logout
-  param: { module: sfMooDooAuth, action: signout }
+  param: { module: users, action: signout }
 
 sf_guard_password:
   url:   /request_password
-  param: { module: sfMooDooAuth, action: password }
+  param: { module: users, action: password }
 
-
-
+vip:
+  url:   /vip
+  param: { module: pages, action: vip }
 # generic rules
 # please, remove them by adding more specific rules
 default_index:
