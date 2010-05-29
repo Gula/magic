@@ -30,6 +30,7 @@
         <li>
           <a href="#"><span class="users"></span><?php echo __('Users'); ?></a>
           <ul>
+
             <li><a href="<?php echo url_for('sfMooDooUser/index') ?>"><span class="users"></span><?php echo __('List'); ?></a></li>
             <li><a href="<?php echo url_for('sfMooDooUser/new') ?>"><span class="add"></span><?php echo __('Add user'); ?></a></li>
             <li><?php echo link_to(__('Groups'), 'sfMooDooGroup/index') ?></li>
