@@ -25,5 +25,12 @@ class MGGalleryForm extends PluginMGGalleryForm
         'multiple' => true,
         'model' => 'MGPhoto'
     ));
+
+    // event_list
+    $this->widgetSchema['event_list'] = new sfWidgetFormDoctrineChoice(array(
+        'expanded' => true,
+        'multiple' => true,
+        'model' => 'Event'
+    ));
   }
 }

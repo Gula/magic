@@ -1,0 +1,80 @@
+.gallery {
+
+}
+
+.gallery ul {
+  list-style: none;
+  margin: 5px;
+}
+
+.gallery ul li {
+  
+}
+
+.gallery ul li h1 {
+  color: #fff;
+  background: transparent  url(../images/bg_30.png) repeat left top;
+  padding: 5px;
+  text-shadow: 0 0 5px #fff;
+  text-align: right;
+  margin: 0;
+}
+
+.gallery ul li p {
+  text-align: right;
+  margin: 5px;
+  font-size: 1.2em;
+}
+
+.gallery ul.mg_gallery {
+  background: transparent  url(../images/bg_white_10.png) repeat left top;
+  margin-bottom: 20px;
+  padding: 1px 0 10px;
+}
+
+.gallery ul.mg_gallery li {
+
+}
+
+.gallery ul.mg_gallery li h2 {
+  color: #fff;
+  background: transparent  url(../images/bg_50.png) repeat left top;
+  padding: 20px 10px;
+  text-shadow: 0 0 5px #fff;
+  margin: 0;
+}
+
+.gallery ul.mg_gallery li p {
+  color: #fff;
+  text-align: left;
+}
+
+/* foto */
+.gallery ul li.mg_photo {
+  padding: 5px;
+  border-radius: 5px;
+  width: 206px;
+  margin: 5px;
+  height: 300px;
+  background: transparent  url(../images/bg_50.png) repeat left top;
+  float: left;
+}
+
+.gallery li.mg_photo h3 {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 10px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 1);
+}
+
+.gallery li.mg_photo .image {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 3px;
+}
+.gallery li.mg_photo p {
+  font-size: 1.1em;
+  line-height: 1.4em;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
+}

@@ -21,3 +21,29 @@ all:
 
   sf_less_php_plugin:
     use_lessc:    true
+
+  sfMooDooGalleryPlugin:
+    dirname:                    mooDooGallery
+    upload_dir:                 %SF_UPLOAD_DIR%/mooDooGallery
+    images_dir:                 %SF_WEB_DIR%/images/mooDooGallery
+    web_dir:                    /uploads/mooDooGallery
+    no_image_name:              moodoo_no_image_
+
+    generate_images:            true
+
+    image_size:
+      tiny:
+        width:                  32
+        height:                 32
+      avatar:
+        width:                  256
+        height:                 256
+      preview:
+        width:                  300
+        height:                 null
+      thumb:
+        width:                  200
+        height:                 null
+      800:
+        width:                  800
+        height:                 null

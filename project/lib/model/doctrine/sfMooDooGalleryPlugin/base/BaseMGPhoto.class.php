@@ -11,6 +11,7 @@
  * @property clob $description
  * @property string $photo
  * @property Doctrine_Collection $Galleries
+ * @property sfGuardUser $Author
  * 
  * @method integer             getId()          Returns the current record's "id" value
  * @method integer             getAuthorId()    Returns the current record's "author_id" value
@@ -18,12 +19,14 @@
  * @method clob                getDescription() Returns the current record's "description" value
  * @method string              getPhoto()       Returns the current record's "photo" value
  * @method Doctrine_Collection getGalleries()   Returns the current record's "Galleries" collection
+ * @method sfGuardUser         getAuthor()      Returns the current record's "Author" value
  * @method MGPhoto             setId()          Sets the current record's "id" value
  * @method MGPhoto             setAuthorId()    Sets the current record's "author_id" value
  * @method MGPhoto             setTitle()       Sets the current record's "title" value
  * @method MGPhoto             setDescription() Sets the current record's "description" value
  * @method MGPhoto             setPhoto()       Sets the current record's "photo" value
  * @method MGPhoto             setGalleries()   Sets the current record's "Galleries" collection
+ * @method MGPhoto             setAuthor()      Sets the current record's "Author" value
  * 
  * @package    magic
  * @subpackage model
@@ -66,6 +69,10 @@ abstract class BaseMGPhoto extends sfDoctrineRecord
              'refClass' => 'MGGalleryPhoto',
              'local' => 'photo_id',
              'foreign' => 'gallery_id'));
+
+        $this->hasOne('sfGuardUser as Author', array(
+             'local' => 'author_id',
+             'foreign' => 'id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);

@@ -16,7 +16,7 @@ abstract class BaseMGPhotoForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id'             => new sfWidgetFormInputHidden(),
-      'author_id'      => new sfWidgetFormInputText(),
+      'author_id'      => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Author'), 'add_empty' => true)),
       'title'          => new sfWidgetFormInputText(),
       'description'    => new sfWidgetFormTextarea(),
       'photo'          => new sfWidgetFormInputText(),
@@ -27,7 +27,7 @@ abstract class BaseMGPhotoForm extends BaseFormDoctrine
 
     $this->setValidators(array(
       'id'             => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id', 'required' => false)),
-      'author_id'      => new sfValidatorInteger(array('required' => false)),
+      'author_id'      => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Author'), 'required' => false)),
       'title'          => new sfValidatorString(array('max_length' => 100)),
       'description'    => new sfValidatorString(array('required' => false)),
       'photo'          => new sfValidatorString(array('max_length' => 255)),

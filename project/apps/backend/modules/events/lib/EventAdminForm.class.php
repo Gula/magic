@@ -27,6 +27,14 @@ class EventAdminForm extends BaseEventForm
         'checked' => $this->getObject()->getIsMainSlide() ? 'checked' : false
       )
     );
+
+    // galleries_list
+    $this->widgetSchema['galleries_list'] = new sfWidgetFormDoctrineChoice(array(
+        'expanded' => true,
+        'multiple' => true,
+        'model' => 'MGGallery'
+    ));
+    
     $this->validatorSchema['main_slideshow'] = new sfValidatorString(array('required' => false));
 
     $this->widgetSchema['event_cat'] = new sfWidgetFormInputHidden(

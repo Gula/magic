@@ -35,7 +35,7 @@ all:
 
     # Enable the database manager
     use_database:           true
-    enabled_modules:        [default]
+    enabled_modules:        [default, mgPhoto, mgGallery]
 
   .actions:
     login_module:           users
