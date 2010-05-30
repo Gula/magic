@@ -1,0 +1,25 @@
+generator:
+  class:                      sfDoctrineGenerator
+  param:
+    model_class:              MGPhoto
+    theme:                    mooDoo.2
+    non_verbose_templates:    true
+    with_show:                false
+    singular:                 ~
+    plural:                   ~
+    route_prefix:             mg_photo
+    with_doctrine_route:      true
+    actions_base_class:       sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title:                Fotos
+        fields:
+          image_tiny:         { label: Photo }
+        display:              [_image_tiny, title, description]
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

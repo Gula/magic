@@ -7,14 +7,14 @@ attributes:
 Profile:
   columns:
     sf_guard_user_id:           integer(4)
-    first_name:                 { type: string(100), notnull: true }
-    last_name:                  { type: string(100), notnull: true }
-    birth_date:                 { type: date }
-    phone:                      { type: string(40) }
-    movil:                      { type: string(40) }
-    email:                      { type: string(60) }
-    addres:                     { type: string(100) }
-    country:                    { type: string(50) }
+    first_name:                 {type: string(100), notnull: true}
+    last_name:                  {type: string(100), notnull: true}
+    birth_date:                 {type: date}
+    phone:                      {type: string(40)}
+    movil:                      {type: string(40)}
+    email:                      {type: string(60)}
+    addres:                     {type: string(100)}
+    country:                    {type: string(50)}
 
   relations:
     User:
@@ -27,17 +27,17 @@ Page:
     - Timestampable
   tableName:                    page
   columns:
-    id:                         { type: integer, primary: true, autoincrement: true}
-    parent_id:                  { type: integer }
+    id:                         {type: integer, primary: true, autoincrement: true}
+    parent_id:                  {type: integer}
     author_id:                  integer(4)
-    title:                      { type: string(100), notnull: true }
-    description:                { type: clob }
-    abstract:                   { type: string(255) }
-    picture:                    { type: string(255) }
+    title:                      {type: string(100), notnull: true}
+    description:                {type: clob}
+    abstract:                   {type: string(255)}
+    picture:                    {type: string(255)}
   relations:
-    Author:                     { local: author_id, foreign: id, class: sfGuardUser }
-    Parent:                     { local: parent_id, foreign: id, class: Page }
-    Categories:                 { class: Category, local: page_id, foreign: category_id, refClass: PageCategory }
+    Author:                     {local: author_id, foreign: id, class: sfGuardUser}
+    Parent:                     {local: parent_id, foreign: id, class: Page}
+    Categories:                 {class: Category, local: page_id, foreign: category_id, refClass: PageCategory}
 
 #Category
 Category:
@@ -45,19 +45,19 @@ Category:
     - Timestampable
   tableName:                    category
   columns:
-    id:                         { type: integer, primary: true, autoincrement: true}
-    parent_id:                  { type: integer }
-    title:                      { type: string(60), notnull: true }
-    description:                { type: string(255) }
+    id:                         {type: integer, primary: true, autoincrement: true}
+    parent_id:                  {type: integer}
+    title:                      {type: string(60), notnull: true}
+    description:                {type: string(255)}
   relations:
-    Pages:                      { class: Page, local: category_id, foreign: page_id, refClass: PageCategory, onDelete: CASCADE }
-    Events:                     { class: Event, local: category_id, foreign: event_id, refClass: EventCategory, onDelete: CASCADE }
-    Parent:                     { local: parent_id, foreign: id, class: Category }
+    Pages:                      {class: Page, local: category_id, foreign: page_id, refClass: PageCategory, onDelete: CASCADE}
+    Events:                     {class: Event, local: category_id, foreign: event_id, refClass: EventCategory, onDelete: CASCADE}
+    Parent:                     {local: parent_id, foreign: id, class: Category}
 
 PageCategory:
   columns:
-    category_id:                { type: integer, primary: true }
-    page_id:                    { type: integer, primary: true }
+    category_id:                {type: integer, primary: true}
+    page_id:                    {type: integer, primary: true}
 
 
 # Events
@@ -68,20 +68,28 @@ Event:
       images:                   [ mugshot ]
   tableName:                    events
   columns:
-    id:                         { type: integer, primary: true, autoincrement: true}
+    id:                         {type: integer, primary: true, autoincrement: true}
     author_id:                  integer(4)
-    title:                      { type: string(100), notnull: true }
-    description:                { type: clob }
-    date:                       { type: timestamp }
-    publication_date:           { type: timestamp }
-    due_date:                   { type: timestamp }
-    sticky:                     { type: enum, values: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ], default: 9 }
+    title:                      {type: string(100), notnull: true}
+    description:                {type: clob}
+    date:                       {type: timestamp}
+    publication_date:           {type: timestamp}
+    due_date:                   {type: timestamp}
+    sticky:                     {type: enum, values: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ], default: 9}
 
   relations:
-    Author:                     { local: author_id, foreign: id, class: sfGuardUser }
-    Categories:                 { class: Category, local: event_id, foreign: category_id, refClass: EventCategory }
+    Author:                     {local: author_id, foreign: id, class: sfGuardUser}
+    Categories:                 {class: Category, local: event_id, foreign: category_id, refClass: EventCategory}
+    Galleries:                  {class: MGGallery, local: event_id, foreign: gallery_id, refClass: EventGallery}
 
 EventCategory:
   columns:
-    category_id:                { type: integer, primary: true }
-    event_id:                   { type: integer, primary: true }
+    category_id:                {type: integer, primary: true}
+    event_id:                   {type: integer, primary: true}
+
+# Event <-> Gallery
+EventGallery:
+  tableName:                    event_gallery
+  columns:
+    gallery_id:                 {type: integer}
+    event_id:                   {type: integer}

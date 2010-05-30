@@ -1,12 +1,18 @@
+<?php use_helper('I18N') ?>
+
 <div class="span-24 contenido-<?php echo $page->getSlugize() ?>">
   <div class="contenido">
     <div class="sub-menu">
       <h2><?php echo $page ?></h2>
+      <?php if ($sf_request->getParameter('id') == 21 and !($isVip)): ?>
+      
+      <?php else : ?>
       <ul>
         <?php foreach ($page->getChildren() as $child) : ?>
         <li><?php echo link_to($child->get('title'), 'pages/index?id='.$child->get('id').'&level=1') ?></li>
         <?php endforeach; ?>
       </ul>
+      <?php endif; ?>
     </div>
 
 
@@ -27,7 +33,9 @@
       <div class="titulo"><h3><?php echo $realPage->getAbstract() ?></h3></div>
 
       <?php if($realPages->count() > 0) : ?>
+      <?php if ($sf_request->getParameter('id') == 21 and !($sf_user->isAuthenticated() and $isVip)): ?>
       <!-- carousel -->
+      <?php else: ?>
       <div class="slideshow-paginas" id="slideshow-paginas">
         <div class="slide-wrapper-paginas">
           <ul>
@@ -37,6 +45,8 @@
           </ul>
         </div>
       </div>
+
+      <?php endif; ?>
       <?php endif; ?>
 
       <?php if($realPages->count() > 3) : ?>
@@ -47,7 +57,31 @@
       <div class="subpagina-contenido">
         <h3><?php echo $realPage ?></h3>
         <?php echo $realPage->getRawValue()->getDescription() ?>
-      </div>
+      
+
+      <?php if ($sf_request->getParameter('id') == 21 and !$sf_user->isAuthenticated()) : ?>
+      
+        <form action="<?php echo url_for('pages/index#signin') ?>" method="post">
+        <p id="signin">
+          <?php echo $form->renderGlobalErrors() ?>
+          <input type="hidden" value="21" name="id" />
+          <input type="hidden" value="1" name="level" />
+          <?php echo $form->renderHiddenFields() ?>
+          <?php echo $form['username']->renderError() ?>
+          <?php echo $form['username'] ?>
+          <?php echo $form['password']->renderError() ?>
+          <?php echo $form['password'] ?>
+          <?php echo $form['remember']->renderError() ?>
+          <?php echo $form['remember']->renderLabel() ?>
+          <?php echo $form['remember'] ?>
+          <input type="submit" value="<?php echo __('sign in') ?>" />
+        </p>  
+      </form>
+
+      <?php elseif ($sf_user->isAuthenticated()): ?>
+      <p><?php echo link_to('Salir','@sf_guard_signout' ); ?></p>
+      <?php endif; ?>
+    </div>
     </div>
   </div>
 

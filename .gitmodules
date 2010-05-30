@@ -1,6 +1,9 @@
 [submodule "lib/vendor/symfony"]
 	path = project/lib/vendor/symfony
 	url = git://github.com/davidsblom/symfony-1.4.git
+[submodule "project/plugins/sfMooDooGalleryPlugin"]
+	path = project/plugins/sfMooDooGalleryPlugin
+	url = git://github.com/RetroFOX/sfMooDooGalleryPlugin.git
 [submodule "project/plugins/sfDoctrineMooDooPlugin"]
 	path = project/plugins/sfDoctrineMooDooPlugin
 	url = git://github.com/RetroFOX/sfDoctrineMooDooPlugin.git

@@ -17,45 +17,69 @@ class pagesActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+    //Asignaciones
+    $this->vipNumber = 21;
     $this->level = $request->getParameter('level');
+    $this->currentPage = Doctrine::getTable('Page')->find($request->getParameter('id'));
+    $user = $this->getUser();
 
-    // paginas hijas
-    if($this->level == 1) {
-      $this->childPage = Doctrine::getTable('Page')->find($request->getParameter('id'));
-      $this->page = $this->childPage->getParent();
+    if ($user->isAuthenticated())
+      $this->isVip = $user->getGuardUser()->hasPermission('Vip');
+    else
+      $this->isVip = false;
+    
+    if($this->currentPage->getParent()->get('id') == $this->vipNumber and !($this->isVip))
+      return $this->redirect('pages/index?id='.$this->vipNumber.'&level=1'); 
+    else {
+      // paginas hijas
+      if($this->level == 1) {
+        // VIP
+        if($request->getParameter('id') == $this->vipNumber ) {
+          $class = sfConfig::get('app_sf_guard_plugin_signin_form', 'sfMooDooFormSignin');
+          $this->form = new $class();
+          if ($request->isMethod('post')) {
+            $this->form->bind($request->getParameter('signin'));
+            if ($this->form->isValid()) {
+              $values = $this->form->getValues();
+              $this->getUser()->signin($values['user'], array_key_exists('remember', $values) ? $values['remember'] : false);
+              return $this->redirect('pages/index?id='.$this->vipNumber.'&level=1');
+            }
+          } 
+        }// end login in page Vip
 
-      // Paginas hijas de show
-      if($this->childPage->getParent()->get('id') == 4) {
-        $catId = $this->childPage->get('id');
-        $catId = $catId - 26;
-        //$catId = $catId - 16;
+        $this->childPage = Doctrine::getTable('Page')->find($request->getParameter('id'));
+        $this->page = $this->childPage->getParent();
 
-        /* Asignacion de mierda
-         * 
-         * 27 = main show   -> 4
-         * 28 = Belterra    -> 5
-         * 29 = Rainbow     -> 6
-         * 30 = Jocker      -> 7
-         */
+        // Paginas hijas de show
+        if($this->childPage->getParent()->get('id') == 4) {
+          $catId = $this->childPage->get('id');
+          $catId = $catId - 26;
+          //$catId = $catId - 16;
 
-        $this->mainShow = EventTable::retrieveMainShow($catId);
-        $this->shows = EventTable::retrieveShows($catId);
+          /* Asignacion de mierda
+          *
+          * 27 = main show   -> 4
+          * 28 = Belterra    -> 5
+          * 29 = Rainbow     -> 6
+          * 30 = Jocker      -> 7
+          */
+
+          $this->mainShow = EventTable::retrieveMainShow($catId);
+          $this->shows = EventTable::retrieveShows($catId);
+          $this->setTemplate('shows');
+        }
+      }
+        else {
+          $this->page = Doctrine::getTable('Page')->find($request->getParameter('id'));
+          $this->childPage = false;
+        }
+
+      // pagina de show
+      if($request->getParameter('id') == 4) {
+        $this->mainShow = EventTable::retrieveMainShow();
+        $this->shows = EventTable::retrieveShows();
         $this->setTemplate('shows');
       }
     }
-    else {
-      $this->page = Doctrine::getTable('Page')->find($request->getParameter('id'));
-      $this->childPage = false;
-    }
-
-    // pagina de show
-    if($request->getParameter('id') == 4) {
-      $this->mainShow = EventTable::retrieveMainShow();
-      $this->shows = EventTable::retrieveShows();
-      $this->setTemplate('shows');
-    }
-
-
-    
   }
 }

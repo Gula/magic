@@ -1,0 +1,6 @@
+all:
+  stylesheets:
+    - -*
+    - /sfDoctrineMooDooPlugin/css/login.css
+
+  layout:           layout_login

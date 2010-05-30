@@ -115,108 +115,6 @@ Profile:
     email: ''
     addres: ''
     country: ''
-Event:
-  Event_1:
-    title: 'Wisin & Yandel'
-    description: "<p>Winsin &amp; Yandel visitan Neuqu&eacute;n por primera vez el dia 11 de Mayo a las 21.30 hs.</p>\r\n<p>Entradas anticipadas en Casino Magic y en las sucursales de Saturno Hogar.</p>\r\n<p>&nbsp;</p>"
-    date: '2010-05-11 00:00:00'
-    publication_date: '2010-05-01 00:00:00'
-    due_date: '2010-05-20 00:00:00'
-    sticky: 0
-    created_at: '2010-04-21 10:37:02'
-    updated_at: '2010-05-20 12:53:47'
-    mugshot: e85f9c88445384b05d39229b12dd50c2c1fb5ed4.jpg
-    mugshot_x1: '12'
-    mugshot_y1: '9'
-    mugshot_x2: '197'
-    mugshot_y2: '194'
-  Event_2:
-    title: 'Cantobar con Epílogo'
-    description: "<p>Todos los Jueves de Mayo.</p>\r\n<p>No te pierdas el Cantobar con Epilogo</p>"
-    date: '2010-05-20 23:30:00'
-    publication_date: '2010-05-01 00:00:00'
-    due_date: '2010-05-27 00:00:00'
-    sticky: '1000'
-    created_at: '2010-05-02 19:58:19'
-    updated_at: '2010-05-20 12:21:47'
-    mugshot: 8095423cea2d143533017d0a5ae6cb199fb1eee6.jpg
-    mugshot_x1: '39'
-    mugshot_y1: '0'
-    mugshot_x2: '264'
-    mugshot_y2: '225'
-  Event_22:
-    Author: sfGuardUser_1
-    title: 'Fito Ceballos y las Guitarras Patagonicas'
-    description: "<p>Vivi una noche Argentina en Jokers Resto Bar. M&uacute;sica, plato tradicionales y todo el color de nuestro pa&iacute;s en Neuqu&eacute;n.</p>\r\n<p><strong>Tarjeta, incluye cena $68.00</strong></p>"
-    date: '2010-05-20 22:00:00'
-    publication_date: '2010-05-20 00:00:00'
-    due_date: '2010-05-22 00:00:00'
-    sticky: 9
-    created_at: '2010-05-20 15:44:43'
-    updated_at: '2010-05-20 15:51:07'
-    mugshot: 929b7dad5e2dd21060786e259b4c93aeff3fc74b.jpg
-    mugshot_x1: '22'
-    mugshot_y1: '0'
-    mugshot_x2: '247'
-    mugshot_y2: '225'
-  Event_19:
-    Author: sfGuardUser_1
-    title: Strippers
-    description: ''
-    date: '2010-05-21 23:00:00'
-    publication_date: '2010-05-20 00:00:00'
-    due_date: '2010-05-22 00:00:00'
-    sticky: 0
-    created_at: '2010-05-20 14:34:34'
-    updated_at: '2010-05-20 14:38:50'
-    mugshot: 945d55482d8d869a351b55b7a19fd52a32839681.jpg
-    mugshot_x1: '49'
-    mugshot_y1: '0'
-    mugshot_x2: '274'
-    mugshot_y2: '225'
-  Event_18:
-    Author: sfGuardUser_1
-    title: Epilogo
-    description: '<p>Baila en Belterra Pub con la m&uacute;sica de Epilogo</p>'
-    date: '2010-05-22 23:30:00'
-    publication_date: '2010-05-20 00:00:00'
-    due_date: '2010-05-23 00:00:00'
-    sticky: 9
-    created_at: '2010-05-20 12:49:37'
-    updated_at: '2010-05-20 15:39:02'
-    mugshot: 90eb9d42f1e88a77e7ca193983ff4f6391d2a770.jpg
-    mugshot_x1: '116'
-    mugshot_y1: '0'
-    mugshot_x2: '383'
-    mugshot_y2: '267'
-  Event_15:
-    title: 'Corazón Latino'
-    description: '<p>Coraz&oacute;n Latino</p>'
-    date: '2010-05-15 23:30:00'
-    publication_date: '2010-05-09 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: '1000'
-    created_at: '2010-05-02 21:26:43'
-    updated_at: '2010-05-03 03:33:11'
-    mugshot: null
-    mugshot_x1: null
-    mugshot_y1: null
-    mugshot_x2: null
-    mugshot_y2: null
-  Event_16:
-    title: 'Noche de Tango'
-    description: '<p>Noche de Tango con la T&iacute;pica Splendid</p>'
-    date: '2010-05-23 23:00:00'
-    publication_date: '2010-05-20 00:00:00'
-    due_date: '2010-05-24 00:00:00'
-    sticky: '1000'
-    created_at: '2010-05-02 21:33:18'
-    updated_at: '2010-05-20 15:28:16'
-    mugshot: 5dcdb3099c141ca1efdaa0abfa0253b3dc6ae347.jpg
-    mugshot_x1: '96'
-    mugshot_y1: '0'
-    mugshot_x2: '321'
-    mugshot_y2: '225'
 Category:
   Category_1:
     title: 'Main Menu'
@@ -628,7 +526,7 @@ sfGuardUser:
     username: admin
     algorithm: sha1
     salt: 175c791b2d837217889462f269a8a961
-    password: c08964a6b241fdff67044e965a18f86cb941b37d
+    password: macarenavela
     is_active: true
     is_super_admin: true
     last_login: '2010-05-28 13:35:43'
@@ -638,7 +536,7 @@ sfGuardUser:
     username: damian
     algorithm: sha1
     salt: 28b0271c037ae651cd72d0af62631348
-    password: a97862600ae2747856a63f2a0cd06a86351d2679
+    password: damian
     is_active: true
     is_super_admin: true
     last_login: '2010-05-26 15:37:43'
@@ -648,7 +546,7 @@ sfGuardUser:
     username: davo
     algorithm: sha1
     salt: 3bfce462e5af26d946a96eda5603581b
-    password: 3312868ceae11816d92297dde4f2853645f5db13
+    password: superpirulo
     is_active: true
     is_super_admin: true
     last_login: '2010-05-28 12:42:02'

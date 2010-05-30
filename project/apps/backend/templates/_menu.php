@@ -1,6 +1,6 @@
 <nav class="menu">
   <ul>
-    <li><a href="<?php echo url_for('@homepage') ?>"><span class="home"></span><?php echo __('Start'); ?></a></li>
+    <li><a href="/"><span class="home"></span><?php echo __('Front'); ?></a></li>
     <li>
       <a href="#"><span class="pages"></span><?php echo __('Pages'); ?></a>
       <ul>
@@ -24,6 +24,17 @@
       </ul>
     </li>
      
+    <li>
+      <a href="#"><span class="photos"></span><?php echo __('Photos'); ?></a>
+      <ul>
+        <li><a href="<?php echo url_for('mg_album/index') ?>"><span class="event"></span><?php echo __('Albums'); ?></a></li>
+        <li><a href="<?php echo url_for('mg_gallery/index') ?>"><span class="event"></span><?php echo __('Galleries'); ?></a></li>
+        <li><a href="<?php echo url_for('mg_photo/index') ?>"><span class="photos"></span><?php echo 
+__('Photos'); ?></a></li>
+        <li><a href="<?php echo url_for('mg_category/index') ?>"><span class="event"></span><?php echo __('Categories'); ?></a></li>
+      </ul>
+    </li>
+    
     <li>
       <a href="#"><span class="config"></span><?php echo __('Configuration'); ?></a>
       <ul>

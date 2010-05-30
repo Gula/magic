@@ -463,5 +463,44 @@
         <target>Recordar Usuario?</target>
       </trans-unit>
     </body>
+    <trans-unit id="101">
+      <source>Gallery</source>
+      <target>Galería</target>
+    </trans-unit>
+
+    <trans-unit id="102">
+      <source>Photos</source>
+      <target>Fotos</target>
+    </trans-unit>
+
+    <trans-unit id="103">
+      <source>Galleries</source>
+      <target>Galerías</target>
+    </trans-unit>
+
+    <trans-unit id="104">
+      <source>Albums</source>
+      <target>Álbumes</target>
+    </trans-unit>
+
+    <trans-unit id="105">
+      <source>Photo</source>
+      <target>Foto</target>
+    </trans-unit>
+
+    <trans-unit id="106">
+      <source>Galleries list</source>
+      <target>Lista de galerías</target>
+    </trans-unit>
+
+    <trans-unit id="107">
+      <source>Photos list</source>
+      <target>Lista de Fotos</target>
+    </trans-unit>
+
+    <trans-unit id="108">
+      <source>Event list</source>
+      <target>Lista de eventos</target>
+    </trans-unit>
   </file>
 </xliff>

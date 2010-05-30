@@ -16,6 +16,7 @@ default:
     - blueprint/screen.css
     #- blueprint/print.css
     - v0.1.css
+    - gallery.css
 
   javascripts:
     - mootools-1.2.4-core-yc.js

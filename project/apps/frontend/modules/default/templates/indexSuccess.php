@@ -1,6 +1,6 @@
 <?php use_helper('Date') ?> <div class="span-18">
   <?php include_component('default', 'slideshow', array('eventsList' => $eventsList)) ?>
-  <div class="clearfix"></div>
+  <div id="gallery" class="clearfix"></div>
   <div id="boxNovedades">
     <ul class="novedades">
       <li class="shows">
@@ -9,7 +9,9 @@
       <li class="promos"><span class="shows"><img src="images/box_promos_convertiteas.jpg" width="130" height="130" class="novedades-imagen" /></span><?php echo link_to('Promos', 'pages/index?id=5') ?></li>
       <li class="torneos"><span class="shows"><img src="images/box_torneos_poker0310.jpg" width="130" height="130" class="novedades-imagen" /></span><a href="/pages?id=44&level=1"></a></li>
       <li class="hotel"><span class="shows"><img src="images/box_hotel_stat.jpg" width="130" height="130" class="novedades-imagen" /></span><a href="/pages?id=6&level=1">Promos Hotel destacadas</a></li>
-      <li class="fotos"><span class="shows"><img src="images/box_fotos_sabina.jpg" width="130" height="130" class="novedades-imagen" /></span><a href="">Fotos de eventos</a></li>
+      <li class="fotos"><span class="shows"><img src="images/box_fotos_sabina.jpg" width="130" height="130" class="novedades-imagen" /></span>
+        <?php echo link_to('Fotos de eventos', 'photos/index') ?>
+      </li>
     </ul>
   </div> </div> <div class="span-5 last">
   <ul class="drawers">

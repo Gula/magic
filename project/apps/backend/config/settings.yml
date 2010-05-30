@@ -37,7 +37,7 @@ all:
     # Enable the database manager
     use_database:           true
 
-    enabled_modules:        [default, sfMooDooGroup, sfMooDooUser, sfMooDooPermission, sfMooDooAuth, mooDooTest]
+    enabled_modules:        [default, mgPhoto, mgGallery, sfMooDooGroup, sfMooDooUser, sfMooDooPermission, sfMooDooAuth]
 
   .actions:
     login_module:           sfMooDooAuth
