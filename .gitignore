@@ -10,5 +10,7 @@ project/lib/form/doctrine/base/*
 project/lib/model/doctrine/base/*
 
 project/web/uploads/*
+project/web/images/mooDooGallery/*
 
 project/config/databases.yml
+project/web/error_log

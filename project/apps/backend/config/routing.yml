@@ -1,3 +1,39 @@
+mg_category:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MGCategory
+    module:               mg_category
+    prefix_path:          /mg_category
+    column:               id
+    with_wildcard_routes: true
+
+mg_gallery:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MGGallery
+    module:               mg_gallery
+    prefix_path:          /mg_gallery
+    column:               id
+    with_wildcard_routes: true
+
+mg_album:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MGAlbum
+    module:               mg_album
+    prefix_path:          /mg_album
+    column:               id
+    with_wildcard_routes: true
+
+mg_photo:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MGPhoto
+    module:               mg_photo
+    prefix_path:          /mg_photo
+    column:               id
+    with_wildcard_routes: true
+
 category:
   class: sfDoctrineRouteCollection
   options:

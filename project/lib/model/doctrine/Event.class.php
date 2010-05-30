@@ -17,7 +17,7 @@ class Event extends BaseEvent {
     if($this->get('sticky') == 'no') $this->set('sticky', 1000);
 
     parent::save($conn);
-
+    /*
     $config = sfConfig::get('app_sfDoctrineJCroppablePlugin_models');
     $dir = sfConfig::get('sf_upload_dir').DIRECTORY_SEPARATOR.$config['Events']['directory'];
     $image = $this->getImageSrc('mugshot', 'original');
@@ -49,7 +49,7 @@ class Event extends BaseEvent {
         }
       }
     }
-
+*/
   }
 
   public function getCats() {

@@ -1,0 +1,23 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           MGAlbum
+    theme:                 mooDoo.2
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          mg_album
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title:                Álbumes
+        display:              [author_id, title, description]
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

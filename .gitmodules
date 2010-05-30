@@ -4,3 +4,6 @@
 [submodule "project/plugins/sfDoctrineMooDooPlugin"]
 	path = project/plugins/sfDoctrineMooDooPlugin
 	url = git://github.com/RetroFOX/sfDoctrineMooDooPlugin.git
+[submodule "project/plugins/sfMooDooGalleryPlugin"]
+	path = project/plugins/sfMooDooGalleryPlugin
+	url = git://github.com/RetroFOX/sfMooDooGalleryPlugin.git
