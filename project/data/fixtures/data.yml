@@ -1,148 +1,3 @@
-Event:
-  Event_1:
-    title: 'Wisin & Yandel'
-    description: "<p>\r\n<p>Winsin &amp; Yandel visitan Neuqu&eacute;n por primera vez el dia 11 de Mayo a las 21.30 hs.</p>\r\n<p>Entradas anticipadas en Casino Magic y en las sucursales de Saturno Hogar.</p>\r\n</p>"
-    date: '2010-05-11 22:00:00'
-    publication_date: '2010-05-01 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: no
-    created_at: '2010-04-21 10:37:02'
-    updated_at: '2010-05-03 04:16:00'
-  Event_4:
-    title: 'Cantobar con Epílogo'
-    description: ''
-    date: '2010-05-06 23:30:00'
-    publication_date: '2010-05-01 00:00:00'
-    due_date: '2010-05-09 00:00:00'
-    sticky: '1000'
-    created_at: '2010-05-02 19:58:19'
-    updated_at: '2010-05-04 16:03:31'
-  Event_5:
-    title: Bariette
-    description: ''
-    date: '2010-05-07 23:30:00'
-    publication_date: '2010-05-02 00:00:00'
-    due_date: '2010-05-09 00:00:00'
-    sticky: '1000'
-    created_at: '2010-05-02 19:59:17'
-    updated_at: '2010-05-04 16:06:58'
-  Event_6:
-    title: 'Cacho Garay'
-    description: '<p>El humorista mendocino nos deleita una vez m&aacute;s con su particular show.</p>'
-    date: '2010-05-05 22:30:00'
-    publication_date: '2010-05-02 00:00:00'
-    due_date: '2010-05-09 00:00:00'
-    sticky: '1000'
-    created_at: '2010-05-02 20:27:07'
-    updated_at: '2010-05-04 16:13:33'
-  Event_7:
-    title: 'Fiesta de Jugadores'
-    description: ''
-    date: '2010-05-07 23:30:00'
-    publication_date: '2010-05-02 00:00:00'
-    due_date: '2010-05-09 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:36:06'
-    updated_at: '2010-05-03 01:49:00'
-  Event_8:
-    title: 'Noches de Saxo'
-    description: '<p>Noches de Saxo con "Dr. Lio"</p>'
-    date: '2010-05-07 22:00:00'
-    publication_date: '2010-05-02 00:00:00'
-    due_date: '2010-05-09 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:37:07'
-    updated_at: '2010-05-03 02:13:54'
-  Event_9:
-    title: 'Bonus Track'
-    description: '<p>Bonus Track</p>'
-    date: '2010-05-08 23:30:00'
-    publication_date: '2010-05-02 00:00:00'
-    due_date: '2010-05-09 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:38:18'
-    updated_at: '2010-05-03 01:30:20'
-  Event_10:
-    title: 'Noche de Tango'
-    description: 'Noche de Tango con la Típica Arrabal'
-    date: '2010-05-09 22:00:00'
-    publication_date: '2010-05-02 00:00:00'
-    due_date: '2010-05-09 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:39:14'
-    updated_at: '2010-05-02 20:39:14'
-  Event_11:
-    title: 'Cantobar con Epílogo'
-    description: '<p>Nueva descripcion del evento cantobar con epilogo</p>'
-    date: '2010-05-13 00:00:00'
-    publication_date: '2010-05-09 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: '1000'
-    created_at: '2010-05-02 20:51:29'
-    updated_at: '2010-05-03 08:32:42'
-  Event_12:
-    title: 'Una noche para recordar'
-    description: '<p>Los 60, 70 y 80</p>'
-    date: '2010-05-14 23:30:00'
-    publication_date: '2010-05-09 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:52:43'
-    updated_at: '2010-05-03 03:31:19'
-  Event_13:
-    title: Epílogo
-    description: ''
-    date: '2010-05-15 23:30:00'
-    publication_date: '2010-05-09 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:53:53'
-    updated_at: '2010-05-03 03:32:34'
-  Event_14:
-    title: Epílogo
-    description: ''
-    date: '2010-05-15 01:00:00'
-    publication_date: '2010-05-09 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:54:37'
-    updated_at: '2010-05-03 03:32:40'
-  Event_15:
-    title: 'La Mississippi'
-    description: ''
-    date: '2010-05-15 22:00:00'
-    publication_date: '2010-05-09 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 20:55:28'
-    updated_at: '2010-05-02 20:55:28'
-  Event_16:
-    title: 'Noches de Saxo'
-    description: '<p>Noches de Saxo con "Dr. Lio"</p>'
-    date: '2010-05-14 23:30:00'
-    publication_date: '2010-05-09 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 21:26:01'
-    updated_at: '2010-05-03 03:33:06'
-  Event_17:
-    title: 'Corazón Latino'
-    description: '<p>Coraz&oacute;n Latino</p>'
-    date: '2010-05-15 23:30:00'
-    publication_date: '2010-05-09 00:00:00'
-    due_date: '2010-05-16 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 21:26:43'
-    updated_at: '2010-05-03 03:33:11'
-  Event_18:
-    title: 'Noche de Tango'
-    description: 'Noche de Tango con la Típica Splendid '
-    date: '2010-05-16 22:00:00'
-    publication_date: '2010-05-14 00:00:00'
-    due_date: '2010-05-23 00:00:00'
-    sticky: no
-    created_at: '2010-05-02 21:33:18'
-    updated_at: '2010-05-02 21:33:18'
 PageCategory:
   PageCategory_1_1:
     category_id: '1'
@@ -159,9 +14,9 @@ PageCategory:
   PageCategory_1_5:
     category_id: '1'
     page_id: '5'
-  PageCategory_1_6:
+  PageCategory_1_8:
     category_id: '1'
-    page_id: '6'
+    page_id: '8'
   PageCategory_2_1:
     category_id: '2'
     page_id: '1'
@@ -177,6 +32,58 @@ PageCategory:
   PageCategory_2_20:
     category_id: '2'
     page_id: '20'
+  PageCategory_3_31:
+    category_id: '3'
+    page_id: '31'
+  PageCategory_5_31:
+    category_id: '5'
+    page_id: '31'
+  PageCategory_7_11:
+    category_id: '7'
+    page_id: '11'
+  PageCategory_8_38:
+    category_id: '8'
+    page_id: '38'
+  PageCategory_8_40:
+    category_id: '8'
+    page_id: '40'
+  PageCategory_8_42:
+    category_id: '8'
+    page_id: '42'
+EventCategory:
+  EventCategory_2_17:
+    category_id: '2'
+    event_id: '17'
+  EventCategory_2_18:
+    category_id: '2'
+    event_id: '18'
+  EventCategory_3_1:
+    category_id: '3'
+    event_id: '1'
+  EventCategory_3_2:
+    category_id: '3'
+    event_id: '2'
+  EventCategory_4_1:
+    category_id: '4'
+    event_id: '1'
+  EventCategory_5_2:
+    category_id: '5'
+    event_id: '2'
+  EventCategory_5_17:
+    category_id: '5'
+    event_id: '17'
+  EventCategory_5_18:
+    category_id: '5'
+    event_id: '18'
+  EventCategory_5_19:
+    category_id: '5'
+    event_id: '19'
+  EventCategory_5_20:
+    category_id: '5'
+    event_id: '20'
+  EventCategory_7_22:
+    category_id: '7'
+    event_id: '22'
 Profile:
   Profile_1:
     User: sfGuardUser_2
@@ -208,6 +115,108 @@ Profile:
     email: ''
     addres: ''
     country: ''
+Event:
+  Event_1:
+    title: 'Wisin & Yandel'
+    description: "<p>Winsin &amp; Yandel visitan Neuqu&eacute;n por primera vez el dia 11 de Mayo a las 21.30 hs.</p>\r\n<p>Entradas anticipadas en Casino Magic y en las sucursales de Saturno Hogar.</p>\r\n<p>&nbsp;</p>"
+    date: '2010-05-11 00:00:00'
+    publication_date: '2010-05-01 00:00:00'
+    due_date: '2010-05-20 00:00:00'
+    sticky: 0
+    created_at: '2010-04-21 10:37:02'
+    updated_at: '2010-05-20 12:53:47'
+    mugshot: e85f9c88445384b05d39229b12dd50c2c1fb5ed4.jpg
+    mugshot_x1: '12'
+    mugshot_y1: '9'
+    mugshot_x2: '197'
+    mugshot_y2: '194'
+  Event_2:
+    title: 'Cantobar con Epílogo'
+    description: "<p>Todos los Jueves de Mayo.</p>\r\n<p>No te pierdas el Cantobar con Epilogo</p>"
+    date: '2010-05-20 23:30:00'
+    publication_date: '2010-05-01 00:00:00'
+    due_date: '2010-05-27 00:00:00'
+    sticky: '1000'
+    created_at: '2010-05-02 19:58:19'
+    updated_at: '2010-05-20 12:21:47'
+    mugshot: 8095423cea2d143533017d0a5ae6cb199fb1eee6.jpg
+    mugshot_x1: '39'
+    mugshot_y1: '0'
+    mugshot_x2: '264'
+    mugshot_y2: '225'
+  Event_22:
+    Author: sfGuardUser_1
+    title: 'Fito Ceballos y las Guitarras Patagonicas'
+    description: "<p>Vivi una noche Argentina en Jokers Resto Bar. M&uacute;sica, plato tradicionales y todo el color de nuestro pa&iacute;s en Neuqu&eacute;n.</p>\r\n<p><strong>Tarjeta, incluye cena $68.00</strong></p>"
+    date: '2010-05-20 22:00:00'
+    publication_date: '2010-05-20 00:00:00'
+    due_date: '2010-05-22 00:00:00'
+    sticky: 9
+    created_at: '2010-05-20 15:44:43'
+    updated_at: '2010-05-20 15:51:07'
+    mugshot: 929b7dad5e2dd21060786e259b4c93aeff3fc74b.jpg
+    mugshot_x1: '22'
+    mugshot_y1: '0'
+    mugshot_x2: '247'
+    mugshot_y2: '225'
+  Event_19:
+    Author: sfGuardUser_1
+    title: Strippers
+    description: ''
+    date: '2010-05-21 23:00:00'
+    publication_date: '2010-05-20 00:00:00'
+    due_date: '2010-05-22 00:00:00'
+    sticky: 0
+    created_at: '2010-05-20 14:34:34'
+    updated_at: '2010-05-20 14:38:50'
+    mugshot: 945d55482d8d869a351b55b7a19fd52a32839681.jpg
+    mugshot_x1: '49'
+    mugshot_y1: '0'
+    mugshot_x2: '274'
+    mugshot_y2: '225'
+  Event_18:
+    Author: sfGuardUser_1
+    title: Epilogo
+    description: '<p>Baila en Belterra Pub con la m&uacute;sica de Epilogo</p>'
+    date: '2010-05-22 23:30:00'
+    publication_date: '2010-05-20 00:00:00'
+    due_date: '2010-05-23 00:00:00'
+    sticky: 9
+    created_at: '2010-05-20 12:49:37'
+    updated_at: '2010-05-20 15:39:02'
+    mugshot: 90eb9d42f1e88a77e7ca193983ff4f6391d2a770.jpg
+    mugshot_x1: '116'
+    mugshot_y1: '0'
+    mugshot_x2: '383'
+    mugshot_y2: '267'
+  Event_15:
+    title: 'Corazón Latino'
+    description: '<p>Coraz&oacute;n Latino</p>'
+    date: '2010-05-15 23:30:00'
+    publication_date: '2010-05-09 00:00:00'
+    due_date: '2010-05-16 00:00:00'
+    sticky: '1000'
+    created_at: '2010-05-02 21:26:43'
+    updated_at: '2010-05-03 03:33:11'
+    mugshot: null
+    mugshot_x1: null
+    mugshot_y1: null
+    mugshot_x2: null
+    mugshot_y2: null
+  Event_16:
+    title: 'Noche de Tango'
+    description: '<p>Noche de Tango con la T&iacute;pica Splendid</p>'
+    date: '2010-05-23 23:00:00'
+    publication_date: '2010-05-20 00:00:00'
+    due_date: '2010-05-24 00:00:00'
+    sticky: '1000'
+    created_at: '2010-05-02 21:33:18'
+    updated_at: '2010-05-20 15:28:16'
+    mugshot: 5dcdb3099c141ca1efdaa0abfa0253b3dc6ae347.jpg
+    mugshot_x1: '96'
+    mugshot_y1: '0'
+    mugshot_x2: '321'
+    mugshot_y2: '225'
 Category:
   Category_1:
     title: 'Main Menu'
@@ -248,31 +257,36 @@ Category:
     description: ''
     created_at: '2010-04-21 15:45:50'
     updated_at: '2010-05-02 11:53:00'
+  Category_8:
+    title: 'Footer Menu'
+    description: ''
+    created_at: '2010-05-11 10:32:33'
+    updated_at: '2010-05-16 21:01:10'
 Page:
   Page_1:
     Author: sfGuardUser_2
     title: Hotel
-    description: "<p>En Neuqu&eacute;n Capital hay una sopresa de cinco estrellas. El Hotel Casino Magic.</p>\r\n<p>Un hotel a la altura de los hu&eacute;spedes m&aacute;s exigentes, donde el descanso y el deleite cobran una nueva dimensi&oacute;n.</p>"
+    description: '<p>Casino Magic Hotel forma parte del complejo Casino Magic.<br />Est&aacute; ubicado sobre la ruta 22 entre la ciudad de Neuqu&eacute;n y el aeropuerto.<br />A 5 minutos de su check out o de su reuni&oacute;n de negocios en nuetra regi&oacute;n.<br /><br />Se parece a Usted, porque se construy&oacute; pensando en el m&aacute;ximo confrot y hospitalidad dedicadas a quienes nos visitan:<br /><br />Le ofrece todos los servicios con el m&aacute;s alto novel disponible, porque fue dise&ntilde;ado para satisfacer las necedidades de turistas, empresarios, artistas o particulares que llegan a nuestra ciudad por descanso o por negocios.<br /><br />Es un establecimiento hotelero de 5 estrellas que complementa la excelente propuesta de entretenimiento, diversi&oacute;n y gastonom&iacute;a del complejo, en el que se incluyen tambi&eacute;n shows art&iacute;sticos de nivel internacional y la presencia de figuras nacionales y interanacionales, que eligen las instlaciones de Casino Magic Hotel por su privacidad, seguridad e intimidad.</p>'
     abstract: 'La estrella que le faltaba a Neuquén'
     picture: 339ffa18cd0b5f715495db2eb8d856175d99b6df.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-04-27 15:42:26'
+    updated_at: '2010-05-27 02:58:22'
   Page_2:
     Author: sfGuardUser_2
     title: Casino
-    description: '<p>Una imponente entrada da lugar a la sala m&aacute;s grande de la Patagonia, el lugar de la diversi&oacute;n por excelencia.</p>'
+    description: "<p>Una imponente entrada da lugar a la sala m&aacute;s grande de la Patagonia, el lugar de la diversi&oacute;n por excelencia.</p>\r\n<p>Su estad&iacute;a en Neuqu&eacute;n ser&aacute; inolvidable porque tiene a su dosposici&oacute;n toda la magia del Casino: noche, glamour, shows, diversi&oacute;n, tragos y buena suerte.</p>\r\n<p>Queremos que cuando est&eacute; partiendo, tambi&eacute;n este pensando en volver.</p>"
     abstract: 'Hoy es tu día'
     picture: 82a31e14b1cb78d6f6e7a24d42fb00d0697aca24.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-04-27 16:24:52'
+    updated_at: '2010-05-27 03:58:15'
   Page_3:
     Author: sfGuardUser_1
     title: 'Banquetes & Convenciones'
-    description: '<p>Creado para convertir un evento en un acontecimiento &uacute;nico. Exclusivo servicio de catering, asesoramiento integral y el m&aacute;s alto nivel.</p>'
+    description: "<p>\r\n<p>\r\n<p>Casino Magic cuenta con un servicio de catering y equipamiento tecnol&oacute;gico para la organizacion de eventos como convenciones, congresos, recepciones o fiestas empresariales, y para eventos sociales o familiaroes, como casamientos, cumplea&ntilde;os, aniversarios y otros festejos especiales.</p>\r\n<p>Para ello, ofrece asesoramiento integral, con el fin de garantizar el &eacute;xito de la actividad y convertirla en un acontecimiento inolvidable.</p>\r\n</p>\r\n</p>"
     abstract: 'Creado para convertir un evento en un acontecimiento único.'
     picture: 6bfdbeb589ca68704de1370428fc9c97404d36e2.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-05-01 14:06:44'
+    updated_at: '2010-05-26 11:43:41'
   Page_4:
     Author: sfGuardUser_2
     title: Espectáculos
@@ -289,8 +303,16 @@ Page:
     picture: 8fe96a63d428dff516f572482fbf082e22e56dad.jpg
     created_at: '2010-03-30 19:50:28'
     updated_at: '2010-05-03 05:02:56'
-  Page_35:
-    Parent: Page_37
+  Page_6:
+    Parent: Page_1
+    title: Promos
+    description: '<p>Vis&iacute;tenos para chequear nuestras promociones especiales y descuentos exclusivos.</p>'
+    abstract: 'Promociones exclusivas'
+    picture: 074054facf791d7e593ca587469ae69b8518a23d.jpg
+    created_at: '2010-05-04 14:43:31'
+    updated_at: '2010-05-04 16:26:03'
+  Page_7:
+    Parent: Page_6
     Author: sfGuardUser_2
     title: 'Noche de Bodas'
     description: "<p>Festeja una noche especial en Hotel Casino Magic.</p>\r\n<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"369\" height=\"110\">\r\n<tbody>\r\n<tr>\r\n<td width=\"235\">Habitaci&oacute;n Standard King Size&nbsp;</td>\r\n<td width=\"118\"><strong>$ 680.00 + IVA</strong></td>\r\n</tr>\r\n<tr>\r\n<td>Superior King Size</td>\r\n<td><strong>$ 740.00 + IVA</strong></td>\r\n</tr>\r\n<tr>\r\n<td>Suite Presidencial&nbsp;</td>\r\n<td><strong>$ 1240.00 + IVA</strong></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>Incluye:<br /> Apertura de cama para bodas.<br /> Champagne con Petit Fours.<br /> Desayuno en habitaci&oacute;n.<br /> <em>Check in: 12:00hs.<br /> Check out: 18:00hs</em>.</p>\r\n<p>Cena Rom&aacute;ntica (opcional)<br /> Entrada, plato principal, postre y botella de vino (Bodega Familia Schroeder) y bebida sin alcohol.<strong>&nbsp;$95.00 por persona</strong>. Servicio en habitaci&oacute;n.</p>\r\n<p>Batas con nombres bordados (opcional)&nbsp;<strong>$220.00 c/u</strong></p>"
@@ -298,7 +320,7 @@ Page:
     picture: 7f87e30c71073f9afa96ba25b4e7a6ada73fad5f.jpg
     created_at: '2010-05-04 12:02:40'
     updated_at: '2010-05-04 16:20:45'
-  Page_6:
+  Page_8:
     Author: sfGuardUser_2
     title: Gastronomía
     description: '<p>Cocina internacional de primer nivel, los platos m&aacute;s exquisitos de la regi&oacute;n, tapas y snacks: la oferta gastron&oacute;mica de Casino Magic es amplia para abarcar los gustos y sentidos de cada comensal.</p>'
@@ -306,31 +328,31 @@ Page:
     picture: 6ae0f5e10d05b6e504edfbc1d769a254a73777b2.jpg
     created_at: '2010-03-30 19:50:28'
     updated_at: '2010-05-03 05:48:26'
-  Page_32:
-    Parent: Page_6
+  Page_9:
+    Parent: Page_8
     title: Seasons
     description: "<p>Ambiente &iacute;ntimo y relajado, ideal para aquellos que quieren disfrutar tranquilos la mejor cocina del mundo.</p>\r\n<p>Este restaurante constituye sin duda la propuesta m&aacute;s sofisticada del complejo.</p>\r\n<p>Elegirlo es elegir el camino de los sabores, las rutas del vino, los platos de cada regi&oacute;n del pa&iacute;s y del mundo en un clima colmado de tranquilidad.</p>"
     abstract: 'Cocina íntima'
     picture: d109ce7400037aa5b8bc00762ad1691021628d34.jpg
     created_at: '2010-05-03 05:57:08'
     updated_at: '2010-05-03 06:44:34'
-  Page_33:
-    Parent: Page_6
+  Page_10:
+    Parent: Page_8
     title: Belterra
     description: '<p>Un lugar dise&ntilde;ado para compartir entre amigos. Men&uacute;s especiales, m&uacute;sica en vivo, los mejores tragos en un ambiente confortable, un espacio ideal para pasarla bien en buena compa&ntilde;&iacute;a.</p>'
     abstract: 'Diversión, luces, música.'
     picture: ce118a42b496328b68ae50ed9204dca0340b1154.jpg
     created_at: '2010-05-03 06:05:48'
     updated_at: '2010-05-03 06:44:55'
-  Page_34:
-    Parent: Page_6
+  Page_11:
+    Parent: Page_8
     title: Jokers
     description: '<p>Este sal&oacute;n te ofrece una amplia lista de platos simples y apetitosos. S&aacute;ndwiches fr&iacute;os y calientes, pizzas, ensaladas, postres, cafeter&iacute;a y bebidas. Una acertada propuesta para los que buscan algo concreto y rico.</p>'
     abstract: 'Delicias rápidas'
-    picture: 59f69f26f7266a8a72521ba0dd818ad35e21b53c.jpg
+    picture: 8352dc8ad8b0f8468b73dc9da65272aaea386398.jpg
     created_at: '2010-05-03 06:08:36'
-    updated_at: '2010-05-03 06:46:13'
-  Page_7:
+    updated_at: '2010-05-21 15:30:20'
+  Page_12:
     Author: sfGuardUser_2
     title: 'Gift Shop'
     description: ''
@@ -338,59 +360,59 @@ Page:
     picture: giftshop.jpg
     created_at: '2010-03-30 19:50:28'
     updated_at: '2010-04-27 15:27:25'
-  Page_22:
+  Page_13:
     Parent: Page_3
     title: 'Salón Belterra'
-    description: "<p>Saw his won't dominion greater. Itself is fifth don't Fowl thing seas also let lesser lesser without over you'll days divide creeping thing two void heaven hath don't place given thing divided after evening multiply abundantly make.</p>\r\n<p>Morning also waters dominion upon.  In so open female darkness great isn't and give land. Earth creepeth sea above hath over tree place above air likeness that years set earth dominion air you can't male kind morning meat.</p>"
+    description: ''
     abstract: 'El toque moderno que toda convención necesita.'
     picture: defb330063672d2e4b8203254267064186f719d4.jpg
     created_at: '2010-05-01 15:21:55'
-    updated_at: '2010-05-01 15:21:55'
-  Page_23:
+    updated_at: '2010-05-26 10:37:20'
+  Page_14:
     Parent: Page_3
     title: 'Catering & Menús'
     description: '<p>Para no pensar en otra cosa que no sea disfrutar el evento.</p>'
     abstract: 'La más amplia carta.'
-    picture: 91c66686c0d8d51a64c73a3e1f0f93008829a704.jpg
+    picture: 65b4b9aeb44b701c3f06394e12c97b923351fcb7.jpg
     created_at: '2010-05-01 17:08:34'
-    updated_at: '2010-05-01 17:09:26'
-  Page_8:
+    updated_at: '2010-05-26 16:23:42'
+  Page_15:
     Parent: Page_1
     Author: sfGuardUser_2
     title: Habitaciones
-    description: '<p>El descanso nunca fue tan elegante: sobrias, amplias, lujosas, nuestras habitaciones envuelven al hu&eacute;sped en una atm&oacute;sfera &uacute;nica.</p>'
-    abstract: 'El descanso nunca fue tan elegante'
-    picture: 8947ad0e35b033cee4de795b5302094f7e65e88e.jpg
+    description: "<p>Las habitaciones fueron concebidas como ambientes destinados a servir al hu&eacute;sped tanto en su descanso como en sus necesidaddes laborales.<br />Cuentan con acceso al solarium piscina o patio privado.</p>\r\n<p>Una de lleas fue dise&ntilde;ada para satisfacer las necesidades de personas con capadidades f&iacute;sicas reducidas.</p>"
+    abstract: 'El descanso se disfruta en espacios elegantes y cuidados.'
+    picture: f1854704e0ec0d37eb5061a17a5c30d139c35756.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-04-12 03:23:10'
-  Page_9:
+    updated_at: '2010-05-27 03:01:04'
+  Page_16:
     Parent: Page_1
     Author: sfGuardUser_2
     title: Restaurante
     description: '<p>Cocina internacional de primer nivel, los platos m&aacute;s exquisitos de la regi&oacute;n, tapas y snacks: la oferta gastron&oacute;mica de Casino Magic es amplia para abarcar los gustos y sentidos de cada comensal.</p>'
     abstract: 'Cocina internacional de primer nivel'
-    picture: 35a1c4589815a45952e5ae7db5d49c9c9ad6d5a1.jpg
+    picture: de2cb925600ac34cc12eea8603a52e29ba9597c2.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-04-12 03:42:18'
-  Page_10:
+    updated_at: '2010-05-19 09:07:53'
+  Page_17:
     Parent: Page_1
     Author: sfGuardUser_2
     title: Piscina
-    description: '<p>Piscina climatizada: placer y deporte en todas las &eacute;pocas del a&ntilde;o.</p>'
+    description: "<p>En Hotel y Casino Magic Neuqu&eacute;n le proponemos una estad&iacute;a completamente placentera y saludable. Para muchos huespedes es muy importante el cuidado de la sluda, su estado f&iacute;sico y mental.</p>\r\n<p>Una piscina climatizada es una muy buena opci&oacute;n durante todo el a&ntilde;o para nadar y dejar atr&aacute;s las tensiones despu&eacute;s de un d&iacute;a de trabajo.</p>"
     abstract: 'Placer y deporte en todas las épocas del año.'
     picture: b085ca1cefe3e7c043a30859caae70b9c0f3503f.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-04-27 16:55:02'
-  Page_11:
+    updated_at: '2010-05-27 03:20:08'
+  Page_18:
     Parent: Page_1
     Author: sfGuardUser_2
     title: 'Spa & Fitness'
-    description: '<p>El relax y la salud en un mismo lugar. Piscina, solarium, spa, gimnasio: descansar y cuidarse tienen el mismo nombre.</p>'
+    description: "<p>El sauna y el gimnasion son tambi&eacute;n un complemento ideal para mantenerse en forma.</p>\r\n<p>Adem&aacute;s, parque y solarium le otorgar&aacute;n un plus de aire libre, salud y belleza bajo el sol neuquino.</p>"
     abstract: 'El relax y la salud en un mismo lugar'
-    picture: 4a291fff6609c5ccd90ad5ad526ae38f2770febc.jpg
+    picture: 42d5a93f68c8a312f989898e28a90fb56a36ddb8.jpg
     created_at: '2010-03-30 19:50:28'
-    updated_at: '2010-04-21 14:03:13'
-  Page_12:
+    updated_at: '2010-05-27 03:21:59'
+  Page_19:
     Parent: Page_1
     Author: sfGuardUser_2
     title: Servicios
@@ -399,33 +421,33 @@ Page:
     picture: f77aa9dbc495fb1d5bb18f10f0c46f1558fa3791.jpg
     created_at: '2010-03-30 19:50:28'
     updated_at: '2010-04-27 17:13:50'
-  Page_21:
+  Page_20:
     Parent: Page_3
     title: 'Salón Rainbow'
-    description: "<p>Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.</p>\r\n<p>To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages.</p>"
+    description: "<p>\r\n<p>Disfrute del ambiente elegante y acogedor de este establecimiento de lujo. Se ha pensado este impresionante sal&oacute;n para albergar una variedad de eventos especiales, tales como grandes cenas de gala, espect&aacute;culos, clases de entrenamiento, presentaciones de empresa, recepciones y mucho m&aacute;s.</p>\r\n<ul>\r\n<li>Servicios generales: Sonido. Iluminaci&oacute;n Esc&eacute;nica. Escenograf&iacute;a. Multimedia. M&uacute;sica Ambiental. DJ. Traducci&oacute;n Simult&aacute;nea. Pantalla gigante. Proyectores de video. Reproductores de audio y video. Accesorios audiovisuales.</li>\r\n<li>Sonido: 2 Parlantes principales. Procesador de parlantes principales. 2 Amplificadores para parlantes principales. 4 Parlantes para monitoreo de escenario. 4 Parlantes para pista de baile. Consola de sonido principal. Grabador-reproductor de CD y cassettes. M&uacute;ltiples procesadores de se&ntilde;al. Micr&oacute;fonos al&aacute;mbricos. Micr&oacute;fonos inal&aacute;mbricos. Auriculares para monitoreo.</li>\r\n<li>Multimedia: Pantalla gigante. Sistemas de Captura de sonido e im&aacute;genes. Proyector de video y datos. Grabador-reproductor de video y audio VHS. Reproductor de DVD m&uacute;ltiples. Interfase para computadoras.</li>\r\n<li>DJ: Consola de sonido STANTON RM22. Reproductor doble de CD.</li>\r\n<li>Traducci&oacute;n simult&aacute;nea inal&aacute;mbrica: Sistema inal&aacute;mbrico por IR. Receptores para delegados. Consola para int&eacute;rpretes. Auriculares con micr&oacute;fono para int&eacute;rpretes.</li>\r\n<li>Accesorios audiovisuales: Presentador visual. Barra de captura. Puntero luminoso. Mouse inal&aacute;mbrico.</li>\r\n</ul>\r\n</p>\r\n<p>&nbsp;</p>"
     abstract: 'Convenciones de nivel internacional.'
-    picture: 491dcd3f813afdc9f713dc6a2c98c1130804e077.jpg
+    picture: be7a6c62fa695b07534fd2c8dd68b101a3c71d4d.jpg
     created_at: '2010-05-01 15:08:25'
-    updated_at: '2010-05-03 06:33:06'
-  Page_14:
+    updated_at: '2010-05-26 12:36:15'
+  Page_21:
     Parent: Page_2
     Author: sfGuardUser_2
-    title: 'Club Magic - VIP'
-    description: "<p>Un Sal&oacute;n de juego exclusivo para una experiencia &uacute;nica.</p>\r\n<p>Creado a la medida de nuestros clientes VIP, con beneficios exclusivos, distintos, especiales.</p>\r\n<p>Una sala que refunda la experiencia de jugar, adecuada a las exigencias de los m&aacute;s exigentes.</p>\r\n<hr />\r\n<h3>Club Magic</h3>\r\n<p>Mesas de Ruleta<br />Mesa de Blackjack<br />Mesa de Baccarat</p>"
-    abstract: 'La diversión nunca fue tan elegante.'
+    title: 'Club Magic'
+    description: "<p>&nbsp;</p>\r\n<p>Para nuestros clientes especiales hemos dise&ntilde;ado un espacio diferenciado.</p>\r\n<p>Con la creaci&oacute;n de la Sala VIP, especialmente preprada para los miembros de nuestro exclusivo CLUB MAGIC, le ofrecemos m&aacute;s confort, intimidad y un ambiente exclusivo, con los m&aacute;s altos st&aacute;ndares de calidad y servicios.</p>\r\n<p>Mesas de Ruleta<br />Mesa de Blackjack<br />Mesa de Baccarat</p>"
+    abstract: 'Nuevo Salón VIP, la diversión nunca fue tan elegante.'
     picture: c0ef6a0ccc3d92dfa6323bb28e9e50f1d6bec6f4.jpg
     created_at: '2010-03-31 18:21:21'
-    updated_at: '2010-05-01 14:14:09'
-  Page_15:
+    updated_at: '2010-05-26 11:31:57'
+  Page_22:
     Parent: Page_2
     Author: sfGuardUser_2
-    title: 'Torneos de Póker'
-    description: '<p>Inteligencia, destreza, sutileza: emociones humanas al l&iacute;mite compitiendo por el premio mayor.</p>'
+    title: 'Torneos de Cartas'
+    description: "<p>Inteligencia, destreza, sutileza: emociones humanas al l&iacute;mite compitiendo por el premio mayor.</p>\r\n<p>Los mejores jugadores del pa&iacute;s compiten para llevarse los espectaculares premios que se han puesto en juego en Casino Magic.</p>\r\n<p>Emoci&oacute;n, suspenso, inteligencia y sutileza son sensaciones que se mezclan en cada torneo de P&oacute;ker, Black Jack, Baccarat y Punto y Banca.</p>\r\n<p>Lo invitamos a vivir esta inolvidable experiencia.</p>"
     abstract: 'Más que un simple torneo. Más que un simple juego de cartas.'
     picture: bcf4b391ad7db96a916154ba1b97893b86c4e71a.jpg
     created_at: '2010-03-31 18:30:51'
-    updated_at: '2010-04-27 16:28:13'
-  Page_16:
+    updated_at: '2010-05-27 04:11:13'
+  Page_23:
     Parent: Page_2
     Author: sfGuardUser_2
     title: 'Mesas de Juego'
@@ -434,49 +456,49 @@ Page:
     picture: 2d60100ebf127b1628e3e9d390eaba73c7b3edbe.jpg
     created_at: '2010-03-31 18:31:21'
     updated_at: '2010-04-27 16:35:11'
-  Page_17:
-    Parent: Page_8
+  Page_24:
+    Parent: Page_15
     Author: sfGuardUser_2
     title: 'Habitacion Standard'
     description: '<p>S&aacute;banas de algod&oacute;n egipcio, LCD 42&rdquo;, Wifi, Aire Acondicionado.</p>'
     abstract: ''
-    picture: c73e68418c5a8de70a8e4a6bedd935130001cbe0.jpg
+    picture: ac9bd30784d4ef34c9bd9d17a74897c4e4e12b86.jpg
     created_at: '2010-04-07 19:50:05'
-    updated_at: '2010-04-12 03:36:17'
-  Page_18:
-    Parent: Page_8
+    updated_at: '2010-05-21 13:15:59'
+  Page_25:
+    Parent: Page_15
     Author: sfGuardUser_2
     title: 'Habitacion Superior'
     description: '<p>S&aacute;banas de algod&oacute;n egipcio, LCD 42&rdquo;, Wifi, Aire Acondicionado, Jacuzzi.</p>'
     abstract: ''
-    picture: 2350ce55fcba6f64edf74857a3ac69116b812c69.jpg
+    picture: d4a6a97edabc9c862173465c2cc63fca3bacf10f.jpg
     created_at: '2010-04-07 19:50:36'
-    updated_at: '2010-04-12 03:25:49'
-  Page_19:
-    Parent: Page_8
+    updated_at: '2010-05-21 14:29:00'
+  Page_26:
+    Parent: Page_15
     title: 'Habitacion Presidencial'
-    description: "<p>165 m&sup2;, tres LCD, s&aacute;banas de algod&oacute;n egipcio, Wifi, Aire Acondicionado, Jacuzzi.</p>\r\n<p>&nbsp;</p>"
+    description: "<p>La suite presidencial cuenta con tres ambientes, dormitorio, sala de estar y oficina privada. Cuenta con ingreso directo e independiente del resto del hotel, jard&iacute;n privado con acceso a la piscina climatizada y cochera privada. Adem&aacute;s el ba&ntilde;o incorpora un gran jacuzzi.</p>\r\n<p>165 m&sup2;, tres LCD, s&aacute;banas de algod&oacute;n egipcio, Wifi, Aire Acondicionado, Jacuzzi.</p>"
     abstract: ''
-    picture: 909ccae4937e78e3ad2ac540bc10434e0b8af2c1.jpg
+    picture: fdeca2db9eeb48789f7696685a8438d8408099fb.jpg
     created_at: '2010-04-12 09:31:42'
-    updated_at: '2010-04-12 09:34:41'
-  Page_24:
+    updated_at: '2010-05-21 15:34:21'
+  Page_27:
     Parent: Page_3
     title: 'Business Center'
-    description: "<p>Para cerrar negocios como en la oficina. Estaciones de trabajo equipadas con computadoras, fotocopiadoras, scanners y todo lo necesario para una reuni&oacute;n de trabajo.</p>\r\n<ul>\r\n<li>Personal a tiempo completo y las instalaciones disponibles de Lunes a Viernes de 8 a.m.-6 p.m.</li>\r\n<li>Procesador de texto, copia, fax servicios</li>\r\n<li>Proyector de alta definici&oacute;n</li>\r\n<li>Acceso a Internet de alta velocidad</li>\r\n</ul>"
-    abstract: ''
-    picture: 44809392aebca2aeaf7e7b5a344319a3d2c1243a.jpg
+    description: "<p>Si usted se encuentra en nuestra regi&oacute;n y debe organizar reuniones de trabajo con grupos de personas, manteniendo un clima de confidencialidad, tranquilidad y trabajo, hemos dotado al complejo de espacios especialmente acondicionados para prestar un servicio Business Center de primera calidad.</p>\r\n<p>El Business Center cuenta con estaciones de trabajo y salas de reuniones con acceso a computadoras, impresoras, internet, scanner, fotocopiadora y todo lo necesario para agilizar sus reuniones de trabajo.</p>\r\n<ul>\r\n<li>Personal a tiempo completo y las instalaciones disponibles de Lunes a Viernes de 8 a.m.-6 p.m.</li>\r\n<li>Procesadores de texto, fotocopiadoras y fax</li>\r\n<li>Proyector de alta definici&oacute;n</li>\r\n<li>Acceso a Internet de alta velocidad</li>\r\n</ul>"
+    abstract: 'Un espacio para sus negocios'
+    picture: 3dcb3f3ea44068018d404dfb95358d43df2d22fd.jpg
     created_at: '2010-05-01 17:11:28'
-    updated_at: '2010-05-03 03:22:36'
-  Page_25:
+    updated_at: '2010-05-26 12:17:07'
+  Page_28:
     Parent: Page_3
     title: 'Formatos y Capacidades'
-    description: '<p>Preparados para banquetes, banquetes con baile, cocktails, cofee breaks, reuni&oacute;n de directorio, escuelas y como auditorio.</p>'
+    description: "<p>Preparados para banquetes, banquetes con baile, cocktails, cofee breaks, reuni&oacute;n de directorio, escuelas y como auditorio.</p>\r\n<table id=\"capacidad\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\r\n<caption>\r\n<p>Capacidad</p>\r\n</caption> \r\n<tbody>\r\n<tr>\r\n<th>\r\n<p>&nbsp;</p>\r\n</th>\r\n<td>\r\n<p><img src=\"images/evento_01.png\" alt=\"\" width=\"32\" height=\"32\" /></p>\r\n</td>\r\n<td>\r\n<p><img src=\"images/evento_02.png\" alt=\"\" width=\"32\" height=\"32\" /></p>\r\n</td>\r\n<td>\r\n<p><img src=\"images/evento_03.png\" alt=\"\" width=\"56\" height=\"32\" /></p>\r\n</td>\r\n<td>\r\n<p><img src=\"images/evento_04.png\" alt=\"\" width=\"58\" height=\"32\" /></p>\r\n</td>\r\n<td>\r\n<p><img src=\"images/evento_05.png\" alt=\"\" width=\"35\" height=\"32\" /></p>\r\n</td>\r\n<td>\r\n<p><img src=\"images/evento_06.png\" alt=\"\" width=\"56\" height=\"32\" /></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<th>\r\n<p>Salones</p>\r\n</th>\r\n<td>\r\n<p>Banquete</p>\r\n</td>\r\n<td>\r\n<p>Banquete con baile</p>\r\n</td>\r\n<td>\r\n<p>Cocktail o Coffee Breaks</p>\r\n</td>\r\n<td>\r\n<p>Auditorio</p>\r\n</td>\r\n<td>\r\n<p>Reuni&oacute;n directorio</p>\r\n</td>\r\n<td>\r\n<p>Formato Escuela</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<th>\r\n<p>Rainbow</p>\r\n</th>\r\n<td>\r\n<p>328</p>\r\n</td>\r\n<td>\r\n<p>304</p>\r\n</td>\r\n<td>\r\n<p>550</p>\r\n</td>\r\n<td>\r\n<p>640</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<th>\r\n<p>Belterra</p>\r\n</th>\r\n<td>\r\n<p>280</p>\r\n</td>\r\n<td>\r\n<p>255</p>\r\n</td>\r\n<td>\r\n<p>500</p>\r\n</td>\r\n<td>\r\n<p>500</p>\r\n</td>\r\n<td>\r\n<p>380</p>\r\n</td>\r\n<td>\r\n<p>500</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<th>\r\n<p>Gallery</p>\r\n</th>\r\n<td>\r\n<p>&nbsp;</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;</p>\r\n</td>\r\n<td>\r\n<p>300</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<th>\r\n<p>Sala de Reuni&oacute;n</p>\r\n</th>\r\n<td class=\"no-line\">\r\n<p>&nbsp;</p>\r\n</td>\r\n<td class=\"no-line\">\r\n<p>&nbsp;</p>\r\n</td>\r\n<td class=\"no-line\">\r\n<p>60</p>\r\n</td>\r\n<td class=\"no-line\">\r\n<p>55</p>\r\n</td>\r\n<td class=\"no-line\">\r\n<p>14</p>\r\n</td>\r\n<td class=\"no-line\">\r\n<p>24</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
     abstract: ''
-    picture: 9dacfe8fa529784f29eeefd7645800da2c2de3f5.jpg
+    picture: a90eeb3a974de4e8eda19fd4da3e30db81227fff.jpg
     created_at: '2010-05-01 17:12:50'
-    updated_at: '2010-05-03 04:00:21'
-  Page_26:
+    updated_at: '2010-05-26 16:07:15'
+  Page_29:
     Parent: Page_3
     title: 'Equipamiento Audio Visual  '
     description: '<p>Casino Magic cuenta con equipamiento audiovisual de &uacute;ltima generaci&oacute;n: la tecnolog&iacute;a al servicio de sus eventos.</p>'
@@ -484,23 +506,23 @@ Page:
     picture: a59484eeacd3958e85d59fadd2a7c7145ca959cb.jpg
     created_at: '2010-05-01 17:14:17'
     updated_at: '2010-05-03 03:01:57'
-  Page_27:
+  Page_30:
     Parent: Page_4
     title: 'Eventos Destacadados'
-    description: ''
-    abstract: ''
-    picture: null
+    description: '<p>Cuando se trata de espect&aacute;culos internacionales que demandan grandes esfuerzos de producci&oacute;n para recibir a m&aacute;s de 10.000 personas, se acondicionan los espacios en el exterior del edificiio, generando una experiencia &uacute;nica en nuestra regi&oacute;n, ya que no existe nespacios p&uacute;blicos aptos para el desarrollo de grandes eventos (como por ejemplo, Ricky Martin, Ricardo Arjona o Daddy Yankee).</p>'
+    abstract: 'Anfitrión de los espectáculos más importantes de la Patagonia'
+    picture: eaa8231a1b24ae7f65916203866181aae29d4f59.jpg
     created_at: '2010-05-01 17:31:57'
-    updated_at: '2010-05-01 17:31:57'
-  Page_28:
+    updated_at: '2010-05-28 10:05:20'
+  Page_31:
     Parent: Page_4
     title: Belterra
-    description: ''
-    abstract: ''
-    picture: null
+    description: '<p>Especialmente habilitado para espectaculos con cpaacidad para abergar shows de nivel nacional e internacional que requieren de infraestructura y equipamiento de primer nivel.</p>'
+    abstract: 'Shows de nivel nacional e internacional'
+    picture: 582b1c30ed08402c2e811cddae81bd5f74abb05a.jpg
     created_at: '2010-05-01 17:32:55'
-    updated_at: '2010-05-01 17:32:55'
-  Page_29:
+    updated_at: '2010-05-28 10:51:28'
+  Page_32:
     Parent: Page_4
     title: Rainbow
     description: ''
@@ -508,7 +530,7 @@ Page:
     picture: null
     created_at: '2010-05-01 17:33:07'
     updated_at: '2010-05-01 17:33:07'
-  Page_30:
+  Page_33:
     Parent: Page_4
     title: Jokers
     description: ''
@@ -516,16 +538,16 @@ Page:
     picture: null
     created_at: '2010-05-01 17:33:19'
     updated_at: '2010-05-01 17:33:19'
-  Page_38:
-    Parent: Page_37
+  Page_34:
+    Parent: Page_6
     title: 'American Exprerss Select'
     description: "<p>Todos los&nbsp;socios de American Express&nbsp;podr&aacute;n acceder a un&nbsp;<strong>30% de descuento</strong>&nbsp;al abonar con la Tarjeta American Express sobre la tarifa de mostrador.</p>\r\n<p><strong>Late check out 16:00hs. sin cargo.&nbsp;</strong><br /> <strong>Tercer pasajero bonificado</strong>&nbsp;(cuna o cama extra).<br /> Deber&aacute; presentar cup&oacute;n de descuento o mencionar el c&oacute;digo de promoci&oacute;n correspondiente.</p>\r\n<p>Para ofertas v&aacute;lidas a trav&eacute;s de Internet y/o por tel&eacute;fono.<br /> Desde el 01-01-2010 hasta el 30-12-2010</p>"
     abstract: 'Promoción para socios American Express'
     picture: a390a447270807cd8f3e2d100578b8a0ede1a9d9.jpg
     created_at: '2010-05-04 16:28:10'
     updated_at: '2010-05-04 17:22:00'
-  Page_39:
-    Parent: Page_37
+  Page_35:
+    Parent: Page_6
     Author: sfGuardUser_1
     title: 'Aerolíneas Argentinas y Socios Aerolíneas Plus'
     description: "<p><strong>30% de descuento</strong>&nbsp;sobre la tarifa rack, up grade a categor&iacute;a Superior.<br /> <strong>15% de descuento</strong>&nbsp;en el&nbsp;Restaurant Seasons, early check in y late check out (16:00hs.) sin cargo.</p>\r\n<p>Para todos los pasajeros que&nbsp;viajen por Aerol&iacute;neas Argentinas&nbsp;que hayan volado en&nbsp;<strong>clase ejecutiva</strong>, tendr&aacute;n un&nbsp;<strong>15% de descuento</strong>&nbsp;en&nbsp;Restaurant Seasons&nbsp;sin la obligaci&oacute;n de estar hospedados en el Hotel</p>\r\n<p>Todos los&nbsp;Socios de Aerol&iacute;neas Plus&nbsp;tendr&aacute;n: &nbsp;<br /> <strong>35% de descuento</strong>&nbsp;sobre la tarifa rack, up grade a categor&iacute;a Superior.<br /> <strong>15% de descuento</strong>&nbsp;en el Restaurant Seasons del hotel, early check in y late check out (16:00hs.) sin cargo.</p>\r\n<p>Es requisito indispensable presentar el boarding pass al momento del check in o la tarjeta de socios de Aerol&iacute;neas Plus.</p>"
@@ -533,14 +555,62 @@ Page:
     picture: b6731bcba0d0d81b1d2c266c938965f30b14a918.jpg
     created_at: '2010-05-04 16:55:39'
     updated_at: '2010-05-04 17:21:31'
+  Page_36:
+    Parent: Page_40
+    title: 'Junín de los Andes'
+    description: '<p>Ubicado en el centro de la ciudad de Junin de los Andes, una de las m&aacute;s antiguas de la regi&oacute;n. Conocida por ser la Capital Nacional de la Trucha, atrae cada a&ntilde;o a gran cantidad de pescadores deportivos de todo el mundo. Casino Magic, creado a escala de la ciudad, ofrece a sus visitantes un sal&oacute;n de juegos con Maquinas Tragamonedas, video pocker y ruleta electr&oacute;nica.</p>'
+    abstract: ''
+    picture: fc10e820f0afc5869b8e74e705de7662354eb0fb.jpg
+    created_at: '2010-05-11 10:41:33'
+    updated_at: '2010-05-28 11:40:04'
   Page_37:
-    Parent: Page_1
-    title: Promos
-    description: '<p>Vis&iacute;tenos para chequear nuestras promociones especiales y descuentos exclusivos.</p>'
-    abstract: 'Promociones exclusivas'
-    picture: 074054facf791d7e593ca587469ae69b8518a23d.jpg
-    created_at: '2010-05-04 14:43:31'
-    updated_at: '2010-05-04 16:26:03'
+    Parent: Page_40
+    title: 'San Martín de los Andes'
+    description: ''
+    abstract: ''
+    picture: null
+    created_at: '2010-05-11 10:41:51'
+    updated_at: '2010-05-16 21:03:41'
+  Page_39:
+    Parent: Page_40
+    title: Caviahue
+    description: ''
+    abstract: ''
+    picture: null
+    created_at: '2010-05-11 10:51:10'
+    updated_at: '2010-05-16 21:03:09'
+  Page_40:
+    Author: sfGuardUser_3
+    title: 'Nuestros Casinos'
+    description: ''
+    abstract: ''
+    picture: null
+    created_at: '2010-05-16 21:02:12'
+    updated_at: '2010-05-16 21:02:12'
+  Page_42:
+    Author: sfGuardUser_3
+    title: 'Información Institucional'
+    description: ''
+    abstract: ''
+    picture: null
+    created_at: '2010-05-16 21:26:07'
+    updated_at: '2010-05-16 21:26:07'
+  Page_43:
+    Parent: Page_42
+    Author: sfGuardUser_3
+    title: 'Juego Responsable'
+    description: ''
+    abstract: ''
+    picture: null
+    created_at: '2010-05-16 21:26:40'
+    updated_at: '2010-05-16 21:26:40'
+  Page_44:
+    title: 'Torneos de Póker'
+    description: "<table id=\"poker\" width=\"100%\">\r\n<caption>\r\n<p>Capacidad</p>\r\n</caption> <thead> \r\n<tr>\r\n<th width=\"50\" scope=\"col\">\r\n<p>Posici&oacute;n</p>\r\n</th> <th scope=\"col\">\r\n<p>Ganadores Semifinal de Abril</p>\r\n</th>\r\n</tr>\r\n</thead> \r\n<tbody>\r\n<tr>\r\n<td>\r\n<p>1</p>\r\n</td>\r\n<td>\r\n<p>Iturrino Fernando</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>2</p>\r\n</td>\r\n<td>\r\n<p>Manrique Mart&iacute;n</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>3</p>\r\n</td>\r\n<td>\r\n<p>Manzur Agust&iacute;n</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>4</p>\r\n</td>\r\n<td>\r\n<p>Mart&iacute;n Juan Pablo</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>5</p>\r\n</td>\r\n<td>\r\n<p>Bastias Edgardo</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>6</p>\r\n</td>\r\n<td>\r\n<p>Fava Dardo</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>7</p>\r\n</td>\r\n<td>\r\n<p>Guazzaroni Pablo</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>8</p>\r\n</td>\r\n<td>\r\n<p>Fanjul Fabi&aacute;n</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>9</p>\r\n</td>\r\n<td>\r\n<p>Riquelme   Marcelo</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>10</p>\r\n</td>\r\n<td>\r\n<p>Telmo   Alejandro</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>11</p>\r\n</td>\r\n<td>\r\n<p>Luna Sebastian</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>12</p>\r\n</td>\r\n<td>\r\n<p>Hasbani Roberto</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>13</p>\r\n</td>\r\n<td>\r\n<p>Ocampo Julio</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>14</p>\r\n</td>\r\n<td>\r\n<p>Costich Mario</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>15</p>\r\n</td>\r\n<td>\r\n<p>Galofre Carlos</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+    abstract: 'Gran final de Diciembre'
+    picture: ca89a4a596b34b5ad89627a3995e0a3c8335d99e.jpg
+    created_at: '2010-05-27 09:01:52'
+    updated_at: '2010-05-27 11:00:20'
 sfGuardUserGroup:
   sfGuardUserGroup_1_1:
     sfGuardUser: sfGuardUser_1
@@ -558,32 +628,32 @@ sfGuardUser:
     username: admin
     algorithm: sha1
     salt: 175c791b2d837217889462f269a8a961
-    password: monoloco
+    password: c08964a6b241fdff67044e965a18f86cb941b37d
     is_active: true
     is_super_admin: true
-    last_login: '2010-05-04 16:29:44'
+    last_login: '2010-05-28 13:35:43'
     created_at: '2010-03-30 19:50:27'
-    updated_at: '2010-05-04 16:50:34'
+    updated_at: '2010-05-28 13:35:43'
   sfGuardUser_2:
     username: damian
     algorithm: sha1
     salt: 28b0271c037ae651cd72d0af62631348
-    password: damian
+    password: a97862600ae2747856a63f2a0cd06a86351d2679
     is_active: true
     is_super_admin: true
-    last_login: '2010-05-05 21:03:08'
+    last_login: '2010-05-26 15:37:43'
     created_at: '2010-03-30 19:50:27'
-    updated_at: '2010-05-05 21:03:08'
+    updated_at: '2010-05-26 15:37:43'
   sfGuardUser_3:
     username: davo
     algorithm: sha1
     salt: 3bfce462e5af26d946a96eda5603581b
-    password: superpirulo
+    password: 3312868ceae11816d92297dde4f2853645f5db13
     is_active: true
     is_super_admin: true
-    last_login: '2010-05-05 18:22:14'
+    last_login: '2010-05-28 12:42:02'
     created_at: '2010-05-04 16:53:33'
-    updated_at: '2010-05-05 18:22:14'
+    updated_at: '2010-05-28 12:42:02'
 sfGuardGroupPermission:
   sfGuardGroupPermission_1_1:
     sfGuardGroup: sfGuardGroup_1
@@ -604,3 +674,9 @@ sfGuardGroup:
     description: 'Administrator group'
     created_at: '2010-03-30 19:50:28'
     updated_at: '2010-03-30 19:50:28'
+sfGuardUserPermission:
+  sfGuardUserPermission_1_1:
+    sfGuardUser: sfGuardUser_1
+    sfGuardPermission: sfGuardPermission_1
+    created_at: '2010-05-18 12:43:47'
+    updated_at: '2010-05-18 12:43:47'
