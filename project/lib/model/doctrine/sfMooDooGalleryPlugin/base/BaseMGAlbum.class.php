@@ -11,19 +11,22 @@
  * @property clob $description
  * @property Doctrine_Collection $Galleries
  * @property sfGuardUser $Author
+ * @property Doctrine_Collection $MGAlbumGallery
  * 
- * @method integer             getId()          Returns the current record's "id" value
- * @method integer             getAuthorId()    Returns the current record's "author_id" value
- * @method string              getTitle()       Returns the current record's "title" value
- * @method clob                getDescription() Returns the current record's "description" value
- * @method Doctrine_Collection getGalleries()   Returns the current record's "Galleries" collection
- * @method sfGuardUser         getAuthor()      Returns the current record's "Author" value
- * @method MGAlbum             setId()          Sets the current record's "id" value
- * @method MGAlbum             setAuthorId()    Sets the current record's "author_id" value
- * @method MGAlbum             setTitle()       Sets the current record's "title" value
- * @method MGAlbum             setDescription() Sets the current record's "description" value
- * @method MGAlbum             setGalleries()   Sets the current record's "Galleries" collection
- * @method MGAlbum             setAuthor()      Sets the current record's "Author" value
+ * @method integer             getId()             Returns the current record's "id" value
+ * @method integer             getAuthorId()       Returns the current record's "author_id" value
+ * @method string              getTitle()          Returns the current record's "title" value
+ * @method clob                getDescription()    Returns the current record's "description" value
+ * @method Doctrine_Collection getGalleries()      Returns the current record's "Galleries" collection
+ * @method sfGuardUser         getAuthor()         Returns the current record's "Author" value
+ * @method Doctrine_Collection getMGAlbumGallery() Returns the current record's "MGAlbumGallery" collection
+ * @method MGAlbum             setId()             Sets the current record's "id" value
+ * @method MGAlbum             setAuthorId()       Sets the current record's "author_id" value
+ * @method MGAlbum             setTitle()          Sets the current record's "title" value
+ * @method MGAlbum             setDescription()    Sets the current record's "description" value
+ * @method MGAlbum             setGalleries()      Sets the current record's "Galleries" collection
+ * @method MGAlbum             setAuthor()         Sets the current record's "Author" value
+ * @method MGAlbum             setMGAlbumGallery() Sets the current record's "MGAlbumGallery" collection
  * 
  * @package    magic
  * @subpackage model
@@ -65,6 +68,10 @@ abstract class BaseMGAlbum extends sfDoctrineRecord
         $this->hasOne('sfGuardUser as Author', array(
              'local' => 'author_id',
              'foreign' => 'id'));
+
+        $this->hasMany('MGAlbumGallery', array(
+             'local' => 'id',
+             'foreign' => 'album_id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);

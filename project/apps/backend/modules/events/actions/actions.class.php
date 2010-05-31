@@ -42,6 +42,7 @@ class eventsActions extends autoEventsActions {
     if ($isMainSlide) $ev->setIsMainSlide(true);
 
     $this->form = $this->configuration->getForm($this->event);
+    //$this->form = new EventForm($this->event);
 
   }
 
@@ -98,7 +99,7 @@ class eventsActions extends autoEventsActions {
           $obj->setEventId($event->get('id'));
           $obj->save();
         }
-        $this->redirect(array('sf_route' => 'event_edit', 'sf_subject' => $event));
+        $this->redirect('events/index');
       }
     }
     else {

@@ -13,7 +13,7 @@
       <ul>
         <li><a href="<?php echo url_for('events/index') ?>"><span class="event"></span><?php echo __('List'); ?></a></li>
         <li>
-          <a href="<?php echo url_for('events/new') ?>"><span class="add"></span><?php echo __('Add event'); ?></a>
+          <a href="#"><?php echo __('Add event'); ?></a>
           <ul>
             <li><?php echo link_to('Main Event', 'events/new?id=4', array('class' => 'event')) ?></li>
             <li><?php echo link_to('Belterra', 'events/new?id=5', array('class' => 'event')) ?></li>

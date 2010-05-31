@@ -12,24 +12,33 @@
  * @property Doctrine_Collection $Albums
  * @property Doctrine_Collection $Photos
  * @property sfGuardUser $Author
+ * @property Doctrine_Collection $MGAlbumGallery
+ * @property Doctrine_Collection $MGGalleryPhoto
  * @property Doctrine_Collection $Event
+ * @property Doctrine_Collection $EventGallery
  * 
- * @method integer             getId()          Returns the current record's "id" value
- * @method integer             getAuthorId()    Returns the current record's "author_id" value
- * @method string              getTitle()       Returns the current record's "title" value
- * @method clob                getDescription() Returns the current record's "description" value
- * @method Doctrine_Collection getAlbums()      Returns the current record's "Albums" collection
- * @method Doctrine_Collection getPhotos()      Returns the current record's "Photos" collection
- * @method sfGuardUser         getAuthor()      Returns the current record's "Author" value
- * @method Doctrine_Collection getEvent()       Returns the current record's "Event" collection
- * @method MGGallery           setId()          Sets the current record's "id" value
- * @method MGGallery           setAuthorId()    Sets the current record's "author_id" value
- * @method MGGallery           setTitle()       Sets the current record's "title" value
- * @method MGGallery           setDescription() Sets the current record's "description" value
- * @method MGGallery           setAlbums()      Sets the current record's "Albums" collection
- * @method MGGallery           setPhotos()      Sets the current record's "Photos" collection
- * @method MGGallery           setAuthor()      Sets the current record's "Author" value
- * @method MGGallery           setEvent()       Sets the current record's "Event" collection
+ * @method integer             getId()             Returns the current record's "id" value
+ * @method integer             getAuthorId()       Returns the current record's "author_id" value
+ * @method string              getTitle()          Returns the current record's "title" value
+ * @method clob                getDescription()    Returns the current record's "description" value
+ * @method Doctrine_Collection getAlbums()         Returns the current record's "Albums" collection
+ * @method Doctrine_Collection getPhotos()         Returns the current record's "Photos" collection
+ * @method sfGuardUser         getAuthor()         Returns the current record's "Author" value
+ * @method Doctrine_Collection getMGAlbumGallery() Returns the current record's "MGAlbumGallery" collection
+ * @method Doctrine_Collection getMGGalleryPhoto() Returns the current record's "MGGalleryPhoto" collection
+ * @method Doctrine_Collection getEvent()          Returns the current record's "Event" collection
+ * @method Doctrine_Collection getEventGallery()   Returns the current record's "EventGallery" collection
+ * @method MGGallery           setId()             Sets the current record's "id" value
+ * @method MGGallery           setAuthorId()       Sets the current record's "author_id" value
+ * @method MGGallery           setTitle()          Sets the current record's "title" value
+ * @method MGGallery           setDescription()    Sets the current record's "description" value
+ * @method MGGallery           setAlbums()         Sets the current record's "Albums" collection
+ * @method MGGallery           setPhotos()         Sets the current record's "Photos" collection
+ * @method MGGallery           setAuthor()         Sets the current record's "Author" value
+ * @method MGGallery           setMGAlbumGallery() Sets the current record's "MGAlbumGallery" collection
+ * @method MGGallery           setMGGalleryPhoto() Sets the current record's "MGGalleryPhoto" collection
+ * @method MGGallery           setEvent()          Sets the current record's "Event" collection
+ * @method MGGallery           setEventGallery()   Sets the current record's "EventGallery" collection
  * 
  * @package    magic
  * @subpackage model
@@ -77,10 +86,22 @@ abstract class BaseMGGallery extends sfDoctrineRecord
              'local' => 'author_id',
              'foreign' => 'id'));
 
+        $this->hasMany('MGAlbumGallery', array(
+             'local' => 'id',
+             'foreign' => 'gallery_id'));
+
+        $this->hasMany('MGGalleryPhoto', array(
+             'local' => 'id',
+             'foreign' => 'gallery_id'));
+
         $this->hasMany('Event', array(
              'refClass' => 'EventGallery',
              'local' => 'gallery_id',
              'foreign' => 'event_id'));
+
+        $this->hasMany('EventGallery', array(
+             'local' => 'id',
+             'foreign' => 'gallery_id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);

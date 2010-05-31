@@ -20,7 +20,7 @@ sf_guard_password:
 
 vip:
   url:   /vip
-  param: { module: pages, action: vip }
+  param: { module: pages, action: index, id:21 }
 # generic rules
 # please, remove them by adding more specific rules
 default_index:

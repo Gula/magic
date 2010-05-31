@@ -15,18 +15,9 @@ class EventAdminForm extends BaseEventForm
   {
     unset(
       $this['created_at'],
-      $this['updated_at'],
-      $this['categories_list']
+      $this['updated_at']
     );
 
-
-    $this->widgetSchema['main_slideshow'] = new sfWidgetFormInput(
-      array(),
-      array(
-        'type' => 'checkbox',
-        'checked' => $this->getObject()->getIsMainSlide() ? 'checked' : false
-      )
-    );
 
     // galleries_list
     $this->widgetSchema['galleries_list'] = new sfWidgetFormDoctrineChoice(array(
@@ -34,7 +25,30 @@ class EventAdminForm extends BaseEventForm
         'multiple' => true,
         'model' => 'MGGallery'
     ));
-    
+
+
+          $this->widgetSchema['main_slideshow'] = new sfWidgetFormInput(
+        array(),
+        array(
+          'type' => 'checkbox',
+          'checked' => $this->getObject()->getIsMainSlide() ? 'checked' : false
+        )
+      );
+          
+    if($this->getObject()->isNew()) {
+    // galleries_list
+      $this->widgetSchema['categories_list'] = new sfWidgetFormInputHidden();
+      $this->validatorSchema['categories_list'] = new sfValidatorString(array('required' => false));
+    }
+    else {
+      $this->widgetSchema['categories_list'] = new sfWidgetFormDoctrineChoice(array(
+        'expanded' => true,
+        'multiple' => true,
+        'model' => 'Category'
+      ));
+      //$this->widgetSchema['main_slideshow'] = new sfWidgetFormInputHidden();
+    }
+
     $this->validatorSchema['main_slideshow'] = new sfValidatorString(array('required' => false));
 
     $this->widgetSchema['event_cat'] = new sfWidgetFormInputHidden(

@@ -36,7 +36,7 @@ Page:
     picture:                    {type: string(255)}
   relations:
     Author:                     {local: author_id, foreign: id, class: sfGuardUser}
-    Parent:                     {local: parent_id, foreign: id, class: Page}
+    Parent:                     {local: parent_id, foreign: id, class: Page, onDelete: CASCADE}
     Categories:                 {class: Category, local: page_id, foreign: category_id, refClass: PageCategory}
 
 #Category
@@ -58,6 +58,9 @@ PageCategory:
   columns:
     category_id:                {type: integer, primary: true}
     page_id:                    {type: integer, primary: true}
+  relations:
+    Category:                   {local: category_id, foreign: id, onDelete: CASCADE}
+    Page:                       {local: page_id, foreign: id, onDelete: CASCADE}
 
 
 # Events
@@ -79,13 +82,16 @@ Event:
 
   relations:
     Author:                     {local: author_id, foreign: id, class: sfGuardUser}
-    Categories:                 {class: Category, local: event_id, foreign: category_id, refClass: EventCategory}
+    Categories:                 {class: Category, local: event_id, foreign: category_id, refClass: EventCategory, onDelete: CASCADE}
     Galleries:                  {class: MGGallery, local: event_id, foreign: gallery_id, refClass: EventGallery}
 
 EventCategory:
   columns:
     category_id:                {type: integer, primary: true}
     event_id:                   {type: integer, primary: true}
+  relations:
+    Category:                   {local: category_id, foreign: id, onDelete: CASCADE}
+    Event:                      {local: event_id, foreign: id, onDelete: CASCADE}
 
 # Event <-> Gallery
 EventGallery:
@@ -93,3 +99,6 @@ EventGallery:
   columns:
     gallery_id:                 {type: integer}
     event_id:                   {type: integer}
+  relations:
+    MGGallery:                  {local: gallery_id, foreign: id, onDelete: CASCADE}
+    Event:                      {local: event_id, foreign: id, onDelete: CASCADE}

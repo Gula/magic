@@ -28,7 +28,7 @@ generator:
         class:                EventAdminForm
         fields:
           Parent:             { name: Parent Event }
-        display:              [ title, author_id, description, date, publication_date, due_date, sticky, mugshot, main_slideshow, event_cat, galleries_list ]
+        display:              [ title, author_id, description, date, publication_date, due_date, sticky, mugshot, main_slideshow, event_cat, categories_list, galleries_list ]
 
       edit:
         title:                  Edit Event

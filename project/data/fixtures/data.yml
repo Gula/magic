@@ -50,40 +50,6 @@ PageCategory:
   PageCategory_8_42:
     category_id: '8'
     page_id: '42'
-EventCategory:
-  EventCategory_2_17:
-    category_id: '2'
-    event_id: '17'
-  EventCategory_2_18:
-    category_id: '2'
-    event_id: '18'
-  EventCategory_3_1:
-    category_id: '3'
-    event_id: '1'
-  EventCategory_3_2:
-    category_id: '3'
-    event_id: '2'
-  EventCategory_4_1:
-    category_id: '4'
-    event_id: '1'
-  EventCategory_5_2:
-    category_id: '5'
-    event_id: '2'
-  EventCategory_5_17:
-    category_id: '5'
-    event_id: '17'
-  EventCategory_5_18:
-    category_id: '5'
-    event_id: '18'
-  EventCategory_5_19:
-    category_id: '5'
-    event_id: '19'
-  EventCategory_5_20:
-    category_id: '5'
-    event_id: '20'
-  EventCategory_7_22:
-    category_id: '7'
-    event_id: '22'
 Profile:
   Profile_1:
     User: sfGuardUser_2

@@ -17,13 +17,13 @@ abstract class BaseMGAlbumGalleryForm extends BaseFormDoctrine
     $this->setWidgets(array(
       'id'         => new sfWidgetFormInputHidden(),
       'gallery_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('MGGallery'), 'add_empty' => true)),
-      'album_id'   => new sfWidgetFormInputText(),
+      'album_id'   => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('MGAlbum'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
       'id'         => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id', 'required' => false)),
       'gallery_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('MGGallery'), 'required' => false)),
-      'album_id'   => new sfValidatorInteger(array('required' => false)),
+      'album_id'   => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('MGAlbum'), 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('mg_album_gallery[%s]');

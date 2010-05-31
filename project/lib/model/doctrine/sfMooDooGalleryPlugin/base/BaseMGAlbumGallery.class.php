@@ -7,11 +7,17 @@
  * 
  * @property integer $gallery_id
  * @property integer $album_id
+ * @property MGAlbum $MGAlbum
+ * @property MGGallery $MGGallery
  * 
  * @method integer        getGalleryId()  Returns the current record's "gallery_id" value
  * @method integer        getAlbumId()    Returns the current record's "album_id" value
+ * @method MGAlbum        getMGAlbum()    Returns the current record's "MGAlbum" value
+ * @method MGGallery      getMGGallery()  Returns the current record's "MGGallery" value
  * @method MGAlbumGallery setGalleryId()  Sets the current record's "gallery_id" value
  * @method MGAlbumGallery setAlbumId()    Sets the current record's "album_id" value
+ * @method MGAlbumGallery setMGAlbum()    Sets the current record's "MGAlbum" value
+ * @method MGAlbumGallery setMGGallery()  Sets the current record's "MGGallery" value
  * 
  * @package    magic
  * @subpackage model
@@ -34,6 +40,14 @@ abstract class BaseMGAlbumGallery extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-        
+        $this->hasOne('MGAlbum', array(
+             'local' => 'album_id',
+             'foreign' => 'id',
+             'onDelete' => 'CASCADE'));
+
+        $this->hasOne('MGGallery', array(
+             'local' => 'gallery_id',
+             'foreign' => 'id',
+             'onDelete' => 'CASCADE'));
     }
 }
