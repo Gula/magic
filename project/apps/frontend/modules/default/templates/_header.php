@@ -1,11 +1,11 @@
 <div id="header">
   <div id="logo" class="span-5"><h1><?php echo link_to('Casino Magic', 'default/index') ?></h1></div>
   <div id="nav" class="span-19 last">
-    <div class="span-9 prepend-10 last" id="global">
+    <div class="span-8 prepend-12 last" id="global">
     	<ul class="above-menu">
     		<li id="mapa"><a href="javascript:;">Mapa del sitio</a></li>
-    		<li id="facebook"><a href="javascript:;">Agreganos a tu Facebook</a></li>
-    		<li id="contactenos"><a href="javascript:;">Contactenos</a></li>
+    		<li id="facebook"><a href="http://www.facebook.com/casino.magic" target="_blank">Agreganos a tu Facebook</a></li>
+    		<!-- <li id="contactenos"><a href="javascript:;">Contactenos</a></li> -->
     		<li id="login"><a href="/backend.php/">Acceder al administrador</a></li>
     		<li id="reservas"><a href="#">Reservas Hotel</a></li>
     	</ul>

@@ -894,14 +894,26 @@ background-color: #dbba83;
 .contenido .subpagina-contenido h3 {
   margin-top: 15px;
   margin-left: 10px;
+  margin-bottom: 0px;
   text-align: left;
   color: white;
-  font: 14px/16px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 14px/12px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform:  uppercase;
   letter-spacing: 1px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+}
 
+.contenido .subpagina-contenido h4 {
+  margin-top: 15px;
+  margin-left: 10px;
+  text-align: left;
+  color: white;
+  font: 12px/10px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform:  uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
 }
 
 .contenido .subpagina-contenido p, .contenido .subpagina-contenido li, .contenido .subpagina-contenido td {
