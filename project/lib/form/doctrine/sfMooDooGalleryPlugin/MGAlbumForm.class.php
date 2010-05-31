@@ -12,5 +12,11 @@ class MGAlbumForm extends PluginMGAlbumForm
 {
   public function configure()
   {
+    // galleries_list
+    $this->widgetSchema['galleries_list'] = new sfWidgetFormDoctrineChoice(array(
+        'expanded' => true,
+        'multiple' => true,
+        'model' => 'MGGallery'
+    ));
   }
 }
