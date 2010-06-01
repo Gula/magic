@@ -60,7 +60,7 @@
       
 
       <?php if ($sf_request->getParameter('id') == 21 and !$sf_user->isAuthenticated()) : ?>
-      
+      <?php if(isset($form)) : ?>
         <form action="<?php echo url_for('pages/index#signin') ?>" method="post">
         <div id="signin">
           <?php echo $form->renderGlobalErrors() ?>
@@ -77,6 +77,7 @@
           <input type="submit" value="<?php echo __('sign in') ?>" />
         </div>  
       </form>
+      <?php endif; ?>
 
       <?php elseif ($sf_user->isAuthenticated()): ?>
       <p><?php echo link_to('Salir','@sf_guard_signout' ); ?></p>

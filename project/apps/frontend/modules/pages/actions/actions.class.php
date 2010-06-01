@@ -27,7 +27,9 @@ class pagesActions extends sfActions
       $this->isVip = $user->getGuardUser()->hasPermission('Vip');
     else
       $this->isVip = false;
-    
+
+    $class = sfConfig::get('app_sf_guard_plugin_signin_form', 'sfMooDooFormSignin');
+    $this->form = new $class();
     if($this->currentPage->getParent()->get('id') == $this->vipNumber and !($this->isVip))
       return $this->redirect('pages/index?id='.$this->vipNumber.'&level=1'); 
     else {
@@ -35,8 +37,6 @@ class pagesActions extends sfActions
       if($this->level == 1) {
         // VIP
         if($request->getParameter('id') == $this->vipNumber ) {
-          $class = sfConfig::get('app_sf_guard_plugin_signin_form', 'sfMooDooFormSignin');
-          $this->form = new $class();
           if ($request->isMethod('post')) {
             $this->form->bind($request->getParameter('signin'));
             if ($this->form->isValid()) {
