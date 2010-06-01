@@ -984,11 +984,12 @@ background-color: #dbba83;
   padding-top: 14px !important;
 }
 
-#global .above-menu {
+#global {
+	/* border: 1px solid red; */
   margin: 0;
   padding: 0;
-  float:			left;
-  position:		relative;
+  left: 560px;
+  position:		absolute;
 }
 
 #global .above-menu ul li {
@@ -999,7 +1000,7 @@ background-color: #dbba83;
   visibility:		inherit; /* fixes IE7 'sticky bug' */
 }
 #global .above-menu li {
-  float:			left;
+  float:			right;
   position:		relative;
 }
 #global .above-menu a {
@@ -1019,7 +1020,7 @@ background-color: #dbba83;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   text-decoration: none;
   top: 5px;
-  right: 50px;
+  right: 7px;
 }
 
 
@@ -1032,6 +1033,13 @@ background-color: #dbba83;
   padding: 0px !important; margin: 0px;
   text-indent: -5000px;
   width: 40px !important; height: 30px;
+}
+
+#logout a {
+  display:  block !important;
+  padding: 0px !important; margin: 0px;
+  text-indent: -5000px;
+  width: 135px !important; height: 30px;
 }
 
 #mapa a {
@@ -1064,6 +1072,14 @@ background-color: #dbba83;
 
 #login a:hover {
   background: transparent url(../images/iconos.png) no-repeat -120px -30px !important;
+}
+
+#logout a {
+  background: transparent url(../images/iconos.png) no-repeat -313px 0px !important;
+}
+
+#logout a:hover {
+  background: transparent url(../images/iconos.png) no-repeat -313px -30px !important;
 }
 
 #reservas a {

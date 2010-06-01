@@ -62,7 +62,7 @@
       <?php if ($sf_request->getParameter('id') == 21 and !$sf_user->isAuthenticated()) : ?>
       
         <form action="<?php echo url_for('pages/index#signin') ?>" method="post">
-        <p id="signin">
+        <div id="signin">
           <?php echo $form->renderGlobalErrors() ?>
           <input type="hidden" value="21" name="id" />
           <input type="hidden" value="1" name="level" />
@@ -75,7 +75,7 @@
           <?php echo $form['remember']->renderLabel() ?>
           <?php echo $form['remember'] ?>
           <input type="submit" value="<?php echo __('sign in') ?>" />
-        </p>  
+        </div>  
       </form>
 
       <?php elseif ($sf_user->isAuthenticated()): ?>
