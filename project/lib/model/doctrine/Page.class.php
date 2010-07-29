@@ -75,7 +75,20 @@ class Page extends BasePage {
   }
 
   public function getDescriptionAbstract() {
-    $long = strlen($this->getDescription());
-    return ($long > 140) ? substr($this->getDescription(), 0, 200).' ...' : $this->getDescription();
+
+  	$input = strip_tags($this->getDescription());
+    $length = 200;
+    if (strlen($input) <= $length) {
+		return $input;
+	}
+	
+	$ultimo_espacio = strrpos(substr($input, 0, $length), ' ');
+	$trimmed_text = substr($input, 0, $ultimo_espacio);
+	$trimmed_text .= '.';
+ 
+ 	return $trimmed_text;
+
+    //$long = strlen();
+    //return ($long > 140) ? substr($this->getDescription(), 0, 200).'...' : $this->getDescription();
   }
 }

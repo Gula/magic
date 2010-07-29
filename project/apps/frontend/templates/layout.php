@@ -27,6 +27,8 @@
     <div class="wrapper">
       <div class="block"></div>
       <iframe src="http://www.idiso.com/csl/reservations/jsp/C_Search_Dates.jsp?&codigoHotel=1652&lang=es&idPartner=CASINOMAGIC&idPrm=MBCASINOMG&idONg=P25&idNom=webpropia" width="420" height="50" frameborder="0" allowtransparency="true" id="iframeBEIdiso"></iframe>
+      
+      <!-- <iframe src="http://beta.casinomagic.com.ar/login" width="520" height="250" frameborder="0" allowtransparency="true" id="pop-login"></iframe> -->
 
       <div class="container" <?php if(isset($id)) echo 'id="'.$id.'"' ?>>
         <?php include_component('default', 'header') ?>

@@ -30,7 +30,7 @@
 
 
   <div class="alpha"></div>
-
+<?php include_partial('default/show', array('event' => $event)) ?>
   <?php
   if($event->getMugshot() != '') {
     $arr_filename = explode ('.', $event->getMugshot());

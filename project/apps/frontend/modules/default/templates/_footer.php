@@ -23,11 +23,11 @@
     </div>
     
 	<div class="comollegar">
-      <h2>C&oacute;mo llegar?</h2>
+      <h2><a href="http://www.casinomagic.com.ar/pages?id=85">C&oacute;mo llegar?</a></h2>
       <ul>
-        <li>Teodoro Planas 2005<br />
+        <li><a href="http://www.casinomagic.com.ar/pages?id=85">Teodoro Planas 4005<br />
         Neuqu&eacute;n - Argentina<br />
-        0800 666 2442</li>
+        0800 666 2442</a></li>
       </ul>
     </div>
   

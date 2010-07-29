@@ -3,15 +3,22 @@
   <div id="gallery" class="clearfix"></div>
   <div id="boxNovedades">
     <ul class="novedades">
-      <li class="shows">
-        <img src="<?php echo $betterShow->getRawValue()->getImageSrc('mugshot', 'small') ?>" width="130" height="130" alt="Show" class="novedades-imagen" /><?php echo link_to('Shows destacados', 'pages/index?id=4') ?>
-      </li>
-      <li class="promos"><span class="shows"><img src="images/box_promos_ganador_de_ganadores.jpg" width="130" height="130" class="novedades-imagen" /></span><?php echo link_to('Promos', 'pages/index?id=5') ?></li>
-      <li class="torneos"><span class="shows"><img src="images/box_torneos_poker0310.jpg" width="130" height="130" class="novedades-imagen" /></span><a href="/pages?id=42&level=1"></a></li>
-      <li class="hotel"><span class="shows"><img src="images/box_hotel_stat.jpg" width="130" height="130" class="novedades-imagen" /></span><a href="/pages?id=6&level=1">Promos Hotel destacadas</a></li>
-      <li class="fotos"><span class="shows"><img src="images/box_fotos_sabina.jpg" width="130" height="130" class="novedades-imagen" /></span>
-        <?php echo link_to('Fotos de eventos', 'photos/index') ?>
-      </li>
+
+
+      <li class="shows"><a href="/pages/index?id=4"><img src="<?php echo $betterShow->getRawValue()->getImageSrc('mugshot', 'small') ?>" width="130" height="130" alt="Show" class="novedades-imagen" /></a>
+      <a class="imagereplacement" href="pages/index?id=4">Shows destacados</a></li>
+      
+      <li class="promos"><a href="pages/index?id=5"><img src="images/box_promos_imagen.jpg" width="130" height="130" class="novedades-imagen" /></a>
+      <a class="imagereplacement" href="pages/index?id=5">Promos</a></li>
+      
+      <li class="torneos"><a href="/pages?id=22&level=1"><img src="images/box_torneos_poker.jpg" width="130" height="130" class="novedades-imagen" /></a>
+      <a class="imagereplacement" href="/pages?id=22&level=1">Torneos</a></li>
+      
+      <li class="hotel"><a href="/pages?id=6&level=1"><img src="images/box_hotel_stat.jpg" width="130" height="130" class="novedades-imagen" /></a>
+      <a class="imagereplacement" href="/pages?id=6&level=1">Promos Hotel destacadas</a></li>
+      
+      <li class="fotos"><a href="/photos/index"><img src="images/box_fotos_sabina.jpg" width="130" height="130" class="novedades-imagen" /></a>
+      <a class="imagereplacement" href="/photos/index">Fotos</a></li>
     </ul>
   </div> </div> <div class="span-5 last">
   <ul class="drawers">

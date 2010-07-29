@@ -12,7 +12,7 @@ window.addEvent('domready', function (ev) {
     });
     overlay.element.setStyle('display', 'block');
   }
-
+  
   // Accordion
   var togglers = $$('.drawers .drawer div.drawer-handle'),
   wins = $$('.drawers .drawer div.accordion-container');

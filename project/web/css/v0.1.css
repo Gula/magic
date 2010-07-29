@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 /*
 @font-face {
   font-weight: bold;
@@ -21,8 +22,9 @@
 }
 */
 
+
 body {
-  font: normal normal normal 0.75em/0.98em "FuturaLTMediumRegular", Helvetica, Arial, sans-serif;
+  font: normal normal normal 0.75em/1.75em "FuturaLTMediumRegular", Helvetica,  Arial, sans-serif;
   background: #000	none;
   color: #F4F4F4;
   background-image: url(../images/bkg.jpg);
@@ -70,7 +72,9 @@ li a {
   background-position: 0px 0px;
 }
 #nav #menu {
+	background: transparent url(../images/header_buscador.png) repeat bottom 0px !important;
   margin-top: 131px;
+	
 }
 
 #header #logo h1 a:hover {
@@ -181,18 +185,42 @@ li a {
   background: transparent url(../images/nav_menu.png) no-repeat -541px -35px !important;
 }
 
+#clubmagic a {
+  display:  block !important;
+  padding: 0px !important; margin: 0px;
+  text-indent: -5000px;
+  width: 79px !important; height: 35px;
+  background: transparent url(../images/nav_menu.png) no-repeat -609px 0px !important;
+}
+
+#clubmagic a:hover {
+  background: transparent url(../images/nav_menu.png) no-repeat -609px -35px !important;
+}
+
+#nuestroscasinos {
+  display:  block !important;
+  padding: 0px !important; margin: 0px;
+  text-indent: -5000px;
+  width: 115px !important; height: 35px;
+  background: transparent url(../images/nav_menu.png) no-repeat -688px 0px !important;
+}
+
+#nuestroscasinos a:hover {
+  background: transparent url(../images/nav_menu.png) no-repeat -688px -35px !important;
+}
+
 #search {
   display:  block !important;
   padding: 0px !important; margin: 0px;
   /* width: 152px !important; height: 35px; */
-  width: 221px !important; height: 35px;
+  width: 105px !important; height: 35px;
   background: transparent url(../images/header_buscador.png) repeat 0px 0px !important;
 }
 #search label #searchInput {
   outline: none;
   margin-top: 9px;
   margin-left: 26px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica,  Arial, sans-serif;
   color: #000;
   height: 15px;
   width: 113px;
@@ -232,7 +260,7 @@ ul.drawers li.drawer div.drawer-handle {
   color: #fff;
   cursor: pointer;
   height: 24px;
-  font: 10px/24px "FuturaLTMediumRegular", Helvetica, Arial, sans-serif;
+  font: 10px/24px "FuturaLTMediumRegular", Helvetica,  Arial, sans-serif;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -261,7 +289,7 @@ ul.drawers .drawer div.accordion-container img {
 }
 
 ul.drawers .drawer div.accordion-container .drawer-texto {
-  font: normal normal normal 0.69em/14px "FuturaLTMediumRegular", Helvetica, Arial, sans-serif;
+  font: normal normal normal 0.69em/14px "FuturaLTMediumRegular", Helvetica,  Arial, sans-serif;
   margin: 5px;
   font-size: 10px;
   text-align: left;
@@ -305,12 +333,12 @@ ul.drawers .drawer div.accordion-container .drawer-texto p {
 }
 
 .slideshow .picture h3 {
-  font: 35px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 35px 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
   position: absolute;
   /* background-color: rgba(0,0,0,0.2); */
   background: transparent  url(../images/bg_30.png) repeat left top;
   width: 720px;
-  left: 0px; top: 240px;
+  left: 0px; top: 310px;
   padding: 25px;
   padding-left: 35px;
   z-index: 10;
@@ -319,6 +347,7 @@ ul.drawers .drawer div.accordion-container .drawer-texto p {
 }
 
 .slideshow .picture .text {
+  display: none;
   position: absolute;
   left: 0px; bottom: 0px;
   width: 720px;
@@ -327,13 +356,13 @@ ul.drawers .drawer div.accordion-container .drawer-texto p {
   background: transparent  url(../images/bg_30.png) repeat left top;
   padding: 25px;
   padding-left: 35px;
-  font: 12px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 12px 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
 }
 
 .slide-index {
-  font: 12px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 12px 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
   position: relative;
-  margin: -197px 0 167px 0;
+  margin: -127px 0px 100px;
   z-index: 30;
 }
 
@@ -393,7 +422,7 @@ NOVEDADES
   width: 144px;
 }
 
-.novedades .shows a {
+.novedades .shows a.imagereplacement {
   background-image: url(../images/box_click_shows.png);
   background-repeat: no-repeat;
   background-position: 0px 0px;
@@ -407,11 +436,11 @@ NOVEDADES
   text-indent: -5000px;
 }
 
-.novedades .shows a:hover {
+.novedades .shows a.imagereplacement:hover {
   background-position: 0px -41px;
 }
 
-.novedades .promos a {
+.novedades .promos a.imagereplacement {
   background-image: url(../images/box_click_promos.png);
   background-repeat: no-repeat;
   background-position: 0px 0px;
@@ -425,7 +454,7 @@ NOVEDADES
   text-indent: -5000px;
 }
 
-.novedades .promos a:hover {
+.novedades .promos a.imagereplacement:hover {
   background-position: 0px -41px;
 }
 
@@ -433,7 +462,7 @@ NOVEDADES
   width: 144px;
 }
 
-.novedades .torneos a {
+.novedades .torneos a.imagereplacement {
   background-image: url(../images/box_click_torneos.png);
   background-repeat: no-repeat;
   background-position: 0px 0px;
@@ -447,7 +476,7 @@ NOVEDADES
   text-indent: -5000px;
 }
 
-.novedades .torneos a:hover {
+.novedades .torneos a.imagereplacement:hover {
   background-position: 0px -41px;
 }
 
@@ -455,7 +484,7 @@ NOVEDADES
   width: 143px;
 }
 
-.novedades .hotel a {
+.novedades .hotel a.imagereplacement {
   background-image: url(../images/box_click_hotel.png);
   background-repeat: no-repeat;
   background-position: 0px 0px;
@@ -469,7 +498,7 @@ NOVEDADES
   text-indent: -5000px;
 }
 
-.novedades .hotel a:hover {
+.novedades .hotel a.imagereplacement:hover {
   background-position: 0px -41px;
 }
 .novedades li.fotos {
@@ -484,7 +513,7 @@ NOVEDADES
   width: 144px;
 }
 
-.novedades .fotos a {
+.novedades .fotos a.imagereplacement {
   background-image: url(../images/box_click_fotos.png);
   background-repeat: no-repeat;
   background-position: 0px 0px;
@@ -498,15 +527,29 @@ NOVEDADES
   text-indent: -5000px;
 }
 
-.novedades .fotos a:hover {
+.novedades .fotos a.imagereplacement:hover {
   background-position: 0px -41px;
 }
 
+#pagina-clubmagic #header #nav {
+  background-image: url(../images/paginas/club_magic_header.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
 
+#pagina-servicios #header #nav,
+#pagina-spafitness #header #nav,
+#pagina-habitacionstandard #header #nav,
+#pagina-habitacionsuperior #header #nav,
+#pagina-habitacionpresidencial #header #nav,
 #pagina-hotel #header #nav,
 #pagina-habitaciones #header #nav,
 #pagina-restaurante #header #nav,
-#pagina-piscina #header #nav
+#pagina-piscina #header #nav,
+#pagina-beneficios #header #nav,
+#pagina-nochedebodas #header #nav,
+#pagina-aerolineasargentinasysociosaerolineasplus #header #nav,
+#pagina-americanexprerssselect #header #nav
 
 {
   background-image: url(../images/paginas/hotel_header.jpg);
@@ -514,13 +557,28 @@ NOVEDADES
   background-position: 0px 0px;
 }
 
-#pagina-gastronomia #header #nav
+#pagina-gastronomia #header #nav,
+#pagina-seasonsrestaurant #header #nav,
+#pagina-belterrapub #header #nav,
+#pagina-jokersrestobar #header #nav
+/* CREAR ESTILOS BASADOS EN LAS PAGINAS UNICAS DE GASTRONOMIA */
 {
   background-image: url(../images/paginas/gastronomia_header.jpg);
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
+#pagina-ganadordeganadores #header #nav,
+#pagina-mundialdesudafricaenjokers #header #nav,
+#pagina-promociones #header #nav
+{
+  background-image: url(../images/paginas/promociones_header.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+#pagina-torneodepoker #header #nav, 
+#pagina-torneossitgo #header #nav, 
 #pagina-casino #header #nav,
 #pagina-torneosdecartas #header #nav,
 #pagina-clubmagicvip #header #nav,
@@ -542,7 +600,9 @@ NOVEDADES
 }
 
 #pagina-banquetesconvenciones #nav,
-#pagina-banquetesconvenciones #nav,
+#pagina-formatosycapacidades #nav,
+#pagina-cateringmenues #nav,
+#pagina-banquete #nav,
 #pagina-salonbelterra #nav,
 #pagina-cateringmenus #nav,
 #pagina-salonrainbow #nav,
@@ -606,7 +666,7 @@ NOVEDADES
 .contenido .sub-menu h2 {
   padding-top: 23px;
   color: white;
-  font: 13px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 13px 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
   font-weight: normal;
   text-transform:  uppercase;
   letter-spacing: 1px;
@@ -618,7 +678,7 @@ NOVEDADES
 }
 .contenido .sub-menu ul {
   width:			100%;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 .contenido .sub-menu li:hover {
   visibility:		inherit; /* fixes IE7 'sticky bug' */
@@ -637,7 +697,7 @@ NOVEDADES
   padding-top: 6px;
   font-style: normal;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
-  font-family: 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font-family: 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
   font-size: 85%;
   letter-spacing: 0px;
   font-weight: 500;
@@ -680,11 +740,11 @@ NOVEDADES
 .contenido .noticia-bloque .titulo h3 {
   margin: 0;
   padding: 28px 10px 0 0;
-  text-align: right;
+  margin-left: 15px;
   color: white;
 
-  font: normal normal normal 150% 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
-
+  font: normal normal normal 150% 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
+  text-transform: uppercase;
   letter-spacing: 1px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
@@ -708,7 +768,7 @@ NOVEDADES
   float: left;
   /* 	border: 1px green solid; */
   width: 250px;
-  height: 300px;
+  height: 280px;
 }
 
 .contenido .noticia-bloque .slideshow-paginas .subpagina .imagen-subpagina {
@@ -716,6 +776,219 @@ NOVEDADES
   margin: 0;
   padding: 0;
 }
+
+
+/* .CONTENIDO .TITULOS */
+
+#pagina-hotel .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 480px !important; height: 75px;
+ 	background: transparent url(../images/titulo_hotel.png) no-repeat 0px 0px !important;
+}
+
+#pagina-promos .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 346px !important; height: 75px;
+ 	background: transparent url(../images/titulo_hotel_promos.png) no-repeat 0px 0px !important;
+}
+
+#pagina-nochedebodas .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 662px !important; height: 75px;
+ 	background: transparent url(../images/titulo_hotel_bodas.png) no-repeat 0px 0px !important;
+}
+
+#pagina-americanexprerssselect .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 553px !important; height: 75px;
+ 	background: transparent url(../images/titulo_promocion_american.png) no-repeat 0px 0px !important;
+}
+
+#pagina-aerolineasargentinasysociosaerolineasplus .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 720px !important; height: 75px;
+ 	background: transparent url(../images/titulo_promocion_aerolineas.png) no-repeat 0px 0px !important;
+}
+
+
+
+
+
+#pagina-habitaciones .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 413px !important; height: 75px;
+ 	background: transparent url(../images/titulo_habitaciones.png) no-repeat 0px 0px !important;
+}
+
+#pagina-restaurante .contenido .titulo h3, #pagina-gastronomia .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 497px !important; height: 75px;
+ 	background: transparent url(../images/titulo_gastronomia.png) no-repeat 0px 0px !important;
+}
+
+#pagina-piscina .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 413px !important; height: 75px;
+ 	background: transparent url(../images/titulo_piscina.png) no-repeat 0px 0px !important;
+}
+
+#pagina-spafitness .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 438px !important; height: 75px;
+ 	background: transparent url(../images/titulo_spa.png) no-repeat 0px 0px !important;
+}
+
+#pagina-servicios .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 440px !important; height: 75px;
+ 	background: transparent url(../images/titulo_servicios.png) no-repeat 0px 0px !important;
+}
+
+#pagina-casino .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 195px !important; height: 75px;
+ 	background: transparent url(../images/titulo_casino.png) no-repeat 0px 0px !important;
+}
+
+#pagina-torneosdecartas .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 497px !important; height: 75px;
+ 	background: transparent url(../images/titulo_torneo_de_cartas.png) no-repeat 0px 0px !important;
+}
+
+#pagina-torneodepoker .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 333px !important; height: 75px;
+ 	background: transparent url(../images/titulo_poker.png) no-repeat 0px 0px !important;
+}
+
+#pagina-mesasdejuego .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 497px !important; height: 75px;
+ 	background: transparent url(../images/titulo_mesas.png) no-repeat 0px 0px !important;
+}
+
+#pagina-clubmagic .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 315px !important; height: 75px;
+ 	background: transparent url(../images/titulo_clubmagic.png) no-repeat 0px 0px !important;
+}
+
+#pagina-banquetesconvenciones .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 475px !important; height: 75px;
+ 	background: transparent url(../images/titulo_banquetes.png) no-repeat 0px 0px !important;
+}
+
+#pagina-banquete .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 393px !important; height: 75px;
+ 	background: transparent url(../images/titulo_catering.png) no-repeat 0px 0px !important;
+}
+
+#pagina-salonbelterra .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 624px !important; height: 75px;
+ 	background: transparent url(../images/titulo_belterra.png) no-repeat 0px 0px !important;
+}
+
+#pagina-cateringmenues .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 393px !important; height: 75px;
+ 	background: transparent url(../images/titulo_catering.png) no-repeat 0px 0px !important;
+}
+
+
+#pagina-salonrainbow .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 465px !important; height: 75px;
+ 	background: transparent url(../images/titulo_rainbow.png) no-repeat 0px 0px !important;
+}
+
+#pagina-businesscenter .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 413px !important; height: 75px;
+ 	background: transparent url(../images/titulo_business.png) no-repeat 0px 0px !important;
+}
+
+#pagina-equipamientoaudiovisual .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 545px !important; height: 75px;
+ 	background: transparent url(../images/titulo_equipamiento.png) no-repeat 0px 0px !important;
+}
+
+#pagina-seasonsrestaurant .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 207px !important; height: 75px;
+ 	background: transparent url(../images/titulo_gastronomia_seasons.png) no-repeat 0px 0px !important;
+}
+
+#pagina-belterrapub .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 528px !important; height: 75px;
+ 	background: transparent url(../images/titulo_gastronomia_belterra.png) no-repeat 0px 0px !important;
+}
+
+#pagina-jokersrestobar .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 385px !important; height: 75px;
+ 	background: transparent url(../images/titulo_gastronomia_jokers.png) no-repeat 0px 0px !important;
+}
+
+#pagina-espectaculos .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 514px !important; height: 75px;
+ 	background: transparent url(../images/titulo_espectaculos.png) no-repeat 0px 0px !important;
+}
+#pagina-ganadordeganadores .contenido .titulo h3,
+#pagina-promociones .contenido .titulo h3 {
+	padding: 0px !important; margin: 0px;
+	text-indent: -5000px !important;
+ 	width: 389px !important; height: 75px;
+ 	background: transparent url(../images/titulo_promo_ganador_de_ganadores.png) no-repeat 0px 0px !important;
+}
+
+
+#pagina-promociones .contenido .noticia-bloque {
+	margin-top: 350px;
+}
+
+#pagina-promociones ol {
+	margin: 5px 2.5em 1.5em;
+}
+
+#pagina-promociones .contenido li {
+float: none !important;
+display: list-item !important;
+width: auto;
+}
+
 
 /* arrows */
 .contenido .noticia-bloque a.arrow {
@@ -747,6 +1020,7 @@ NOVEDADES
 /* El color de fondo del titulo va luego en .contenido-NOMBREPAGINA .contenido. .titulo-subpagina */
 
 .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
+background: transparent url(../images/titulo-subpagina.png) no-repeat left top;
 padding-left: 0px;
 padding-bottom: 10px;
 padding-right: 10px;
@@ -762,7 +1036,7 @@ color: #fff;
 text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
 letter-spacing: 1px;
 text-transform: uppercase;
-font: 9px 'FuturaLTBoldRegular', Helvetica, Arial, sans-serif;
+font: 9px 'FuturaLTBoldRegular', Helvetica,  Arial, sans-serif;
 }
 
 .contenido .slideshow-paginas .subpagina p.titulo-subpagina a {
@@ -775,7 +1049,7 @@ font: 9px 'FuturaLTBoldRegular', Helvetica, Arial, sans-serif;
 
 /* Modifico el aspecto del SPAN, para mostrar resumen */
 .contenido .slideshow-paginas .subpagina .resumen-subpagina {
-  line-height: 12px;
+  line-height: 14px;
   width: 240px;
   height: 140px;
   font-size: 90%;
@@ -791,7 +1065,7 @@ font: 9px 'FuturaLTBoldRegular', Helvetica, Arial, sans-serif;
 
   /* border: 1px solid green; */
 
-  font: 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
   text-align: left;
 }
 
@@ -800,46 +1074,74 @@ font: 9px 'FuturaLTBoldRegular', Helvetica, Arial, sans-serif;
 
 .sub-menu, .resumen-subpagina
 {
-  background-color: rgba(0,0,0,0.5);
+  /* background-color: rgba(0,0,0,0.5); */
+}
+
+#pagina-jokersrestobar .subpagina,
+#pagina-jokersrestobar .slideshow-paginas,
+#pagina-seasonsrestaurant .subpagina,
+#pagina-seasonsrestaurant .slideshow-paginas,
+#pagina-belterrapub .subpagina, 
+#pagina-belterrapub .slideshow-paginas {
+	height: 142px !important; 
+}
+.contenido-clubmagic .contenido .sub-menu,
+.contenido-clubmagic .contenido .subpagina-contenido
+{
+ background-color: #de7d5c;
+}
+
+.contenido-hotel .contenido .sub-menu,
+.contenido-habitaciones .contenido .sub-menu,
+.contenido-habitacionstandard .contenido .sub-menu,
+{
+  background-color: #C1901B;
+}
+
+.contenido-promociones .contenido .sub-menu,
+.contenido-promociones .contenido .subpagina-contenido
+{
+  background-color: #36668f;
 }
 
 
 .contenido-hotel .contenido .sub-menu,
-.contenido-hotel .contenido .resumen-subpagina,
 .contenido-habitaciones .contenido .sub-menu,
-.contenido-habitaciones .contenido .resumen-subpagina,
 .contenido-habitacionstandard .contenido .sub-menu,
-.contenido-habitacionstandard .contenido .resumen-subpagina
+.contenido-promos .contenido .sub-menu
 {
-  background-color: rgba(235,190,68,0.5);
+  background-color: #C1901B;
 }
 
 
-.contenido-hotel .contenido .slideshow-paginas .subpagina p.titulo-subpagina,
-.contenido-habitaciones .contenido .slideshow-paginas .subpagina p.titulo-subpagina,
-.contenido-habitacionstandard .contenido .slideshow-paginas .subpagina p.titulo-subpagina
-{
-  /*
-background-color: #ebbe44;
-  border-top: 1px solid #e6ddc7;
-*/
-}
-
+.contenido-torneosdecartas .contenido .sub-menu,
 .contenido-casino .contenido .sub-menu,
-.contenido-casino .contenido .resumen-subpagina {
-  background-color: rgba(145, 0, 0, .8);
+.contenido-casino .contenido .subpagina-contenido,
+.contenido-torneosdecartas .contenido .subpagina-contenido
+{
+  background-color: #5a0502;
 }
+
+.contenido-comollegar .contenido .sub-menu,
+.contenido-comollegar .contenido .subpagina-contenido,
+.contenido-juegoresponsable .contenido .sub-menu,
+.contenido-juegoresponsable .subpagina-contenido,
+.contenido-junindelosandes .contenido .sub-menu,
+.contenido-sanmartindelosandes .contenido .sub-menu,
+.contenido-caviahue .contenido .sub-menu,
+.contenido-junindelosandes .subpagina-contenido,
+.contenido-sanmartindelosandes .subpagina-contenido,
+.contenido-caviahue .subpagina-contenido
+{
+    background: transparent  url(../images/bg_50.png) repeat left top;
+}
+
 
 .contenido-casino .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
-  /*
-background-color: #a12524;
-  border-top: 1px solid #dec4c3;
-*/
 }
 
-.contenido-banquetesconvenciones .contenido .sub-menu,
-.contenido-banquetesconvenciones .contenido .resumen-subpagina {
-  background-color: rgba(146, 56, 85, .8);
+.contenido-banquetesconvenciones .contenido .sub-menu {
+  background-color: #923855;
 }
 
 .contenido-banquetesconvenciones .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
@@ -850,8 +1152,12 @@ background-color: #923855;
 }
 
 .contenido-espectaculos .contenido .sub-menu,
-.contenido-espectaculos .contenido .resumen-subpagina {
-  background-color: rgba(68, 221, 235, .8);
+.contenido-belterra .contenido .sub-menu,
+.contenido-eventosdestacadados .contenido .sub-menu,
+.contenido-rainbow .contenido .sub-menu,
+.contenido-jokers  .contenido .sub-menu
+ {
+  background-color: #17bfce;
 }
 
 .contenido-espectaculos .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
@@ -861,9 +1167,9 @@ background-color: #44ddeb;
 */
 }
 
-.contenido-gastronomia .contenido .sub-menu,
-.contenido-gastronomia .contenido .resumen-subpagina {
-  background-color: rgba(219, 186, 131, .8);
+.contenido-gastronomia .contenido .sub-menu
+{
+  background-color: #c6a46b;
 }
 
 .contenido-gastronomia .contenido .slideshow-paginas .subpagina p.titulo-subpagina {
@@ -884,86 +1190,188 @@ background-color: #dbba83;
   margin-left: 197px;
   position: relative;
   width: 752px;
-  padding-bottom: 75px;
+  padding-bottom: 15px;
   border-right: 1px solid #000;
   /* height: 250px; */
   overflow: hidden;
-  background: transparent url(../images/bg_50.png) repeat left top;
+  /* background: transparent url(../images/bg_50.png) repeat left top; */
 }
 
 .contenido .subpagina-contenido h3 {
-  margin-top: 15px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #fff;
   margin-left: 10px;
   text-align: left;
-  color: white;
-  font: 14px/12px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 21px/24px 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
   font-weight: normal;
   text-transform:  uppercase;
   letter-spacing: 1px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+  /* text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65); */
 }
 
 .contenido .subpagina-contenido h4 {
   margin-top: 15px;
   margin-left: 10px;
+  color: #fff;
   text-align: left;
-  color: white;
-  font: 12px/10px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 12px/10px 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
   font-weight: normal;
   text-transform:  uppercase;
   letter-spacing: 1px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
 }
 
-.contenido .subpagina-contenido p, .contenido .subpagina-contenido li, .contenido .subpagina-contenido td {
+.contenido .subpagina-contenido p, .contenido .subpagina-contenido td {
   padding-left: 10px;
   padding-right: 10px;
-  text-align: left;
   color: #fff;
+  text-align: left;
 
   letter-spacing: 0px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  /* text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8); */
   font: 11px/18px;
 }
 
-.subpagina-contenido
-{
-  background-color: #bb9224;
+.contenido .subpagina-contenido li {
+	width: 50%;
+	float: left;
+	
 }
 
 
-/* COLOR DE FONDO CUSTOMIZADO PARA CADA PAGINA */
 
-#pagina-hotel .contenido .subpagina-contenido,
+/* COLOR DE FONDO CUSTOMIZADO PARA CADA PAGINA */
+#pagina-casino .titulo,
+#pagina-mesasdejuego .titulo,
+#pagina-torneosdecartas .titulo,
+#pagina-clubmagic .titulo {
+	/* background: transparent url(../images/hotel_titulo_bkg.png) repeat left top; */
+}
+
+.sparks {
+	z-index: 10;
+	width: 297px;
+	height: 208px;
+	position: absolute;
+	top: -85px;
+	left: 123px;
+	background: transparent url(../images/sparks.png) no-repeat 0 0;
+}
+
+
+/* #pagina-hotel .contenido .subpagina-contenido, */
+.contenido-habitaciones .contenido .subpagina-contenido,
+.contenido-hotel  .contenido .subpagina-contenido,
+.contenido-promos .contenido .subpagina-contenido
+/*,
 #pagina-restaurante .contenido .subpagina-contenido,
 #pagina-habitaciones .contenido .subpagina-contenido,
 #pagina-spafitness .contenido .subpagina-contenido,
 #pagina-piscina .contenido .subpagina-contenido,
-#pagina-servicios .contenido .subpagina-contenido
+#pagina-servicios .contenido .subpagina-contenido,
+#pagina-promos .contenido .subpagina-contenido,
+#pagina-nochedebodas .contenido .subpagina-contenido,
+#pagina-habitacionstandard .contenido .subpagina-contenido,
+#pagina-habitacionsuperior .contenido .subpagina-contenido,
+#pagina-habitacionpresidencial .contenido .subpagina-contenido
+*/
 {
-  background-color: #bb9224;
+  background-color: #c1901b;
 }
-#pagina-casino .contenido .subpagina-contenido,
-#pagina-mesasdejuego .contenido .subpagina-contenido,
-#pagina-torneosdecartas .contenido .subpagina-contenido,
-#pagina-clubmagicvip .contenido .subpagina-contenido {
+
+.contenido-juegoresponsable .titulo,
+.contenido-juegoresponsable .sparks,
+.contenido-junindelosandes .titulo,
+.contenido-junindelosandes .sparks,
+.contenido-sanmartindelosandes .titulo,
+.contenido-sanmartindelosandes .sparks,
+.contenido-caviahue .contenido .titulo,
+.contenido-caviahue .contenido .sparks,
+#pagina-formatosycapacidades .titulo,
+#pagina-formatosycapacidades .sparks,
+#pagina-promos .contenido .subpagina-contenido,
+#pagina-habitacionstandard .titulo,
+#pagina-habitacionstandard .sparks,
+#pagina-habitacionsuperior .titulo,
+#pagina-habitacionsuperior .sparks,
+#pagina-habitacionpresidencial .titulo,
+#pagina-habitacionpresidencial .sparks,
+
+
+
+#pagina-seasonsrestaurant .titulo-subpagina,
+#pagina-seasonsrestaurant .resumen-subpagina,
+#pagina-belterrapub .titulo-subpagina,
+#pagina-belterrapub .resumen-subpagina,
+#pagina-jokersrestobar .titulo-subpagina,
+#pagina-jokersrestobar .resumen-subpagina,
+
+
+
+.contenido-seasonsrestaurant .sub-menu ul,
+.contenido-seasonsrestaurant .titulo,
+.contenido-seasonsrestaurant .sparks,
+.contenido-seasonsrestaurant .subpagina-contenido,
+
+.contenido-jokersrestobar .sub-menu ul,
+.contenido-jokersrestobar .titulo,
+.contenido-jokersrestobar .sparks,
+.contenido-jokersrestobar .subpagina-contenido,
+
+.contenido-belterrapub .sub-menu ul,
+.contenido-belterrapub .titulo,
+.contenido-belterrapub .sparks,
+.contenido-belterrapub .subpagina-contenido
+
+{
+	display: none !important;
+}
+.contenido-jokersrestobar .noticia-bloque,
+.contenido-belterrapub .noticia-bloque,
+.contenido-seasonsrestaurant .noticia-bloque
+{
+	margin-top: 471px;
+}
+
+
+#pagina-habitacionstandard .titulo,
+#pagina-habitacionsuperior .titulo,
+#pagina-habitacionpresidencial .titulo
+{
+	display: none !important;
+}
+
+
+.contenido-junindelosandes .subpagina-contenido,
+.contenido-sanmartindelosandes .subpagina-contenido,
+.contenido-caviahue .contenido .subpagina-contenido,
+#pagina-habitacionstandard .subpagina-contenido,
+#pagina-habitacionsuperior .subpagina-contenido,
+#pagina-habitacionpresidencial .subpagina-contenido
+{
+	padding-bottom: 30px;
+	margin-bottom: 120px;
+}
+
+.contenido-hotel .subpagina-contenido {
   background-color: #5a0502;
 }
 
+	
 
-#pagina-espectaculos .contenido .subpagina-contenido {
-  background-color: #016781;
+.contenido-espectaculos .contenido .subpagina-contenido {
+  background-color: #17bfce;
 }
 
-#pagina-gastronomia .contenido .subpagina-contenido,
-#pagina-seasons .contenido .subpagina-contenido,
-#pagina-belterra .contenido .subpagina-contenido,
-#pagina-jokers .contenido .subpagina-contenido
+.contenido-gastronomia .contenido .subpagina-contenido
 {
-  background-color: #d0a866;
+  background-color: #c6a46b;
 }
 
 #pagina-banquetesconvenciones .subpagina-contenido,
+#pagina-cateringmenues .subpagina-contenido,
+#pagina-banquete .subpagina-contenido,
 #pagina-salonbelterra .subpagina-contenido,
 #pagina-cateringmenus .subpagina-contenido,
 #pagina-salonrainbow .subpagina-contenido,
@@ -971,17 +1379,21 @@ background-color: #dbba83;
 #pagina-equipamientoaudiovisual .subpagina-contenido,
 #pagina-formatosycapacidades .subpagina-contenido
 {
-  background-color: #63132d;
+  background-color: #923855;
 }
 
-#pagina-banquetesconvenciones .sub-menu h2,
+#pagina-sanmartindelosandes .sub-menu h2,
+#pagina-formatosycapacidades .sub-menu h2,
+#pagina-cateringmenues .sub-menu h2,
+#pagina-banquetesconvenciones .sub-menu h2, 
+#pagina-banquete .sub-menu h2,
 #pagina-salonbelterra .sub-menu h2,
 #pagina-cateringmenus .sub-menu h2,
 #pagina-salonrainbow .sub-menu h2,
 #pagina-businesscenter .sub-menu h2,
 #pagina-equipamientoaudiovisual .sub-menu h2
 {
-  padding-top: 14px !important;
+  padding-top: 15px !important;
 }
 
 #global {
@@ -1015,7 +1427,7 @@ background-color: #dbba83;
   padding: 0;
   text-align: left;
   color: white;
-  font: 9px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 9px 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
   letter-spacing: 0px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   text-decoration: none;
@@ -1104,7 +1516,7 @@ background-color: #dbba83;
 	overflow: hidden;
 }
 */
-#iframeBEIdiso {
+#pop-login, #iframeBEIdiso {
 	  -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
 
@@ -1155,7 +1567,7 @@ padding-left: 5px;
   padding: 0;
   text-align: left;
   color: white;
-  font: normal normal normal 21px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: normal normal normal 21px 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
   text-transform:  uppercase;
 
   letter-spacing: 1px;
@@ -1174,7 +1586,7 @@ padding-left: 5px;
   padding: 0;
   text-align: left;
   color: white;
-  font: 0.69em 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 0.69em 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
   text-transform:  uppercase;
 
   letter-spacing: 1px;
@@ -1183,7 +1595,7 @@ padding-left: 5px;
 }
 
 .main-show h3 {
-	font: bold 0.69em 'FuturaLTBoldRegular', Helvetica, Arial, sans-serif;
+	font: bold 0.69em 'FuturaLTBoldRegular', Helvetica,  Arial, sans-serif;
 }
 .main-show h3, .main-show .category, .main-show .next-show 
 {
@@ -1221,12 +1633,13 @@ padding-left: 0px;
   padding: 28px 10px 0 0;
   text-align: left;
   color: white;
-  font: normal normal normal 21px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: normal normal normal 21px 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
   text-transform:  uppercase;
 
   letter-spacing: 1px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   text-decoration: none;
+  margin-bottom: 20px !important;
 }
 
 .shows-wrapper div {
@@ -1238,10 +1651,21 @@ padding-left: 0px;
   width: 143px;
   overflow: hidden;
   position: relative;
+  margin-bottom: 10px;
 }
 
-.shows-wrapper li h3, .shows-wrapper li h4 {
+
+.shows-wrapper li h3 {
+	vertical-align: bottom;
 	margin-bottom: 0 !important;
+	height: 30px;
+	display: block;
+}
+
+.shows-wrapper li h4 {
+	margin-bottom: 0 !important;
+	height: 15px;
+	display: block;
 }
 
 
@@ -1256,7 +1680,7 @@ display: block;
   background-color: red;
   
   color: white;
-  font: 9px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 9px 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
   float: left;
   margin: 0;
   
@@ -1269,7 +1693,7 @@ display: block;
 background-color: rgb(0, 55, 106);
 margin-top: 24px;
 display: block;
- font: 9px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+ font: 9px 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
 font-weight: bold;
 padding-bottom: 1px;
 position: absolute;
@@ -1293,15 +1717,15 @@ padding: 3px;
 }
 
 .shows-wrapper .belterra .count-event {
- margin-left: 90px;
+ margin-left: 115px;
  }
 
 .shows-wrapper .rainbow .count-event {
- margin-left: 100px;
+ margin-left: 105px;
  }
  
  .shows-wrapper .events .count-event {
- margin-left: 140px;
+ margin-left: 150px;
  }
 
  .shows-wrapper .jokers .count-event {
@@ -1313,7 +1737,7 @@ padding: 3px;
   padding: 0;
   text-align: left;
   color: #004046;
-  font: 12px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 12px 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
   font-weight: normal;
   letter-spacing: 0px;
   text-decoration: none;
@@ -1328,7 +1752,7 @@ padding: 3px;
   padding: 0;
   text-align: left;
   color: #004046;
-  font: 10px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 10px 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
   font-weight: bold;
   letter-spacing: 0px;
   text-decoration: none;
@@ -1412,14 +1836,14 @@ background-color: #000;
   color: white;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font: 8px 'FuturaLTBoldRegular', Helvetica, Arial, sans-serif;
+  font: 8px 'FuturaLTBoldRegular', Helvetica,  Arial, sans-serif;
 }
 
 .footer-menu a, .footer-menu li {
   text-align: left;
   color: #b3b3b3;
   letter-spacing: 0px;
-  font: 9px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+  font: 9px 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
 }
 
 .footer-menu .comollegar li, .footer-menu .comollegar h2 {
@@ -1439,21 +1863,22 @@ background-color: #000;
 	text-align: center;
 	color: white;
 	letter-spacing: 0px;
-	font: 10px 'FuturaLTMediumRegular', Helvetica, Arial, sans-serif;
+	font: 10px 'FuturaLTMediumRegular', Helvetica,  Arial, sans-serif;
 }
 
 #poker, #capacidad {
-	width: 100%;
+	width: 60%;
+	margin: 15px;
 }
 #capacidad caption {
 
-	background-color: #732b42;
+	background-color: #444444;
 
 }
 
 #poker caption, #poker thread th {
 
-	background-color: #5a0502;
+	background-color: #444444;
 
 }
 
@@ -1462,6 +1887,7 @@ background-color: #000;
 #poker caption p, #capacidad caption p {
 	font-size: 14px;
 	margin: 0px;
+	color: white;
 	padding-top: 10px !important;
 	padding-right: 0px;
 	padding-bottom: 10px !important;
@@ -1475,13 +1901,15 @@ background-color: #000;
 #poker p, #capacidad p {
 	font-size: 10px;
 	margin: 0px;
+	color: white;
 	padding: 5px !important;
 	text-align: center;
 }
 #poker tr th, #capacidad tr th {
-	border-right-width: 2px;
+	background-color: #646464;
+	border-right-width: 1px;
 	border-right-style: solid;
-	border-right-color: #732b42;
+	border-right-color: #f4f4f4;
 }
 
 #capacidad tr th p {
@@ -1494,6 +1922,7 @@ background-color: #000;
 }
 
 #poker td {
+	background-color: #242424;
 	border-bottom-width: 1px !important;
 	border-bottom-style: solid !important;
 	border-bottom-color: #5a0502 !important;
@@ -1502,3 +1931,20 @@ background-color: #000;
 #capacidad td.no-line {
 	border-bottom-width: 0px !important;
 }
+
+
+.subpagina-contenido a {
+color:#fff;
+text-decoration:underline;
+}
+
+
+.subpagina-contenido a:hover {
+text-decoration:none;
+}
+
+.HcTop {
+	display: block;
+	padding-top: 40px;
+}
+

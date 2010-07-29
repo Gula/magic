@@ -84,6 +84,8 @@ class EventTable extends Doctrine_Table {
       ->groupBy('ev.category_id');
       //->orderBy('sticky Asc, e.date Desc');
 
+
+
     if(is_null($cat_id)) {
       $q->where('c.parent_id = ?', 3);
     }
@@ -99,7 +101,8 @@ class EventTable extends Doctrine_Table {
       $q = Doctrine_Query::create()
         ->from ('Event e')
         ->leftJoin('e.EventCategory ev')
-        ->where('ev.category_id = ?', $shows[$i]['id']);
+        ->where('ev.category_id = ?', $shows[$i]['id'])
+        ->andWhere('e.due_date >= ?', date('y-m-d h:i'));
 
       $shows[$i]['events'] = $q->execute();
     }

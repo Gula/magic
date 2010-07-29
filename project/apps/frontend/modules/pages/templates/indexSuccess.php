@@ -30,7 +30,13 @@
 
 
     <div class="noticia-bloque" id="noticia-bloque">
-      <div class="titulo"><h3><?php echo $realPage->getAbstract() ?></h3></div>
+    <?php if ($sf_request->getParameter('id') == 1): ?>
+    <div><div class="HcHolder_2_1"><a class="HcTop" target="_blank" href="http://www.hotelscombined.com/Hotel/Casino_Magic_Hotel_Neuquen.htm"><img src="http://www.hotelscombined.com/Images/Badges/2/1/top_transparent4.gif" alt="Casino Magic Hotel Neuquen"/></a><div class="HcMiddle"></div><div class="HcBottom"></div></div></div><script type="text/javascript" src="http://www.hotelscombined.com/Script/Badges/ShowBadge.ashx?hotelId=1522022&type=2&style=1&color=4&ver=2"></script>  
+	<?php endif; ?>
+  		
+
+    <div class="sparks"></div>
+    <div class="titulo"><h3><?php echo $realPage->getAbstract() ?></h3></div>
 
       <?php if($realPages->count() > 0) : ?>
       <?php if ($sf_request->getParameter('id') == 21 and !($sf_user->isAuthenticated() and $isVip)): ?>
@@ -61,6 +67,7 @@
 
       <?php if ($sf_request->getParameter('id') == 21 and !$sf_user->isAuthenticated()) : ?>
       <?php if(isset($form)) : ?>
+      	<div id="spark-title"></div>
         <form action="<?php echo url_for('pages/index#signin') ?>" method="post">
         <div id="signin">
           <?php echo $form->renderGlobalErrors() ?>
@@ -80,9 +87,16 @@
       <?php endif; ?>
 
       <?php elseif ($sf_user->isAuthenticated()): ?>
-      <p><?php echo link_to('Salir','@sf_guard_signout' ); ?></p>
+      <!-- <p><?php echo link_to('Salir','@sf_guard_signout' ); ?></p> -->
       <?php endif; ?>
-    </div>
+  
+  
+  	
+  	      
+
+    
+    
+        </div>
     </div>
   </div>
 

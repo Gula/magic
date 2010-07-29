@@ -4,7 +4,7 @@
     <div class="span-10 prepend-9 last" id="global">
     	<ul class="above-menu">
     		<li id="reservas"><a href="#">Reservas Hotel</a></li>
-    		<li id="mapa"><a href="javascript:;">Mapa del sitio</a></li>
+    		<!-- <li id="mapa"><a href="javascript:;">Mapa del sitio</a></li> -->
     		<li id="facebook"><a href="http://www.facebook.com/casino.magic" target="_blank">Agreganos a tu Facebook</a></li>
     		<!-- <li id="contactenos"><a href="javascript:;">Contactenos</a></li> -->
     		
