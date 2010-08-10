@@ -19,7 +19,7 @@
       <h2><?php echo $realPage ?></h2>
       <ul>
         <?php foreach ($realPages as $child) : ?>
-        <li><?php echo link_to($child->get('title'), 'pages/index?id='.$child->get('id').'&level=1') ?></li>
+        <li><?php echo link_to($child->get('title'), '@page_child_slug?parentslug='.$realpage->get('slug').'&slug='.$child->get('slug').'&level=1') ?></li>
         <?php endforeach; ?>
       </ul>
     </div>

@@ -34,10 +34,17 @@ Page:
     description:                {type: clob}
     abstract:                   {type: string(255)}
     picture:                    {type: string(255)}
+    slug:                       {type: string(255)}
+    porder:                     integer(4)
+  indexes:
+    permalink:
+      fields:                   [slug]
+      type:                     unique
   relations:
     Author:                     {local: author_id, foreign: id, class: sfGuardUser}
     Parent:                     {local: parent_id, foreign: id, class: Page, onDelete: CASCADE}
     Categories:                 {class: Category, local: page_id, foreign: category_id, refClass: PageCategory}
+
 
 #Category
 Category:
@@ -49,6 +56,7 @@ Category:
     parent_id:                  {type: integer}
     title:                      {type: string(60), notnull: true}
     description:                {type: string(255)}
+    slug:                       {type: string(255)}
   relations:
     Pages:                      {class: Page, local: category_id, foreign: page_id, refClass: PageCategory, onDelete: CASCADE}
     Events:                     {class: Event, local: category_id, foreign: event_id, refClass: EventCategory, onDelete: CASCADE}
@@ -79,7 +87,7 @@ Event:
     publication_date:           {type: timestamp}
     due_date:                   {type: timestamp}
     sticky:                     {type: enum, values: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ], default: 9}
-
+    slug:                       {type: string(255)}
   relations:
     Author:                     {local: author_id, foreign: id, class: sfGuardUser}
     Categories:                 {class: Category, local: event_id, foreign: category_id, refClass: EventCategory, onDelete: CASCADE}

@@ -14,7 +14,7 @@ class EventForm extends BaseEventForm
   {
     unset(
       $this['created_at'],
-      $this['updated_at']
+      $this['updated_at'], $this['slug']
     );
 
     // categories_list

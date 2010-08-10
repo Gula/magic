@@ -502,5 +502,10 @@
       <source>Event list</source>
       <target>Lista de eventos</target>
     </trans-unit>
+
+    <trans-unit id="109">
+      <source>Order</source>
+      <target>Orden</target>
+    </trans-unit>
   </file>
 </xliff>

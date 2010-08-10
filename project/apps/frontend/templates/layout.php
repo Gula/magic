@@ -17,7 +17,7 @@
   <body>
     <?php
     if($sf_context->getModuleName() == 'pages') {
-      $page = Doctrine::getTable('Page')->find($sf_request->getParameter('id'));
+      $page = Doctrine::getTable('Page')->findOneBySlug($sf_request->getParameter('slug'));
       $id = 'pagina-'.$page->getSlugize();
     }
     elseif ($sf_context->getModuleName() == 'events') {

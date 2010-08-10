@@ -10,10 +10,11 @@
  */
 class PageForm extends BasePageForm {
   public function configure() {
-    unset($this['created_at'], $this['updated_at']);
+    unset($this['created_at'], $this['updated_at'], $this['slug']);
 
     $this->widgetSchema->setLabels(array(
-            'parent_id'=> 'Parent page'
+            'parent_id'=> 'Parent page',
+            'porder'=>'Order'
     ));
 
 

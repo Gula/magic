@@ -10,7 +10,7 @@
 ?>
 
 <li class="subpagina">
-  <?php echo link_to(image_tag($img_url, array('class' => 'imagen-subpagina')), 'pages/index?id='.$page->getId().'&level='.$level) ?>
-  <p class="titulo-subpagina"><?php echo link_to($page, 'pages/index?id='.$page->getId().'&level='.$level) ?></p>
+  <?php echo link_to(image_tag($img_url, array('class' => 'imagen-subpagina')), '@page_child_slug?parentslug='.$parent->get('slug').'&slug='.$page->get('slug').'&level='.$level) ?>
+  <p class="titulo-subpagina"><?php echo link_to($page, '@page_child_slug?parentslug='.$parent->get('slug').'&slug='.$page->get('slug').'&level='.$level) ?></p>
   <span class="resumen-subpagina"><?php echo strip_tags($page->getRawValue()->getDescriptionAbstract()) ?></span>
 </li>

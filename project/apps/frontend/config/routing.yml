@@ -20,12 +20,29 @@ sf_guard_password:
 
 vip:
   url:   /vip
-  param: { module: pages, action: index, id:21 }
+  param: { module: pages, action: permalink, id:21 }
+
+photos:
+  url:   /fotos
+  param: { module: photos, action: index }
+  
+events:
+  url:   /espectaculos
+  param: { module: events, action: index }
+
+page_slug:
+  url:   /:slug
+  param: {module: pages, action: permalink }
+
+page_child_slug:
+  url:   /:parentslug/:slug
+  param: {module: pages, action: permalink, level:1 }
+  
 # generic rules
 # please, remove them by adding more specific rules
-default_index:
-  url:   /:module
-  param: { action: index }
+#default_index:
+#  url:   /:module
+#  param: { action: index }
 
-default:
-  url:   /:module/:action/*
+#default:
+#  url:   /:module/:action/*

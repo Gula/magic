@@ -1,5 +1,5 @@
 <div id="header">
-  <div id="logo" class="span-5"><h1><?php echo link_to('Casino Magic', 'default/index') ?></h1></div>
+  <div id="logo" class="span-5"><h1><?php echo link_to('Casino Magic', '@homepage') ?></h1></div>
   <div id="nav" class="span-19 last">
     <div class="span-10 prepend-9 last" id="global">
     	<ul class="above-menu">
@@ -21,7 +21,9 @@
       <ul class="menu">
         <?php foreach ($optionesMenu as $option) : ?>
         <li id="<?php echo $option->getSlugize() ?>">
-          <?php echo link_to($option, 'pages/index?id='.$option->get('id'), array('title' => $option)) ?>
+          <?php //echo link_to($option, 'pages/index?id='.$option->get('id'), array('title' => $option));
+                 echo link_to($option, '@page_slug?slug='.$option->get('slug'), array('title' => $option))
+              ?>
         </li>
         <?php endforeach; ?>
         <li id="search"><!-- <label for="search"><input border="0" id="searchInput" /></label> --></li>

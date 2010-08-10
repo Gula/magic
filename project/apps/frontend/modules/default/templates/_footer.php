@@ -9,7 +9,7 @@
       <h2><?php echo $page ?></h2>
       <ul>
         <?php foreach ($children as $child) : ?>
-        <li><?php echo link_to($child, 'pages/index?id='.$child->get('id')) ?></li>
+        <li><?php echo link_to($child, '@page_child_slug?parentslug='.$page->get('slug').'&slug='.$child->get('slug')) ?></li>
         <?php endforeach; ?>
       </ul>
     </div>
@@ -23,11 +23,11 @@
     </div>
     
 	<div class="comollegar">
-      <h2><a href="http://www.casinomagic.com.ar/pages?id=85">C&oacute;mo llegar?</a></h2>
+      <h2><?php echo link_to('C&oacute;mo llegar?', '@page_slug?slug=como-llegar') ?></h2>
       <ul>
-        <li><a href="http://www.casinomagic.com.ar/pages?id=85">Teodoro Planas 4005<br />
-        Neuqu&eacute;n - Argentina<br />
-        0800 666 2442</a></li>
+        <li>
+          <?php echo link_to('Teodoro Planas 4005<br />Neuqu&eacute;n - Argentina<br />0800 666 2442', '@page_slug?slug=como-llegar') ?>
+        </li>
       </ul>
     </div>
   

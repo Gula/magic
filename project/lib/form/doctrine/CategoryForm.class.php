@@ -16,7 +16,8 @@ class CategoryForm extends BaseCategoryForm
     $this['created_at'],
     $this['updated_at'],
     $this['pages_list'],
-    $this['events_list']
+    $this['events_list'],
+    $this['slug']
   );
 
     $this->widgetSchema->setLabels(array(
