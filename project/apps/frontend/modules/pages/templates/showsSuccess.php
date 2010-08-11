@@ -3,11 +3,13 @@
   <?php
     $realPage = $childPage;
     $realPages = $page->getChildren();
+   $grandParent = $childPage->getParent();
     ?>
   <?php else : ?>
   <?php
     $realPage = $page;
     $realPages = $page->getChildren();
+    $grandParent = false;
     ?>
 <?php endif; ?>
 
@@ -19,12 +21,12 @@
       <h2><?php echo $realPage ?></h2>
       <ul>
         <?php foreach ($realPages as $child) : ?>
-        <li><?php echo link_to($child->get('title'), '@page_child_slug?parentslug='.$realpage->get('slug').'&slug='.$child->get('slug').'&level=1') ?></li>
+        <li><?php echo link_to($child->get('title'), '@page_child_slug?parentslug='.$page->get('slug').'&slug='.$child->get('slug').'&level=1') ?></li>
         <?php endforeach; ?>
       </ul>
     </div>
 
-    <?php if($sf_request->getParameter('id') == 4) : ?>
+    <?php if($sf_request->getParameter('slug') == 'espectaculos') : ?>
     <div class="noticia-bloque" id="noticia-bloque">
       <div class="titulo"><h3><?php echo $realPage->getAbstract() ?></h3></div>
 
@@ -34,7 +36,7 @@
         <div class="slide-wrapper-paginas">
           <ul>
                 <?php foreach ($realPage->getChildren() as $child) : ?>
-                  <?php include_partial('slide_element', array('page' => $child, 'level' => $level)) ?>
+                  <?php include_partial('slide_element', array('page' => $child,'grandParent' => $grandParent,'parent' => $realPage, 'level' => $level)) ?>
                 <?php endforeach; ?>
           </ul>
         </div>
@@ -55,7 +57,7 @@
       <?php if(!is_null($mainShow)) : ?>
     <div class="main-show">
       <span class="next-show">Próximo Evento</span>
-      <h2><?php echo link_to($mainShow, 'events/index?id='.$mainShow->get('id')) ?></h2>
+      <h2><?php echo link_to($mainShow, '@events?slug='.$mainShow->get('slug').'&cat='.$catSlug ) ?></h2>
       <h3><?php echo format_date($mainShow->getDate(), 'dd-MM-y') ?></h3>
 
       <div class="category">
@@ -82,7 +84,7 @@
           <ul>
                   <?php foreach ($show['events'] as $event) : ?>
             <li>
-              <h3><?php echo link_to($event, 'events/index?id='.$event->get('id')) ?></h3>
+              <h3><?php echo link_to($event, '@events?slug='.$event->get('slug').'&cat='.$catSlug) ?></h3>
               <h4><?php echo format_date($event->getDate(), 'dd-MM-y HH:mm')?>hs</h4>
               <div class="img-placeholder sticky-<?php echo $event->get('sticky') ?>">
 

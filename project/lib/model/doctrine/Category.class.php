@@ -12,4 +12,43 @@
  */
 class Category extends BaseCategory
 {
+  public function save(Doctrine_Connection $conn = null) {
+
+   $slug=Magic::slugify($this->getTitle());
+   if ($this->isNew()){
+        $i=0;
+        do{
+        $i++;
+        $q = Doctrine::getTable('Category')->findOneBySlug($slug);
+        if(!$q) {
+          break;
+        }
+        else{
+          $slug=Magic::slugify($this->getTitle());
+          $slug.=$i;
+         }
+        } while($i);
+        $this->setSlug($slug);
+      }
+      elseif ($slug != $this->getSlug()) {
+        $i=0;
+        do{
+          $i++;
+          $q = Doctrine::getTable('Category')->findOneBySlug($slug);
+          if(!$q ) {
+            $this->setSlug($slug);
+            break;
+          }
+          else if($slug == $this->getSlug()) break;
+          else{
+            $slug=Magic::slugify($this->getTitle());
+            $slug.=$i;
+          }
+        } while($i);
+
+      }
+
+    parent::save($conn);
+
+  }
 }

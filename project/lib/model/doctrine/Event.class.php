@@ -14,6 +14,42 @@ class Event extends BaseEvent {
   static $cat_id;
 
   public function save(Doctrine_Connection $conn = null) {
+
+    $slug=Magic::slugify($this->getTitle());
+   if ($this->isNew()){
+        $i=0;
+        do{
+        $i++;
+        $q = Doctrine::getTable('Event')->findOneBySlug($slug);
+        if(!$q) {
+          break;
+        }
+        else{
+          $slug=Magic::slugify($this->getTitle());
+          $slug.=$i;
+         }
+        } while($i);
+        $this->setSlug($slug);
+      } 
+      elseif ($slug != $this->getSlug()) {
+        $i=0;
+        do{
+          $i++;
+          $q = Doctrine::getTable('Event')->findOneBySlug($slug);
+          if(!$q ) {
+            $this->setSlug($slug);
+            break;
+          }
+          else if($slug == $this->getSlug()) break;
+          else{
+            $slug=Magic::slugify($this->getTitle());
+            $slug.=$i;
+          }
+        } while($i);
+                 
+      }
+
+
     if($this->get('sticky') == 'no') $this->set('sticky', 1000);
 
     parent::save($conn);

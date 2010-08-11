@@ -50,227 +50,6 @@ PageCategory:
   PageCategory_8_40:
     Category: Category_8
     Page: Page_40
-EventGallery:
-  EventGallery_13:
-    MGGallery: MGGallery_1
-    Event: Event_28
-  EventGallery_12:
-    MGGallery: MGGallery_1
-    Event: Event_32
-  EventGallery_11:
-    MGGallery: MGGallery_1
-    Event: Event_27
-  EventGallery_9:
-    MGGallery: MGGallery_1
-    Event: Event_30
-  EventGallery_28:
-    MGGallery: MGGallery_1
-    Event: Event_45
-  EventGallery_29:
-    MGGallery: MGGallery_1
-    Event: Event_46
-  EventGallery_16:
-    MGGallery: MGGallery_1
-    Event: Event_29
-  EventGallery_10:
-    MGGallery: MGGallery_1
-    Event: Event_26
-  EventGallery_17:
-    MGGallery: MGGallery_1
-    Event: Event_36
-  EventGallery_18:
-    MGGallery: MGGallery_1
-    Event: Event_37
-  EventGallery_32:
-    MGGallery: MGGallery_1
-    Event: Event_49
-  EventGallery_20:
-    MGGallery: MGGallery_1
-    Event: Event_39
-  EventGallery_21:
-    MGGallery: MGGallery_1
-    Event: Event_40
-  EventGallery_22:
-    MGGallery: MGGallery_1
-    Event: Event_41
-  EventGallery_23:
-    MGGallery: MGGallery_1
-    Event: Event_42
-  EventGallery_24:
-    MGGallery: MGGallery_1
-    Event: Event_33
-  EventGallery_25:
-    MGGallery: MGGallery_1
-    Event: Event_43
-  EventGallery_26:
-    MGGallery: MGGallery_1
-    Event: Event_22
-  EventGallery_27:
-    MGGallery: MGGallery_1
-    Event: Event_44
-  EventGallery_34:
-    MGGallery: MGGallery_1
-    Event: Event_50
-  EventGallery_33:
-    MGGallery: MGGallery_1
-    Event: Event_47
-  EventGallery_35:
-    MGGallery: MGGallery_1
-    Event: Event_51
-  EventGallery_36:
-    MGGallery: MGGallery_1
-    Event: Event_52
-  EventGallery_37:
-    MGGallery: MGGallery_1
-    Event: Event_53
-  EventGallery_38:
-    MGGallery: MGGallery_1
-    Event: Event_55
-  EventGallery_39:
-    MGGallery: MGGallery_1
-    Event: Event_48
-  EventGallery_40:
-    MGGallery: MGGallery_1
-    Event: Event_56
-  EventGallery_41:
-    MGGallery: MGGallery_1
-    Event: Event_57
-  EventGallery_42:
-    MGGallery: MGGallery_1
-    Event: Event_58
-  EventGallery_43:
-    MGGallery: MGGallery_1
-    Event: Event_59
-EventCategory:
-  EventCategory_2_57:
-    Category: Category_2
-    Event: Event_57
-  EventCategory_3_1:
-    Category: Category_3
-    Event: Event_1
-  EventCategory_3_2:
-    Category: Category_3
-    Event: Event_2
-  EventCategory_4_1:
-    Category: Category_4
-    Event: Event_1
-  EventCategory_5_2:
-    Category: Category_5
-    Event: Event_2
-  EventCategory_5_17:
-    Category: Category_5
-    Event: Event_17
-  EventCategory_5_18:
-    Category: Category_5
-    Event: Event_18
-  EventCategory_5_19:
-    Category: Category_5
-    Event: Event_19
-  EventCategory_5_20:
-    Category: Category_5
-    Event: Event_20
-  EventCategory_5_21:
-    Category: Category_5
-    Event: Event_21
-  EventCategory_5_22:
-    Category: Category_5
-    Event: Event_22
-  EventCategory_5_28:
-    Category: Category_5
-    Event: Event_28
-  EventCategory_5_30:
-    Category: Category_5
-    Event: Event_30
-  EventCategory_5_32:
-    Category: Category_5
-    Event: Event_32
-  EventCategory_5_33:
-    Category: Category_5
-    Event: Event_33
-  EventCategory_5_36:
-    Category: Category_5
-    Event: Event_36
-  EventCategory_5_37:
-    Category: Category_5
-    Event: Event_37
-  EventCategory_5_43:
-    Category: Category_5
-    Event: Event_43
-  EventCategory_5_44:
-    Category: Category_5
-    Event: Event_44
-  EventCategory_5_45:
-    Category: Category_5
-    Event: Event_45
-  EventCategory_5_46:
-    Category: Category_5
-    Event: Event_46
-  EventCategory_5_49:
-    Category: Category_5
-    Event: Event_49
-  EventCategory_5_54:
-    Category: Category_5
-    Event: Event_54
-  EventCategory_5_55:
-    Category: Category_5
-    Event: Event_55
-  EventCategory_5_58:
-    Category: Category_5
-    Event: Event_58
-  EventCategory_6_19:
-    Category: Category_6
-    Event: Event_19
-  EventCategory_6_31:
-    Category: Category_6
-    Event: Event_31
-  EventCategory_6_39:
-    Category: Category_6
-    Event: Event_39
-  EventCategory_6_40:
-    Category: Category_6
-    Event: Event_40
-  EventCategory_6_41:
-    Category: Category_6
-    Event: Event_41
-  EventCategory_6_42:
-    Category: Category_6
-    Event: Event_42
-  EventCategory_6_51:
-    Category: Category_6
-    Event: Event_51
-  EventCategory_6_52:
-    Category: Category_6
-    Event: Event_52
-  EventCategory_6_57:
-    Category: Category_6
-    Event: Event_57
-  EventCategory_6_59:
-    Category: Category_6
-    Event: Event_59
-  EventCategory_7_26:
-    Category: Category_7
-    Event: Event_26
-  EventCategory_7_27:
-    Category: Category_7
-    Event: Event_27
-  EventCategory_7_29:
-    Category: Category_7
-    Event: Event_29
-  EventCategory_7_47:
-    Category: Category_7
-    Event: Event_47
-  EventCategory_7_48:
-    Category: Category_7
-    Event: Event_48
-  EventCategory_7_50:
-    Category: Category_7
-    Event: Event_50
-  EventCategory_7_53:
-    Category: Category_7
-    Event: Event_53
-  EventCategory_7_56:
-    Category: Category_7
-    Event: Event_56
 Profile:
   Profile_1:
     User: sfGuardUser_2
@@ -504,9 +283,9 @@ MGGalleryPhoto:
   MGGalleryPhoto_17:
     MGGallery: MGGallery_3
     MGPhoto: MGPhoto_17
-  MGGalleryPhoto_16:
-    MGGallery: MGGallery_1
-    MGPhoto: MGPhoto_11
+  #MGGalleryPhoto_16:
+    #MGGallery: MGGallery_1
+    #MGPhoto: MGPhoto_11
   MGGalleryPhoto_15:
     MGGallery: MGGallery_1
     MGPhoto: MGPhoto_10
@@ -522,12 +301,12 @@ MGGalleryPhoto:
   MGGalleryPhoto_26:
     MGGallery: MGGallery_4
     MGPhoto: MGPhoto_26
-  MGGalleryPhoto_27:
-    MGGallery: MGGallery_4
-    MGPhoto: MGPhoto_28
-  MGGalleryPhoto_28:
-    MGGallery: MGGallery_4
-    MGPhoto: MGPhoto_29
+  #MGGalleryPhoto_27:
+    #MGGallery: MGGallery_4
+    #MGPhoto: MGPhoto_28
+  #MGGalleryPhoto_28:
+    #MGGallery: MGGallery_4
+    #MGPhoto: MGPhoto_29
   MGGalleryPhoto_29:
     MGGallery: MGGallery_4
     MGPhoto: MGPhoto_30
@@ -1503,3 +1282,224 @@ sfGuardUserPermission:
     sfGuardPermission: sfGuardPermission_1
     created_at: '2010-05-18 12:43:47'
     updated_at: '2010-05-18 12:43:47'
+EventGallery:
+  #EventGallery_13:
+   # MGGallery: MGGallery_1
+   # Event: Event_28
+  EventGallery_12:
+    MGGallery: MGGallery_1
+    Event: Event_32
+  #EventGallery_11:
+   # MGGallery: MGGallery_1
+   # Event: Event_27
+  EventGallery_9:
+    MGGallery: MGGallery_1
+    Event: Event_30
+  EventGallery_28:
+    MGGallery: MGGallery_1
+    Event: Event_45
+  EventGallery_29:
+    MGGallery: MGGallery_1
+    Event: Event_46
+  #EventGallery_16:
+   # MGGallery: MGGallery_1
+   # Event: Event_29
+  #EventGallery_10:
+   # MGGallery: MGGallery_1
+    #Event: Event_26
+  EventGallery_17:
+    MGGallery: MGGallery_1
+    Event: Event_36
+  EventGallery_18:
+    MGGallery: MGGallery_1
+    Event: Event_37
+  EventGallery_32:
+    MGGallery: MGGallery_1
+    Event: Event_49
+  #EventGallery_20:
+    #MGGallery: MGGallery_1
+    #Event: Event_39
+  EventGallery_21:
+    MGGallery: MGGallery_1
+    Event: Event_40
+  #EventGallery_22:
+  #  MGGallery: MGGallery_1
+  #  Event: Event_41
+  EventGallery_23:
+    MGGallery: MGGallery_1
+    Event: Event_42
+  EventGallery_24:
+    MGGallery: MGGallery_1
+    Event: Event_33
+  EventGallery_25:
+    MGGallery: MGGallery_1
+    Event: Event_43
+  #EventGallery_26:
+  #  MGGallery: MGGallery_1
+  #  Event: Event_22
+  EventGallery_27:
+    MGGallery: MGGallery_1
+    Event: Event_44
+  EventGallery_34:
+    MGGallery: MGGallery_1
+    Event: Event_50
+  EventGallery_33:
+    MGGallery: MGGallery_1
+    Event: Event_47
+  #EventGallery_35:
+   # MGGallery: MGGallery_1
+   # Event: Event_51
+  EventGallery_36:
+    MGGallery: MGGallery_1
+    Event: Event_52
+  EventGallery_37:
+    MGGallery: MGGallery_1
+    Event: Event_53
+  EventGallery_38:
+    MGGallery: MGGallery_1
+    Event: Event_55
+  EventGallery_39:
+    MGGallery: MGGallery_1
+    Event: Event_48
+  EventGallery_40:
+    MGGallery: MGGallery_1
+    Event: Event_56
+  EventGallery_41:
+    MGGallery: MGGallery_1
+    Event: Event_57
+  EventGallery_42:
+    MGGallery: MGGallery_1
+    Event: Event_58
+  EventGallery_43:
+    MGGallery: MGGallery_1
+    Event: Event_59
+EventCategory:
+  EventCategory_2_57:
+    Category: Category_2
+    Event: Event_57
+  #EventCategory_3_1:
+  #  Category: Category_3
+  #  Event: Event_1
+ # EventCategory_3_2:
+ #   Category: Category_3
+ #   Event: Event_2
+ # EventCategory_4_1:
+ #   Category: Category_4
+ #   Event: Event_1
+ # EventCategory_5_2:
+ #   Category: Category_5
+ #   Event: Event_2
+ # EventCategory_5_17:
+ #   Category: Category_5
+ #   Event: Event_17
+ # EventCategory_5_18:
+ #   Category: Category_5
+ #   Event: Event_18
+  # EventCategory_5_19:
+   #  Category: Category_5
+   #  Event: Event_19
+ # EventCategory_5_20:
+   # Category: Category_5
+  #  Event: Event_20
+ # EventCategory_5_21:
+  #  Category: Category_5
+ #   Event: Event_21
+ # EventCategory_5_22:
+  #  Category: Category_5
+ #   Event: Event_22
+ # EventCategory_5_28:
+#    Category: Category_5
+ #   Event: Event_28
+  EventCategory_5_30:
+    Category: Category_5
+    Event: Event_30
+  EventCategory_5_32:
+    Category: Category_5
+    Event: Event_32
+  EventCategory_5_33:
+    Category: Category_5
+    Event: Event_33
+  EventCategory_5_36:
+    Category: Category_5
+    Event: Event_36
+  EventCategory_5_37:
+    Category: Category_5
+    Event: Event_37
+  EventCategory_5_43:
+    Category: Category_5
+    Event: Event_43
+  EventCategory_5_44:
+    Category: Category_5
+    Event: Event_44
+  EventCategory_5_45:
+    Category: Category_5
+    Event: Event_45
+  EventCategory_5_46:
+    Category: Category_5
+    Event: Event_46
+  EventCategory_5_49:
+    Category: Category_5
+    Event: Event_49
+  EventCategory_5_54:
+    Category: Category_5
+    Event: Event_54
+  EventCategory_5_55:
+    Category: Category_5
+    Event: Event_55
+  EventCategory_5_58:
+    Category: Category_5
+    Event: Event_58
+  #EventCategory_6_19:
+   # Category: Category_6
+    #Event: Event_19
+  #EventCategory_6_31:
+   # Category: Category_6
+    #Event: Event_31
+  #EventCategory_6_39:
+   # Category: Category_6
+    #Event: Event_39
+  EventCategory_6_40:
+    Category: Category_6
+    Event: Event_40
+  #EventCategory_6_41:
+   # Category: Category_6
+    #Event: Event_41
+  EventCategory_6_42:
+    Category: Category_6
+    Event: Event_42
+  #EventCategory_6_51:
+   # Category: Category_6
+    #Event: Event_51
+  EventCategory_6_52:
+    Category: Category_6
+    Event: Event_52
+  EventCategory_6_57:
+    Category: Category_6
+    Event: Event_57
+  EventCategory_6_59:
+    Category: Category_6
+    Event: Event_59
+  #EventCategory_7_26:
+   # Category: Category_7
+    #Event: Event_26
+  #EventCategory_7_27:
+   # Category: Category_7
+   # Event: Event_27
+  #EventCategory_7_29:
+   # Category: Category_7
+   # Event: Event_29
+  EventCategory_7_47:
+    Category: Category_7
+    Event: Event_47
+  EventCategory_7_48:
+    Category: Category_7
+    Event: Event_48
+  EventCategory_7_50:
+    Category: Category_7
+    Event: Event_50
+  EventCategory_7_53:
+    Category: Category_7
+    Event: Event_53
+  EventCategory_7_56:
+    Category: Category_7
+    Event: Event_56

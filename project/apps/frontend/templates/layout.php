@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
-    <script type="text/javascript" src="http://include.reinvigorate.net/re_.js"></script>
+   <!-- <script type="text/javascript" src="http://include.reinvigorate.net/re_.js"></script>-->
 
     <!--[if IE]>
 	<link href="/css/ie.css" media="all" type="text/css" />
@@ -38,7 +38,7 @@
     </div>
 
 <script type="text/javascript">
-
+/*
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-9993295-1']);
   _gaq.push(['_setDomainName', '.com.ar']);
@@ -53,7 +53,7 @@
 try {
 reinvigorate.track("t18y5-uy76b08q85");
 } catch(err) {}
-
+*/
 </script>
 
   </body>

@@ -27,7 +27,7 @@ photos:
   param: { module: photos, action: index }
   
 events:
-  url:   /espectaculos
+  url:   /espectaculos/:cat/:slug
   param: { module: events, action: index }
 
 page_slug:
@@ -38,6 +38,9 @@ page_child_slug:
   url:   /:parentslug/:slug
   param: {module: pages, action: permalink, level:1 }
   
+page_grand_child_slug:
+  url:   /:grand/:parentslug/:slug
+  param: {module: pages, action: permalink, level:2 }
 # generic rules
 # please, remove them by adding more specific rules
 #default_index:

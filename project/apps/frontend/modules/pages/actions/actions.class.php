@@ -15,7 +15,7 @@ class pagesActions extends sfActions
   *
   * @param sfRequest $request A request object
   */
-  public function executeIndex(sfWebRequest $request)
+ /* public function executeIndex(sfWebRequest $request)
   {
     //Asignaciones
     $this->vipNumber = 21;
@@ -64,7 +64,7 @@ class pagesActions extends sfActions
           * 30 = Jocker      -> 7
           */
 
-          $this->mainShow = EventTable::retrieveMainShow($catId);
+   /*       $this->mainShow = EventTable::retrieveMainShow($catId);
           $this->shows = EventTable::retrieveShows($catId);
           $this->setTemplate('shows');
         }
@@ -75,36 +75,41 @@ class pagesActions extends sfActions
         }
 
       // pagina de show
-      if($request->getParameter('id') == 4) {
+      if($request->getParameter('slug') == 4) {
         $this->mainShow = EventTable::retrieveMainShow();
         $this->shows = EventTable::retrieveShows();
         $this->setTemplate('shows');
       }
     }
-  }
+  }*/
   public function executePermalink(sfWebRequest $request) {
 //Asignaciones
-    $this->vipNumber = 21;
+    $this->vipSlug = 'club-magic';
+
     $this->level = $request->getParameter('level');
+
     $slug=$request->getParameter('slug');
+
     $this->currentPage = Doctrine::getTable('Page')->findOneBySlug($slug);
-    //die($this->currentPage->getParent()->getId());
+
     $user = $this->getUser();
 
-    if ($user->isAuthenticated())
-      $this->isVip = $user->getGuardUser()->hasPermission('Vip');
-    else
-      $this->isVip = false;
+    //usuarios de paginas vip
+    if ($user->isAuthenticated()) $this->isVip = $user->getGuardUser()->hasPermission('Vip');
+    else  $this->isVip = false;
 
     $class = sfConfig::get('app_sf_guard_plugin_signin_form', 'sfMooDooFormSignin');
+
     $this->form = new $class();
-    if($this->currentPage->getParent()->getId() == $this->vipNumber and !($this->isVip))
+
+    //si es pagina vip y no es vip redirecciona
+    if($this->currentPage->getParent()->getSlug() == $this->vipSlug and !($this->isVip))
       return $this->redirect('@page_child_slug?parentslug='.$request->getParameter('parentslug').'&slug='.$request->getParameter('slug').'&level=1');
     else {
       // paginas hijas
-      if($this->level == 1) {
-        // VIP
-        if($request->getParameter('id') == $this->vipNumber ) {
+      if($this->level == 1 || $this->level == 2 ) {
+        // VIP estando logueado como vip
+        if($request->getParameter('slug') == $this->vipSlug ) {
           if ($request->isMethod('post')) {
             $this->form->bind($request->getParameter('signin'));
             if ($this->form->isValid()) {
@@ -114,36 +119,32 @@ class pagesActions extends sfActions
             }
           }
         }// end login in page Vip
-
+ if($this->level == 1 || $this->level == 2 )
         $this->childPage = Doctrine::getTable('Page')->findOneBySlug($slug);
         $this->page = $this->childPage->getParent();
 
+        $this->grandParent = $this->page->getParent();
+
+        if($this->grandParent == '' ||$this->grandParent == NULL ) $this->grandParent = false;
         // Paginas hijas de show
-        if($this->childPage->getParent()->get('id') == 4) {
-          $catId = $this->childPage->get('id');
-          $catId = $catId - 26;
-          //$catId = $catId - 16;
-
-          /* Asignacion de mierda
-          *
-          * 27 = main show   -> 4
-          * 28 = Belterra    -> 5
-          * 29 = Rainbow     -> 6
-          * 30 = Jocker      -> 7
-          */
-
+        if( $this->page->get('slug') == 'espectaculos') {
+          $this->catSlug = $slug;
+          $catId = Doctrine::getTable('category')->findOneBySlug($this->catSlug)->getId();
           $this->mainShow = EventTable::retrieveMainShow($catId);
           $this->shows = EventTable::retrieveShows($catId);
           $this->setTemplate('shows');
         }
       }
-        else {
-          $this->page = Doctrine::getTable('Page')->findOneBySlug($slug);
-          $this->childPage = false;
-        }
+
+      else {
+        $this->page = Doctrine::getTable('Page')->findOneBySlug($slug);
+        $this->childPage = false;
+        $this->grandParent = false;
+      }
 
       // pagina de show
       if($slug=='espectaculos') {
+        $this->catSlug = $slug;
         $this->mainShow = EventTable::retrieveMainShow();
         $this->shows = EventTable::retrieveShows();
         $this->setTemplate('shows');

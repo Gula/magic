@@ -6,10 +6,16 @@
       <h2><?php echo $page ?></h2>
       <?php if ($sf_request->getParameter('slug') == 'club-magic' and !($isVip)): ?>
       
-      <?php else : ?>
+      <?php elseif(!$grandParent) : ?>
       <ul>
         <?php foreach ($page->getChildren() as $child) : ?>
         <li><?php echo link_to($child->get('title'), '@page_child_slug?parentslug='.$page->get('slug').'&slug='.$child->get('slug').'&level=1') ?></li>
+        <?php endforeach; ?>
+      </ul>
+      <?php else: ?>
+      <ul>
+        <?php foreach ($page->getChildren() as $child) : ?>
+        <li><?php echo link_to($child->get('title'), '@page_grand_child_slug?grand='.$grandParent->get('slug').'&parentslug='.$page->get('slug').'&slug='.$child->get('slug').'&level=2') ?></li>
         <?php endforeach; ?>
       </ul>
       <?php endif; ?>
@@ -20,11 +26,13 @@
       <?php
         $realPage = $childPage;
         $realPages = $childPage->getChildren();
+        $grandParent = $childPage->getParent();
         ?>
     <?php else : ?>
       <?php
         $realPages = $page->getChildren();
         $realPage = $page;
+        $grandParent = false;
         ?>
     <?php endif; ?>
 
@@ -46,7 +54,7 @@
         <div class="slide-wrapper-paginas">
           <ul>
               <?php foreach ($realPages as $child) : ?>
-                <?php include_partial('slide_element', array('page' => $child,'parent' => $realPage, 'level' => $level)) ?>
+                <?php include_partial('slide_element', array('page' => $child,'parent' => $realPage,'grandParent' => $grandParent, 'level' => $level)) ?>
               <?php endforeach; ?>
           </ul>
         </div>

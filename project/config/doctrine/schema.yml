@@ -61,7 +61,10 @@ Category:
     Pages:                      {class: Page, local: category_id, foreign: page_id, refClass: PageCategory, onDelete: CASCADE}
     Events:                     {class: Event, local: category_id, foreign: event_id, refClass: EventCategory, onDelete: CASCADE}
     Parent:                     {local: parent_id, foreign: id, class: Category}
-
+  indexes:
+    permalink:
+      fields:                   [slug]
+      type:                     unique
 PageCategory:
   columns:
     category_id:                {type: integer, primary: true}
@@ -92,7 +95,10 @@ Event:
     Author:                     {local: author_id, foreign: id, class: sfGuardUser}
     Categories:                 {class: Category, local: event_id, foreign: category_id, refClass: EventCategory, onDelete: CASCADE}
     Galleries:                  {class: MGGallery, local: event_id, foreign: gallery_id, refClass: EventGallery}
-
+  indexes:
+    permalink:
+      fields:                   [slug]
+      type:                     unique
 EventCategory:
   columns:
     category_id:                {type: integer, primary: true}

@@ -17,7 +17,7 @@ class eventsActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-    $this->event = Doctrine::getTable('Event')->find($request->getParameter('id'));
+    $this->event = Doctrine::getTable('Event')->findOneBySlug($request->getParameter('slug'));
     $this->page = Doctrine::getTable('Page')->find(4);
   }
 }

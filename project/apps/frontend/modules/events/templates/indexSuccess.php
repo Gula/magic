@@ -5,7 +5,7 @@
       <h2><?php echo $page ?></h2>
       <ul>
         <?php foreach ($page->getChildren() as $child) : ?>
-        <li><?php echo link_to($child->get('title'), 'pages/index?id='.$child->get('id').'&level=1') ?></li>
+        <li><?php echo link_to($child->get('title'), '@page_child_slug?parentslug='.$page->get('slug').'&slug='.$child->get('slug')) ?></li>
         <?php endforeach; ?>
       </ul>
     </div>
