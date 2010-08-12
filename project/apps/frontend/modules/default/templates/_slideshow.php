@@ -13,12 +13,15 @@
 
     <?php foreach ($eventsList as $event) : ?>
       <?php
-      $mug = $event->getMugshot();
-      if(isset($mug)) {
-        $arr_filename = explode ('.', $event->getMugshot());
-        $filename = $arr_filename[0].'_720x405.'.$arr_filename[1];
-      }
-      ?>
+        $mug = $event->getRawValue()->getMugshot();
+
+        
+     
+        if(isset($mug)) {
+          $arr_filename = explode ('.', $event->getMugshot());
+          $filename = $arr_filename[0].'_720x405.'.$arr_filename[1];
+        }
+        ?>
 
     <div class="picture">
         <?php echo image_tag('/uploads/events/'.$filename) ?>

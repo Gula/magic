@@ -15,10 +15,13 @@ generator:
       actions: ~
       fields:  ~
       list:
-        display:                [ parent, author, title, created_at ]
+        display:                [ porder, parent, author, title, created_at ]
         fields:
+          porder:
+            label:              Order
           parent:
             label:              Parent page
+        sort:                   [ porder, asc ]
         actions:
           _new:                  { label: '&nbsp;', atts: {title: Add page } }
         batch_actions:

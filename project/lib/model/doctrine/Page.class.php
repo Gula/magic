@@ -103,7 +103,8 @@ class Page extends BasePage {
   public function getChildren() {
     $q = Doctrine_Query::create()
       ->from('Page p')
-      ->where('p.parent_id = ?', $this->get('id'));
+      ->where('p.parent_id = ?', $this->get('id'))
+      ->orderBy('p.porder, p.id');
 
     return $q->execute();
 
